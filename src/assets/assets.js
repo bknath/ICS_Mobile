@@ -113,6 +113,9 @@ import CEPNavbarIcon from './CEP-NavbarIcon.png'
 import chatbotNavbarIcon from './ChahbotNavbarIcon.png'
 import whatsappapiNavbarIcon from './whatsappAPINavbarIcon.png'
 import SMSmarketingNavbarIcon from './SMSmarketingNavbarIcon.png'
+//contact-us
+import contactuslocationIcon from './contactus-locationIcon.png'
+import contactusphoneIcon from './contactus-phoneIcon.png'
 export const assets = {
     logo,
     chatBubble,
@@ -228,5 +231,8 @@ export const assets = {
     CEPNavbarIcon,
     whatsappapiNavbarIcon,
     chatbotNavbarIcon,
-    SMSmarketingNavbarIcon
+    SMSmarketingNavbarIcon,
+    //contactus
+    contactuslocationIcon,
+    contactusphoneIcon
 }

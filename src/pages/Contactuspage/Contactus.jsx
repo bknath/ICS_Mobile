@@ -94,7 +94,7 @@ const Contactus = () => {
                         <p >Come visit our friendly team at one of our offices.</p>
                         <div className="locations-container">
                             <div className="location-card">
-                                <img src={assets.LocationIcon} alt="Location Icon" className="location-icon" />
+                                <img src={assets.contactuslocationIcon} alt="Location Icon" className="location-icon" />
                                 <div className="location-info">
                                     <h3>Visit us</h3>
                                     <p style={{ paddingBottom: '5px' }}>Visit our office HQ.</p>
@@ -105,7 +105,7 @@ const Contactus = () => {
                                 </div>
                             </div>
                             <div className="location-card">
-                                <img src={assets.PhoneIcon} alt="Phone Icon" className="location-icon" />
+                                <img src={assets.contactusphoneIcon} alt="Phone Icon" className="location-icon" />
                                 <div className="location-info">
                                     <h3>Call us or Chat</h3>
                                     <p>Mon-Fri from 8am to 5pm.</p>
