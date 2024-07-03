@@ -33,6 +33,8 @@ import shopclueslogo from'./shopclueslogo.png'
 import shopifylogo from './shopifylogo.png'
 import wayfairlogo from './wayfairlogo.png'
 import writingimg from './writingimg.png'
+import productvectorart from './productvectorart.svg'
+import productvectorart2 from './productvectorart2.svg'
 //chatbot
 import chatbotImg from './chatbotimg.svg'
 import chipIcon from './integratedsolicon.svg'
@@ -153,6 +155,8 @@ export const assets = {
     shopifylogo,
     wayfairlogo,
     writingimg,
+    productvectorart,
+    productvectorart2,
     //chatbot
     chatbotImg,
     chipIcon,

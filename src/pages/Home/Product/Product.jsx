@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
 const Product = () => {
     const { ref: sectionref9, inView: imageInView9 } = useInView({
-         triggerOnce: true,
+        triggerOnce: true,
         threshold: 0.1,
     })
 
@@ -21,7 +21,7 @@ const Product = () => {
                             <a href="#">Learn More</a>
                         </div>
                         <div className="product-image">
-                            <img src={assets.SMSmobile} alt="SMS Gateway Graphic" className={`image-slide-up ${imageInView9 ? 'visible': ''}`} />
+                            <img src={assets.SMSmobile} alt="SMS Gateway Graphic" className={`image-slide-up ${imageInView9 ? 'visible' : ''}`} />
                         </div>
                     </div>
                 );
@@ -114,6 +114,8 @@ const Product = () => {
                 ))}
             </nav>
             <div className="wrap-product-content">
+                <img src={assets.productvectorart} className="productvectorart1" alt="" />
+                <img src={assets.productvectorart2} className='productvectorart2' alt="" />
                 {renderContent()}
             </div>
         </section>
