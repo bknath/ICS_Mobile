@@ -11,10 +11,10 @@ const Footer = () => {
                         <p>Helping Step up Businesses a Notch <br />Higher</p>
                     </div>
                     <div className="footer-social">
-                        <a href="#"><img src={assets.TwitterIcon} alt="Twitter Icon" /></a>
-                        <a href="#"><img src={assets.LinkedlnIcon} alt="LinkedIn Icon" /></a>
-                        <a href="#"><img src={assets.FacebookIcon} alt="Facebook Icon" /></a>
-                        <a href="#"><img src={assets.InstagramIcon} alt="Instagram Icon" /></a>
+                        <a href="#" target="_blank"><img src={assets.TwitterIcon} alt="Twitter Icon"/></a>
+                        <a href="https://www.linkedin.com/company/ics-mobile-pvt-limited/mycompany/" target="_blank"><img src={assets.LinkedlnIcon} alt="LinkedIn Icon" /></a>
+                        <a href="https://www.facebook.com/people/ICS-Mobile-Pvt-Ltd/100091170706909/" target="_blank"><img src={assets.FacebookIcon} alt="Facebook Icon" /></a>
+                        <a href="https://www.instagram.com/ics_mobile_private_limited/" target="_blank"><img src={assets.InstagramIcon} alt="Instagram Icon" /></a>
                     </div>
                 </div>
                 <div className="footer-links">
