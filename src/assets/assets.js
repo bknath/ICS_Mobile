@@ -11,9 +11,10 @@ import SMSmobile from './SMS-mobile.png'
 import whatsappimg from './whatsapp-image.png'
 import Partnercompany from './partnercompany.png'
 import lifestylelogo from './lifestyle-logo.png'
+import lifestylelogo2 from './lifestylelogo2.png'
 import documentlogo from './documentlogo.svg'
 import zomotologo from './Zomato-logo.png'
-import weworklogo from './wework.png'
+import weworklogo from './wework-logo.png'
 import magnetIcon from './magneticon.svg'
 import handshakeIcon from './handshakeicon.svg'
 import settingIcon from './settingicon.svg'
@@ -130,6 +131,7 @@ export const assets = {
     whatsappimg,
     Partnercompany,
     lifestylelogo,
+    lifestylelogo2,
     documentlogo,
     zomotologo,
     weworklogo,

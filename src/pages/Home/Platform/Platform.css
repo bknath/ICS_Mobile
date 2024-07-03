@@ -222,7 +222,8 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 2px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+    box-shadow: 0px 0px 10px 5px rgba(38, 113, 183, 0.1);
     margin-bottom: 20px;
     /* width: 100%; */
     width: 1000px;
@@ -237,12 +238,10 @@
 
 .testimonial-logo {
     width: 100px;
-
+    height: 90px;
 }
 
 .testimonial-text p {
-    margin: 20px 0;
-    margin-top: 0;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -253,7 +252,8 @@
 .author-info {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 22px;
+    padding-left: 5px;
 }
 
 .author-image {
@@ -282,6 +282,7 @@
     margin-top: 20px;
     font-weight: bold;
     font-size: 14px;
+    padding-left: 8px;
 }
 
 .case-study-link:hover {
@@ -297,6 +298,7 @@
 
 .testimonial-image img {
     width: 224px;
+    padding-top: 1rem;
 }
 
 .client-logos {
@@ -312,13 +314,12 @@
     width: 344px; */
     border-radius: 10px;
     padding-top: 0;
-    padding: 0 110px;
-    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.1);
+    padding: 0 95px;
+    box-shadow: 0px 0px 10px 5px rgba(38, 113, 183, 0.1);
 }
 
-.client-logos img {
-    width: 83px;
-    height: 74px;
+.client-logo-container img{
+    width: 90px;
 }
 
 .tabs-container {

@@ -149,7 +149,7 @@ const Platform = () => {
             </div>
             <div className="header-content">
                 <h2>Our case studies</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p style={{paddingBottom:'20px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </div>
             <div className="content-block-3">
                 <div className="testimonial-content">
@@ -172,13 +172,13 @@ const Platform = () => {
                     </div>
                     <div className="client-logos">
                         <div className="client-logo-container">
-                            <img src={assets.lifestylelogo} alt="Lifestyle" />
+                            <img style={{padding:'1rem 0 10px 0'}} src={assets.lifestylelogo2} alt="Lifestyle" />
                         </div>
                         <div className="client-logo-container">
-                            <img src={assets.zomotologo} alt="Zomato" />
+                            <img style={{width:'120px' ,padding:'1.3rem 0 10px 0' }} src={assets.zomotologo} alt="Zomato" />
                         </div>
                         <div className="client-logo-container">
-                            <img src={assets.weworklogo} alt="Wework" />
+                            <img style={{width:'120px' ,padding:'1rem 0 10px 0' }} src={assets.weworklogo} alt="Wework" />
                         </div>
 
                     </div>
