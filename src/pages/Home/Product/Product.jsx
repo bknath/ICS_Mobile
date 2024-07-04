@@ -103,6 +103,7 @@ const Product = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </div>
             <nav className="product-nav">
+                <div className="product-nav-line"></div>
                 {["SMS Gateways", "Whatsapp", "Gamification", "RCS", "Chat Bots", "Solution"].map((item) => (
                     <a
                         key={item}
