@@ -10,7 +10,7 @@
 
 .logo img {
     height: 55px;
-    padding-right: 4.7rem;
+    padding-right: 3.2rem;
 }
 
 .nav-items {
@@ -107,13 +107,13 @@
 
 .activate-trial {
     background-color: white;
-    color: #004498;
-    border: 1px solid #004498;
+    color: #b30000;
+    border: 2px solid #b30000;
     border-radius: 5px;
     padding: 10px 20px;
-    margin-left: 10px;
+    margin-left: 35px;
     font-size: 16px;
-    font-family: 'DM Sans';
+    font-family: 'Montserrat';
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
@@ -121,12 +121,12 @@
 
 .sign-in {
     color: white;
-    background-color: #004498;
+    background-color: #b30000;
     border-radius: 5px;
     padding: 11px 44px;
     margin-left: 10px;
     font-size: 16px;
-    font-family: 'DM Sans';
+    font-family: 'Montserrat';
     font-weight: 700;
     border: none;
     cursor: pointer;
