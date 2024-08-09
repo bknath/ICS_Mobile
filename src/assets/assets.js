@@ -35,6 +35,14 @@ import wayfairlogo from './wayfairlogo.png'
 import writingimg from './writingimg.png'
 import productvectorart from './productvectorart.svg'
 import productvectorart2 from './productvectorart2.svg'
+//uodated Home section icon
+import lastingconnection from './stars-02.svg'
+import FlagIcon from './flag-06.svg'
+import innovativetech from './book-closed.svg'
+import playBtn from './play-circle.svg'
+import readmorearrow from './readmorearrow.svg'
+import plusIcon from './plusIcon.svg'
+import minusIcon from './minusIcon.svg'
 //chatbot
 import chatbotImg from './chatbotimg.svg'
 import chipIcon from './integratedsolicon.svg'
@@ -54,8 +62,8 @@ import experienceIcon from './experienceicon.svg'
 //Formsection-component
 import LocationIcon from './locationicon.svg'
 import MessageIcon from './messageicon.png'
-import EmailIcon from './emailicon.png'
-import PhoneIcon from './phoneicon.png'
+import EmailIcon from './emailicon.svg'
+import PhoneIcon from './phoneicon.svg'
 //CustomerEngagementpage
 import CustomerEngagementlogo from './CustomerEngagementlogo.svg'
 import surveypagesIcon from './surveypagesicon.svg'
@@ -106,6 +114,8 @@ import TPsIcon from './TPsIcon.svg'
 import operatorconnectivityIcon from './operatorconnectivityIcon.svg'
 // backgroundgradient
 import BackgroundImage from './backgroundimage.png'
+import Abstract from './Abstract.png'
+import HomepageBannerart from './HomepageBannerart.svg'
 // footer
 import FacebookIcon from './FacebookIcon.svg'
 import InstagramIcon from './InstagramIcon.svg'
@@ -120,6 +130,7 @@ import SMSmarketingNavbarIcon from './SMSmarketingNavbarIcon.png'
 import contactuslocationIcon from './contactus-locationIcon.png'
 import contactusphoneIcon from './contactus-phoneIcon.png'
 export const assets = {
+    //Home
     logo,
     chatBubble,
     mapICS,
@@ -129,6 +140,7 @@ export const assets = {
     facebook,
     downarrow,
     Robot,
+    HomepageBannerart,
     SMSmobile,
     whatsappimg,
     Partnercompany,
@@ -157,6 +169,14 @@ export const assets = {
     writingimg,
     productvectorart,
     productvectorart2,
+    //updated home page icons
+    lastingconnection,
+    FlagIcon,
+    innovativetech,
+    playBtn,
+    readmorearrow,
+    plusIcon,
+    minusIcon,
     //chatbot
     chatbotImg,
     chipIcon,
@@ -228,6 +248,7 @@ export const assets = {
     MTSlIcon,
     // backgroundimage
     BackgroundImage,
+    Abstract,
     // footer
     InstagramIcon,
     FacebookIcon,

@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-image: linear-gradient(to bottom, #fff, #ffffff);
+    /* box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08); */
     padding: 10px 50px;
 }
 

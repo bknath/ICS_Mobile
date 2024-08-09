@@ -93,28 +93,28 @@ const Platform = () => {
                 <div className="content-block">
                     <div className="content-block-col-1">
                         <div className="content-item">
-                            <img src={assets.magnetIcon} alt="icon" />
+                            <img src={assets.lastingconnection} alt="icon" />
                             <div className="content-text">
                                 <h3>Lasting Connections</h3>
                                 <p>Building enduring relationships through meaningful engagement.</p>
                             </div>
                         </div>
                         <div className="content-item">
-                            <img src={assets.handshakeIcon} alt="icon" />
+                            <img src={assets.FlagIcon} alt="icon" />
                             <div className="content-text">
                                 <h3>Commitment to Excellence</h3>
                                 <p>Striving for unpralleled quality in every endeavor.</p>
                             </div>
                         </div>
                         <div className="content-item">
-                            <img src={assets.settingIcon} alt="icon" />
+                            <img src={assets.innovativetech} alt="icon" />
                             <div className="content-text">
                                 <h3>Innovative Technology</h3>
                                 <p>Harnessing cutting-edge solution for advanced communication.</p>
                             </div>
                         </div>
                         <div className="content-item">
-                            <img src={assets.customerapproachIcon} alt="icon" />
+                            <img src={assets.playBtn} alt="icon" />
                             <div className="content-text">
                                 <h3>Customer-First Approach</h3>
                                 <p>Prioritizing your needs at every step.</p>
@@ -164,7 +164,7 @@ const Platform = () => {
                                     <p>CEO of lifestyle</p>
                                 </div>
                             </div>
-                            <a href="#" className="case-study-link">Read Case Study &gt;</a>
+                            <a href="#" className="case-study-link">Read Case Study<span><img className='readmorearrow' src={assets.readmorearrow} alt="" /></span></a>
                         </div>
                         <div className="testimonial-image">
                             <img src={assets.documentlogo} alt="Document" />

@@ -2,10 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1rem;
     /* background-color: #114DBB; */
-    
-    color: white;
+    color: #00306a;
     position: relative;
     overflow: hidden;
     width: 1400px;
@@ -13,7 +11,10 @@
 .hero-wrap-section{
     display: flex;
     justify-content: center;
-    background-image: url("src/assets/backgroundimage.png");
+    background-image: url("src/assets/Abstract.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .content {
     width: 41%;
@@ -54,26 +55,26 @@
 } */
 
 .request-demo {
-    background-color: white;
+    background-color: transparent;
+    border: 2px solid #b30000;
     color: #b30000;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 4px;
 }
 
 .talk-to-sales {
-    background-color: transparent;
-    border: 2px solid #b30000;
+    background-color: #b30000;
     color: white;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
     margin-left: 10px;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 4px;
 }
 .talk-to-sales:hover{
@@ -89,7 +90,7 @@
 
 .stat {
     margin-right: 30px;
-    border-right: 2px solid white;
+    border-right: 2px solid #00306a;
     padding-right: 2rem;
 }
 .stat:last-child{
@@ -120,13 +121,11 @@
 
 .robot {
     width: 40%;
-    margin-top: 6rem;
-    padding-left: 7rem;
+    padding-left: 1rem;
 }
 
-.robot img {
-    /* width: 100%; */
-    width: 400px;
+.h2{
+    width: 620px;
 }
 @keyframes slideUp {
     0% {

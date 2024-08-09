@@ -65,9 +65,10 @@ const Hero = () => {
                     </div>
                     <div className="robot">
                         <div className="hero-product-image">
-                            <img src={assets.Robot} alt="Robot" />
+                            <img className="h2" src={assets.HomepageBannerart} alt="Robot" />
                         </div>
                     </div>
+
                 </section>
             </div>
         </div>

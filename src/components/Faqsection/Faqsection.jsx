@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Faqsection.css'
-import plusIcon from '../../assets/plus-icon.svg'
-import minusIcon from '../../assets/minus-icon.svg'
+import plusIcon from '../../assets/plusIcon.svg'
+import minusIcon from '../../assets/minusIcon.svg'
 const Faqsection = () => {
     const [openIndex, setOpenIndex] = useState(0);
     const faqs = [

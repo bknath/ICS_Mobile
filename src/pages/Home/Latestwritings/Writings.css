@@ -22,7 +22,7 @@
   /* margin: 0 5px; */
   cursor: pointer;
   transition: background-color 0.3s;
-  border: 1px solid rgb(4, 44, 165);
+  border: 1px solid #b30000;
 }
 
 .tab:nth-child(1) {
@@ -35,7 +35,7 @@
 
 .tab:hover,
 .tab.active {
-  background-color: #0262c8;
+  background-color: #b30000;
   color: #fff;
 }
 

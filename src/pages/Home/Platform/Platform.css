@@ -73,18 +73,18 @@
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
-    margin-left: 8px;
+    margin-left: 6px;
     padding: 10px 20px;
-    border-color: #004498;
+    border-color: #b30000;
     border: 2px solid;
-    color: #004498;
+    color: #b30000;
     text-decoration: none;
     border-radius: 5px;
     align-self: flex-start;
 }
 
 .get-in-touch:hover {
-    background-color: #004498;
+    background-color: #b30000;
     color: #fff;
     transition: all 0.6ms ease;
 }
@@ -182,17 +182,17 @@
     font-size: 14px;
     padding: 10px 20px;
     font-weight: 600;
-    border: 2px solid #004498;
+    border: 2px solid #b30000;
     text-decoration: none;
     border-radius: 5px;
     align-self: flex-start;
-    color: #004498;
+    color: #b30000;
     margin-top: 1rem;
 }
 
 .explore-more-integration:hover {
     color: #fff;
-    background-color: #004498;
+    background-color: #b30000;
     transition: all ease 0.6ms;
 }
 
@@ -277,7 +277,7 @@
 }
 
 .case-study-link {
-    color: #034e9e;
+    color: #b30000;
     text-decoration: none;
     margin-top: 20px;
     font-weight: bold;
@@ -287,6 +287,11 @@
 
 .case-study-link:hover {
     text-decoration: underline;
+}
+.readmorearrow{
+    position: relative;
+    top: 8px;
+    padding-left: 5px;
 }
 
 .testimonial-image {
@@ -335,7 +340,7 @@
 
 .tab-button {
     background-color: white;
-    border: 1px solid #007bff;
+    border: 1px solid #b30000;
     border-radius: 5px;
     padding: 10px 45px;
     margin: 0 20px;
@@ -344,12 +349,12 @@
 }
 
 .tab-button.active {
-    background-color: #0056b3;
+    background-color: #b30000;
     color: white;
 }
 
 .tab-button:hover {
-    background-color: #0056b3;
+    background-color: #b30000;
     color: white;
 }
 
