@@ -107,7 +107,7 @@ const SMSgateway = () => {
             <div className="SMSgateway-wrap-content" ref={sectionref10}>
                 <div className="hero-section-5">
                     <div className="content-SMSgateway">
-                        <p>SMS Gateway</p>
+                        <p style={{color:'#b30000'}}>SMS Gateway</p>
                         <h1>Quick A2P SMS <br /> Solutions for Modern <br /> Communication</h1>
                         <p className="SMSgateway-text">Use ICS SMS Gateway to take your communications strategy to the next level. We are your source for dependable, effective, tailored SMS communication solutions.</p>
                         <div className="buttons">

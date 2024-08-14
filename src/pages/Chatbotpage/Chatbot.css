@@ -4,7 +4,7 @@
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 3rem;
-    background-color: #114DBB;
+    
     color: white;
     position: relative;
     overflow: hidden;
@@ -13,7 +13,10 @@
 .hero-wraping-content{
     display: flex;
     justify-content: center;
-    /* background-image: url("src/assets/backgroundimage.png"); */
+    background-image: url("src/assets/Abstract.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .content-chatbot {
@@ -23,6 +26,7 @@
 }
 
 .content-chatbot h1 {
+    color: #144494;
     font-size: 40px;
     font-weight: 600;
     line-height: 45px;
@@ -36,6 +40,7 @@
     margin-bottom: 5px;
 }
 .chatbot-text{
+    color: #144494;
     padding-bottom: 2rem;
 }
 
@@ -44,8 +49,8 @@
 }
 
 .contact-us {
-    background-color: white;
-    color: #114DBB;
+    border: 2px solid #b30000;
+    color: #b30000;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;

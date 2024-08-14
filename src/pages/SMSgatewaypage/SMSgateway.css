@@ -4,7 +4,6 @@
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 3rem;
-    background-color: #114DBB;
     color: white;
     position: relative;
     overflow: hidden;
@@ -13,6 +12,10 @@
 .SMSgateway-wrap-content{
     display: flex;
     justify-content: center;
+    background-image: url("src/assets/Abstract.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .content-SMSgateway{
     max-width: 40%;
@@ -23,11 +26,13 @@
     font-weight: 600;
     line-height: 45px;
     margin-bottom: 20px;
+    color: #144494;
 }
 .content-SMSgateway p{
     font-size: 14px;
     line-height: 24px;
     margin-left: 2px;
+    color: #144494;
     /* width: 64%; */
     margin-bottom: 5px;  
 }

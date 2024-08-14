@@ -140,7 +140,7 @@ const Whatsapp = () => {
             <div className="whatsappAPI-wrap-content">
                 <div className="hero-section-4">
                     <div className="content-whatsappAPI">
-                        <p>Whatsapp Business API</p>
+                        <p style={{color:'#b30000'}}>Whatsapp Business API</p>
                         <h1>Amplify Customer <br />Bonds With <br />Whatsapp</h1>
                         <p className="whatsappAPI-text">ICS's WhatsApp Business API solution to build stronger <br /> relationships with your audience, streamline your operations, and boost your brand's visibility. </p>
                         <div className="buttons">

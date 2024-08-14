@@ -43,42 +43,42 @@ const features3 = [
 const features4 = [
   {
     icon: assets.globalflexIcon,
-    title: 'Connect Instantly, Anywhere',
+    title: 'Global Flexibility',
     description: 'Integration with WhatsApp and Google RCS Messenger enables immediate, reliable support on global platforms.',
     link: '_',
     linkText: 'Learn More'
   },
   {
     icon: assets.variedrewardsIcon,
-    title: 'Know Your Customer Better',
+    title: 'Varied Rewards',
     description: 'Deep tech integration ensures personalized, informed interactions, transforming every chat into an opportunity to impress.',
     link: '#',
     linkText: 'Learn More'
   },
   {
     icon: assets.keyfeaturesIcon,
-    title: 'Unified Integrations, Diverse Platforms',
+    title: 'Key Features',
     description: 'Synchronize chats across WhatsApp, Google RCS messenger and CRM systems to ensure consistent customer service.',
     link: '#',
     linkText: 'Learn More'
   },
   {
     icon: assets.engagingIcon,
-    title: 'Engage with Precision and Empathy',
+    title: 'Engaging Interactions',
     description: 'Leverage Chatbots for real-time, interactive and relevant customer engagement.',
     link: '#',
     linkText: 'Learn More'
   },
   {
     icon: assets.brandalignmentIcon,
-    title: 'Discover, Adapt, and Thrive',
+    title: 'Brand Alignment',
     description: 'Utilize rich data from integrated chats for actionable insights, enhancing customer satisfaction and business growth.',
     link: '#',
     linkText: 'Learn More'
   },
   {
     icon: assets.diverseoptionsIcon,
-    title: 'Discover, Adapt, and Thrive',
+    title: 'Discover Options',
     description: 'Utilize rich data from integrated chats for actionable insights, enhancing customer satisfaction and business growth.',
     link: '#',
     linkText: 'Learn More'
@@ -94,7 +94,7 @@ const Customer = () => {
       <div className="wrap-customer-content">
         <div className="hero-section-3">
           <div className="content-CustomerEngagement">
-            <p>Customer Engagement Page</p>
+            <p style={{color:'#b30000'}}>Customer Engagement Page</p>
             <h1>Engage, Thrive, And <br />Win With ICS <br />Engagement!</h1>
             <p className='CustomerEngagement-text'>At ICS, our main goal is to assist you in developing captivating experiences that connect with your target demographic and provide tangible outcomes.</p>
             <div className="buttons">

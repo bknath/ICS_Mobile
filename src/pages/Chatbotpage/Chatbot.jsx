@@ -84,7 +84,7 @@ const Chatbot = () => {
             <div className="hero-wraping-content">
                 <div className="hero-section-2">
                     <div className="content-chatbot">
-                        <p>Chatbot</p>
+                        <p style={{color:'#b30000'}}>Chatbot</p>
                         <h1>Experience Stellar <br />Customer Engagement <br />with ICS Chatbots</h1>
                         <p className='chatbot-text'>Amplify your brand with exceptional customer care and personalized experiences provided by our ICS ChatBots. Leverage technology to deliver efficient and intelligent customer interactions.</p>
                         <div className="buttons">
