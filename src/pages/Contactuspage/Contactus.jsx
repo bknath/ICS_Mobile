@@ -7,9 +7,12 @@ const Contactus = () => {
             <div className="contactus-text-wrap">
                 <div className="contactus-text-section">
                     <div className="contact-us-content">
-                        <p style={{ paddingBottom: '5px' }}>Contact us</p>
-                        <h2>How May We Assist You?</h2>
-                        <p style={{ paddingBottom: '2rem' }}>ICS is a trusted CPaaS communication partner for Enterprises. We aim to provide solutions that not only fulfill your demands <br /> but also surpass your expectations. We're here to help you find it, no matter what you're looking for.</p>
+                        <p style={{ paddingBottom: '5px', color:'#b30000' }}>Contact us</p>
+                        <h2>How May We<br /> Assist You?</h2>
+                        <p style={{ paddingBottom: '2rem' }}>ICS is a trusted CPaaS communication partner for Enterprises. We aim to provide solutions that not only fulfill your demands but also surpass your expectations. We're here to help you find it, no matter what you're looking for.</p>
+                    </div>
+                    <div className="contactusimage">
+                        <img src={assets.contactusimage} alt="" />
                     </div>
                 </div>
             </div>
@@ -19,12 +22,12 @@ const Contactus = () => {
                         <div className="contact-us-item">
                             <img src={assets.chatBubble} alt="" />
                             <div className="info-block-content">
-                                <h3>Looking to know more about our Services and Products?</h3>
+                                <h3>Looking to know more about our <br /> Services and Products?</h3>
                                 <a href="_">Find Assistance</a>
                             </div>
                         </div>
                         <div className="contact-us-item">
-                            <img src={assets.chatBubble} alt="" />
+                            <img src={assets.contactuschaticon2} alt="" />
                             <div className="info-block-content">
                                 <h3>Want to know more about our Developers API?</h3>
                                 <a href="_">Read API Docs</a>
@@ -38,7 +41,7 @@ const Contactus = () => {
                             </div>
                         </div>
                         <div className="contact-us-item">
-                            <img src={assets.chatBubble} alt="" />
+                            <img src={assets.contactuschaticon2} alt="" />
                             <div className="info-block-content">
                                 <h3>Investigating potential ICS Mobile collaborations?</h3>
                                 <a href="_">Discover Patnership</a>
@@ -93,7 +96,7 @@ const Contactus = () => {
                         <h2 >Our Loactions</h2>
                         <p >Come visit our friendly team at one of our offices.</p>
                         <div className="locations-container">
-                            <div className="location-card">
+                            <div className="location-card-1">
                                 <img src={assets.contactuslocationIcon} alt="Location Icon" className="location-icon" />
                                 <div className="location-info">
                                     <h3>Visit us</h3>
@@ -104,7 +107,7 @@ const Contactus = () => {
                                     </address>
                                 </div>
                             </div>
-                            <div className="location-card">
+                            <div className="location-card-2">
                                 <img src={assets.contactusphoneIcon} alt="Phone Icon" className="location-icon" />
                                 <div className="location-info">
                                     <h3>Call us or Chat</h3>

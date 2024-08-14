@@ -1,9 +1,5 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="100" height="100" fill="url(#pattern0_2416_3)"/>
-<defs>
-<pattern id="pattern0_2416_3" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_2416_3" transform="scale(0.01)"/>
-</pattern>
-<image id="image0_2416_3" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADB0lEQVR4nO3cvWtTURzG8ePLYDuoIFQpKKKLUrR0UlCwWCcLDhV0KEIXHUX7JziIiyiiQjdREHSya106iJOTgw6GIoIv+AJaUWtN/cq53KFiDjXnnCS/JM8HAiXNPffePDxJ7s09cU5EREREREREREQKQB9wEjgPTJZ/9+npaTJgAJgGqvxrqfzfQLO3qysBp4AFVvbDP7bV29vRgLGyAf/rt38Za/V2dyRgC/CV+s37ZZ1kD+QK8a4qj7xhrAbeJATyzo+hUPIFsp10OxRIvkD2ZwjkgALJF8ieDIHsVSD5AlkP/EoIowpsUCAZAbMJgcwqjMYcFMYaUyD5A1kFPIwIY8Yv6yQ/YBPwrI4wnvtllEUDARvLs7kreeAf28htkWWAEeAu8GFZCO/L+w7ryWohoMffWrkNIiIi0oGAtcAgcBq4AFwDpoDrwCXgLDAKbHNtflB4P/K2OTDmcOR4Q4HxfAg3gU91HLzOlUHVHNMsYCvxdgbGnIgc72iN68Nu13kBRug0z6BrB1YDAQ4Cr8lnEThn/vybxUCAI8A3GuOys8xaIMDu8hKjRpp0VhkL5BjwlMb7afbN3lggj2gem992Gguk2YadNV0eyD1nTZcH8h3odZZ0eSDeqLOkTQJZBF4Bj4EnwMeMY190lhgPZBo4BKypsY6h8rSKn6uSYsZZYjSQJeBMHTO/Us51vXCWGA3kRhPnuCyYmlJhMJAv/prjiK8QPiess99ZYTCQW5H7cSdhnfucFQYDORG5H+MJ6xxxVhgMZFcL5rr89cVYSxkMpCdyP3oTPgIfd1YYC6SauC/+tHqMcWeFsUDmE/cl9pPWhLPCWCBvE/fFT9OOoUAC5hIDeUkcBRJQSQykQhwFEqBAjL2HVNQQBeLpJStADVFDCmpIgBqihhTUkAA1RA0pqCEBaogaUlBDAtQQNaSghgSoIWpIQQ0JUEPUkIIaEqCGqCEFNSRADVFD7DVkXflTFjG3nsCY/ZHjJf2wv18+cr12piOIiIiIiIiIiIiIiIiIiGsvfwAsqCQQszDTeAAAAABJRU5ErkJggg=="/>
-</defs>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="#F8F9FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 9H2V21H6V9Z" stroke="#F8F9FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="#F8F9FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

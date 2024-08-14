@@ -127,8 +127,10 @@ import chatbotNavbarIcon from './ChahbotNavbarIcon.png'
 import whatsappapiNavbarIcon from './whatsappAPINavbarIcon.png'
 import SMSmarketingNavbarIcon from './SMSmarketingNavbarIcon.png'
 //contact-us
-import contactuslocationIcon from './contactus-locationIcon.png'
-import contactusphoneIcon from './contactus-phoneIcon.png'
+import contactuslocationIcon from './contactus-locationIcon.svg'
+import contactusphoneIcon from './contactus-phoneIcon.svg'
+import contactusimage from './contactusimage.svg'
+import contactuschaticon2 from './contactuschaticon2.svg'
 export const assets = {
     //Home
     logo,
@@ -261,5 +263,7 @@ export const assets = {
     SMSmarketingNavbarIcon,
     //contactus
     contactuslocationIcon,
-    contactusphoneIcon
+    contactusphoneIcon,
+    contactusimage,
+    contactuschaticon2
 }

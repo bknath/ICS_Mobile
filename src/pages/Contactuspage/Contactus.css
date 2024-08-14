@@ -1,5 +1,6 @@
 .contactus-text-section {
-    background-color: #114DBB;
+    display: flex;
+    align-items: center;
     color: white;
     display: flex;
     justify-content: center;
@@ -11,19 +12,29 @@
 .contactus-text-wrap {
     display: flex;
     justify-content: center;
+    background-image: url("src/assets/Abstract.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-us-content {
-    text-align: justify;
-    width: 80%;
+    width: 43%;
+}
+
+.contactusimage {
+    width: 38%;
+    padding-left: 6rem;
 }
 
 .contact-us-content p {
+    color: #144494;
     font-size: 14px;
     line-height: 24px;
 }
 
 .contact-us-content h2 {
+    color: #144494;
     font-size: 40px;
     font-weight: 600;
     line-height: 45px;
@@ -31,10 +42,11 @@
 }
 
 /* form section */
-.wrapping-form-section{
+.wrapping-form-section {
     display: flex;
     justify-content: center;
 }
+
 .form-section {
     display: flex;
     justify-content: center;
@@ -45,13 +57,13 @@
 .info-block {
     width: 37%;
     margin-right: 40px;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .contact-us-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contact-us-item img {
@@ -61,14 +73,29 @@
 }
 
 .info-block-content h3 {
-    font-size: 16px;
-    line-height: 30px;
-    margin: 0 0 5px;
+    height: 65px;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: Montserrat;
+    font-size: 20px;
     font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #454545;
 }
 
 .info-block-content a {
-    color: #0360c4;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b30000;
     text-decoration: none;
     font-weight: 600;
 }
@@ -78,6 +105,7 @@
 }
 
 .contact-us-form {
+    height: 580px;
     width: 40%;
     background-color: #ffffff;
     padding: 20px;
@@ -102,14 +130,16 @@
 
 /* location section */
 
-.wrap-locations-section{
+.wrap-locations-section {
     display: flex;
     justify-content: center;
 }
-.locations-section-container{
+
+.locations-section-container {
     max-width: 970px;
     width: 100%;
 }
+
 .locations-section {
     text-align: justify;
     padding: 40px 20px;
@@ -134,8 +164,20 @@
     flex-wrap: wrap;
 }
 
-.location-card {
+.location-card-1 {
     background-color: #a32b44;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 473px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.location-card-2 {
+    background-color: #004498;
     color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -178,6 +220,7 @@
 .location-info a:hover {
     text-decoration: none;
 }
+
 .location-maps iframe {
     width: 980px;
     height: 300px;
