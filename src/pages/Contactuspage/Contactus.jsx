@@ -36,7 +36,7 @@ const Contactus = () => {
                         <div className="contact-us-item">
                             <img src={assets.chatBubble} alt="" />
                             <div className="info-block-content">
-                                <h3>Exploring better rates or better CPaaS services?</h3>
+                                <h3>Exploring better rates or better <br /> CPaaS services?</h3>
                                 <a href="_">Contact an Expert</a>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ const Contactus = () => {
                         <div className="contact-us-item">
                             <img src={assets.chatBubble} alt="" />
                             <div className="info-block-content">
-                                <h3>Want to be a part of our exciting team?</h3>
+                                <h3>Want to be a part of our exciting <br />team?</h3>
                                 <a href="_">Uncover Possibilities</a>
                             </div>
                         </div>
