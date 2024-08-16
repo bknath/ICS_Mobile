@@ -58,7 +58,7 @@ const Product = () => {
                         <div className="product-description">
                             <h2>RCS</h2>
                             <p>Amplify your voice using our advanced SMS Gateway. Deliver targeted, timely, and reliable messages for maximum impact.</p>
-                            <a href="#">Learn More</a>
+                            {/* <a href="#">Learn More</a> */}
                         </div>
                         <div className="product-image">
                             <img src={assets.SMSmobile} alt="SMS Gateway Graphic" />

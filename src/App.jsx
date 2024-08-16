@@ -13,7 +13,6 @@ import CustomerengagementPage from './pages/CustomerengagementPage'
 import ApiwhatsappPage from './pages/ApiwhatsappPage'
 import Contactuspage from './pages/Contactuspage'
 import SMSgatewaypage from './pages/SMSgatewaypage'
-
 const App = () => {
   return (
     <div>
