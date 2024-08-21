@@ -88,7 +88,7 @@ const Chatbot = () => {
                         <h1>Experience Stellar <br />Customer Engagement <br />with ICS Chatbots</h1>
                         <p className='chatbot-text'>Amplify your brand with exceptional customer care and personalized experiences provided by our ICS ChatBots. Leverage technology to deliver efficient and intelligent customer interactions.</p>
                         <div className="buttons">
-                            <a href="contact-us" className="contact-us">Contact us</a>
+                            <a href="/contact-us" className="contact-us">Contact us</a>
                         </div>
                     </div>
                     <div className="chatrobot">
