@@ -131,6 +131,8 @@ import contactuslocationIcon from './contactus-locationIcon.svg'
 import contactusphoneIcon from './contactus-phoneIcon.svg'
 import contactusimage from './contactusimage.svg'
 import contactuschaticon2 from './contactuschaticon2.svg'
+//RCS
+import Rcsmainlogo from './Rcsmainlogo.svg'
 export const assets = {
     //Home
     logo,
@@ -265,5 +267,7 @@ export const assets = {
     contactuslocationIcon,
     contactusphoneIcon,
     contactusimage,
-    contactuschaticon2
+    contactuschaticon2,
+    //
+    Rcsmainlogo
 }

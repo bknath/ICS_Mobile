@@ -57,6 +57,13 @@ const Navbar = () => {
                                 <p>Choose from various gamified campaigns to offer your customers...</p>
                             </div>
                         </div>
+                        <div className="dropdown-content-pr">
+                            <img src={assets.CEPNavbarIcon} alt="" />
+                            <div className="content-text-pr">
+                                <Link to="/rcspage" onClick={handleLinkClick}>Rich Communication</Link>
+                                <p>Choose from various gamified campaigns to offer your customers...</p>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li 

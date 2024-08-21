@@ -13,6 +13,7 @@ import CustomerengagementPage from './pages/CustomerengagementPage'
 import ApiwhatsappPage from './pages/ApiwhatsappPage'
 import Contactuspage from './pages/Contactuspage'
 import SMSgatewaypage from './pages/SMSgatewaypage'
+import Rcstestpage from './pages/Rcstestpage'
 const App = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/whatsapp' element={<ApiwhatsappPage/>}/>
         <Route path='/contact-us' element={<Contactuspage/>}/>
         <Route path='/smsgateway' element={<SMSgatewaypage/>}/>
+        <Route path='/rcspage' element={<Rcstestpage/>}/>
       </Routes>
       <Routes>
         <Route path='/' element={<Product />} />

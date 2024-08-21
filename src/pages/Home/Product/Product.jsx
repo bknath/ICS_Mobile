@@ -59,6 +59,7 @@ const Product = () => {
                             <h2>RCS</h2>
                             <p>Amplify your voice using our advanced SMS Gateway. Deliver targeted, timely, and reliable messages for maximum impact.</p>
                             {/* <a href="#">Learn More</a> */}
+                            <Link to="/rcspage">Learn More</Link>
                         </div>
                         <div className="product-image">
                             <img src={assets.SMSmobile} alt="SMS Gateway Graphic" />
@@ -115,8 +116,8 @@ const Product = () => {
                 ))}
             </nav>
             <div className="wrap-product-content">
-                <img src={assets.productvectorart} className="productvectorart1" alt="" />
-                <img src={assets.productvectorart2} className='productvectorart2' alt="" />
+                {/* <img src={assets.productvectorart} className="productvectorart1" alt="" />
+                <img src={assets.productvectorart2} className='productvectorart2' alt="" /> */}
                 {renderContent()}
             </div>
         </section>
