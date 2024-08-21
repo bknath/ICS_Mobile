@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './Rcs.css'
 import { assets } from '../../assets/assets';
+import { Link } from 'react-router-dom';
 const Rcs = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -84,7 +85,8 @@ const Rcs = () => {
                         <h1>Promote Your <br />Business With RCS Messaging</h1>
                         <p style={{ paddingBottom: '2rem' }}>The goal of our team at ICS is to revolutionize human communication. Rich Communication Services (RCS) is a prime example of that level of commitment.</p>
                         <div className="buttons">
-                            <a href="contact-us" className="contact-us">Contact us</a>
+                            {/* <a href="contact-us" className="contact-us">Contact us</a> */}
+                            <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
                     <div className="rcsdetail-image">

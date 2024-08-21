@@ -2,6 +2,7 @@ import React from 'react'
 import './Customer.css'
 import { assets } from '../../assets/assets'
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 const features3 = [
   {
     icon: assets.promotionIcon,
@@ -98,7 +99,8 @@ const Customer = () => {
             <h1>Engage, Thrive, And <br />Win With ICS <br />Engagement!</h1>
             <p className='CustomerEngagement-text'>At ICS, our main goal is to assist you in developing captivating experiences that connect with your target demographic and provide tangible outcomes.</p>
             <div className="buttons">
-              <a href="contact-us" className="contact-us">Contact us</a>
+              {/* <a href="contact-us" className="contact-us">Contact us</a> */}
+              <Link to="/contact-us" className='contact-us'>Contact us</Link>
             </div>
           </div>
           <div className="Customerrobot">

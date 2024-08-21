@@ -3,6 +3,7 @@ import './Whatsapp.css'
 import { assets } from '../../assets/assets'
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 const Whatsapp = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -144,7 +145,8 @@ const Whatsapp = () => {
                         <h1>Amplify Customer <br />Bonds With <br />Whatsapp</h1>
                         <p className="whatsappAPI-text">ICS's WhatsApp Business API solution to build stronger <br /> relationships with your audience, streamline your operations, and boost your brand's visibility. </p>
                         <div className="buttons">
-                            <a href="contact-us" className="contact-us">Contact us</a>
+                            {/* <a href="contact-us" className="contact-us">Contact us</a> */}
+                            <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
                     <div className="whatsapprobot">

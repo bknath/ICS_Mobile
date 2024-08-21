@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './Hero.css'
 import { assets } from '../../../assets/assets'
+import { Link } from 'react-router-dom';
 const Hero = () => {
     const brandRef = useRef(null);
     const yearRef = useRef(null);
@@ -39,8 +40,10 @@ const Hero = () => {
                         <h1>Reimagine omnichannel communications</h1>
                         <p>Leverage the power of ICS Mobile’s Trusted CPAAS platform to elevate your digital interactions.</p>
                         <div className="buttons">
-                            <a href="contact-us" className="request-demo">Request Demo</a>
-                            <a href="contact-us" className="talk-to-sales">Talk to Sales</a>
+                            {/* <a href="contact-us" className="request-demo">Request Demo</a> */}
+                            <Link to="/contact-us" className='request-demo'>Request Demo</Link>
+                            {/* <a href="contact-us" className="talk-to-sales">Talk to Sales</a> */}
+                            <Link to="/contact-us" className='talk-to-sales'>Talk to Sales</Link>
                         </div>
                         <div className="stats">
                             <div className="stat">

@@ -2,6 +2,7 @@ import React from 'react'
 import './SMSgateway.css'
 import { assets } from '../../assets/assets'
 import { useInView } from 'react-intersection-observer'
+import { Link } from 'react-router-dom'
 const SMSgateway = () => {
     const features8 = [
         {
@@ -111,7 +112,8 @@ const SMSgateway = () => {
                         <h1>Quick A2P SMS <br /> Solutions for Modern <br /> Communication</h1>
                         <p className="SMSgateway-text">Use ICS SMS Gateway to take your communications strategy to the next level. We are your source for dependable, effective, tailored SMS communication solutions.</p>
                         <div className="buttons">
-                            <a href="contact-us" className="contact-us">Contact us</a>
+                            {/* <a href="contact-us" className="contact-us">Contact us</a> */}
+                            <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
                     <div className="SMSrobot">
