@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Contactus.css'
 import { assets } from '../../assets/assets'
 const Contactus = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    },[]);
     return (
         <div className='contact-us-section'>
             <div className="contactus-text-wrap">
