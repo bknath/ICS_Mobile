@@ -166,7 +166,7 @@ const Contactus = () => {
               <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input
-                  type="email"
+                  type="email"k
                   id="email"
                   name="email"
                   placeholder='you@company.com'
