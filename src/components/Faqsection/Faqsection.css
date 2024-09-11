@@ -17,9 +17,7 @@
     background-color: #fff;
     border-radius: 5px;
     margin-bottom: 10px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     cursor: pointer;
-    /* transition: all 0.3s ease; */
     transition: max-height 0.9s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -43,7 +41,7 @@
 }
 
 .faq-answer {
-    padding: 15px 20px;
+    padding: 0px 0px 20px 60px;
     font-size: 14px;
 }
 

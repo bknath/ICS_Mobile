@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './SMSgateway.css'
 import { assets } from '../../assets/assets'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 const SMSgateway = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    },[]);
     const features8 = [
         {
             icon: assets.smoothIcon,
@@ -137,7 +140,7 @@ const SMSgateway = () => {
                                 <div className="feature8-card-content">
                                     <h3>{features8.title}</h3>
                                     <p>{features8.description}</p>
-                                    <a href={features8.link} className="read-more">Read More &gt;</a>
+                                    {/* <a href={features8.link} className="read-more">Read More &gt;</a> */}
                                 </div>
                             </div>
                         ))}
@@ -156,7 +159,7 @@ const SMSgateway = () => {
                                     <div className="feature9-card-content">
                                         <h3>{features9.title}</h3>
                                         <p>{features9.description}</p>
-                                        <a href={features9.link} className='read-more-2'>{features9.linkText} &gt;</a>
+                                        {/* <a href={features9.link} className='read-more-2'>{features9.linkText} &gt;</a> */}
                                     </div>
                                 </div>
                             ))}

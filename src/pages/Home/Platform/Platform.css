@@ -362,6 +362,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 1100px;
 }
 
 .logos img {
@@ -369,10 +370,13 @@
     margin: 20px;
 }
 
+.tab-stat-container{
+    width: 1038px;
+    margin: 0 auto;
+}
 
 .tab-stats {
     background-image: url('../../../assets/tab-stats-background.svg');
-    /*path for background image */
     background-size: cover;
     background-position: center;
     padding: 20px 0;

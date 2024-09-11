@@ -149,7 +149,7 @@ const Platform = () => {
             </div>
             <div className="header-content">
                 <h2>Our case studies</h2>
-                <p style={{paddingBottom:'20px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p style={{ paddingBottom: '20px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </div>
             <div className="content-block-3">
                 <div className="testimonial-content">
@@ -172,13 +172,13 @@ const Platform = () => {
                     </div>
                     <div className="client-logos">
                         <div className="client-logo-container">
-                            <img style={{padding:'1rem 0 10px 0'}} src={assets.lifestylelogo2} alt="Lifestyle" />
+                            <img style={{ padding: '1rem 0 10px 0' }} src={assets.lifestylelogo2} alt="Lifestyle" />
                         </div>
                         <div className="client-logo-container">
-                            <img style={{width:'120px' ,padding:'1.3rem 0 10px 0' }} src={assets.zomotologo} alt="Zomato" />
+                            <img style={{ width: '120px', padding: '1.3rem 0 10px 0' }} src={assets.zomotologo} alt="Zomato" />
                         </div>
                         <div className="client-logo-container">
-                            <img style={{width:'120px' ,padding:'1rem 0 10px 0' }} src={assets.weworklogo} alt="Wework" />
+                            <img style={{ width: '120px', padding: '1rem 0 10px 0' }} src={assets.weworklogo} alt="Wework" />
                         </div>
 
                     </div>
@@ -207,37 +207,39 @@ const Platform = () => {
                         ))}
                     </div>
                 </div>
-                <div className="tab-stats" ref={sectionstatRef}>
-                    <div className="tab-stats-row">
-                        <div className="tab-stats-content">
-                            <div className="stat-flex-box">
-                                <h3 className='stat-flex-box-1' ref={apiCallsRef}>0</h3><span className="stat-flex-box-2">L+</span>
+                <div className="tab-stat-container">
+                    <div className="tab-stats" ref={sectionstatRef}>
+                        <div className="tab-stats-row">
+                            <div className="tab-stats-content">
+                                <div className="stat-flex-box">
+                                    <h3 className='stat-flex-box-1' ref={apiCallsRef}>0</h3><span className="stat-flex-box-2">L+</span>
+                                </div>
+                                <p>API calls per <br /> months</p>
                             </div>
-                            <p>API calls per <br /> months</p>
-                        </div>
-                        <div className="tab-stats-content">
-                            <div className="stat-flex-box">
-                                <h3 className='stat-flex-box-1' ref={operatorsRef}>0</h3><span className='stat-flex-box-2'>L+</span>
+                            <div className="tab-stats-content">
+                                <div className="stat-flex-box">
+                                    <h3 className='stat-flex-box-1' ref={operatorsRef}>0</h3><span className='stat-flex-box-2'>L+</span>
+                                </div>
+                                <p>Operators <br />connected</p>
                             </div>
-                            <p>Operators <br />connected</p>
-                        </div>
-                        <div className="tab-stats-content">
-                            <div className="stat-flex-box">
-                                <span className="stat-flex-box-2">0</span><h3 className='stat-flex-box-1' ref={apiUptimeRef}>0</h3>
+                            <div className="tab-stats-content">
+                                <div className="stat-flex-box">
+                                    <span className="stat-flex-box-2">0</span><h3 className='stat-flex-box-1' ref={apiUptimeRef}>0</h3>
+                                </div>
+                                <p style={{ paddingTop: '1.3rem' }}>API uptime</p>
                             </div>
-                            <p style={{paddingTop:'1.3rem'}}>API uptime</p>
-                        </div>
-                        <div className="tab-stats-content">
-                            <div className="stat-flex-box">
-                                <h3 className='stat-flex-box-1' ref={smsSentRef}>0</h3><span className='stat-flex-box-2'>L+</span>
+                            <div className="tab-stats-content">
+                                <div className="stat-flex-box">
+                                    <h3 className='stat-flex-box-1' ref={smsSentRef}>0</h3><span className='stat-flex-box-2'>L+</span>
+                                </div>
+                                <p>SMS sent per <br />month</p>
                             </div>
-                            <p>SMS sent per <br />month</p>
-                        </div>
-                        <div className="tab-stats-content">
-                            <div className="stat-flex-box">
-                                <h3 className='stat-flex-box-1' ref={otpSentRef}>0</h3><span className='stat-flex-box-2'>K+</span>
+                            <div className="tab-stats-content">
+                                <div className="stat-flex-box">
+                                    <h3 className='stat-flex-box-1' ref={otpSentRef}>0</h3><span className='stat-flex-box-2'>K+</span>
+                                </div>
+                                <p>OTP sent per <br /> month</p>
                             </div>
-                            <p>OTP sent per <br /> month</p>
                         </div>
                     </div>
                 </div>
