@@ -1,0 +1,107 @@
+.product2-section{
+  /* background-image: linear-gradient(to bottom, #f2f7ff -33%, #f2f7ff 167%); */
+  background-color: #ffffff;
+}
+.head-section-button{
+  margin-top: 3rem;
+  border: none;
+  background-color: #FDEFF0;
+  border-radius: 15px;
+  padding: 10px 25px;
+  color: #000247;
+  font-size: 14px;
+}
+.custom-product-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px; 
+  width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.custom-product-content {
+  display: flex;
+  width: 100%;
+}
+
+.custom-product-list {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.custom-product-item {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.custom-product-item.active {
+  background-color: #ffffff;
+  /* border-left: 4px solid #d32f2f; */
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px 2px rgba(232, 115, 97, 0.2);
+  transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+.custom-product-item.active .custom-product-question span{
+  color: #d32f2f;
+  font-weight: bold;
+}
+.custom-product-question {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-product-title {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.custom-product-title.active-title {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.custom-product-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.custom-product-item.active .custom-product-description {
+  height: auto;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+.custom-product-icon {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.custom-product-image {
+  flex: 1;
+  max-width: 50%; /* Adjust this to manage image size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

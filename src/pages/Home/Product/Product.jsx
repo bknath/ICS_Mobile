@@ -18,7 +18,6 @@ const Product = () => {
                         <div className="product-description">
                             <h2>SMS Gateways</h2>
                             <p>Amplify your voice using our advanced SMS Gateway. Deliver targeted, timely, and reliable messages for maximum impact.</p>
-                            {/* <a href="#">Learn More</a> */}
                             <Link to="/smsgateway">Learn More</Link>
                         </div>
                         <div className="product-image">
@@ -32,7 +31,6 @@ const Product = () => {
                         <div className="product-description">
                             <h2>Whatsapp</h2>
                             <p>Amplify your voice using our advanced SMS Gateway. Deliver targeted, timely, and reliable messages for maximum impact.</p>
-                            {/* <a href="#">Learn More</a> */}
                             <Link to="/whatsapp">Learn More</Link>
                         </div>
                         <div className="product-image">
@@ -59,7 +57,6 @@ const Product = () => {
                         <div className="product-description">
                             <h2>RCS</h2>
                             <p>Amplify your voice using our advanced SMS Gateway. Deliver targeted, timely, and reliable messages for maximum impact.</p>
-                            {/* <a href="#">Learn More</a> */}
                             <Link to="/rcspage">Learn More</Link>
                         </div>
                         <div className="product-image">
@@ -73,7 +70,6 @@ const Product = () => {
                         <div className="product-description">
                             <h2>Chat Bots</h2>
                             <p>Amplify your voice using our advanced SMS Gateway. Deliver targeted, timely, and reliable messages for maximum impact.</p>
-                            {/* <a href="#">Learn More</a> */}
                             <Link to='/chatbot'>Learn More</Link>
                         </div>
                         <div className="product-image">

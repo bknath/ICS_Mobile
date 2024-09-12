@@ -35,6 +35,9 @@ import wayfairlogo from './wayfairlogo.png'
 import writingimg from './writingimg.png'
 import productvectorart from './productvectorart.svg'
 import productvectorart2 from './productvectorart2.svg'
+import SMSproduct2image from './SMSproduct2image.svg'
+import RCSproduct2image from './RCSproduct2image.svg'
+import Whatsappproduct2image from './Whatsappproduct2image.svg'
 //uodated Home section icon
 import lastingconnection from './stars-02.svg'
 import FlagIcon from './flag-06.svg'
@@ -181,6 +184,9 @@ export const assets = {
     readmorearrow,
     plusIcon,
     minusIcon,
+    SMSproduct2image,
+    RCSproduct2image,
+    Whatsappproduct2image,
     //chatbot
     chatbotImg,
     chipIcon,
