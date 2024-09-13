@@ -4,9 +4,19 @@
   background-image: linear-gradient(to bottom, #fafafa -33%, #fff 167%);
 }
 
+.head-section-b4 {
+  margin-top: 2rem;
+  border: none;
+  background-color: #FDEFF0;
+  border-radius: 15px;
+  color: #000247;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
 .latest-writings h2 {
+  padding: 20px 0;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .tabs {
@@ -49,7 +59,7 @@
   width: 300px;
   background-color: #fff;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,9 +80,12 @@
 .article p {
   font-size: 14px;
   margin-bottom: 15px;
+  color: #4A5057;
+  font-weight: 300;
 }
 
 .meta {
-  color: #999;
+  color: #353A40;
   font-size: 12px;
+  font-weight: 600;
 }

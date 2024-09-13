@@ -17,7 +17,7 @@
     background-position: center;
 }
 .content {
-    width: 41%;
+    width: 40%;
 }
 
 .content h1 {
@@ -120,12 +120,12 @@
 }
 
 .robot {
-    width: 40%;
+    width: 35%;
     padding-left: 1rem;
 }
 
 .h2{
-    width: 620px;
+    width: 440px;
 }
 @keyframes slideUp {
     0% {

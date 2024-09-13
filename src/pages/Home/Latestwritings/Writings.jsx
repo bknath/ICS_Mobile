@@ -4,6 +4,9 @@ import { assets } from '../../../assets/assets'
 const Writings = () => {
   return (
     <div className="latest-writings">
+      <div className="header-content">
+        <button className='head-section-b4'>Blogs</button>
+      </div>
       <h2>Latest writings</h2>
       <div className="tabs">
         <button className="tab">SMS gateways</button>
