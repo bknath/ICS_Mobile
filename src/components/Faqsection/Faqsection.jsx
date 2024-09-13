@@ -6,26 +6,27 @@ const Faqsection = () => {
     const [openIndex, setOpenIndex] = useState(0);
     const faqs = [
         {
-            question: "API calls per month",
-            answer: "Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+            question: "How many API calls can I make per month?",
+            answer: "You can make as many API calls as your business requires. We offer a free 30-day trial where you’ll have full access to our API, allowing you to explore its full potential. During the trial, we'll provide comprehensive support, including a personalized 30-minute onboarding session to help you integrate our services into your system efficiently and ensure you're up and running in no time."
         },
         {
-            question: "Operators connected",
-            answer: "We have a network of operators spanning over 200 countries, ensuring global coverage and reliability for your messaging needs."
+            question: "How many operators are connected?",
+            answer: "We have established a vast network of over 200 operators across the globe, providing coverage in nearly every country. This ensures that no matter where your business operates or where your customers are located, we can deliver messages quickly and reliably. Our global reach ensures that we can meet the communication needs of businesses from any industry, anywhere in the world."
         },
         {
-            question: "API uptime",
-            answer: "Our API boasts a 99.9% uptime, ensuring that your messages are delivered without interruption."
+            question: "What is the API uptime?",
+            answer: "We take reliability seriously and guarantee a 99.9% API uptime. This means that our service is operational almost 24/7, with minimal downtime, ensuring seamless messaging. Whether you're sending time-sensitive notifications, promotional messages, or important updates, you can count on our API to deliver consistently without interruptions."
         },
         {
-            question: "SMS sent per month",
-            answer: "Our system handles millions of SMS messages per month, providing scalable solutions for businesses of all sizes."
+            question: "How many SMS messages are sent per month?",
+            answer: "Our system is built to handle high volumes, sending millions of SMS messages every month for businesses ranging from small startups to large enterprises. This scalability means we can grow with your business, whether you're sending a few hundred messages or millions. Our platform is designed for reliability and speed, ensuring that your messages reach their recipients quickly and efficiently."
         },
         {
-            question: "OTP sent per month",
-            answer: "We send millions of one-time passwords (OTPs) every month, offering secure and reliable authentication services."
+            question: "How many OTPs are sent per month?",
+            answer: "Security is at the core of our services, and we process millions of one-time passwords (OTPs) every month for businesses worldwide. These OTPs are used for secure user authentication, ensuring that your customers can access their accounts or verify transactions safely. Our system is optimized to handle large volumes without compromising speed or security, making sure that OTPs are delivered instantly to users, even during peak times."
         }
     ];
+
 
     // Toggle the open state of an FAQ
     const toggleFaq = (index) => {
@@ -35,6 +36,9 @@ const Faqsection = () => {
 
     return (
         <section className="faq">
+            <div className="header-content">
+                <button className='head-section-b3'>FAQ</button>
+            </div>
             <div className="faq-accordion">
                 <h2>Frequently asked questions</h2>
                 {faqs.map((faq, index) => (
