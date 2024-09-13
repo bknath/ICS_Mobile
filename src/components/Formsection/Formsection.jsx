@@ -103,7 +103,7 @@ const Formsection = () => {
             <div>
               <h3>Office</h3>
               <p>Come say hello at our <br /> office HQ.</p>
-              <address>100 Smith Street Collingwood VIC 3066 AU</address>
+              <address>NO.57, 2ND FLOOR, 8th Main Rd, NEAR SBI BANK, 3rd Phase, J. P. Nagar, Bengaluru, Karnataka 560078</address>
             </div>
           </div>
           <div className="contact-item">
@@ -118,6 +118,18 @@ const Formsection = () => {
       </div>
       <div className="form-block">
         <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="email">Business Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder='you@company.com'
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="first-name">First name</label>
@@ -145,17 +157,23 @@ const Formsection = () => {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder='you@company.com'
-              value={formData.email}
+            <label htmlFor="company-size">Company Size</label>
+            <select
+              id="company-size"
+              name="companySize"
+              value={formData.companySize}
               onChange={handleChange}
               required
-            />
+            >
+              <option value="">Select company size</option>
+              <option value="1-10">1-10 employees</option>
+              <option value="11-50">11-50 employees</option>
+              <option value="51-200">51-200 employees</option>
+              <option value="201-500">201-500 employees</option>
+              <option value="500+">500+ employees</option>
+            </select>
           </div>
+
           <div className="form-group">
             <label htmlFor="phone">Phone number</label>
             <input
@@ -169,16 +187,25 @@ const Formsection = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder='Leave us a message...'
-              value={formData.message}
+            <label htmlFor="help-options">How Could ICS Help You?</label>
+            <select
+              id="help-options"
+              name="helpOptions"
+              value={formData.helpOptions}
               onChange={handleChange}
               required
-            ></textarea>
+            >
+              <option value="">Select an option</option>
+              <option value="increase-traffic">Increase Website Traffic</option>
+              <option value="improve-communication">Improve Customer Communication</option>
+              <option value="optimize-processes">Optimize Business Processes</option>
+              <option value="enhance-security">Enhance Security & Authentication</option>
+              <option value="enhance-security">Connect and discuss with us</option>
+              <option value="enhance-security">Book a free 15 min demo</option>
+              <option value="other">Other</option>
+            </select>
           </div>
+
           <div className="form-group checkbox-group">
             <input
               type="checkbox"
