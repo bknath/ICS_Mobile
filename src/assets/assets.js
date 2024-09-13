@@ -39,6 +39,7 @@ import SMSproduct2image from './SMSproduct2image.svg'
 import RCSproduct2image from './RCSproduct2image.svg'
 import Whatsappproduct2image from './Whatsappproduct2image.svg'
 //uodated Home section icon
+import homepageupdatedimage from './homepageupdatedimage.svg'
 import lastingconnection from './stars-02.svg'
 import FlagIcon from './flag-06.svg'
 import innovativetech from './book-closed.svg'
@@ -46,6 +47,14 @@ import playBtn from './play-circle.svg'
 import readmorearrow from './readmorearrow.svg'
 import plusIcon from './plusIcon.svg'
 import minusIcon from './minusIcon.svg'
+import outerplt1backgrndlayer from './outerbkglayer.svg'
+import p1image from './p1image.svg'
+import zapierlogo from './zapier.svg'
+import zohologo from './zoho.svg'
+import shopify2logo from './shopify.svg'
+import pabblyconnectlogo from './pabblyconnect.svg'
+import woocommercelogo from './woocommerce.svg'
+import hubspotlogo from './hubspot.svg'
 //chatbot
 import chatbotImg from './chatbotimg.svg'
 import chipIcon from './integratedsolicon.svg'
@@ -177,6 +186,7 @@ export const assets = {
     productvectorart,
     productvectorart2,
     //updated home page icons
+    homepageupdatedimage,
     lastingconnection,
     FlagIcon,
     innovativetech,
@@ -187,6 +197,14 @@ export const assets = {
     SMSproduct2image,
     RCSproduct2image,
     Whatsappproduct2image,
+    outerplt1backgrndlayer,
+    p1image,
+    zapierlogo,
+    zohologo,
+    pabblyconnectlogo,
+    woocommercelogo,
+    shopify2logo,
+    hubspotlogo,
     //chatbot
     chatbotImg,
     chipIcon,

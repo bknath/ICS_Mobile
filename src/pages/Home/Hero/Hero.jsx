@@ -68,7 +68,7 @@ const Hero = () => {
                     </div>
                     <div className="robot">
                         <div className="hero-product-image">
-                            <img className="h2" src={assets.HomepageBannerart} alt="Robot" />
+                            <img className="h2" src={assets.homepageupdatedimage} alt="Robot" />
                         </div>
                     </div>
 

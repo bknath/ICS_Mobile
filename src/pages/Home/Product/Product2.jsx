@@ -50,8 +50,8 @@ const Product2 = () => {
 
     return (
         <section className="product2-section">
-            <div className="header-content">
-                <button className='head-section-button'>Products</button>
+            <div className="header-content-1">
+                <button className='head-section-b1'>Products</button>
                 <h2>Explore All Products, Unlock Possibilities</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </div>
