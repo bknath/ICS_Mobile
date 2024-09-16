@@ -141,7 +141,7 @@ const Whatsapp = () => {
             <div className="whatsappAPI-wrap-content">
                 <div className="hero-section-4">
                     <div className="content-whatsappAPI">
-                        <p style={{color:'#b30000'}}>Whatsapp Business API</p>
+                        <p style={{ color: '#b30000' }}>Whatsapp Business API</p>
                         <h1>Amplify Customer <br />Bonds With <br />Whatsapp</h1>
                         <p className="whatsappAPI-text">ICS's WhatsApp Business API solution to build stronger <br /> relationships with your audience, streamline your operations, and boost your brand's visibility. </p>
                         <div className="buttons">
@@ -161,7 +161,53 @@ const Whatsapp = () => {
                     <h2>Why WhatsApp Business API?</h2>
                     <p>The API, introduced by Facebook in 2018, completely changes how companies engage with WhatsApp users. It offers a seamless platform <br /> for communication and engagement. With it, businesses can:</p>
                 </div>
-                <div className="feature5-wrap-container">
+                <div className="whatsapp-info-section">
+                    <div className="whatsapp-info-details">
+                        <div className="whatsapp-info-item">
+                            <div className='whatsapp-info-r1'>
+                                <div className="whataspp-info-r1-c1">
+                                    <img src={assets.EmailIcon} alt="Email Icon" />
+                                </div>
+                                <div className="whatsapp-info-r1-c2">
+                                    <h3>Automate Sales and Support</h3>
+                                    <p>Get your word out to thousands of people at once. Embrace limitless reach and bid farewell to limitations.</p>
+                                </div>
+                            </div>
+                            <div className="whatsapp-info-content">
+                                <img src={assets.whywhatsappP1img} alt="" />
+                            </div>
+                        </div>
+
+                        <div className="whatsapp-info-item">
+                            <img src={assets.MessageIcon} alt="Live Chat Icon" />
+                            <div className="whatsapp-info-content">
+                                <h3>Automate Sales and Support</h3>
+                                <p>Put intelligent chatbots to work for your company. Reduce manual steps in the sales process and offer round-the-clock assistance.</p>
+                                <img src={assets.ChatImage} alt="Start New Chat" />
+                            </div>
+                        </div>
+
+                        <div className="whatsapp-info-item">
+                            <img src={assets.LocationIcon} alt="Office Icon" />
+                            <div className="whatsapp-info-content">
+                                <h3>Connect Multiple Human Agents</h3>
+                                <p>Effortlessly coordinate chats with several people using a single WhatsApp number. Efficient teamwork simplified.</p>
+                                <img src={assets.OfficeImage} alt="Office Location" />
+                            </div>
+                        </div>
+
+                        <div className="whatsapp-info-item">
+                            <img src={assets.PhoneIcon} alt="Phone Icon" />
+                            <div className="whatsapp-info-content">
+                                <h3>Green Tick</h3>
+                                <p>Gain trust by earning WhatsApp's coveted green tick. Promote the fact that your audience is interacting with a legitimate company.</p>
+                                <img src={assets.PhoneImage} alt="Phone Contact" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div className="feature5-wrap-container">
                     <div className="feature5-cards-container">
                         <div className="feature5-cards-column">
                             {features5.map((features5, index) => (
@@ -182,8 +228,8 @@ const Whatsapp = () => {
                             />
                         </div>
                     </div>
-                </div>
-                <div className="feature5-wrap-container">
+                </div> */}
+                {/* <div className="feature5-wrap-container">
                     <div className="feature5-cards-container" ref={sectionref5}>
                         <div className="image-column-wp">
                             <img src={assets.whatsappPlatfroml3}
@@ -204,7 +250,7 @@ const Whatsapp = () => {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="whatsapp-platform-header">
                     <h2>Unparalleled Features Tailored For Success</h2>
                     <p>Discover carefully developed features that will improve your company's success on WhatsApp. Discover the unique ways each element <br /> has been designed to boost your achievements.</p>
@@ -268,9 +314,9 @@ const Whatsapp = () => {
                 <div className="unique-wrap-feature">
                     <section className="unique-feature-section" ref={sectionref7}>
                         <div className="unique-feature-image">
-                            <img src={assets.whatsappPlatforml5} 
-                            alt="Robot and Phone"
-                            className={`image-slide-up ${imageInView7 ? 'visible' : ''}`}
+                            <img src={assets.whatsappPlatforml5}
+                                alt="Robot and Phone"
+                                className={`image-slide-up ${imageInView7 ? 'visible' : ''}`}
                             />
                         </div>
                         <div className="unique-feature-content">

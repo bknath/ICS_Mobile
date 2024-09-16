@@ -111,6 +111,8 @@ import whatsappPlatforml4 from './whatsappPlatforml4.svg'
 import whatsappPlatforml5 from './whatsappPlatforml5.svg'
 import chatIcon2 from './chaticon2.svg'
 import chatIcon3 from './chaticon3.svg'
+//new whatsappAPI
+import whywhatsappP1img from './whywhatsapp-p1img.svg'
 //SMSgatewaypage
 import SMSgatewaylogo from './SMSgatewaylogo.svg'
 import SMSgatewaylogo2 from './SMSgatewayl2.png'
@@ -261,6 +263,8 @@ export const assets = {
     chatIcon3,
     whatsappPlatforml4,
     whatsappPlatforml5,
+    //newwhatsappapi
+    whywhatsappP1img,
     //SMSgatewaypage
     SMSgatewaylogo,
     SMSgatewaylogo2,
