@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Whatsapp.css'
+import '../Home/Product/Product.css'
+import plusIcon from '../../assets/plusIcon.svg';
 import { assets } from '../../assets/assets'
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -8,6 +10,15 @@ const Whatsapp = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    const [activeIndex2, setActiveIndex2] = useState(0);
+    const [activeIndex3, setActiveIndex3] = useState(0);
+
+    const handleClick = (index) => {
+        setActiveIndex2(index); // Open the clicked product and close the previously opened one
+    };
+    const handleClick2 = (index) => {
+        setActiveIndex3(index);
+    };
     const features5 = [
         {
             icon: assets.globalaudienceIcon,
@@ -40,93 +51,69 @@ const Whatsapp = () => {
             linkText: 'Learn More'
         },
     ]
+
     const features7 = [
         {
-            icon: assets.LocationIcon,
-            title: 'Location Share',
-            description: 'Effortlessly direct your consumers by giving the locations of the ne...',
-            link: '#'
+            name: 'Location Sharing',
+            description: 'Effortlessly direct your consumers by giving the locations of the nearest service centre, branch or stores on WhatsApp. Facilitate easier access and utilisation by making it easier to find your physical touch points.',
+            image: assets.f7wf1
         },
         {
-            icon: assets.notificationIcon,
-            title: 'Notifications',
-            description: 'Ensure that various audiences can comprehend and respond t...',
-            link: '#'
+            name: 'Notification in Local languages',
+            description: 'Ensure that various audiences can comprehend and respond to critical notifications by providing them in Indian languages. Promptly notify your consumers of any significant developments or happenings.',
+            image: assets.f7wf2
         },
         {
-            icon: assets.smoothIcon,
-            title: 'Helpdesk Integration',
-            description: 'Our adaptive natural language algorithms provide an unrivaled...',
-            link: '#'
+            name: 'Helpdesk Integration',
+            description: 'Provide a seamless transition for customers when moving from automated replies to live agent service. Get questions and problems answered quickly to boost satisfaction and loyalty.',
+            image: assets.f7wf3
         },
         {
-            icon: assets.MessageIcon,
-            title: 'Live Chat',
-            description: 'Our technology allows seamless handovers to human customer s...',
-            link: '#'
+            name: 'E-commerce Integration',
+            description: 'Put your product catalog on display and accept payments safely within WhatsApp. Help your consumers have a smooth shopping experience by streamlining the purchase process.',
+            image: assets.f7wf4
         },
         {
-            icon: assets.ecommerceIcon,
-            title: 'E-commerce Integration',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
+            name: 'Loyalty Programs',
+            description: 'Build long-term connections with dealers, merchants, and consumers to inspire devotion to your brand. Promote consumer happiness in the long run by rewarding loyalty and offering incentives for recurrent purchases.',
+            image: assets.f7wf5
         },
         {
-            icon: assets.loyaltyprogramIcon,
-            title: 'Loyalty Programs',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
-        },
-        {
-            icon: assets.faqautomationIcon,
-            title: 'FAQ Automation',
-            description: 'Our technology allows seamless handovers to human customer s...',
-            link: '#'
-        },
-        {
-            icon: assets.feedbacksolIcon,
-            title: 'Feedback Collection',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
-        },
-        {
-            icon: assets.botflowIcon,
-            title: 'BOT Flow',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
-        },
-        {
-            icon: assets.newsletterIcon,
-            title: 'Newsletters',
-            description: 'Our technology allows seamless handovers to human customer s...',
-            link: '#'
-        },
-        {
-            icon: assets.deliverymanageIcon,
-            title: 'Delivery Management',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
-        },
-        {
-            icon: assets.socialmediaIcon,
-            title: 'Social Media Integration',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
-        },
-        {
-            icon: assets.whatsapptemplateIcon,
-            title: 'Whatsapp Template Message',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
+            name: 'FAQ Automation',
+            description: 'Help your staff and clients save time by providing rapid solutions to frequent concerns with automated responses. Resolve routine queries efficiently to increase customer satisfaction.',
+            image: assets.f7wf6
         }
-    ]
+    ];
+    const features71 = [
+        {
+            name: 'Customizable Bot Flows',
+            description: 'Effortlessly direct your consumers by giving the locations of the nearest service centre, branch or stores on WhatsApp. Facilitate easier access and utilisation by making it easier to find your physical touch points.',
+            image: assets.f7wf7
+        },
+        {
+            name: 'Engaging Newsletter',
+            description: 'Ensure that various audiences can comprehend and respond to critical notifications by providing them in Indian languages. Promptly notify your consumers of any significant developments or happenings.',
+            image: assets.f7wf8
+        },
+        {
+            name: 'Delivery Management',
+            description: 'Provide a seamless transition for customers when moving from automated replies to live agent service. Get questions and problems answered quickly to boost satisfaction and loyalty.',
+            image: assets.f7wf9
+        },
+        {
+            name: 'Social Media Integration',
+            description: 'Put your product catalog on display and accept payments safely within WhatsApp. Help your consumers have a smooth shopping experience by streamlining the purchase process.',
+            image: assets.f7wf10
+        },
+        {
+            name: 'Versatile WhatsApp Template Messages',
+            description: 'Build long-term connections with dealers, merchants, and consumers to inspire devotion to your brand. Promote consumer happiness in the long run by rewarding loyalty and offering incentives for recurrent purchases.',
+            image: assets.f7wf11
+        },
+    ];
     const { ref: sectionref4, inView: imageInView4 } = useInView({
         triggerOnce: true,
         threshold: 0.1,
-    })
-    const { ref: sectionref5, inView: imageInView5 } = useInView({
-        triggerOnce: true,
-        threshold: 0.2,
     })
     const { ref: sectionref6, inView: imageInView6 } = useInView({
         triggerOnce: true,
@@ -166,10 +153,10 @@ const Whatsapp = () => {
                         <div className="whatsapp-info-item">
                             <div className='whatsapp-info-r1'>
                                 <div className="whataspp-info-r1-c1">
-                                    <img src={assets.EmailIcon} alt="Email Icon" />
+                                    <img src={assets.whywhatsappp1} alt="Email Icon" />
                                 </div>
                                 <div className="whatsapp-info-r1-c2">
-                                    <h3>Automate Sales and Support</h3>
+                                    <h3>Connect with a Global Audience</h3>
                                     <p>Get your word out to thousands of people at once. Embrace limitless reach and bid farewell to limitations.</p>
                                 </div>
                             </div>
@@ -177,31 +164,48 @@ const Whatsapp = () => {
                                 <img src={assets.whywhatsappP1img} alt="" />
                             </div>
                         </div>
-
                         <div className="whatsapp-info-item">
-                            <img src={assets.MessageIcon} alt="Live Chat Icon" />
+                            <div className='whatsapp-info-r1'>
+                                <div className="whataspp-info-r1-c1">
+                                    <img src={assets.whywhatsappp2} alt="Email Icon" />
+                                </div>
+                                <div className="whatsapp-info-r1-c2">
+                                    <h3>Automate Sales and Support</h3>
+                                    <p>Put intelligent chatbots to work for your company. Reduce manual steps in the sales process and offer round-the-clock assistance.</p>
+                                </div>
+                            </div>
                             <div className="whatsapp-info-content">
-                                <h3>Automate Sales and Support</h3>
-                                <p>Put intelligent chatbots to work for your company. Reduce manual steps in the sales process and offer round-the-clock assistance.</p>
-                                <img src={assets.ChatImage} alt="Start New Chat" />
+                                <img src={assets.whywhatsappP2img} alt="" />
                             </div>
                         </div>
 
                         <div className="whatsapp-info-item">
-                            <img src={assets.LocationIcon} alt="Office Icon" />
+                            <div className='whatsapp-info-r1'>
+                                <div className="whataspp-info-r1-c1">
+                                    <img src={assets.whywhatsappp3} alt="Email Icon" />
+                                </div>
+                                <div className="whatsapp-info-r1-c2">
+                                    <h3>Connect Multiple Human Agents</h3>
+                                    <p>Effortlessly coordinate chats with several people using a single WhatsApp number. Efficient teamwork simplified.</p>
+                                </div>
+                            </div>
                             <div className="whatsapp-info-content">
-                                <h3>Connect Multiple Human Agents</h3>
-                                <p>Effortlessly coordinate chats with several people using a single WhatsApp number. Efficient teamwork simplified.</p>
-                                <img src={assets.OfficeImage} alt="Office Location" />
+                                <img src={assets.whywhatsappP3img} alt="" />
                             </div>
                         </div>
 
                         <div className="whatsapp-info-item">
-                            <img src={assets.PhoneIcon} alt="Phone Icon" />
+                            <div className='whatsapp-info-r1'>
+                                <div className="whataspp-info-r1-c1">
+                                    <img src={assets.whywhatsappp4} alt="Email Icon" />
+                                </div>
+                                <div className="whatsapp-info-r1-c2">
+                                    <h3>Green Tick</h3>
+                                    <p>Gain trust by earning WhatsApp's coveted green tick. Promote the fact that your audience is interacting with a legitimate company.</p>
+                                </div>
+                            </div>
                             <div className="whatsapp-info-content">
-                                <h3>Green Tick</h3>
-                                <p>Gain trust by earning WhatsApp's coveted green tick. Promote the fact that your audience is interacting with a legitimate company.</p>
-                                <img src={assets.PhoneImage} alt="Phone Contact" />
+                                <img style={{ height: '180px' }} src={assets.whywhatsappP4img} alt="" />
                             </div>
                         </div>
                     </div>
@@ -255,18 +259,79 @@ const Whatsapp = () => {
                     <h2>Unparalleled Features Tailored For Success</h2>
                     <p>Discover carefully developed features that will improve your company's success on WhatsApp. Discover the unique ways each element <br /> has been designed to boost your achievements.</p>
                 </div>
-                <div className="feature7-wrap-container">
-                    <div className="feature7-cards-container">
-                        {features7.map((features7, index) => (
-                            <div className="feature7-card" key={index}>
-                                <img src={features7.icon} alt={features7.title} className="feature7-icon" />
-                                <div className="feature7-card-content">
-                                    <h3>{features7.title}</h3>
-                                    <p>{features7.description}</p>
-                                    <a href={features7.link} className="read-more">Read More &gt;</a>
+                {/* taking css from products2 page  */}
+                <div className="custom-product-section">
+                    <div className="custom-product-content">
+                        {/* Left side - Product List */}
+                        <div className="custom-product-list">
+                            {features7.map((product, index) => (
+                                <div
+                                    key={index}
+                                    className={`custom-product-item ${activeIndex2 === index ? 'active' : ''}`}
+                                    onClick={() => handleClick(index)} // Set the clicked product as active
+                                >
+                                    <div className="custom-product-question">
+                                        <span>{product.name}</span>
+                                        {activeIndex2 !== index && ( // Only show the plus icon if the product is not active
+                                            <img
+                                                src={plusIcon}
+                                                alt="Expand"
+                                                className="custom-product-icon"
+                                            />
+                                        )}
+                                    </div>
+                                    {activeIndex2 === index && (
+                                        <div className="custom-product-description">
+                                            {product.description}
+                                        </div>
+                                    )}
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
+                        {/* Right side - Image */}
+                        <div className="custom-product-image2">
+                            <img
+                                src={features7[activeIndex2].image}
+                                alt={features7[activeIndex2].name}
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div className="custom-product-section">
+                    <div className="custom-product-content">
+                        {/* left side - Image */}
+                        <div className="custom-product-image3">
+                            <img
+                                src={features71[activeIndex3].image}
+                                alt={features71[activeIndex3].name}
+                            />
+                        </div>
+                        {/* right side - Product List */}
+                        <div className="custom-product-list">
+                            {features71.map((product, index) => (
+                                <div
+                                    key={index}
+                                    className={`custom-product-item ${activeIndex3 === index ? 'active' : ''}`}
+                                    onClick={() => handleClick2(index)} // Set the clicked product as active
+                                >
+                                    <div className="custom-product-question">
+                                        <span>{product.name}</span>
+                                        {activeIndex3 !== index && ( // Only show the plus icon if the product is not active
+                                            <img
+                                                src={plusIcon}
+                                                alt="Expand"
+                                                className="custom-product-icon"
+                                            />
+                                        )}
+                                    </div>
+                                    {activeIndex3 === index && (
+                                        <div className="custom-product-description">
+                                            {product.description}
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className="whatsapp-platform-header">
