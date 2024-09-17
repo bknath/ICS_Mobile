@@ -1,12 +1,62 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './SMSgateway.css'
 import { assets } from '../../assets/assets'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 const SMSgateway = () => {
     useEffect(() => {
-        window.scrollTo(0,0);
-    },[]);
+        window.scrollTo(0, 0);
+    }, []);
+    const [activeTab, setActiveTab] = useState('dlt-support');
+    const navRef = useRef(null);
+
+    // Sections array to match navigation with content
+    const sections = [
+        'dlt-support',
+        'unicode-messages',
+        'tat',
+        'smart-routing',
+        'custom-apis',
+        'brand-integration',
+        'operator-connectivity',
+        'operator-connectivity',
+        'operator-connectivity',
+    ];
+
+    useEffect(() => {
+        const sectionElements = sections.map((section) =>
+            document.getElementById(section)
+        );
+
+        // Create IntersectionObserver to track visibility of sections
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Update active tab based on which section is visible
+                        setActiveTab(entry.target.id);
+                    }
+                });
+            },
+            { threshold: 0.6 } // 60% of the section needs to be visible to activate the tab
+        );
+
+        // Observe all sections
+        sectionElements.forEach((el) => {
+            if (el) observer.observe(el);
+        });
+
+        // Cleanup observer on component unmount
+        return () => observer.disconnect();
+    }, []);
+
+    const handleNavClick = (id) => {
+        // Smooth scroll to the section on clicking a tab
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     const features8 = [
         {
             icon: assets.smoothIcon,
@@ -111,7 +161,7 @@ const SMSgateway = () => {
             <div className="SMSgateway-wrap-content" ref={sectionref10}>
                 <div className="hero-section-5">
                     <div className="content-SMSgateway">
-                        <p style={{color:'#b30000'}}>SMS Gateway</p>
+                        <p style={{ color: '#b30000' }}>SMS Gateway</p>
                         <h1>Quick A2P SMS <br /> Solutions for Modern <br /> Communication</h1>
                         <p className="SMSgateway-text">Use ICS SMS Gateway to take your communications strategy to the next level. We are your source for dependable, effective, tailored SMS communication solutions.</p>
                         <div className="buttons">
@@ -132,7 +182,95 @@ const SMSgateway = () => {
                     <h2>Why Opt For ICS SMS Gateway</h2>
                     <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. <br /> Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
                 </div>
-                <div className="feature8-wrap-container">
+                <div className="feature-main-container-1234">
+                    {/* Horizontal Navigation Bar */}
+                    <div className="product-nav-1234" ref={navRef}>
+                        {sections.map((section) => (
+                            <a
+                                key={section}
+                                href={`#${section}`}
+                                className={activeTab === section ? 'active-1234' : ''}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleNavClick(section); // Handle smooth scroll when clicking
+                                }}
+                            >
+                                {section.replace(/-/g, ' ')} {/* Replace dashes with spaces */}
+                            </a>
+                        ))}
+                    </div>
+
+                    {/* Scrollable Content Section */}
+                    <div className="feature-content-container-1234">
+                        <section id="dlt-support" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src="dlt-support-image.png" alt="DLT Support" />
+                                <div className="feature-text-1234">
+                                    <h2>DLT Support</h2>
+                                    <p>DLT support ensures that your messaging activities are aligned with government regulations, providing compliance and security.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="unicode-messages" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <div className="feature-text-1234">
+                                    <h2>Unicode Messages</h2>
+                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="tat" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <div className="feature-text-1234">
+                                    <h2>Unicode Messages</h2>
+                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="smart-routing" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <div className="feature-text-1234">
+                                    <h2>Unicode Messages</h2>
+                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="custom-apis" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <div className="feature-text-1234">
+                                    <h2>Unicode Messages</h2>
+                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="brand-integration" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <div className="feature-text-1234">
+                                    <h2>Unicode Messages</h2>
+                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="operator-connectivity" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <div className="feature-text-1234">
+                                    <h2>Unicode Messages</h2>
+                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Continue with other sections similarly */}
+                    </div>
+                </div>
+                {/* <div className="feature8-wrap-container">
                     <div className="feature8-cards-container">
                         {features8.map((features8, index) => (
                             <div className="feature8-card" key={index}>
@@ -140,12 +278,12 @@ const SMSgateway = () => {
                                 <div className="feature8-card-content">
                                     <h3>{features8.title}</h3>
                                     <p>{features8.description}</p>
-                                    {/* <a href={features8.link} className="read-more">Read More &gt;</a> */}
+                                    <a href={features8.link} className="read-more">Read More &gt;</a>
                                 </div>
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
                 <div className="SMSgateway-platform-header">
                     <h2>Why Opt For ICS SMS Gateway</h2>
                     <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. <br /> Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
