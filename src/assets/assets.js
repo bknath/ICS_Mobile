@@ -113,6 +113,24 @@ import chatIcon2 from './chaticon2.svg'
 import chatIcon3 from './chaticon3.svg'
 //new whatsappAPI
 import whywhatsappP1img from './whywhatsapp-p1img.svg'
+import whywhatsappP2img from './whywhatsapp-p2img.svg'
+import whywhatsappP3img from './whywhatsapp-p3img.svg'
+import whywhatsappP4img from './whywhatsapp-p4img.svg'
+import whywhatsappp1 from './whywhatsappp1.svg'
+import whywhatsappp2 from './whywhatsappp2.svg'
+import whywhatsappp3 from './whywhatsappp3.svg'
+import whywhatsappp4 from './whywhatsappp4.svg'
+import f7wf1 from './f7-wf1.svg'
+import f7wf2 from './f7-wf2.svg'
+import f7wf3 from './f7-wf3.svg'
+import f7wf4 from './f7-wf4.svg'
+import f7wf5 from './f7-wf5.svg'
+import f7wf6 from './f7-wf6.svg'
+import f7wf7 from './f7-wf7.svg'
+import f7wf8 from './f7-wf8.svg'
+import f7wf9 from './f7-wf9.svg'
+import f7wf10 from './f7-wf10.svg'
+import f7wf11 from './f7-wf11.svg'
 //SMSgatewaypage
 import SMSgatewaylogo from './SMSgatewaylogo.svg'
 import SMSgatewaylogo2 from './SMSgatewayl2.png'
@@ -265,6 +283,24 @@ export const assets = {
     whatsappPlatforml5,
     //newwhatsappapi
     whywhatsappP1img,
+    whywhatsappP2img,
+    whywhatsappP3img,
+    whywhatsappP4img,
+    whywhatsappp1,
+    whywhatsappp2,
+    whywhatsappp3,
+    whywhatsappp4,
+    f7wf1,
+    f7wf2,
+    f7wf3,
+    f7wf4,
+    f7wf5,
+    f7wf6,
+    f7wf7,
+    f7wf8,
+    f7wf9,
+    f7wf10,
+    f7wf11,
     //SMSgatewaypage
     SMSgatewaylogo,
     SMSgatewaylogo2,
