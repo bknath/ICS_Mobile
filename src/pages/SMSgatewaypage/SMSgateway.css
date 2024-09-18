@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     padding-top: 1rem;
-    padding-bottom: 3rem;
     color: white;
     position: relative;
     overflow: hidden;
@@ -26,7 +25,7 @@
 
 .content-SMSgateway h1 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 550;
     line-height: 45px;
     margin-bottom: 20px;
     color: #144494;
@@ -51,14 +50,8 @@
     padding-top: 1rem;
 }
 
-.SMSrobot img {
-    width: 380px;
-}
-
-
-
 .SMSgateway-platform-section {
-    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #ffffff -33%, #F4F9FF 100%);
 }
 
 .SMSgateway-platform-header {
@@ -67,10 +60,9 @@
 
 .SMSgateway-platform-header h2 {
     font-size: 32px;
-    line-height: 54px;
+    line-height: 60px;
     font-weight: 600;
     color: #454545;
-    padding-top: 3rem;
 }
 
 .SMSgateway-platform-header p {
@@ -244,6 +236,7 @@
     display: flex;
     justify-content: center;
     width: 1200px;
+    padding-top: 4rem;
 }
 
 .SMS-content-block-col-1 {
@@ -278,7 +271,7 @@
     display: flex;
     justify-content: center;
     width: 1200px;
-    padding: 4rem 0 4rem 0;
+    padding: 5rem 0 5rem 0;
 }
 
 .SMS-content-block2-col-1 {
@@ -349,19 +342,19 @@
 }
 
 
-
-/* scrolling  */
+/* scrolling of product section */
 
 /* Main container and nav styles */
 .feature-main-container-1234 {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
 
 .product-nav-1234 {
     display: flex;
     justify-content: flex-start;
-    gap: 1.2rem;
+    gap: 2rem;
     width: 1100px;
     margin: 0 auto;
     overflow-x: auto;
@@ -375,8 +368,7 @@
 
 .product-nav-1234 a {
     text-decoration: none;
-    color: #353a40;
-    font-weight: bold;
+    color: #000247;
     cursor: pointer;
     padding: 10px 0;
     position: relative;
@@ -384,6 +376,7 @@
 
 .product-nav-1234 a.active-1234 {
     color: #b30000;
+    font-weight: 600;
 }
 
 .product-nav-1234 a.active-1234::after {
@@ -409,18 +402,24 @@
 .feature-item-1234 {
     display: flex;
     align-items: center;
+    margin: 3rem 0;
 }
 
 .feature-text-1234 {
     margin-left: 20px;
 }
-
-.feature-item-1234 img {
-    width: 150px;
-    height: 150px;
+.feature-text-1234 h2{
+    color: #000247;
+    font-weight: 600;
+    font-size: 24px;
+    /* padding-bottom: 1rem; */
+    line-height: 50px;
 }
-
-
+.feature-text-1234 p{
+    color: #565774;
+    font-size: 16px;
+    line-height: 24px;
+}
 
 /* Content scroll area styles */
 .feature-content-container-1234 {
@@ -450,6 +449,13 @@
     padding: 20px;
 }
 
-.feature-item-1234 img {
-    max-width: 40%;
+.head-section-b5{
+    margin-top: 4rem;
+    border: none;
+    background-color: #FDEFF0;
+    border-radius: 15px;
+    color: #000247;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-bottom: 8px;
 }
