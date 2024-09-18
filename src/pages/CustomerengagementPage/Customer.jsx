@@ -7,37 +7,37 @@ const features3 = [
   {
     icon: assets.promotionIcon,
     title: 'Tailored Promotions',
-    description: 'Personalized promotions are crucial for attracting the interest...',
+    description: "Personalized promotions are key to capturing your target audience's interest. Our team specializes in creating targeted marketing campaigns that boost engagement and revenue.",
     link: '#'
   },
   {
     icon: assets.gamificationIcon,
     title: 'Gamification',
-    description: "Leverage your customer's interactions into a captivating... ",
+    description: "Turn customer interactions into a captivating journey with our gamification solutions, offering engaging experiences from reward systems to interactive challenges.",
     link: '#'
   },
   {
     icon: assets.loyaltyIcon,
     title: 'Loyalty Rewards',
-    description: 'Our loyalty reward programs contribute to the development...',
+    description: 'Our loyalty programs help build lasting customer relationships by offering incentives like exclusive discounts, VIP privileges, and special offers that strengthen brand loyalty.',
     link: '#'
   },
   {
     icon: assets.htmltemplateIcon,
     title: 'Custom HTML Email Templates',
-    description: 'Leave a lasting impression with expertly designed custom HTML...',
+    description: 'Make a lasting impression with custom HTML email templates, optimized for conversion and engagement to stand out in crowded inboxes.',
     link: '#'
   },
   {
     icon: assets.flipbookIcon,
     title: 'Flipbook',
-    description: 'Engage your audience with interactive flipbooks that bring...',
+    description: "Engage your audience with interactive flipbooks that bring your content to life, offering immersive digital publications and product catalogs.",
     link: '#'
   },
   {
     icon: assets.surveypagesIcon,
     title: 'Survey Page',
-    description: 'Collect insightful information and customer feedback with the...',
+    description: 'Gather valuable insights and feedback with our survey solutions, designed to deliver practical results for customer satisfaction or market research.',
     link: '#'
   }
 ];
@@ -95,11 +95,10 @@ const Customer = () => {
       <div className="wrap-customer-content">
         <div className="hero-section-3">
           <div className="content-CustomerEngagement">
-            <p style={{color:'#b30000'}}>Customer Engagement Page</p>
+            <p style={{color:'#b30000', fontSize:'16px', fontWeight:'600'}}>Customer Engagement Page</p>
             <h1>Engage, Thrive, And <br />Win With ICS <br />Engagement!</h1>
             <p className='CustomerEngagement-text'>At ICS, our main goal is to assist you in developing captivating experiences that connect with your target demographic and provide tangible outcomes.</p>
             <div className="buttons">
-              {/* <a href="contact-us" className="contact-us">Contact us</a> */}
               <Link to="/contact-us" className='contact-us'>Contact us</Link>
             </div>
           </div>
@@ -110,7 +109,6 @@ const Customer = () => {
           </div>
         </div>
       </div>
-
       <div className="customer-platform-section">
         <div className="customer-platform-header">
           <h2>Engagement Experiences We Provide</h2>
@@ -124,7 +122,7 @@ const Customer = () => {
                 <div className="feature3-card-content">
                   <h3>{features3.title}</h3>
                   <p>{features3.description}</p>
-                  <a href={features3.link} className="read-more">Read More &gt;</a>
+                  {/* <a href={features3.link} className="read-more">Read More &gt;</a> */}
                 </div>
               </div>
             ))}
@@ -143,7 +141,7 @@ const Customer = () => {
                   <div className="feature4-card-content">
                     <h3>{features4.title}</h3>
                     <p>{features4.description}</p>
-                    <a href={features4.link} className="read-more-2">{features4.linkText} &gt;</a>
+                    {/* <a href={features4.link} className="read-more-2">{features4.linkText} &gt;</a> */}
                   </div>
                 </div>
               ))}
