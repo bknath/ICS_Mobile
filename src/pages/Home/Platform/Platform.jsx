@@ -43,7 +43,6 @@ const Platform = () => {
     ];
     const cardWidth = 320; // Width of a single card
     const cardGap = 20; // Gap between cards
-    const cardsPerView = 4; // Number of cards visible at once
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
@@ -219,7 +218,7 @@ const Platform = () => {
                     </button>
                 </div>
                 <div className="header-content-2">
-                    <p style={{ fontSize: '14px', color: '#777' }}>By partnering with these leading companies, our API provides a versatile and powerful tool to help you streamline operations, automate processes, and <br />enhance customer engagement across various platforms.</p>
+                    <p style={{ fontSize: '14px', color: '#777', lineHeight:'24px' }}>By partnering with these leading companies, our API provides a versatile and powerful tool to help you streamline operations, automate processes, and <br />enhance customer engagement across various platforms.</p>
                 </div>
                 <div className="header-content">
                     <button className='head-section-b3'>Case Studies</button>

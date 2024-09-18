@@ -35,12 +35,14 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 56px;
+    margin-bottom: 8px;
     color: #454545;
 }
 
 .header-content p {
     font-size: 14px;
     color: #777;
+    line-height: 24px;
 }
 
 .content-block {
@@ -147,6 +149,7 @@
 
 .head-section-b3{
     margin-top: 3rem;
+    margin-bottom: 0.8rem;
     border: none;
     background-color: #FDEFF0;
     border-radius: 15px;
@@ -161,7 +164,7 @@
 .scroll-container {
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,7 +175,7 @@
 .scroll-boxes {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
+    gap: 25px;
     padding: 20px 40px;
     height: 380px;
     scroll-behavior: smooth;
@@ -186,7 +189,7 @@
 }
 
 .card {
-    width: 320px;
+    width: 300px;
     /* Fixed width for each card */
     padding: 20px;
     background: #fff;

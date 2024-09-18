@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './SMSgateway.css'
+import '../Home/Platform/Platform.css'
 import { assets } from '../../assets/assets'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
@@ -9,45 +10,66 @@ const SMSgateway = () => {
     }, []);
     const [activeTab, setActiveTab] = useState('dlt-support');
     const navRef = useRef(null);
+    let scrollTimeout = null;
 
     // Sections array to match navigation with content
     const sections = [
-        'dlt-support',
-        'unicode-messages',
-        'tat',
-        'smart-routing',
-        'custom-apis',
-        'brand-integration',
-        'operator-connectivity',
-        'operator-connectivity',
-        'operator-connectivity',
+        { id: 'dlt-support', name: 'DLT Support' },
+        { id: 'unicode-messages', name: 'Unicode Messages' },
+        { id: 'tat', name: 'Swift Turnaround Time (TAT)' },
+        { id: 'smart-routing', name: 'Smart Routing' },
+        { id: 'custom-apis', name: 'Custom APIs' },
+        { id: 'brand-integration', name: 'Brand Integration' },
+        { id: 'operator-connectivity', name: 'Operator Connectivity' },
+        { id: 'mtsl', name: 'Multiple Trackable Short Links' },
+        { id: 'tps', name: 'High Throughput (TPS)' }
     ];
 
     useEffect(() => {
         const sectionElements = sections.map((section) =>
-            document.getElementById(section)
+            document.getElementById(section.id)
         );
 
-        // Create IntersectionObserver to track visibility of sections
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        // Update active tab based on which section is visible
+                        // Update active tab based on visible section
                         setActiveTab(entry.target.id);
+
+                        // Debouncing scroll to prevent multiple triggers
+                        clearTimeout(scrollTimeout);
+                        scrollTimeout = setTimeout(() => {
+                            const activeNavLink = document.querySelector(
+                                `.product-nav-1234 a[href="#${entry.target.id}"]`
+                            );
+                            if (activeNavLink && navRef.current) {
+                                const navContainer = navRef.current;
+                                const navLinkLeft = activeNavLink.offsetLeft;
+                                const navLinkWidth = activeNavLink.offsetWidth;
+                                const containerWidth = navContainer.offsetWidth;
+
+                                // Scroll manually for smooth horizontal scroll
+                                navContainer.scrollTo({
+                                    left: navLinkLeft - (containerWidth - navLinkWidth) / 2,
+                                    behavior: 'smooth',
+                                });
+                            }
+                        }, 100); // Delay for debouncing scroll
                     }
                 });
             },
-            { threshold: 0.6 } // 60% of the section needs to be visible to activate the tab
+            { threshold: 0.7 }
         );
 
-        // Observe all sections
         sectionElements.forEach((el) => {
             if (el) observer.observe(el);
         });
 
-        // Cleanup observer on component unmount
-        return () => observer.disconnect();
+        return () => {
+            observer.disconnect();
+            clearTimeout(scrollTimeout); // Cleanup timeout
+        };
     }, []);
 
     const handleNavClick = (id) => {
@@ -57,62 +79,61 @@ const SMSgateway = () => {
             section.scrollIntoView({ behavior: 'smooth' });
         }
     };
-    const features8 = [
+    const scrollContainerRef = useRef(null);
+    const cards = [
         {
-            icon: assets.smoothIcon,
-            title: 'DLT Support',
-            description: 'Use ICS to traverse the complicated terrain of DLT com...',
-            link: '#'
+            logo: assets.zapierlogo,
+            title: "Zapier",
+            description: "Automate workflows and connect WhatsApp with over 5,000 apps, allowing for seamless task automation and enhanced productivity."
         },
         {
-            icon: assets.MessageIcon,
-            title: 'Unicode Messages',
-            description: 'We ensure clarity and authenticity with Unicode and r...',
-            link: '#'
+            logo: assets.pabblyconnectlogo,
+            title: "Pabbly Connect",
+            description: "Integrate WhatsApp with various apps and services, creating efficient workflows and automating repetitive tasks to save time and effort."
         },
         {
-            icon: assets.turnaroundTimeIcon,
-            title: 'Swift Turnaround Time (TAT)',
-            description: 'Get the fastest turnaround times in the business for managed ca...',
-            link: '#'
+            logo: assets.hubspotlogo,
+            title: "HubSpot",
+            description: "WhatsApp conversations directly with HubSpot CRM, ensuring all customer interactions are tracked and managed efficiently."
         },
         {
-            icon: assets.smartroutingIcon,
-            title: 'Smart Routing',
-            description: 'Our clever routing method will keep you ahead of any outage...',
-            link: '#'
+            logo: assets.zohologo,
+            title: "Zoho",
+            description: "Enhance your customer relationship management by integrating WhatsApp with Zoho CRM, allowing for personalized communication and improved customer service."
         },
         {
-            icon: assets.customizedAPIsIcon,
-            title: 'Customized APIs',
-            description: 'Take advantage of our extensive library of APIs to integrate effort...',
-            link: '#'
+            logo: assets.shopify2logo,
+            title: "Shopify",
+            description: "Enhance your customer relationship management by integrating WhatsApp with Zoho CRM, allowing for personalized communication and improved customer service."
         },
         {
-            icon: assets.branddomainIcon,
-            title: 'Brand Domain Integration',
-            description: 'Incorporating your brand name into SMS links adds an additiona...',
-            link: '#'
+            logo: assets.woocommercelogo,
+            title: "WooCommerce",
+            description: "Connect WhatsApp with WooCommerce to provide real-time customer support, send order updates, and boost sales through personalized interactions."
         },
-        {
-            icon: assets.operatorconnectivityIcon,
-            title: 'Operator Connectivity',
-            description: 'Use the ICS SMS Gateway to connect to any of the main oper...',
-            link: '#'
-        },
-        {
-            icon: assets.MTSlIcon,
-            title: 'Multiple Trackable Short Links',
-            description: 'Get more people to click on your links by including many in one...',
-            link: '#'
-        },
-        {
-            icon: assets.TPsIcon,
-            title: 'High Throughput (TPS)',
-            description: 'With ICS, you can easily manage high-volume campaigns since it...',
-            link: '#'
-        },
-    ]
+    ];
+    const cardWidth = 320; // Width of a single card
+    const cardGap = 20; // Gap between cards
+
+    const scrollLeft = () => {
+        if (scrollContainerRef.current) {
+            const scrollAmount = cardWidth + cardGap;
+            scrollContainerRef.current.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollContainerRef.current) {
+            const scrollAmount = cardWidth + cardGap;
+            scrollContainerRef.current.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    };
     const features9 = [
         {
             icon: assets.smoothIcon,
@@ -179,23 +200,24 @@ const SMSgateway = () => {
             </div>
             <div className="SMSgateway-platform-section">
                 <div className="SMSgateway-platform-header">
-                    <h2>Why Opt For ICS SMS Gateway</h2>
-                    <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. <br /> Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
+                    <button className='head-section-b5'>Features for SMS Gateway</button>
+                    <h2>Maximize SMS Potential with ICS</h2>
+                    <p>Our shared values keep us connected and guide us as one team.</p>
                 </div>
                 <div className="feature-main-container-1234">
                     {/* Horizontal Navigation Bar */}
                     <div className="product-nav-1234" ref={navRef}>
                         {sections.map((section) => (
                             <a
-                                key={section}
-                                href={`#${section}`}
-                                className={activeTab === section ? 'active-1234' : ''}
+                                key={section.id}
+                                href={`#${section.id}`}
+                                className={activeTab === section.id ? 'active-1234' : ''}
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    handleNavClick(section); // Handle smooth scroll when clicking
+                                    handleNavClick(section.id); // Handle smooth scroll when clicking
                                 }}
                             >
-                                {section.replace(/-/g, ' ')} {/* Replace dashes with spaces */}
+                                {section.name}
                             </a>
                         ))}
                     </div>
@@ -204,88 +226,90 @@ const SMSgateway = () => {
                     <div className="feature-content-container-1234">
                         <section id="dlt-support" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src="dlt-support-image.png" alt="DLT Support" />
+                                <img src={assets.f7wf1} alt="DLT Support" />
                                 <div className="feature-text-1234">
                                     <h2>DLT Support</h2>
-                                    <p>DLT support ensures that your messaging activities are aligned with government regulations, providing compliance and security.</p>
+                                    <p>Use ICS to traverse the complicated terrain of DLT compliance easily. Our goal is to provide smooth integration and speedy approvals across the board, from registration processes to SMS templates. We give you the tools you need to concentrate on SMS marketing.</p>
                                 </div>
                             </div>
                         </section>
 
                         <section id="unicode-messages" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src="unicode-image.png" alt="Unicode Messages" />
                                 <div className="feature-text-1234">
                                     <h2>Unicode Messages</h2>
-                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                    <p>We ensure clarity and authenticity with Unicode and regional SMS content visibility. Ensure that all messages delivered from ICS to your clients are verified and authenticated. Improve the credibility of the brand and the efficacy of communication.</p>
                                 </div>
+                                <img src={assets.f7wf2} alt="Unicode Messages" />
                             </div>
                         </section>
                         <section id="tat" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <img src={assets.f7wf3} alt="Swift Turnaround Time (TAT)" />
                                 <div className="feature-text-1234">
-                                    <h2>Unicode Messages</h2>
-                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                    <h2>Swift Turnaround Time (TAT)</h2>
+                                    <p>Get the fastest turnaround times in the business for managed campaigns and ticket resolutions with ICS. Our lightning-fast response and execution will meet your CPaaS support and execution needs.</p>
                                 </div>
                             </div>
                         </section>
                         <section id="smart-routing" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src="unicode-image.png" alt="Unicode Messages" />
                                 <div className="feature-text-1234">
-                                    <h2>Unicode Messages</h2>
-                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                    <h2>Smart Routing</h2>
+                                    <p>Our clever routing method will keep you ahead of any outage. Ensure communication continues unabated by smoothly shifting SMS traffic during an operator outage. Have faith in ICS to ensure the uninterrupted flow of your SMS traffic.</p>
                                 </div>
+                                <img src={assets.f7wf4} alt="Smart Routing" />
                             </div>
                         </section>
                         <section id="custom-apis" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <img src={assets.f7wf5} alt="Customized Apis" />
                                 <div className="feature-text-1234">
-                                    <h2>Unicode Messages</h2>
-                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                    <h2>Customized APIs</h2>
+                                    <p>Take advantage of our extensive library of APIs to integrate effortlessly. Require a tailored answer? Inform us of your data flow requirements, and we will provide you with APIs specifically designed to meet your business objectives.</p>
                                 </div>
                             </div>
                         </section>
                         <section id="brand-integration" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src="unicode-image.png" alt="Unicode Messages" />
                                 <div className="feature-text-1234">
-                                    <h2>Unicode Messages</h2>
-                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                    <h2>Brand Domain Integration</h2>
+                                    <p>Incorporating your brand name into SMS links adds an additional level of authenticity to your SMS communications. Authenticated links provided straight to customers increase brand awareness and credibility.</p>
                                 </div>
+                                <img src={assets.f7wf6} alt="Brand Domain Integration" />
                             </div>
                         </section>
                         <section id="operator-connectivity" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src="unicode-image.png" alt="Unicode Messages" />
+                                <img src={assets.f7wf7} alt="Operator Connectivity" />
                                 <div className="feature-text-1234">
-                                    <h2>Unicode Messages</h2>
-                                    <p>Send messages in any language with Unicode support, ensuring global reach with local communication.</p>
+                                    <h2>Operator Connectivity</h2>
+                                    <p>Use the ICS SMS Gateway to connect to any of the main operator networks, such as Videocon, TATA, BSNL, Airtel. Get your SMS sent without a hitch by selecting your chosen network path.</p>
                                 </div>
                             </div>
                         </section>
-
-                        {/* Continue with other sections similarly */}
-                    </div>
-                </div>
-                {/* <div className="feature8-wrap-container">
-                    <div className="feature8-cards-container">
-                        {features8.map((features8, index) => (
-                            <div className="feature8-card" key={index}>
-                                <img src={features8.icon} alt={features8.title} className="feature8-icon" />
-                                <div className="feature8-card-content">
-                                    <h3>{features8.title}</h3>
-                                    <p>{features8.description}</p>
-                                    <a href={features8.link} className="read-more">Read More &gt;</a>
+                        <section id="mtsl" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <div className="feature-text-1234">
+                                    <h2>Multiple Trackable Short Links</h2>
+                                    <p>Get more people to click on your links by including many in one message. With trackable short links, we monitor the functioning of several links within a single message. ICS will help you in analyzing click rates and engagement. We optimize everything for the most effective SMS marketing.</p>
+                                </div>
+                                <img src={assets.f7wf8} alt="Multiple Trackable Short Links" />
+                            </div>
+                        </section>
+                        <section id="tps" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src={assets.f7wf9} alt="High Throughput (TPS)" />
+                                <div className="feature-text-1234">
+                                    <h2>High Throughput (TPS)</h2>
+                                    <p>With ICS, you can easily manage high-volume campaigns since it can achieve up to 20K TPS for SMS channels. Count on us for secure and quick message delivery, whether it's for a holiday campaign or a massive launch.</p>
                                 </div>
                             </div>
-                        ))}
+                        </section>
                     </div>
-                </div> */}
+                </div>
                 <div className="SMSgateway-platform-header">
-                    <h2>Why Opt For ICS SMS Gateway</h2>
+                    <h2 style={{paddingTop:'3rem'}}>Why Opt For ICS SMS Gateway</h2>
                     <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. <br /> Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
                 </div>
                 <div className="feature9-wrap-container">
@@ -310,11 +334,39 @@ const SMSgateway = () => {
                         </div>
                     </div>
                 </div>
+                <div className="header-content">
+                    <button className='head-section-b3'>Our Integration</button>
+                    <h2>Connecting Seamlessly with Leading Platforms</h2>
+                    <p>We are proud to integrate our WhatsApp Business API with top-tier platforms, ensuring seamless <br /> communication and enhanced functionality for your business:</p>
+                </div>
+                <div className="scroll-container">
+                    <button className="scroll-btn left" onClick={scrollLeft}>
+                        &#8249; {/* Left arrow symbol */}
+                    </button>
+
+                    <div className="scroll-boxes" ref={scrollContainerRef}>
+                        {cards.map((card, index) => (
+                            <div className="card" key={index}>
+                                <div className="card-content">
+                                    <img src={card.logo} alt={card.title} />
+                                    <h3>{card.title}</h3>
+                                    <p>{card.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <button className="scroll-btn right" onClick={scrollRight}>
+                        &#8250; {/* Right arrow symbol */}
+                    </button>
+                </div>
+                <div className="header-content-2">
+                    <p style={{ fontSize: '14px', color: '#777', paddingBottom:'2rem', lineHeight:'24px' }}>By partnering with these leading companies, our API provides a versatile and powerful tool to help you streamline operations, automate processes, and <br />enhance customer engagement across various platforms.</p>
+                </div>
                 <div className="wrap-SMS-content-block">
                     <div className="SMS-content-block" ref={sectionref12}>
                         <div className="SMS-content-block-col-1">
                             <img
-                                style={{ width: '470px', border: '2px solid #004498', borderRadius: '10px' }}
+                                style={{ width: '470px', borderRadius: '10px' }}
                                 src={assets.SMSgatewaylogo3}
                                 alt=""
                                 className={`image-slide-up ${imageInView12 ? 'visible' : ''}`}
@@ -337,21 +389,6 @@ const SMSgateway = () => {
                                 alt=""
                                 className={`image-slide-up ${imageInView13 ? 'visible' : ''}`}
                             />
-                        </div>
-                    </div>
-                </div>
-                <div className="wrap-SMS-content-block">
-                    <div className="SMS-content-block-3" ref={sectionref14}>
-                        <div className="SMS-content-block3-col-1">
-                            <img src={assets.SMSgatewaylogo5}
-                                alt=""
-                                className={`image-slide-up ${imageInView14 ? 'visible' : ''}`}
-                            />
-                        </div>
-                        <div className="SMS-content-block3-col-2">
-                            <h3>Seamless Integrations: Enhance Your Workflow</h3>
-                            <p>Our advanced API effortlessly integrates with top-tier helpdesk,<br /> e-commerce, CRM, and marketing platforms, offering seamless integration without the coding hassle.</p>
-                            <a href="" className='explore-more-integration'>Explore more integration</a>
                         </div>
                     </div>
                 </div>
