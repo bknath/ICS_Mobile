@@ -1,10 +1,70 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Rcs.css'
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
 const Rcs = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+    }, []);
+    const [activeTab, setActiveTab] = useState('rcs-carousels');
+    const navRef = useRef(null);
+    let scrollTimeout = null;
+
+    // Sections array to match navigation with content
+    const sections = [
+        { id: 'rcs-carousels', name: 'RCS Carousels' },
+        { id: 'rcs-suggested', name: 'RCS Suggested Actions' },
+        { id: 'rcs-smart', name: 'RCS Smart Replies' },
+        { id: 'rcs-high', name: 'RCS High-Resolution Images and Videos' },
+        { id: 'rcs-read', name: 'RCS Read Receipts' },
+        { id: 'seamless-integration', name: 'Seamless Integrations' }
+    ];
+
+    useEffect(() => {
+        const sectionElements = sections.map((section) =>
+            document.getElementById(section.id)
+        );
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Update active tab based on visible section
+                        setActiveTab(entry.target.id);
+
+                        // Debouncing scroll to prevent multiple triggers
+                        clearTimeout(scrollTimeout);
+                        scrollTimeout = setTimeout(() => {
+                            const activeNavLink = document.querySelector(
+                                `.product-nav-1234 a[href="#${entry.target.id}"]`
+                            );
+                            if (activeNavLink && navRef.current) {
+                                const navContainer = navRef.current;
+                                const navLinkLeft = activeNavLink.offsetLeft;
+                                const navLinkWidth = activeNavLink.offsetWidth;
+                                const containerWidth = navContainer.offsetWidth;
+
+                                // Scroll manually for smooth horizontal scroll
+                                navContainer.scrollTo({
+                                    left: navLinkLeft - (containerWidth - navLinkWidth) / 2,
+                                    behavior: 'smooth',
+                                });
+                            }
+                        }, 100); // Delay for debouncing scroll
+                    }
+                });
+            },
+            { threshold: 0.7 }
+        );
+
+        sectionElements.forEach((el) => {
+            if (el) observer.observe(el);
+        });
+
+        return () => {
+            observer.disconnect();
+            clearTimeout(scrollTimeout); // Cleanup timeout
+        };
     }, []);
     const features11 = [
         {
@@ -36,44 +96,6 @@ const Rcs = () => {
             description: 'Gain trust by earning WhatsApp coveted green tick. Promote the fact that your audience is interacting with a legitimate company.',
             link: '_',
             linkText: 'Learn More'
-        }
-    ]
-    const features13 = [
-        {
-            icon: assets.LocationIcon,
-            title: 'Location Share',
-            description: 'Effortlessly direct your consumers by giving the locations of the ne...',
-            link: '#'
-        },
-        {
-            icon: assets.notificationIcon,
-            title: 'Notifications',
-            description: 'Ensure that various audiences can comprehend and respond t...',
-            link: '#'
-        },
-        {
-            icon: assets.smoothIcon,
-            title: 'Helpdesk Integration',
-            description: 'Our adaptive natural language algorithms provide an unrivaled...',
-            link: '#'
-        },
-        {
-            icon: assets.MessageIcon,
-            title: 'Live Chat',
-            description: 'Our technology allows seamless handovers to human customer s...',
-            link: '#'
-        },
-        {
-            icon: assets.ecommerceIcon,
-            title: 'E-commerce Integration',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
-        },
-        {
-            icon: assets.loyaltyprogramIcon,
-            title: 'Loyalty Programs',
-            description: 'Communicate in multiple languages and provide accomm...',
-            link: '#'
         }
     ]
     return (
@@ -148,18 +170,81 @@ const Rcs = () => {
                     <h2>Unparalleled Features Tailored For Success</h2>
                     <p>Discover carefully developed features that will improve your company's success on WhatsApp. Discover the unique ways each element <br /> has been designed to boost your achievements.</p>
                 </div>
-                <div className="feature13-wrap-container">
-                    <div className="feature13-cards-container">
-                        {features13.map((features13, index) => (
-                            <div className="feature13-card" key={index}>
-                                <img src={features13.icon} alt={features13.title} className="feature13-icon" />
-                                <div className="feature13-card-content">
-                                    <h3>{features13.title}</h3>
-                                    <p>{features13.description}</p>
-                                    <a href={features13.link} className="read-more">Read More &gt;</a>
+                <div className="feature-main-container-1234">
+                    {/* Horizontal Navigation Bar */}
+                    <div className="product-nav-1234" ref={navRef}>
+                        {sections.map((section) => (
+                            <a
+                                key={section.id}
+                                href={`#${section.id}`}
+                                className={activeTab === section.id ? 'active-1234' : ''}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleNavClick(section.id); // Handle smooth scroll when clicking
+                                }}
+                            >
+                                {section.name}
+                            </a>
+                        ))}
+                    </div>
+
+                    {/* Scrollable Content Section */}
+                    <div className="feature-content-container-1234">
+                        <section id="rcs-carousels" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src={assets.f7wf1} alt="RCS Carousels" />
+                                <div className="feature-text-1234">
+                                    <h2>RCS Carousels</h2>
+                                    <p>RCS Carousels transform how the material is shared by providing a visually attractive platform to display rich media. With RCS Carousels, you can enhance the immersion and engagement of any interaction, whether you're presenting product photos, promotional offers, or multimedia material.</p>
                                 </div>
                             </div>
-                        ))}
+                        </section>
+
+                        <section id="rcs-suggested" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <div className="feature-text-1234">
+                                    <h2>RCS Suggested Actions</h2>
+                                    <p>With RCS Suggested Actions, you can finally end all that laborious typing. Users can easily react to messages, finish purchases, and engage with your company using these clickable buttons. Now more than ever before, communication is streamlined, simplified, and straightforward with RCS Suggested Actions.</p>
+                                </div>
+                                <img src={assets.f7wf2} alt="RCS Suggested Actions" />
+                            </div>
+                        </section>
+                        <section id="rcs-smart" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src={assets.f7wf3} alt="RCS Smart Replies" />
+                                <div className="feature-text-1234">
+                                    <h2>RCS Smart Replies</h2>
+                                    <p>With RCS Smart Replies, you can make discussions more efficient. The discussion is guided, and users save time with these context-aware suggestions that give pre-populated replies based on the message content. You may expedite the communication process for appointment confirmation, order placement, and question responding by using RCS Smart Replies.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="rcs-high" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <div className="feature-text-1234">
+                                    <h2 style={{lineHeight:'30px', paddingBottom:'10px'}}>RCS High-Resolution Images and Videos</h2>
+                                    <p>Get a feel for RCS's high-resolution picture and video capabilities. Put an end to grainy movies and distorted photographs with RCS. Your shared media will always seem crystal clear. Whether presenting items to clients or reminiscing with friends, RCS will make your stuff look better.</p>
+                                </div>
+                                <img src={assets.f7wf4} alt="RCS High-Resolution Images and Videos" />
+                            </div>
+                        </section>
+                        <section id="rcs-read" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <img src={assets.f7wf5} alt="RCS Read Receipts" />
+                                <div className="feature-text-1234">
+                                    <h2>RCS Read Receipts</h2>
+                                    <p>Using RCS Read Receipts, you can rest easy. These user-friendly features let users know when their messages have been read and received by the people they meant them to. You may converse with peace of mind when you use RCS Read Receipts. Your communications will be recognized and handled accordingly.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="seamless-integration" className="feature-section-1234">
+                            <div className="feature-item-1234">
+                                <div className="feature-text-1234">
+                                    <h2>Seamless Integrations</h2>
+                                    <p>RCS provides a unified communication experience by integrating your favorite applications and services. Using RCS, being connected and productive is easier than ever before, whether sharing your location, making payments, or organizing appointments.</p>
+                                </div>
+                                <img src={assets.f7wf6} alt="Seamless Integrations" />
+                            </div>
+                        </section>
                     </div>
                 </div>
                 <div className="rcs-platform-header">
