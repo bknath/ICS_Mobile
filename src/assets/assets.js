@@ -8,7 +8,6 @@ import facebook from './facebook.png'
 import downarrow from './down-arrow.png'
 import Robot from './Robot.svg'
 import SMSmobile from './SMS-mobile.png' 
-import whatsappimg from './whatsapp-image.png'
 import Partnercompany from './partnercompany.png'
 import lifestylelogo from './lifestyle-logo.png'
 import lifestylelogo2 from './lifestylelogo2.png'
@@ -92,7 +91,7 @@ import engagingIcon from './Engagingicon.svg'
 import globalflexIcon from './gloabalflexicon.svg'
 import keyfeaturesIcon from './keyfeaturesicon.png'
 //whatsappAPI
-import whatsappAPILogo from './whatsappAPIlogo.png'
+import whatsappAPILogo from './whatsappAPIlogo.svg'
 import globalaudienceIcon from './globalaudienceicon.svg'
 import bluetickIcon from './bluetickicon.svg'
 import whatsappPlatfroml2 from './4815735 1.svg'
@@ -178,7 +177,6 @@ export const assets = {
     Robot,
     HomepageBannerart,
     SMSmobile,
-    whatsappimg,
     Partnercompany,
     lifestylelogo,
     lifestylelogo2,

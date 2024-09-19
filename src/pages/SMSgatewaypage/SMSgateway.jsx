@@ -173,10 +173,6 @@ const SMSgateway = () => {
         triggerOnce: true,
         threshold: 0.1,
     })
-    const { ref: sectionref14, inView: imageInView14 } = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
-    })
     return (
         <div>
             <div className="SMSgateway-wrap-content" ref={sectionref10}>
