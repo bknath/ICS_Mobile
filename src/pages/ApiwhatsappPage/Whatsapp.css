@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     padding-top: 1rem;
-    padding-bottom: 3rem;
     color: white;
     position: relative;
     overflow: hidden;
@@ -62,13 +61,9 @@
 
 .whatsapprobot {
     width: 40%;
-    padding-left: 9rem;
     padding-top: 1rem;
 }
 
-.whatsapprobot img {
-    width: 360px;
-}
 
 /* card-feature-5 */
 .whatsapp-platform-header {
@@ -149,86 +144,6 @@
     height: auto;
     display: block;
 }
-
-
-/* .feature5-wrap-container{
-    display: flex;
-    justify-content: center;
-}
-.whatsapp-platform-section{
-    background-color: #f9f9f9;
-}
-.feature5-cards-container{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    max-width: 1300px;
-}
-.feature5-cards-column{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding-top: 3rem;
-}
-.image-column-wp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-}
-.feature5-card{
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-    width: 100%;
-    position: relative;
-    transition: transform 0.3s;
-}
-.feature5-card:hover{
-    transform: translateY(-5px);
-}
-.feature5-icon{
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    flex-shrink: 0;
-}
-.feature5-card-content{
-    display: flex;
-    flex-direction: column;
-}
-.feature5-card h3{
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    margin: 0;
-    margin-bottom: 10px;
-}
-.feature5-card p{
-    font-size: 14px;
-    color: #666;
-    margin: 0;
-    margin-bottom: 20px;
-}
-.read-more-2{
-    color: #0066cc;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    position: absolute;
-    bottom: 20px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.feature5-card:hover .read-more-2{
-    opacity: 1;
-}
-.image-column-wp img{
-    width: 382px;
-} */
 
 /* feature7 css */
 
