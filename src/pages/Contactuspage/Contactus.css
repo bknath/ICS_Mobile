@@ -55,9 +55,9 @@
 }
 
 .info-block {
-    width: 37%;
+    width: 35%;
     margin-right: 40px;
-    padding-top: 1rem;
+    padding-top: 4rem;
 }
 
 .contact-us-item {
@@ -105,7 +105,7 @@
 }
 
 .contact-us-form {
-    height: 580px;
+    /* height: 580px; */
     width: 40%;
     background-color: #ffffff;
     padding: 20px;

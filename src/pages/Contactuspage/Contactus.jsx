@@ -85,7 +85,7 @@ const Contactus = () => {
       <div className="contactus-text-wrap">
         <div className="contactus-text-section">
           <div className="contact-us-content">
-            <p style={{ paddingBottom: '5px', color:'#b30000' }}>Contact us</p>
+            <p style={{ paddingBottom: '5px', color: '#b30000' }}>Contact us</p>
             <h2>How May We<br /> Assist You?</h2>
             <p style={{ paddingBottom: '2rem' }}>ICS is a trusted CPaaS communication partner for Enterprises. We aim to provide solutions that not only fulfill your demands but also surpass your expectations. We're here to help you find it, no matter what you're looking for.</p>
           </div>
@@ -107,7 +107,7 @@ const Contactus = () => {
             <div className="contact-us-item">
               <img src={assets.contactuschaticon2} alt="Contact Us" />
               <div className="info-block-content">
-                <h3>Want to know more about our Developers API?</h3>
+                <h3>Want to know more about our <br /> Developers API?</h3>
                 <a href="#">Read API Docs</a>
               </div>
             </div>
@@ -137,36 +137,10 @@ const Contactus = () => {
             <h2>Fill up the form</h2>
             <p>Kindly provide the following information, and a representative from ICS Mobile will contact you at the earliest:</p>
             <form onSubmit={handleSubmit}>
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="first-name">First name</label>
-                  <input
-                    type="text"
-                    id="first-name"
-                    name="first_name"
-                    placeholder='First Name'
-                    value={formData.first_name}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="last-name">Last name</label>
-                  <input
-                    type="text"
-                    id="last-name"
-                    name="last_name"
-                    placeholder='Last Name'
-                    value={formData.last_name}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Business Email Address</label>
                 <input
-                  type="email"k
+                  type="email"
                   id="email"
                   name="email"
                   placeholder='you@company.com'
@@ -174,6 +148,47 @@ const Contactus = () => {
                   onChange={handleChange}
                   required
                 />
+              </div>
+              <div className="form-group">
+                <label htmlFor="first-name">First name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  placeholder='First Name'
+                  value={formData.first_name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="last-name">Last name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last_name"
+                  placeholder='Last Name'
+                  value={formData.last_name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="company-size">Company Size</label>
+                <select
+                  id="company-size"
+                  name="companySize"
+                  value={formData.companySize}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select company size</option>
+                  <option value="1-10">1-10 employees</option>
+                  <option value="11-50">11-50 employees</option>
+                  <option value="51-200">51-200 employees</option>
+                  <option value="201-500">201-500 employees</option>
+                  <option value="500+">500+ employees</option>
+                </select>
               </div>
               <div className="form-group">
                 <label htmlFor="phone">Phone number</label>
@@ -188,15 +203,23 @@ const Contactus = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder='Leave us a message...'
-                  value={formData.message}
+                <label htmlFor="help-options">How Could ICS Help You?</label>
+                <select
+                  id="help-options"
+                  name="helpOptions"
+                  value={formData.helpOptions}
                   onChange={handleChange}
                   required
-                ></textarea>
+                >
+                  <option value="">Select an option</option>
+                  <option value="increase-traffic">Increase Website Traffic</option>
+                  <option value="improve-communication">Improve Customer Communication</option>
+                  <option value="optimize-processes">Optimize Business Processes</option>
+                  <option value="enhance-security">Enhance Security & Authentication</option>
+                  <option value="enhance-security">Connect and discuss with us</option>
+                  <option value="enhance-security">Book a free 15 min demo</option>
+                  <option value="other">Other</option>
+                </select>
               </div>
               <div className="form-group checkbox-group">
                 <input
