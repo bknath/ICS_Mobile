@@ -84,24 +84,26 @@ const Navbar = () => {
                             </span>
                         </a>
                         <div className={`dropdown-content-2 ${dropdownOpen === 'resources' ? 'show' : ''}`}>
-                        <div className="dropdown-content-pr">
-                            <img src={assets.innovativetech} alt="" />
-                            <div className="content-text-pr">
-                                <a href="#" onClick={handleLinkClick}>Blogs </a>
-                                <p>The latest industry news, updates and info.</p>
+                            <div className="dropdown-content-pr">
+                                <img src={assets.innovativetech} alt="" />
+                                <div className="content-text-pr">
+                                    <a href="#" onClick={handleLinkClick}>Blogs </a>
+                                    <p>The latest industry news, updates and info.</p>
+                                </div>
+                            </div>
+                            <div className="dropdown-content-pr">
+                                <img src={assets.lastingconnection} alt="" />
+                                <div className="content-text-pr">
+                                    <a href="#" onClick={handleLinkClick}>Case Study</a>
+                                    <p>Learn how our customers are making big changes.</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="dropdown-content-pr">
-                            <img src={assets.lastingconnection} alt="" />
-                            <div className="content-text-pr">
-                                <a href="#" onClick={handleLinkClick}>Case Study</a>
-                                <p>Learn how our customers are making big changes.</p>
-                            </div>
-                        </div>
-                    </div>
                     </li>
                     <li className="nav-item"><a href="#">Blogs</a></li>
-                    <li className="nav-item"><a href="#">About us</a></li>
+                    <li className="nav-item">
+                        <Link to="/aboutus">About us</Link>
+                    </li>
                     <li className="nav-item">
                         <Link to="/contact-us">Contact us</Link>
                     </li>

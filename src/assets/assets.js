@@ -164,6 +164,20 @@ import contactusimage from './contactusimage.svg'
 import contactuschaticon2 from './contactuschaticon2.svg'
 //RCS
 import Rcsmainlogo from './Rcsmainlogo.svg'
+//About us
+import Aboutuslogo1 from './Aboutuslogo1.svg'
+import Aboutuslogo2 from './Aboutuslogo2.svg'
+import ceo from './ceo.png'
+import cto from './cto.png'
+import smsl from './smsl.png'
+import sysl from './sysl.png'
+import techl from './techl.png'
+import image1 from './image-1.svg'
+import image2 from './image-2.svg'
+import image3 from './image-3.svg'
+import image4 from './image-4.svg'
+import image5 from './image-5.svg'
+import ourJourney from './ourjourney.svg'
 export const assets = {
     //Home
     logo,
@@ -330,6 +344,20 @@ export const assets = {
     contactusphoneIcon,
     contactusimage,
     contactuschaticon2,
-    //
-    Rcsmainlogo
+    //RCS
+    Rcsmainlogo,
+    //Aboutus
+    Aboutuslogo1,
+    Aboutuslogo2,
+    ceo,
+    cto,
+    smsl,
+    sysl,
+    techl,
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    ourJourney
 }
