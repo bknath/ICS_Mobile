@@ -199,7 +199,7 @@ const Platform = () => {
                 </div>
                 <div className="scroll-container">
                     <button className="scroll-btn left" onClick={scrollLeft}>
-                        &#8249; {/* Left arrow symbol */}
+                        <span style={{position:'relative', top:'-1px'}}>&#8249;</span>
                     </button>
 
                     <div className="scroll-boxes" ref={scrollContainerRef}>
@@ -214,7 +214,7 @@ const Platform = () => {
                         ))}
                     </div>
                     <button className="scroll-btn right" onClick={scrollRight}>
-                        &#8250; {/* Right arrow symbol */}
+                        <span style={{position:'relative', left:'1px'}}>&#8250;</span>
                     </button>
                 </div>
                 <div className="header-content-2">
