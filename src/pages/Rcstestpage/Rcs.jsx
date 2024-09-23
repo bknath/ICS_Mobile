@@ -66,6 +66,13 @@ const Rcs = () => {
             clearTimeout(scrollTimeout); // Cleanup timeout
         };
     }, []);
+    const handleNavClick = (id) => {
+        // Smooth scroll to the section on clicking a tab
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     const features11 = [
         {
             icon: assets.globalaudienceIcon,
@@ -221,7 +228,7 @@ const Rcs = () => {
                         <section id="rcs-high" className="feature-section-1234">
                             <div className="feature-item-1234">
                                 <div className="feature-text-1234">
-                                    <h2 style={{lineHeight:'30px', paddingBottom:'10px'}}>RCS High-Resolution Images and Videos</h2>
+                                    <h2 style={{ lineHeight: '30px', paddingBottom: '10px' }}>RCS High-Resolution Images and Videos</h2>
                                     <p>Get a feel for RCS's high-resolution picture and video capabilities. Put an end to grainy movies and distorted photographs with RCS. Your shared media will always seem crystal clear. Whether presenting items to clients or reminiscing with friends, RCS will make your stuff look better.</p>
                                 </div>
                                 <img src={assets.f7wf4} alt="RCS High-Resolution Images and Videos" />

@@ -178,6 +178,14 @@ import image3 from './image-3.svg'
 import image4 from './image-4.svg'
 import image5 from './image-5.svg'
 import ourJourney from './ourjourney.svg'
+import partner1logo from './pt1logo.svg'
+import partner2logo from './pt2logo.svg'
+import partner3logo from './pt3logo.svg'
+import partner4logo from './pt4logo.svg'
+import partner5logo from './pt5logo.svg'
+import partner6logo from './pt6logo.svg'
+import partner7logo from './pt7logo.svg'
+import partner8logo from './pt8logo.svg'
 export const assets = {
     //Home
     logo,
@@ -359,5 +367,13 @@ export const assets = {
     image3,
     image4,
     image5,
-    ourJourney
+    ourJourney,
+    partner1logo,
+    partner2logo,
+    partner3logo,
+    partner4logo,
+    partner5logo,
+    partner6logo,
+    partner7logo,
+    partner8logo
 }

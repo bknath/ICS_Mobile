@@ -121,3 +121,31 @@
     width: 1400px;
     margin: 0 auto;
 }
+.carousel-container {
+    overflow: hidden;
+    width: 1200px; /* Fixed width for the carousel */
+    margin: 0 auto; /* Centers the carousel horizontally */
+    position: relative;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.carousel {
+    display: flex; /* Align items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping to next line */
+    overflow-x: hidden; /* Prevent default horizontal scrollbars */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Prevent shrinking and ensure each item takes only as much space as needed */
+    width: 150px; /* Width of each item */
+    margin-right: 10px; /* Add space between items */
+}
+
+.carousel-item img {
+    width: 100%; /* Make image fill its parent */
+    height: auto; /* Keep image aspect ratio */
+    display: block;
+    /* object-fit: cover; Ensure image covers the area properly */
+}

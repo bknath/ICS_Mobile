@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Aboutus.css'
 import { assets } from '../../assets/assets'
 const Aboutus = () => {
@@ -48,10 +48,10 @@ const Aboutus = () => {
             pic: assets.image5
         }
     ]
-    const cardWidth = 320; 
-    const cardGap = 20; 
-    const cardWidth2 = 320; 
-    const cardGap2 = 20; 
+    const cardWidth = 320;
+    const cardGap = 20;
+    const cardWidth2 = 320;
+    const cardGap2 = 20;
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
@@ -91,6 +91,34 @@ const Aboutus = () => {
         }
     };
 
+
+    // const carouselRef = useRef(null);
+
+    // useEffect(() => {
+    //     const carousel = carouselRef.current;
+    //     const scrollSpeed = 1; // Speed of scroll
+    //     let animationFrameId;
+
+    //     const scrollCarousel = () => {
+    //         // Scroll the carousel
+    //         carousel.scrollLeft += scrollSpeed;
+
+    //         // If the user has scrolled to the end of the first set, jump to the start of the second set
+    //         if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+    //             carousel.scrollLeft = 0;
+    //         }
+
+    //         // Loop the function using requestAnimationFrame for smooth scrolling
+    //         animationFrameId = requestAnimationFrame(scrollCarousel);
+    //     };
+
+    //     // Start the scroll when the component is mounted
+    //     scrollCarousel();
+
+    //     // Clean up the animation frame when the component unmounts
+    //     return () => cancelAnimationFrame(animationFrameId);
+    // }, []);
+
     return (
         <div>
             <div className="aboutus-wrap-content">
@@ -126,7 +154,7 @@ const Aboutus = () => {
             </div>
             <div className="scroll-container-2">
                 <button className="scroll-btn left" onClick={scrollLeft}>
-                    <span style={{position:'relative', top:'-1px'}}>&#8249;</span>
+                    <span style={{ position: 'relative', top: '-1px' }}>&#8249;</span>
                 </button>
 
                 <div className="scroll-boxes2" ref={scrollContainerRef}>
@@ -141,7 +169,7 @@ const Aboutus = () => {
                     ))}
                 </div>
                 <button className="scroll-btn right" onClick={scrollRight}>
-                   <span style={{position:'relative', left:'1px'}}>&#8250;</span> 
+                    <span style={{ position: 'relative', left: '1px' }}>&#8250;</span>
                 </button>
             </div>
             <div style={{ backgroundColor: '#FFFAFA' }} className='header-content'>
@@ -167,7 +195,7 @@ const Aboutus = () => {
             </div>
             <div className="scroll-container-3">
                 <button className="scroll-btn left" onClick={scrollLeftPictures}>
-                   <span style={{position:'relative', top:'-1px'}}>&#8249;</span> 
+                    <span style={{ position: 'relative', top: '-1px' }}>&#8249;</span>
                 </button>
                 <div className="scroll-boxes3" ref={pictureScrollRef}>
                     {pictures.map((pictures, index) => (
@@ -179,7 +207,7 @@ const Aboutus = () => {
                     ))}
                 </div>
                 <button className="scroll-btn right" onClick={scrollRightPictures}>
-                    <span style={{position:'relative', left:'1px'}}>&#8250;</span> 
+                    <span style={{ position: 'relative', left: '1px' }}>&#8250;</span>
                 </button>
             </div>
             <div className="header-content-2">
@@ -188,6 +216,59 @@ const Aboutus = () => {
             <div className='our-journey'>
                 <img src={assets.ourJourney} alt="" />
             </div>
+            {/* <div className="carousel-container">
+                <div className="carousel" ref={carouselRef}>
+                    <div className="carousel-item">
+                        <img src={assets.partner1logo} alt="Times Internet" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner2logo} alt="Lifestyle" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner3logo} alt="M&S" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner4logo} alt="MedLife" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner5logo} alt="Pantaloons" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner6logo} alt="Pantaloons" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner7logo} alt="Pantaloons" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner8logo} alt="Pantaloons" />
+                    </div>
+
+                    <div className="carousel-item">
+                        <img src={assets.partner1logo} alt="Times Internet" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner2logo} alt="Lifestyle" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner3logo} alt="M&S" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner4logo} alt="MedLife" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner5logo} alt="Pantaloons" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner6logo} alt="Pantaloons" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner7logo} alt="Pantaloons" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src={assets.partner8logo} alt="Pantaloons" />
+                    </div>
+                </div>
+            </div> */}
         </div>
     )
 }
