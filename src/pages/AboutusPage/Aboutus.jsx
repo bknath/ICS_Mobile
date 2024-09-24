@@ -90,7 +90,26 @@ const Aboutus = () => {
             });
         }
     };
-
+    const logos = {
+        partnerlogos: [
+            assets.partner1logo,
+            assets.partner2logo,
+            assets.partner3logo,
+            assets.partner4logo,
+            assets.partner5logo,
+            assets.partner6logo,
+            assets.partner7logo,
+            assets.partner8logo
+        ]
+    };
+    const Awards = {
+        Awardsimage: [
+            assets.Award1,
+            assets.Award1,
+            assets.Award1,
+            assets.Award1,
+        ]
+    }
 
     // const carouselRef = useRef(null);
 
@@ -216,59 +235,24 @@ const Aboutus = () => {
             <div className='our-journey'>
                 <img src={assets.ourJourney} alt="" />
             </div>
-            {/* <div className="carousel-container">
-                <div className="carousel" ref={carouselRef}>
-                    <div className="carousel-item">
-                        <img src={assets.partner1logo} alt="Times Internet" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner2logo} alt="Lifestyle" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner3logo} alt="M&S" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner4logo} alt="MedLife" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner5logo} alt="Pantaloons" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner6logo} alt="Pantaloons" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner7logo} alt="Pantaloons" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner8logo} alt="Pantaloons" />
-                    </div>
-
-                    <div className="carousel-item">
-                        <img src={assets.partner1logo} alt="Times Internet" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner2logo} alt="Lifestyle" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner3logo} alt="M&S" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner4logo} alt="MedLife" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner5logo} alt="Pantaloons" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner6logo} alt="Pantaloons" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner7logo} alt="Pantaloons" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={assets.partner8logo} alt="Pantaloons" />
-                    </div>
-                </div>
-            </div> */}
+            <div className="header-content">
+                <h2 style={{marginTop:'3rem'}}>Reowned Brand Trust us</h2>
+                <p>Fueling countless campaigns, delighting thousands of customers.</p>
+            </div>
+            <div className="logos-container">
+                {logos.partnerlogos.map((logo, index) => (
+                    <img key={index} src={logo} alt={`partnerlogos logo ${index + 1}`} className="logo-image" />
+                ))}
+            </div>
+            <div className="header-content">
+                <h2>Awards</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius <br /> vulputate neque. Morbi id tempor quam</p>
+            </div>
+            <div className="awards-container-2">
+                {Awards.Awardsimage.map((logo, index) => (
+                    <img key={index} src={logo} alt={`Awards logo ${index + 1}`} className="logo-image-2" />
+                ))}
+            </div>
         </div>
     )
 }

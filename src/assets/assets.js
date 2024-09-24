@@ -186,6 +186,7 @@ import partner5logo from './pt5logo.svg'
 import partner6logo from './pt6logo.svg'
 import partner7logo from './pt7logo.svg'
 import partner8logo from './pt8logo.svg'
+import Award1 from './award1.svg'
 export const assets = {
     //Home
     logo,
@@ -375,5 +376,6 @@ export const assets = {
     partner5logo,
     partner6logo,
     partner7logo,
-    partner8logo
+    partner8logo,
+    Award1
 }
