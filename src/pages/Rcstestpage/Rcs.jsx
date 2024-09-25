@@ -139,7 +139,7 @@ const Rcs = () => {
                                     <div className="feature11-card-content">
                                         <h3>{features11.title}</h3>
                                         <p>{features11.description}</p>
-                                        <a href={features11.link} className='read-more-2'>{features11.linkText} &gt;</a>
+                                        {/* <a href={features11.link} className='read-more-2'>{features11.linkText} &gt;</a> */}
                                     </div>
                                 </div>
                             ))}
@@ -166,7 +166,7 @@ const Rcs = () => {
                                     <div className="feature11-card-content">
                                         <h3>{features12.title}</h3>
                                         <p>{features12.description}</p>
-                                        <a href={features12.link} className='read-more-2'>{features12.linkText} &gt;</a>
+                                        {/* <a href={features12.link} className='read-more-2'>{features12.linkText} &gt;</a> */}
                                     </div>
                                 </div>
                             ))}

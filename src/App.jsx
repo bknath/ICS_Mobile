@@ -16,6 +16,7 @@ import SMSgatewaypage from './pages/SMSgatewaypage'
 import Rcstestpage from './pages/Rcstestpage'
 import Product2 from './pages/Home/Product/Product2'
 import AboutusPage from './pages/AboutusPage'
+import CareerPage from './pages/CareerPage'
 const App = () => {
   return (
     <div>
@@ -28,13 +29,11 @@ const App = () => {
         <Route path='/smsgateway' element={<SMSgatewaypage />} />
         <Route path='/rcspage' element={<Rcstestpage />} />
         <Route path='/aboutus' element={<AboutusPage/>}/>
+        <Route path='/career' element={<CareerPage/>}/>
       </Routes>
       <Routes>
         <Route path='/' element={<Hero />} />
       </Routes>
-      {/* <Routes>
-        <Route path='/' element={<Product />} />
-      </Routes> */}
       <Routes>
         <Route path='/' element={<Product2 />} />
       </Routes>

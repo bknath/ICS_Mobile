@@ -187,6 +187,13 @@ import partner6logo from './pt6logo.svg'
 import partner7logo from './pt7logo.svg'
 import partner8logo from './pt8logo.svg'
 import Award1 from './award1.svg'
+//careers page
+import careercoverLogo from './careerslogo1.svg'
+import careerLogo2 from './careerlogo2.svg'
+import careerLogo3 from './careerlogo3.svg'
+import Hiringlogo1 from './Hiringlogo1.svg'
+import Hiringlogo2 from './Hiringlogo2.svg'
+import Hiringlogo3 from './Hiringlogo3.svg'
 export const assets = {
     //Home
     logo,
@@ -377,5 +384,12 @@ export const assets = {
     partner6logo,
     partner7logo,
     partner8logo,
-    Award1
+    Award1,
+    //careerspage
+    careercoverLogo,
+    careerLogo2,
+    careerLogo3,
+    Hiringlogo1,
+    Hiringlogo2,
+    Hiringlogo3
 }

@@ -110,34 +110,6 @@ const Aboutus = () => {
             assets.Award1,
         ]
     }
-
-    // const carouselRef = useRef(null);
-
-    // useEffect(() => {
-    //     const carousel = carouselRef.current;
-    //     const scrollSpeed = 1; // Speed of scroll
-    //     let animationFrameId;
-
-    //     const scrollCarousel = () => {
-    //         // Scroll the carousel
-    //         carousel.scrollLeft += scrollSpeed;
-
-    //         // If the user has scrolled to the end of the first set, jump to the start of the second set
-    //         if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
-    //             carousel.scrollLeft = 0;
-    //         }
-
-    //         // Loop the function using requestAnimationFrame for smooth scrolling
-    //         animationFrameId = requestAnimationFrame(scrollCarousel);
-    //     };
-
-    //     // Start the scroll when the component is mounted
-    //     scrollCarousel();
-
-    //     // Clean up the animation frame when the component unmounts
-    //     return () => cancelAnimationFrame(animationFrameId);
-    // }, []);
-
     return (
         <div>
             <div className="aboutus-wrap-content">
@@ -167,9 +139,8 @@ const Aboutus = () => {
                 </div>
             </div>
             <div className="header-content">
-                <button style={{ backgroundColor: '#F7FBFF' }} className='head-section-b3'>Our Integration</button>
-                <h2>Connecting Seamlessly with Leading Platforms</h2>
-                <p>We are proud to integrate our WhatsApp Business API with top-tier platforms, ensuring seamless <br /> communication and enhanced functionality for your business:</p>
+                <h2 style={{paddingTop:'2rem'}}>The ICS Mobile Team</h2>
+                <p>Meet the enthusiastic and hardworking staff at ICS, where we push ourselves <br /> ahead daily through teamwork and innovative thinking.</p>
             </div>
             <div className="scroll-container-2">
                 <button className="scroll-btn left" onClick={scrollLeft}>
