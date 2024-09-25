@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react'
 import './Aboutus.css'
 import { assets } from '../../assets/assets'
 const Aboutus = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const scrollContainerRef = useRef(null);
     const pictureScrollRef = useRef(null);
     const cards = [
