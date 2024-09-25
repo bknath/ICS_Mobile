@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Carrer.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
@@ -43,6 +43,9 @@ const jobsData = [
     { id: 6, title: 'SMS Lead', description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.', date: '2024-09-17' },
 ];
 const Carrer = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const [filter, setFilter] = useState('newest');
     const sortJobs = (jobs, filter) => {
         return jobs.sort((a, b) => {
