@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import './Hero.css'
 import { assets } from '../../../assets/assets'
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
 const Hero = () => {
     const brandRef = useRef(null);
     const yearRef = useRef(null);
@@ -30,7 +31,10 @@ const Hero = () => {
         updateCount(yearRef, targetCounts.yearcount);
         updateCount(smsRef, targetCounts.smscount);
     }, []);
-
+    const { ref: sectionref14, inView: imageInView14 } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    })
 
     return (
         <div>
@@ -40,9 +44,7 @@ const Hero = () => {
                         <h1>Reimagine omnichannel communications</h1>
                         <p>Leverage the power of ICS Mobile’s Trusted CPAAS platform to elevate your digital interactions.</p>
                         <div className="buttons">
-                            {/* <a href="contact-us" className="request-demo">Request Demo</a> */}
                             <Link to="/contact-us" className='request-demo'>Request Demo</Link>
-                            {/* <a href="contact-us" className="talk-to-sales">Talk to Sales</a> */}
                             <Link to="/contact-us" className='talk-to-sales'>Talk to Sales</Link>
                         </div>
                         <div className="stats">
@@ -66,12 +68,13 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="robot">
-                        <div className="hero-product-image">
-                            <img className="h2" src={assets.homepageupdatedimage} alt="Robot" />
-                        </div>
+                    <div className="robot" ref={sectionref14}>
+                        <img
+                            className={`image-slide-up ${imageInView14 ? 'visible' : ''}`}
+                            src={assets.homepageupdatedimage}
+                            alt="Robot"
+                        />
                     </div>
-
                 </section>
             </div>
         </div>
