@@ -4,6 +4,7 @@ import '../Home/Product/Product.css'
 import { assets } from '../../assets/assets'
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
 const Whatsapp = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -135,6 +136,11 @@ const Whatsapp = () => {
             });
         }
     };
+    const { ref: sectionref15, inView: imageInView15 } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    })
+
     return (
         <div>
             <div className="whatsappAPI-wrap-content">
@@ -148,10 +154,14 @@ const Whatsapp = () => {
                             <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
-                    <div className="whatsapprobot">
-                        <div className="hero-product-image">
-                            <img src={assets.whatsappAPILogo} alt="chatRobot" />
-                        </div>
+                    <div className="whatsapprobot" ref={sectionref15}>
+
+                        <img
+                            src={assets.whatsappAPILogo}
+                            alt="chatRobot"
+                            className={`image-slide-up ${imageInView15 ? 'visible' : ''}`}
+                        />
+
                     </div>
                 </div>
             </div>
