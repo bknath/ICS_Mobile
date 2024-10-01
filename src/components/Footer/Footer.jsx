@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer-top">
                     <div className="footer-logo">
                         <img src={assets.logo} alt="ICS Logo" className="logo" />
-                        <p>Helping Step up Businesses a Notch <br />Higher</p>
+                        <p>Helping Step up Businesses a Notch Higher</p>
                     </div>
                     <div className="footer-social">
                         <a href="#" target="_blank"><img src={assets.TwitterIcon} alt="Twitter Icon"/></a>

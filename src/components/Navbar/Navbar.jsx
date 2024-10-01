@@ -8,6 +8,21 @@ const Navbar = () => {
     const handleLinkClick = () => {
         setDropdownOpen(null);
     };
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
+    const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const toggleProductsDropdown = () => {
+        setIsProductsDropdownOpen(!isProductsDropdownOpen);
+    };
+
+    const toggleResourcesDropdown = () => {
+        setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
+    };
     return (
         <div>
             <nav className="navbar">
@@ -112,6 +127,70 @@ const Navbar = () => {
                     <a href="#" className="activate-trial">Activate Trial</a>
                     <a href="#" className="btn sign-in">Sign In</a>
                 </div>
+                {/* Mobile Hamburger */}
+                <div className="hamburger" onClick={toggleMobileMenu}>
+                    &#9776;
+                </div>
+                {/* Mobile Navigation */}
+                {isMobileMenuOpen && (
+                    <div className="mobile-nav">
+                        {/* Mobile Menu Header */}
+                        <div className="mobile-header">
+                            <div className="menu-title">Menu</div>
+                            <div className="close-btn" onClick={toggleMobileMenu}>
+                                &times;
+                            </div>
+                        </div>
+
+                        {/* Mobile Navigation Links */}
+                        <div className="mobile-nav-links">
+                            <ul>
+                                <li>
+                                    <a href="#" onClick={toggleProductsDropdown}>
+                                        Products
+                                        <span className="arrow">
+                                            <img src={isProductsDropdownOpen ? assets.uparrow : assets.downarrow2} alt="dropdown" />
+                                        </span>
+                                    </a>
+                                    {isProductsDropdownOpen && (
+                                        <ul className="dropdown show">
+                                            <li><Link to="/whatsapp" onClick={handleLinkClick}>Whatsapp Business API</Link></li>
+                                            <li><Link to="/chatbot" onClick={handleLinkClick}>Chatbot</Link></li>
+                                            <li><Link to="/customer" onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
+                                            <li><Link to="/smsgateway" onClick={handleLinkClick}>SMS Gateway</Link></li>
+                                            <li><Link to="/rcspage" onClick={handleLinkClick}>Rich Communication</Link></li>
+                                        </ul>
+                                    )}
+                                </li>
+                                <li>
+                                    <a href="#" onClick={toggleResourcesDropdown}>
+                                        Resources
+                                        <span className="arrow">
+                                            <img src={isResourcesDropdownOpen ? assets.uparrow : assets.downarrow2} alt="dropdown" />
+                                        </span>
+                                    </a>
+                                    {isResourcesDropdownOpen && (
+                                        <ul className="dropdown show">
+                                            <li><a href="#" onClick={handleLinkClick}>Blogs </a></li>
+                                            <li><a href="#" onClick={handleLinkClick}>Case Study</a></li>
+                                        </ul>
+                                    )}
+                                </li>
+                                <li><Link to="/aboutus">About Us</Link></li>
+                                <li><Link to="/contact-us">Contact Us</Link></li>
+                            </ul>
+
+                        </div>
+
+                        {/* Mobile Buttons */}
+                        <div className="wrap-mobile-buttons">
+                            <div className="mobile-buttons">
+                                <a href="#" className="activate-trial">Activate Trial</a>
+                                <a href="#" className="btn sign-in">Sign In</a>
+                            </div>
+                        </div>
+                    </div>
+                )}
             </nav>
         </div>
     )

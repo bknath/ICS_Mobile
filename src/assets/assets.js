@@ -157,6 +157,8 @@ import CEPNavbarIcon from './CEP-NavbarIcon.png'
 import chatbotNavbarIcon from './ChahbotNavbarIcon.png'
 import whatsappapiNavbarIcon from './whatsappAPINavbarIcon.png'
 import SMSmarketingNavbarIcon from './SMSmarketingNavbarIcon.png'
+import downarrow2 from './downarrow.svg'
+import uparrow from './uparrow.svg'
 //contact-us
 import contactuslocationIcon from './contactus-locationIcon.svg'
 import contactusphoneIcon from './contactus-phoneIcon.svg'
@@ -355,6 +357,8 @@ export const assets = {
     whatsappapiNavbarIcon,
     chatbotNavbarIcon,
     SMSmarketingNavbarIcon,
+    downarrow2,
+    uparrow,
     //contactus
     contactuslocationIcon,
     contactusphoneIcon,

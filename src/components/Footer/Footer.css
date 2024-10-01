@@ -4,12 +4,14 @@
     padding: 20px;
     text-align: center;
 }
-.footer-container{
+
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-.footer-logo img{
+
+.footer-logo img {
     width: 87px;
     height: 50px;
     border-radius: 5px;
@@ -31,7 +33,8 @@
 .footer-logo .logo {
     margin-right: 10px;
 }
-.footer-logo p{
+
+.footer-logo p {
     text-align: justify;
     font-size: 14px;
     line-height: 25px;
@@ -39,9 +42,10 @@
 
 .footer-social a {
     margin-left: 20px;
-    
+
 }
-.footer-social:last-child{
+
+.footer-social:last-child {
     margin-right: 4.2rem;
 }
 
@@ -71,7 +75,8 @@
     font-weight: 700;
     font-size: 14px;
 }
-.footer-links :first-child{
+
+.footer-links :first-child {
     margin-left: 1.6rem;
 }
 
@@ -82,16 +87,91 @@
 .footer-bottom {
     margin-top: 20px;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     text-align: justify;
     margin-left: 4.6rem;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
 }
+
 .footer-line {
     border-bottom: 1px solid #FFFFFF;
-    margin: 0 auto 10px; /* Center the line */
-    width: 88%; /* Adjust the width as needed */
+    margin: 0 auto 10px;
+    /* Center the line */
+    width: 88%;
+    /* Adjust the width as needed */
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        padding: 15px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .footer-logo img {
+        position: relative;
+        left: -65px;
+        width: 100px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .footer-logo p {
+        position: relative;
+        left: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-social a {
+        margin: 10px;
+    }
+
+    .footer-links {
+        position: relative;
+        left: 10px;
+    }
+    .footer-links :first-child {
+        margin: 0;
+    }
+
+    .footer-links ul {
+        display: block;
+        text-align: justify;
+    }
+
+    .footer-links ul li {
+        margin: 10px 0;
+    }
+
+    .footer-bottom p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 0;
+    }
+
+    .footer-line {
+        width: 90%;
+    }
+    
 }

@@ -28,8 +28,8 @@ const App = () => {
         <Route path='/contact-us' element={<Contactuspage />} />
         <Route path='/smsgateway' element={<SMSgatewaypage />} />
         <Route path='/rcspage' element={<Rcstestpage />} />
-        <Route path='/aboutus' element={<AboutusPage/>}/>
-        <Route path='/career' element={<CareerPage/>}/>
+        <Route path='/aboutus' element={<AboutusPage />} />
+        <Route path='/career' element={<CareerPage />} />
       </Routes>
       <Routes>
         <Route path='/' element={<Hero />} />
