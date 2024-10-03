@@ -96,6 +96,10 @@
 .stat:last-child{
     border-right: none;
 }
+/* .stat-wrap{
+    display: flex;
+    justify-content: space-between;
+} */
 .statbox{
     display: flex;
     justify-content: justify;
@@ -140,4 +144,41 @@
 
 .hero-product-image {
     animation: slideUp 1s ease-out;
+}
+
+@media (max-width: 765px){
+    .hero-section{
+        flex-direction: column;
+    }
+    .content {
+        width: 100%;
+        padding-left: 1.5rem;
+
+    }
+    .robot{
+        width: 100%;
+    }
+    .robot img{
+        width: 340px;
+    }
+    .content p{
+        width: 70%;
+    }
+    .stats{
+        width: 100%;
+    }
+    .stat{
+        margin-right: 10px;
+        padding-right: 1rem;
+    }
+    .content h1{
+        font-size: 32px;
+    }
+    .request-demo{
+        padding: 8px 25px;
+    }
+    .talk-to-sales{
+        margin-left: 15px;
+        padding: 10px 30px;
+    }
 }

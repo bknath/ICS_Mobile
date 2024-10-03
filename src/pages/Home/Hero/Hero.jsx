@@ -48,24 +48,30 @@ const Hero = () => {
                             <Link to="/contact-us" className='talk-to-sales'>Talk to Sales</Link>
                         </div>
                         <div className="stats">
+
                             <div className="stat">
                                 <div className='statbox'>
                                     <span className="number" ref={brandRef}>0</span><span className='numbertext'>+ brands</span>
                                 </div>
                                 <span className="text">Trusted us</span>
                             </div>
+
+
                             <div className="stat">
                                 <div className="statbox">
                                     <span className="number" ref={yearRef}>0</span><span className='numbertext'>+ years</span>
                                 </div>
                                 <span className="text">Experience</span>
                             </div>
+
+
                             <div className="stat">
                                 <div className="statbox">
                                     <span className="number" ref={smsRef}>0</span><span className="numbertext">+ Crore</span>
                                 </div>
                                 <span className="text">SMS per hour</span>
                             </div>
+
                         </div>
                     </div>
                     <div className="robot" ref={sectionref14}>

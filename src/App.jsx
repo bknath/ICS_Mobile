@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path='/chatbot' element={<ChatBotpage />} />
         <Route path='/customer' element={<CustomerengagementPage />} />
         <Route path='/whatsapp' element={<ApiwhatsappPage />} />
@@ -30,14 +30,14 @@ const App = () => {
         <Route path='/rcspage' element={<Rcstestpage />} />
         <Route path='/aboutus' element={<AboutusPage />} />
         <Route path='/career' element={<CareerPage />} />
-      </Routes>
+      </Routes> */}
       <Routes>
         <Route path='/' element={<Hero />} />
       </Routes>
       <Routes>
         <Route path='/' element={<Product2 />} />
       </Routes>
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Platform />} />
       </Routes>
       <Routes>
@@ -48,7 +48,7 @@ const App = () => {
       </Routes>
       <Routes>
         <Route path='/' element={<Formsection />} />
-      </Routes>
+      </Routes> */}
       <Footer />
     </div>
   )

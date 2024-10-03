@@ -54,6 +54,9 @@ import shopify2logo from './shopify.svg'
 import pabblyconnectlogo from './pabblyconnect.svg'
 import woocommercelogo from './woocommerce.svg'
 import hubspotlogo from './hubspot.svg'
+import mobileWhatsappproduct2image from './mobileWhatsappproduct2image.png'
+import mobileSMSproduct2image from './mobileSMSproduct2image.png'
+import mobileRCSproduct2image from './mobileRCSproduct2image.png'
 //chatbot
 import chatbotImg from './chatbotimg.svg'
 import chipIcon from './integratedsolicon.svg'
@@ -255,6 +258,9 @@ export const assets = {
     woocommercelogo,
     shopify2logo,
     hubspotlogo,
+    mobileRCSproduct2image,
+    mobileSMSproduct2image,
+    mobileWhatsappproduct2image,
     //chatbot
     chatbotImg,
     chipIcon,

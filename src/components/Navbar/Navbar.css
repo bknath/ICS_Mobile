@@ -203,6 +203,7 @@
 
     .navbar {
         justify-content: space-between;
+        padding: 5px 20px;
     }
 
     /* Show hamburger menu for mobile */
