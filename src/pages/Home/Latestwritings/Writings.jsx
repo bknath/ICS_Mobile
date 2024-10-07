@@ -8,7 +8,7 @@ const Writings = () => {
         <button className='head-section-b4'>Blogs</button>
       </div>
       <h2>Latest writings</h2>
-      <div className="tabs">
+      <div className="tabs2">
         <button className="tab">SMS gateways</button>
         <button className="tab">Email assistance</button>
         <button className="tab">Engagement programs</button>

@@ -24,7 +24,7 @@
 .wrap-platform-content {
     display: flex;
     justify-content: center;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .header-content {
@@ -114,7 +114,6 @@
 
 .content-block-col-2 img {
     width: 470px;
-    /* max-width: 100%; */
     height: auto;
 }
 
@@ -566,4 +565,67 @@
     margin: 0;
     padding-top: 8px;
     color: #666;
+}
+
+@media (max-width: 765px){
+    .content-block{
+        flex-direction: column;
+    }
+    .content-block-col-1{
+        padding-top: 1rem;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .content-block-col-2{
+        width: 100%;
+    }
+    .content-block-col-2 img{
+        width: 328px;
+    }
+    .scroll-boxes{
+        gap: 40px;
+        padding: 10px 30px;
+    }
+    .scroll-btn.left{
+        left: 20px;
+    }
+    .client-logos{
+        display: none;
+    }
+    .testimonial-box{
+        flex-direction: column;
+        width: 350px;
+    }
+    .testimonial-text{
+        max-width: 75%;
+    }
+    .testimonial-image{
+        display: none;
+    }
+    .tabs{
+        display: flex;
+        justify-content: left;
+        overflow-x: auto;
+        padding-left: 40px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+    .logos{
+        width: auto;
+    }
+    .tab-stat-container{
+        width: 350px;
+    }
+    .tab-stats-row{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+    }
+    .tab-stats{
+        padding: 0;
+        background-image: url(../../../assets/platformbackgrndmv.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

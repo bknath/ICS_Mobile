@@ -6,7 +6,6 @@
 }
 
 .contact-content-block {
-    flex: 1;
     padding: 20px;
     max-width: 600px;
 }
@@ -36,9 +35,6 @@
 }
 
 .contact-item {
-    /* display: flex;
-    align-items: flex-start;
-    gap: 15px; */
     width: 48%;
 }
 
@@ -225,4 +221,25 @@ select:focus {
 /* Optional: To remove the spinner on some browsers (like Safari) */
 select::-ms-expand {
     display: none;
+}
+
+@media (max-width: 765px){
+    .contact-form-section{
+        flex-direction: column;
+    }
+    .contact-content-block{
+        padding: 10px 5px;
+    }
+    .contact-details{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-item{
+        width: 46%;
+        gap: 10px;
+    }
+    .form-block{
+        width: auto;
+        margin: 0;
+    }
 }

@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.tabs {
+.tabs2 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -88,4 +88,10 @@
   color: #353A40;
   font-size: 12px;
   font-weight: 600;
+}
+
+@media (max-width: 765px){
+  .latest-writings{
+    display: none;
+  }
 }

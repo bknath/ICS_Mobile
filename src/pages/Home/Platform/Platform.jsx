@@ -121,6 +121,9 @@ const Platform = () => {
     }, []);
 
     const [activeTab, setActiveTab] = useState('Banking');
+    const handleTabClick = (tab) => {
+        setActiveTab(tab);
+    };
     const tabs = ['Banking', 'Retail', 'Technology', 'Ecommerce'];
     const logos = {
         Banking: [
@@ -136,9 +139,27 @@ const Platform = () => {
             assets.shopclueslogo,
             assets.evernotelogo,
             assets.pwclogo
+        ],
+        Retail: [
+            assets.amazonlogo,
+            assets.nykaalogo,
+            assets.safewaylogo,
+            assets.cromalogo
+        ],
+        Technology: [
+            assets.pwclogo,
+            assets.hexawarelogo,
+            assets.wayfairlogo,
+            assets.citibanklogo
+        ],
+        Ecommerce: [
+            assets.safewaylogo,
+            assets.wayfairlogo,
+            assets.citibanklogo,
+            assets.shopclueslogo,
+            assets.evernotelogo,
+            assets.pwclogo
         ]
-
-
     }
     return (
         <div>
@@ -199,7 +220,7 @@ const Platform = () => {
                 </div>
                 <div className="scroll-container">
                     <button className="scroll-btn left" onClick={scrollLeft}>
-                        <span style={{position:'relative', top:'-1px'}}>&#8249;</span>
+                        <span style={{ position: 'relative', top: '-1px' }}>&#8249;</span>
                     </button>
 
                     <div className="scroll-boxes" ref={scrollContainerRef}>
@@ -214,11 +235,11 @@ const Platform = () => {
                         ))}
                     </div>
                     <button className="scroll-btn right" onClick={scrollRight}>
-                        <span style={{position:'relative', left:'1px'}}>&#8250;</span>
+                        <span style={{ position: 'relative', left: '1px' }}>&#8250;</span>
                     </button>
                 </div>
                 <div className="header-content-2">
-                    <p style={{ fontSize: '14px', color: '#777', lineHeight:'24px' }}>By partnering with these leading companies, our API provides a versatile and powerful tool to help you streamline operations, automate processes, and <br />enhance customer engagement across various platforms.</p>
+                    <p style={{ fontSize: '14px', color: '#777', lineHeight: '24px' }}>By partnering with these leading companies, our API provides a versatile and powerful tool to help you streamline operations, automate processes, and <br />enhance customer engagement across various platforms.</p>
                 </div>
                 <div className="header-content">
                     <button className='head-section-b3'>Case Studies</button>
@@ -260,7 +281,7 @@ const Platform = () => {
             </div>
             <div className="platform-section-3">
                 <div className="header-content">
-                    <h2 style={{padding:'3rem 0px'}}>Across the industry, our partners</h2>
+                    <h2 style={{ padding: '3rem 0px' }}>Across the industry, our partners</h2>
                 </div>
                 <div className="tab-container">
                     <div className="tabs">
