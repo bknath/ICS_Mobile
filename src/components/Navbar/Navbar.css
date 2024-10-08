@@ -193,6 +193,10 @@
     display: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /* For mobile */
 @media (max-width: 765px) {
 

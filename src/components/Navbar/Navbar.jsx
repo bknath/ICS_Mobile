@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css';
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
@@ -24,6 +24,13 @@ const Navbar = () => {
     const toggleResourcesDropdown = () => {
         setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
     };
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [isMobileMenuOpen]);
     return (
         <div>
             <nav className="navbar">
