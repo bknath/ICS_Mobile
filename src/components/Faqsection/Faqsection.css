@@ -60,3 +60,13 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.head-section-b6{
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    border: none;
+    background-color: #FDEFF0;
+    border-radius: 15px;
+    color: #000247;
+    font-size: 14px;
+    padding: 10px 20px;
+}

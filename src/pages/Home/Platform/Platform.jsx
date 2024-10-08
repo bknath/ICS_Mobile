@@ -41,8 +41,8 @@ const Platform = () => {
             description: "Connect WhatsApp with WooCommerce to provide real-time customer support, send order updates, and boost sales through personalized interactions."
         },
     ];
-    const cardWidth = 320; // Width of a single card
-    const cardGap = 20; // Gap between cards
+    const cardWidth = 300; // Width of a single card
+    const cardGap = 25; // Gap between cards
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {

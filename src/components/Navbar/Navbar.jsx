@@ -7,6 +7,7 @@ const Navbar = () => {
 
     const handleLinkClick = () => {
         setDropdownOpen(null);
+        setIsMobileMenuOpen(false);
     };
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);

@@ -147,28 +147,25 @@ const Whatsapp = () => {
                 <div className="hero-section-4">
                     <div className="content-whatsappAPI">
                         <p style={{ color: '#b30000' }}>Whatsapp Business API</p>
-                        <h1>Amplify Customer <br />Bonds With <br />Whatsapp</h1>
-                        <p className="whatsappAPI-text">ICS's WhatsApp Business API solution to build stronger <br /> relationships with your audience, streamline your operations, and boost your brand's visibility. </p>
+                        <h1>Amplify Customer Bonds With Whatsapp</h1>
+                        <p className="whatsappAPI-text">ICS's WhatsApp Business API solution to build stronger relationships with your audience, streamline your operations, and boost your brand's visibility. </p>
                         <div className="buttons">
-                            {/* <a href="contact-us" className="contact-us">Contact us</a> */}
                             <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
                     <div className="whatsapprobot" ref={sectionref15}>
-
                         <img
                             src={assets.whatsappAPILogo}
                             alt="chatRobot"
                             className={`image-slide-up ${imageInView15 ? 'visible' : ''}`}
                         />
-
                     </div>
                 </div>
             </div>
             <div className="whatsapp-platform-section">
                 <div className="whatsapp-platform-header">
                     <h2>Why WhatsApp Business API?</h2>
-                    <p>The API, introduced by Facebook in 2018, completely changes how companies engage with WhatsApp users. It offers a seamless platform <br /> for communication and engagement. With it, businesses can:</p>
+                    <p>The API, introduced by Facebook in 2018, completely changes how companies engage with WhatsApp users. It offers a seamless platform for communication and engagement. With it, businesses can:</p>
                 </div>
                 <div className="whatsapp-info-section">
                     <div className="whatsapp-info-details">
@@ -234,10 +231,10 @@ const Whatsapp = () => {
                 </div>
                 <div className="whatsapp-platform-header">
                     <h2>Unparalleled Features Tailored For Success</h2>
-                    <p>Discover carefully developed features that will improve your company's success on WhatsApp. Discover the unique ways each element <br /> has been designed to boost your achievements.</p>
+                    <p>Discover carefully developed features that will improve your company's success on WhatsApp. Discover the unique ways each element has been designed to boost your achievements.</p>
                 </div>
                 <div className="feature-main-container-1234">
-                    {/* Horizontal Navigation Bar */}
+                    
                     <div className="product-nav-1234" ref={navRef}>
                         {sections.map((section) => (
                             <a
@@ -246,15 +243,13 @@ const Whatsapp = () => {
                                 className={activeTab === section.id ? 'active-1234' : ''}
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    handleNavClick(section.id); // Handle smooth scroll when clicking
+                                    handleNavClick(section.id); 
                                 }}
                             >
                                 {section.name}
                             </a>
                         ))}
                     </div>
-
-                    {/* Scrollable Content Section */}
                     <div className="feature-content-container-1234">
                         <section id="location-sharing" className="feature-section-1234">
                             <div className="feature-item-1234">
@@ -365,7 +360,7 @@ const Whatsapp = () => {
                 </div>
                 <div className="scroll-container">
                     <button className="scroll-btn left" onClick={scrollLeft}>
-                        &#8249; {/* Left arrow symbol */}
+                        &#8249; 
                     </button>
 
                     <div className="scroll-boxes" ref={scrollContainerRef}>
@@ -380,7 +375,7 @@ const Whatsapp = () => {
                         ))}
                     </div>
                     <button className="scroll-btn right" onClick={scrollRight}>
-                        &#8250; {/* Right arrow symbol */}
+                        &#8250; 
                     </button>
                 </div>
                 <div className="header-content-2">

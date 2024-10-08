@@ -37,7 +37,7 @@ const Faqsection = () => {
     return (
         <section className="faq">
             <div className="header-content">
-                <button className='head-section-b3'>FAQ</button>
+                <button className='head-section-b6'>FAQ</button>
             </div>
             <div className="faq-accordion">
                 <h2>Frequently asked questions</h2>
