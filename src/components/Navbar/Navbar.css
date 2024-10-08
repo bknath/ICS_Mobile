@@ -244,16 +244,17 @@
 
     /* Show mobile nav */
     .mobile-nav {
-        display: block;
         background-color: #ffffff;
         position: fixed;
         top: 0;
         left: 0;
         width: 300px;
-        height: 100vh;
+        height: 100%;
         z-index: 1000;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .mobile-nav ul {
@@ -301,7 +302,7 @@
         display: block;
         text-align: center;
         position: relative;
-        top: 260px;
+        top: 280px;
     }
 
     .mobile-buttons a {
