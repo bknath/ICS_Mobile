@@ -219,7 +219,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
+        padding: 10px 15px;
         background-color: #fff;
         border-bottom: 1px solid #ddd;
     }
@@ -229,8 +229,11 @@
         font-weight: bold;
     }
 
-    .mobile-header .close-btn {
-        font-size: 24px;
+    .mobile-header{
+        font-size: 24px; 
+    }
+    .close-btn{
+        font-size: 30px;
         cursor: pointer;
         color: red;
     }
@@ -256,32 +259,39 @@
     }
 
     .mobile-nav ul li {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
     .mobile-nav ul li a {
         text-decoration: none;
-        color: #333;
+        color: #000247;
+        font-weight: 500;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
     }
 
     /* Show dropdown for mobile */
     .dropdown {
         display: none;
         padding-left: 20px;
-        background-color: #f1f1f1;
+        background-color: #ffffff;
     }
 
     .dropdown li {
+        display: flex;
+        justify-content: left;
         padding: 10px;
         border-bottom: 1px solid #ddd;
     }
+    
 
     /* Show dropdown when toggled */
     .dropdown.show {
         display: block;
     }
+
     
     .mobile-buttons {
         display: block;

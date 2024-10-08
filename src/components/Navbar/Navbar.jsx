@@ -149,31 +149,31 @@ const Navbar = () => {
                                 <li>
                                     <a href="#" onClick={toggleProductsDropdown}>
                                         Products
-                                        <span className="arrow">
+                                        <span className="arrow2">
                                             <img src={isProductsDropdownOpen ? assets.uparrow : assets.downarrow2} alt="dropdown" />
                                         </span>
                                     </a>
                                     {isProductsDropdownOpen && (
                                         <ul className="dropdown show">
-                                            <li><Link to="/whatsapp" onClick={handleLinkClick}>Whatsapp Business API</Link></li>
-                                            <li><Link to="/chatbot" onClick={handleLinkClick}>Chatbot</Link></li>
-                                            <li><Link to="/customer" onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
-                                            <li><Link to="/smsgateway" onClick={handleLinkClick}>SMS Gateway</Link></li>
-                                            <li><Link to="/rcspage" onClick={handleLinkClick}>Rich Communication</Link></li>
+                                            <li><span><img src={assets.playBtn} alt="wh-icon" style={{paddingRight:"10px", width:'42px'}} /></span><Link to="/whatsapp" style={{fontSize:'14px'}} onClick={handleLinkClick}>Whatsapp Business API</Link></li>
+                                            <li><span><img src={assets.robotextIcon} alt="ch-icon" style={{paddingRight:"10px", width:'42px'}} /></span><Link to="/chatbot" style={{fontSize:'14px'}} onClick={handleLinkClick}>Chatbot</Link></li>
+                                            <li><span><img src={assets.FlagIcon} alt="cep-icon" style={{paddingRight:"10px"}} /></span><Link to="/customer" style={{fontSize:'14px'}} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
+                                            <li><span><img src={assets.innovativetech} alt="sms-icon" style={{paddingRight:"10px"}} /></span><Link to="/smsgateway" style={{fontSize:'14px'}} onClick={handleLinkClick}>SMS Gateway</Link></li>
+                                            <li><span><img src={assets.lastingconnection} alt="rcs-icon" style={{paddingRight:"10px"}} /></span><Link to="/rcspage" style={{fontSize:'14px'}} onClick={handleLinkClick}>Rich Communication</Link></li>
                                         </ul>
                                     )}
                                 </li>
                                 <li>
                                     <a href="#" onClick={toggleResourcesDropdown}>
                                         Resources
-                                        <span className="arrow">
+                                        <span className="arrow2">
                                             <img src={isResourcesDropdownOpen ? assets.uparrow : assets.downarrow2} alt="dropdown" />
                                         </span>
                                     </a>
                                     {isResourcesDropdownOpen && (
                                         <ul className="dropdown show">
-                                            <li><a href="#" onClick={handleLinkClick}>Blogs </a></li>
-                                            <li><a href="#" onClick={handleLinkClick}>Case Study</a></li>
+                                            <li><span><img src={assets.innovativetech} alt="bg-icon" style={{paddingRight:"10px"}} /></span><a href="#" style={{fontSize:'14px'}} onClick={handleLinkClick}>Blogs </a></li>
+                                            <li><span><img src={assets.lastingconnection} alt="cs-icon" style={{paddingRight:"10px"}} /></span><a href="#" style={{fontSize:'14px'}} onClick={handleLinkClick}>Case Study</a></li>
                                         </ul>
                                     )}
                                 </li>
