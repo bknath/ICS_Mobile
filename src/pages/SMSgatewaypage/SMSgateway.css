@@ -405,7 +405,9 @@
 .feature-content-container-1234 {
     scroll-behavior: smooth;
 }
-
+.feature-content-container-1234::-webkit-scrollbar {
+    display: none;
+}
 .feature-section-1234 {
     margin-bottom: 60px;
 }
