@@ -11,8 +11,8 @@ const Communication = () => {
                         <img src={assets.iPhoneimg} alt="iPhone" className='iPhone-image' />
                     </div>
                     <div className="communication-content">
-                        <h2>Powering Communication Across the Globe</h2>
-                        <p>With ICS ChatBots, you're just choosing advanced technology you're selecting a proven partner in global communication excellence.</p>
+                        <h2>Empower Your Global Communication with ICS SMS API</h2>
+                        <p>In addition to cutting-edge technology, working with ICS means joining forces with experts.</p>
                     </div>
                 </div>
             </div>

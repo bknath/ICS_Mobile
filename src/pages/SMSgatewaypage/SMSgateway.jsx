@@ -112,8 +112,8 @@ const SMSgateway = () => {
             description: "Connect WhatsApp with WooCommerce to provide real-time customer support, send order updates, and boost sales through personalized interactions."
         },
     ];
-    const cardWidth = 320; // Width of a single card
-    const cardGap = 20; // Gap between cards
+    const cardWidth = 300; // Width of a single card
+    const cardGap = 25; // Gap between cards
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
@@ -182,7 +182,6 @@ const SMSgateway = () => {
                         <h1>Quick A2P SMS <br /> Solutions for Modern <br /> Communication</h1>
                         <p className="SMSgateway-text">Use ICS SMS Gateway to take your communications strategy to the next level. We are your source for dependable, effective, tailored SMS communication solutions.</p>
                         <div className="buttons">
-                            {/* <a href="contact-us" className="contact-us">Contact us</a> */}
                             <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
@@ -201,7 +200,7 @@ const SMSgateway = () => {
                     <p>Our shared values keep us connected and guide us as one team.</p>
                 </div>
                 <div className="feature-main-container-1234">
-                    {/* Horizontal Navigation Bar */}
+                    
                     <div className="product-nav-1234" ref={navRef}>
                         {sections.map((section) => (
                             <a
@@ -218,7 +217,7 @@ const SMSgateway = () => {
                         ))}
                     </div>
 
-                    {/* Scrollable Content Section */}
+                    
                     <div className="feature-content-container-1234">
                         <section id="dlt-support" className="feature-section-1234">
                             <div className="feature-item-1234">
@@ -306,7 +305,7 @@ const SMSgateway = () => {
                 </div>
                 <div className="SMSgateway-platform-header">
                     <h2 style={{paddingTop:'3rem'}}>Why Opt For ICS SMS Gateway</h2>
-                    <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. <br /> Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
+                    <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
                 </div>
                 <div className="feature9-wrap-container">
                     <div className="feature9-cards-container" ref={sectionref11}>
@@ -317,7 +316,7 @@ const SMSgateway = () => {
                                     <div className="feature9-card-content">
                                         <h3>{features9.title}</h3>
                                         <p>{features9.description}</p>
-                                        {/* <a href={features9.link} className='read-more-2'>{features9.linkText} &gt;</a> */}
+                                        
                                     </div>
                                 </div>
                             ))}
@@ -337,7 +336,7 @@ const SMSgateway = () => {
                 </div>
                 <div className="scroll-container">
                     <button className="scroll-btn left" onClick={scrollLeft}>
-                        &#8249; {/* Left arrow symbol */}
+                        &#8249; 
                     </button>
 
                     <div className="scroll-boxes" ref={scrollContainerRef}>
@@ -352,7 +351,7 @@ const SMSgateway = () => {
                         ))}
                     </div>
                     <button className="scroll-btn right" onClick={scrollRight}>
-                        &#8250; {/* Right arrow symbol */}
+                        &#8250; 
                     </button>
                 </div>
                 <div className="header-content-2">
@@ -362,15 +361,14 @@ const SMSgateway = () => {
                     <div className="SMS-content-block" ref={sectionref12}>
                         <div className="SMS-content-block-col-1">
                             <img
-                                style={{ width: '470px', borderRadius: '10px' }}
                                 src={assets.SMSgatewaylogo3}
                                 alt=""
                                 className={`image-slide-up ${imageInView12 ? 'visible' : ''}`}
                             />
                         </div>
                         <div className="SMS-content-block-col-2">
-                            <h3>Developer-Centric <br /> Messaging APIs</h3>
-                            <p>Our platform offers carrier-grade capabilities such as delivery <br /> receipts and error codes, enhancing deliverability, minimizing <br /> costs, and enabling the creation of superior products.</p>
+                            <h3>Developer-Centric Messaging APIs</h3>
+                            <p>Our platform offers carrier-grade capabilities such as delivery receipts and error codes, enhancing deliverability, minimizing costs, and enabling the creation of superior products.</p>
                         </div>
                     </div>
                 </div>
