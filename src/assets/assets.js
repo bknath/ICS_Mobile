@@ -1,10 +1,6 @@
 import logo from './images.png'
 import chatBubble from './Chat Bubble.svg'
 import mapICS from './mapics.png'
-import instagram from './instagram.png'
-import linkedin from './linkedin.png'
-import twitterx from './twitterx.png'
-import facebook from './facebook.png'
 import downarrow from './down-arrow.png'
 import Robot from './Robot.svg'
 import SMSmobile from './SMS-mobile.png' 
@@ -204,10 +200,6 @@ export const assets = {
     logo,
     chatBubble,
     mapICS,
-    instagram,
-    linkedin,
-    twitterx,
-    facebook,
     downarrow,
     Robot,
     HomepageBannerart,
