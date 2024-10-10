@@ -44,6 +44,7 @@
     padding: 0px 0px 20px 60px;
     font-size: 14px;
     line-height: 24px;
+    width: 840px;
 }
 
 .view-all-faqs {
@@ -69,4 +70,9 @@
     color: #000247;
     font-size: 14px;
     padding: 10px 20px;
+}
+@media(max-width:756px){
+    .faq-answer{
+        width: 325px;
+    }
 }
