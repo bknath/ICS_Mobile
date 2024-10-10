@@ -8,11 +8,11 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-top">
                     <div className="footer-logo">
-                        <img src={assets.logo} alt="ICS Logo" className="logo" />
+                        <img src={assets.logo2} alt="ICS Logo" className="logo" />
                         <p>Helping Step up Businesses a Notch Higher</p>
                     </div>
                     <div className="footer-social">
-                        <a href="#" target="_blank"><img src={assets.TwitterIcon} alt="Twitter Icon"/></a>
+                        <a href="#" target="_blank"><img src={assets.TwitterIcon} alt="Twitter Icon" /></a>
                         <a href="https://www.linkedin.com/company/ics-mobile-pvt-limited/mycompany/" target="_blank"><img src={assets.LinkedlnIcon} alt="LinkedIn Icon" /></a>
                         <a href="https://www.facebook.com/people/ICS-Mobile-Pvt-Ltd/100091170706909/" target="_blank"><img src={assets.FacebookIcon} alt="Facebook Icon" /></a>
                         <a href="https://www.instagram.com/ics_mobile_private_limited/" target="_blank"><img src={assets.InstagramIcon} alt="Instagram Icon" /></a>
@@ -31,7 +31,12 @@ const Footer = () => {
                 </div>
                 <div className="footer-bottom">
                     <div className="footer-line"></div>
-                    <p>Copyright ©2021. ICS Mobile Pvt. Ltd. All Rights Reserved</p>
+                    <div className="footer-ct-img">
+                        <p>Copyright ©2021. ICS Mobile Pvt. Ltd. All Rights Reserved</p>
+                        <div className="ct-img-grp">
+                            <span style={{paddingRight:'10px'}}><img src={assets.ISOCertified1} alt="" /></span><span><img src={assets.ISOCertified2} alt="" /></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

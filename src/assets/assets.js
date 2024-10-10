@@ -1,4 +1,4 @@
-import logo from './images.png'
+import logo from './logo.svg'
 import chatBubble from './Chat Bubble.svg'
 import mapICS from './mapics.png'
 import downarrow from './down-arrow.png'
@@ -142,6 +142,15 @@ import customizedAPIsIcon from './customizedAPIsIcon.svg'
 import MTSlIcon from './MTSlIcon.png'
 import TPsIcon from './TPsIcon.svg'
 import operatorconnectivityIcon from './operatorconnectivityIcon.svg'
+import f7sm1 from './f7sm1.svg'
+import f7sm2 from './f7sm2.svg'
+import f7sm3 from './f7sm3.svg'
+import f7sm4 from './f7sm4.svg'
+import f7sm5 from './f7sm5.svg'
+import f7sm6 from './f7sm6.svg'
+import f7sm7 from './f7sm7.svg'
+import f7sm8 from './f7sm8.svg'
+import f7sm9 from './f7sm9.svg'
 // backgroundgradient
 import BackgroundImage from './backgroundimage.png'
 import Abstract from './Abstract.png'
@@ -151,6 +160,9 @@ import FacebookIcon from './FacebookIcon.svg'
 import InstagramIcon from './InstagramIcon.svg'
 import TwitterIcon from './TwitterIcon.svg'
 import LinkedlnIcon from './LinkedInIcon.svg'
+import logo2 from './logo2.svg'
+import ISOCertified1 from './ISOCertified(9001-2015).svg'
+import ISOCertified2 from './ISOCertified(27001-2022).svg'
 // Navbar
 import CEPNavbarIcon from './CEP-NavbarIcon.png'
 import chatbotNavbarIcon from './ChahbotNavbarIcon.png'
@@ -165,6 +177,12 @@ import contactusimage from './contactusimage.svg'
 import contactuschaticon2 from './contactuschaticon2.svg'
 //RCS
 import Rcsmainlogo from './Rcsmainlogo.svg'
+import f7rcs1 from './f7rcs1.svg'
+import f7rcs2 from './f7rcs2.svg'
+import f7rcs3 from './f7rcs3.svg'
+import f7rcs4 from './f7rcs4.svg'
+import f7rcs5 from './f7rcs5.svg'
+import f7rcs6 from './f7rcs6.svg'
 //About us
 import Aboutuslogo1 from './Aboutuslogo1.svg'
 import Aboutuslogo2 from './Aboutuslogo2.svg'
@@ -342,14 +360,26 @@ export const assets = {
     operatorconnectivityIcon,
     TPsIcon,
     MTSlIcon,
+    f7sm1,
+    f7sm2,
+    f7sm3,
+    f7sm4,
+    f7sm5,
+    f7sm6,
+    f7sm7,
+    f7sm8,
+    f7sm9,
     // backgroundimage
     BackgroundImage,
     Abstract,
     // footer
+    logo2,
     InstagramIcon,
     FacebookIcon,
     TwitterIcon,
     LinkedlnIcon,
+    ISOCertified1,
+    ISOCertified2,
     // Navbar
     CEPNavbarIcon,
     whatsappapiNavbarIcon,
@@ -364,6 +394,12 @@ export const assets = {
     contactuschaticon2,
     //RCS
     Rcsmainlogo,
+    f7rcs1,
+    f7rcs2,
+    f7rcs3,
+    f7rcs4,
+    f7rcs5,
+    f7rcs6,
     //Aboutus
     Aboutuslogo1,
     Aboutuslogo2,

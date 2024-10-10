@@ -199,7 +199,7 @@ const Rcs = () => {
                     <div className="feature-content-container-1234">
                         <section id="rcs-carousels" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src={assets.f7wf1} alt="RCS Carousels" />
+                                <img src={assets.f7rcs1} alt="RCS Carousels" />
                                 <div className="feature-text-1234">
                                     <h2>RCS Carousels</h2>
                                     <p>RCS Carousels transform how the material is shared by providing a visually attractive platform to display rich media. With RCS Carousels, you can enhance the immersion and engagement of any interaction, whether you're presenting product photos, promotional offers, or multimedia material.</p>
@@ -213,12 +213,12 @@ const Rcs = () => {
                                     <h2>RCS Suggested Actions</h2>
                                     <p>With RCS Suggested Actions, you can finally end all that laborious typing. Users can easily react to messages, finish purchases, and engage with your company using these clickable buttons. Now more than ever before, communication is streamlined, simplified, and straightforward with RCS Suggested Actions.</p>
                                 </div>
-                                <img src={assets.f7wf2} alt="RCS Suggested Actions" />
+                                <img src={assets.f7rcs2} alt="RCS Suggested Actions" />
                             </div>
                         </section>
                         <section id="rcs-smart" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src={assets.f7wf3} alt="RCS Smart Replies" />
+                                <img src={assets.f7rcs3} alt="RCS Smart Replies" />
                                 <div className="feature-text-1234">
                                     <h2>RCS Smart Replies</h2>
                                     <p>With RCS Smart Replies, you can make discussions more efficient. The discussion is guided, and users save time with these context-aware suggestions that give pre-populated replies based on the message content. You may expedite the communication process for appointment confirmation, order placement, and question responding by using RCS Smart Replies.</p>
@@ -231,12 +231,12 @@ const Rcs = () => {
                                     <h2 style={{ lineHeight: '30px', paddingBottom: '10px' }}>RCS High-Resolution Images and Videos</h2>
                                     <p>Get a feel for RCS's high-resolution picture and video capabilities. Put an end to grainy movies and distorted photographs with RCS. Your shared media will always seem crystal clear. Whether presenting items to clients or reminiscing with friends, RCS will make your stuff look better.</p>
                                 </div>
-                                <img src={assets.f7wf4} alt="RCS High-Resolution Images and Videos" />
+                                <img src={assets.f7rcs4} alt="RCS High-Resolution Images and Videos" />
                             </div>
                         </section>
                         <section id="rcs-read" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src={assets.f7wf5} alt="RCS Read Receipts" />
+                                <img src={assets.f7rcs5} alt="RCS Read Receipts" />
                                 <div className="feature-text-1234">
                                     <h2>RCS Read Receipts</h2>
                                     <p>Using RCS Read Receipts, you can rest easy. These user-friendly features let users know when their messages have been read and received by the people they meant them to. You may converse with peace of mind when you use RCS Read Receipts. Your communications will be recognized and handled accordingly.</p>
@@ -249,7 +249,7 @@ const Rcs = () => {
                                     <h2>Seamless Integrations</h2>
                                     <p>RCS provides a unified communication experience by integrating your favorite applications and services. Using RCS, being connected and productive is easier than ever before, whether sharing your location, making payments, or organizing appointments.</p>
                                 </div>
-                                <img src={assets.f7wf6} alt="Seamless Integrations" />
+                                <img src={assets.f7rcs6} alt="Seamless Integrations" />
                             </div>
                         </section>
                     </div>

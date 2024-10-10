@@ -221,7 +221,7 @@ const SMSgateway = () => {
                     <div className="feature-content-container-1234">
                         <section id="dlt-support" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src={assets.f7wf1} alt="DLT Support" />
+                                <img src={assets.f7sm1} alt="DLT Support" />
                                 <div className="feature-text-1234">
                                     <h2>DLT Support</h2>
                                     <p>Use ICS to traverse the complicated terrain of DLT compliance easily. Our goal is to provide smooth integration and speedy approvals across the board, from registration processes to SMS templates. We give you the tools you need to concentrate on SMS marketing.</p>
@@ -235,12 +235,12 @@ const SMSgateway = () => {
                                     <h2>Unicode Messages</h2>
                                     <p>We ensure clarity and authenticity with Unicode and regional SMS content visibility. Ensure that all messages delivered from ICS to your clients are verified and authenticated. Improve the credibility of the brand and the efficacy of communication.</p>
                                 </div>
-                                <img src={assets.f7wf2} alt="Unicode Messages" />
+                                <img src={assets.f7sm2} alt="Unicode Messages" />
                             </div>
                         </section>
                         <section id="tat" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src={assets.f7wf3} alt="Swift Turnaround Time (TAT)" />
+                                <img src={assets.f7sm3} alt="Swift Turnaround Time (TAT)" />
                                 <div className="feature-text-1234">
                                     <h2>Swift Turnaround Time (TAT)</h2>
                                     <p>Get the fastest turnaround times in the business for managed campaigns and ticket resolutions with ICS. Our lightning-fast response and execution will meet your CPaaS support and execution needs.</p>
@@ -253,12 +253,12 @@ const SMSgateway = () => {
                                     <h2>Smart Routing</h2>
                                     <p>Our clever routing method will keep you ahead of any outage. Ensure communication continues unabated by smoothly shifting SMS traffic during an operator outage. Have faith in ICS to ensure the uninterrupted flow of your SMS traffic.</p>
                                 </div>
-                                <img src={assets.f7wf4} alt="Smart Routing" />
+                                <img src={assets.f7sm4} alt="Smart Routing" />
                             </div>
                         </section>
                         <section id="custom-apis" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src={assets.f7wf5} alt="Customized Apis" />
+                                <img src={assets.f7sm5} alt="Customized Apis" />
                                 <div className="feature-text-1234">
                                     <h2>Customized APIs</h2>
                                     <p>Take advantage of our extensive library of APIs to integrate effortlessly. Require a tailored answer? Inform us of your data flow requirements, and we will provide you with APIs specifically designed to meet your business objectives.</p>
@@ -271,12 +271,12 @@ const SMSgateway = () => {
                                     <h2>Brand Domain Integration</h2>
                                     <p>Incorporating your brand name into SMS links adds an additional level of authenticity to your SMS communications. Authenticated links provided straight to customers increase brand awareness and credibility.</p>
                                 </div>
-                                <img src={assets.f7wf6} alt="Brand Domain Integration" />
+                                <img src={assets.f7sm6} alt="Brand Domain Integration" />
                             </div>
                         </section>
                         <section id="operator-connectivity" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src={assets.f7wf7} alt="Operator Connectivity" />
+                                <img src={assets.f7sm7} alt="Operator Connectivity" />
                                 <div className="feature-text-1234">
                                     <h2>Operator Connectivity</h2>
                                     <p>Use the ICS SMS Gateway to connect to any of the main operator networks, such as Videocon, TATA, BSNL, Airtel. Get your SMS sent without a hitch by selecting your chosen network path.</p>
@@ -289,12 +289,12 @@ const SMSgateway = () => {
                                     <h2>Multiple Trackable Short Links</h2>
                                     <p>Get more people to click on your links by including many in one message. With trackable short links, we monitor the functioning of several links within a single message. ICS will help you in analyzing click rates and engagement. We optimize everything for the most effective SMS marketing.</p>
                                 </div>
-                                <img src={assets.f7wf8} alt="Multiple Trackable Short Links" />
+                                <img src={assets.f7sm8} alt="Multiple Trackable Short Links" />
                             </div>
                         </section>
                         <section id="tps" className="feature-section-1234">
                             <div className="feature-item-1234">
-                                <img src={assets.f7wf9} alt="High Throughput (TPS)" />
+                                <img src={assets.f7sm9} alt="High Throughput (TPS)" />
                                 <div className="feature-text-1234">
                                     <h2>High Throughput (TPS)</h2>
                                     <p>With ICS, you can easily manage high-volume campaigns since it can achieve up to 20K TPS for SMS channels. Count on us for secure and quick message delivery, whether it's for a holiday campaign or a massive launch.</p>
