@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     padding-top: 1rem;
-    /* padding-bottom: 3rem; */
     color: white;
     position: relative;
     overflow: hidden;
@@ -29,6 +28,7 @@
     line-height: 55px;
     margin-bottom: 20px;
     color: #144494;
+    width: 440px;
 }
 
 .content-CustomerEngagement p {
@@ -38,6 +38,7 @@
     margin-bottom: 5px;
     font-weight: 500;
     color: #144494;
+    width: 440px;
 }
 .CustomerEngagement-text{
     padding-bottom: 2rem;
@@ -80,35 +81,10 @@
 .customer-platform-header p{
     font-size: 14px;
     color: #4A5057;
-    /* font-family: 'DM Sans'; */
     line-height: 24px;
     font-weight: 400;
 }
 
-/* .Rectangle-34625029 {
-    display: flex;
-    position: relative;
-    width: 46.6px;
-    right: -90%;
-    height: 45.8px;
-    margin: 0 19.3px 12px 0;
-    transform: rotate(-284.21deg);
-    opacity: 0.1;
-    border: solid 6px #2369f6;
-}
-.Rectangle-34625030 {
-    display: flex;
-    position: absolute;
-    right: 5%;
-    top: 108%;
-    width: 40.6px;
-    height: 39.8px;
-    flex-grow: 0;
-    margin: 18px 0 0 25.3px;
-    transform: rotate(-284.21deg);
-    opacity: 0.08;
-    border: solid 6px #4883f8;
-} */
 
 /* card-feature */
 
@@ -136,16 +112,13 @@
     align-items: flex-start;
     text-align: left;
     width: 30%;
-    min-width: 250px;
     margin-bottom: 20px;
 }
-
-
 .feature3-icon {
     width: 50px;
     height: 50px;
     margin-right: 20px;
-    flex-shrink: 0; /* Prevent the icon from shrinking */
+    flex-shrink: 0;
 }
 
 .feature3-card-content {
@@ -256,4 +229,58 @@
 .image-column img{
     max-width: 100%;
     height: auto;
+}
+
+@media(max-width:765px){
+    .hero-section-3{
+        flex-direction: column;
+        padding-left: 1.5rem;
+    }
+    .content-CustomerEngagement{
+        width: 100%;
+    }
+    .content-CustomerEngagement h1{
+        width: 340px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .content-CustomerEngagement p{
+        width: 320px;
+    }
+    .Customerrobot{
+        width: 100%;
+    }
+    .Customerrobot img{
+        width: 330px;
+    }
+    .customer-platform-header h2{
+        color: #000247;
+        padding-top: 15px;
+        line-height: 28px;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .customer-platform-header p{
+        width: 320px;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    .feature3-card{
+        width: 100%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .feature4-cards-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .feature4-cards-column{
+        width: 100%;
+    }
+    .image-column-ce{
+        width: 100%;
+    }
+    .image-column-ce img{
+        width: 328px;
+    }
 }
