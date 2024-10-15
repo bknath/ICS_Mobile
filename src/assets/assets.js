@@ -1,4 +1,5 @@
 import logo from './logo.svg'
+import logo3 from './images.png'
 import chatBubble from './Chat Bubble.svg'
 import mapICS from './mapics.png'
 import downarrow from './down-arrow.png'
@@ -215,6 +216,7 @@ import Hiringlogo2 from './Hiringlogo2.svg'
 import Hiringlogo3 from './Hiringlogo3.svg'
 export const assets = {
     //Home
+    logo3,
     logo,
     chatBubble,
     mapICS,
