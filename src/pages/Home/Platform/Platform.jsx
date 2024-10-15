@@ -216,7 +216,7 @@ const Platform = () => {
                 <div className="header-content">
                     <button className='head-section-b3'>Our Integration</button>
                     <h2>Connecting Seamlessly with Leading Platforms</h2>
-                    <p>We are proud to integrate our WhatsApp Business API with top-tier platforms, ensuring seamless <br /> communication and enhanced functionality for your business:</p>
+                    <p>We are proud to integrate our WhatsApp Business API with top-tier platforms, ensuring seamless communication and enhanced functionality for your business:</p>
                 </div>
                 <div className="scroll-container">
                     <button className="scroll-btn left" onClick={scrollLeft}>

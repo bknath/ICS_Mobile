@@ -114,7 +114,6 @@ const Rcs = () => {
                         <h1>Promote Your <br />Business With RCS Messaging</h1>
                         <p style={{ paddingBottom: '2rem' }}>The goal of our team at ICS is to revolutionize human communication. Rich Communication Services (RCS) is a prime example of that level of commitment.</p>
                         <div className="buttons">
-                            {/* <a href="contact-us" className="contact-us">Contact us</a> */}
                             <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
@@ -128,7 +127,7 @@ const Rcs = () => {
             <div className="rcs-platform-section">
                 <div className="rcs-platform-header">
                     <h2>Empowering Conversations With Advanced Features</h2>
-                    <p>A communication revolution has occurred with the advent of Rich Communication Services (RCS), which is more than simply <br /> another messaging platform. Here at ICS, we are thrilled to show you the limitless potential of RCS.</p>
+                    <p>A communication revolution has occurred with the advent of Rich Communication Services (RCS), which is more than simply another messaging platform. Here at ICS, we are thrilled to show you the limitless potential of RCS.</p>
                 </div>
                 <div className="feature11-wrap-container">
                     <div className="feature11-cards-container">
@@ -139,7 +138,6 @@ const Rcs = () => {
                                     <div className="feature11-card-content">
                                         <h3>{features11.title}</h3>
                                         <p>{features11.description}</p>
-                                        {/* <a href={features11.link} className='read-more-2'>{features11.linkText} &gt;</a> */}
                                     </div>
                                 </div>
                             ))}
@@ -152,7 +150,7 @@ const Rcs = () => {
                     </div>
                 </div>
                 <div className="feature11-wrap-container">
-                    <div className="feature11-cards-container">
+                    <div className="feature12-cards-container">
                         <div className="image-column-rcs">
                             <img src={assets.whatsappPlatfroml3}
                                 alt="whatsappAPIlogo2"
@@ -166,7 +164,6 @@ const Rcs = () => {
                                     <div className="feature11-card-content">
                                         <h3>{features12.title}</h3>
                                         <p>{features12.description}</p>
-                                        {/* <a href={features12.link} className='read-more-2'>{features12.linkText} &gt;</a> */}
                                     </div>
                                 </div>
                             ))}
@@ -175,10 +172,9 @@ const Rcs = () => {
                 </div>
                 <div className="rcs-platform-header">
                     <h2>Unparalleled Features Tailored For Success</h2>
-                    <p>Discover carefully developed features that will improve your company's success on WhatsApp. Discover the unique ways each element <br /> has been designed to boost your achievements.</p>
+                    <p>Discover carefully developed features that will improve your company's success on WhatsApp. Discover the unique ways each element has been designed to boost your achievements.</p>
                 </div>
                 <div className="feature-main-container-1234">
-                    {/* Horizontal Navigation Bar */}
                     <div className="product-nav-1234" ref={navRef}>
                         {sections.map((section) => (
                             <a
@@ -187,15 +183,13 @@ const Rcs = () => {
                                 className={activeTab === section.id ? 'active-1234' : ''}
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    handleNavClick(section.id); // Handle smooth scroll when clicking
+                                    handleNavClick(section.id);
                                 }}
                             >
                                 {section.name}
                             </a>
                         ))}
                     </div>
-
-                    {/* Scrollable Content Section */}
                     <div className="feature-content-container-1234">
                         <section id="rcs-carousels" className="feature-section-1234">
                             <div className="feature-item-1234">
