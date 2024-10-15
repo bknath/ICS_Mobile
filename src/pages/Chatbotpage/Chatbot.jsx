@@ -7,31 +7,31 @@ const features = [
     {
         icon: assets.magnetIcon,
         title: 'Real-time Engagement',
-        description: 'Ensure fast, insightful responses to customer queries with our Ch...',
+        description: 'Ensure fast, insightful responses to customer queries with our ChatBots designed for instant, meaningful interactions.',
         link: '#'
     },
     {
         icon: assets.chipIcon,
         title: 'Seamlessly Integrated Solutions',
-        description: 'Connect our ChatBots with popular platforms like WhatsAp...',
+        description: 'Connect our ChatBots with popular platforms like WhatsApp and Google RCS messaging effortlessly through our robust APIs. We offer a WABA catalog to enhance your dynamic customer interaction.',
         link: '#'
     },
     {
         icon: assets.understandingIcon,
         title: 'Enhanced Understanding',
-        description: 'Our adaptive natural language algorithms provide an unrivaled...',
+        description: 'Our adaptive natural language algorithms provide an unrivaled understanding of customer needs and conversations.',
         link: '#'
     },
     {
         icon: assets.smoothIcon,
         title: 'Smooth Transitions',
-        description: 'Our technology allows seamless handovers to human customer s...',
+        description: 'Our technology allows seamless handovers to human customer service agents when necessary, preserving the conversational context.',
         link: '#'
     },
     {
         icon: assets.globalIcon,
         title: 'Global Reach',
-        description: 'Communicate in multiple languages and provide accomm...',
+        description: 'Communicate in multiple languages and provide accommodating and personalized global customer interaction.',
         link: '#'
     }
 ];
@@ -89,7 +89,6 @@ const Chatbot = () => {
                         <h1>Experience Stellar <br />Customer Engagement <br />with ICS Chatbots</h1>
                         <p className='chatbot-text'>Amplify your brand with exceptional customer care and personalized experiences provided by our ICS ChatBots. Leverage technology to deliver efficient and intelligent customer interactions.</p>
                         <div className="buttons">
-                            {/* <a href="/contact-us" className="contact-us">Contact us</a> */}
                             <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
@@ -114,7 +113,6 @@ const Chatbot = () => {
                                 <div className="feature-card-content">
                                     <h3>{feature.title}</h3>
                                     <p>{feature.description}</p>
-                                    <a href={feature.link} className="read-more">Read More &gt;</a>
                                 </div>
                             </div>
                         ))}
@@ -122,7 +120,7 @@ const Chatbot = () => {
                 </div>
                 <div className="chatbot-platform-header" ref={sectionref8}>
                     <h2>Enhancing Digital Interactions with ICS Chatbots</h2>
-                    <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. <br /> Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
+                    <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
                 </div>
                 <div className="feature2-wrap-container">
                     <div className="feature2-cards-container">
@@ -133,7 +131,6 @@ const Chatbot = () => {
                                     <div className="feature2-card-content">
                                         <h3>{features2.title}</h3>
                                         <p>{features2.description}</p>
-                                        <a href={features2.link} className="read-more-2">{features2.linkText} &gt;</a>
                                     </div>
                                 </div>
                             ))}

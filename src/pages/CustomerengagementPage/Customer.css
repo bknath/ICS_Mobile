@@ -104,9 +104,6 @@
 }
 
 .feature3-card {
-    /* background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     padding: 20px;
     display: flex;
     align-items: flex-start;
@@ -234,7 +231,7 @@
 @media(max-width:765px){
     .hero-section-3{
         flex-direction: column;
-        padding-left: 1.5rem;
+        padding-left: 1rem;
     }
     .content-CustomerEngagement{
         width: 100%;
