@@ -125,10 +125,10 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item"><a href="#">Blogs</a></li>
                     <li className="nav-item">
-                        <Link to="/aboutus">About us</Link>
+                        <Link to="/aboutus" onClick={handleLinkClick}>About us</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/contact-us">Contact us</Link>
+                        <Link to="/contact-us" onClick={handleLinkClick}>Contact us</Link>
                     </li>
                 </ul>
                 <div className="nav-buttons">
@@ -184,8 +184,8 @@ const Navbar = () => {
                                         </ul>
                                     )}
                                 </li>
-                                <li><Link to="/aboutus">About Us</Link></li>
-                                <li><Link to="/contact-us">Contact Us</Link></li>
+                                <li><Link to="/aboutus" onClick={handleLinkClick}>About Us</Link></li>
+                                <li><Link to="/contact-us" onClick={handleLinkClick}>Contact Us</Link></li>
                             </ul>
 
                         </div>

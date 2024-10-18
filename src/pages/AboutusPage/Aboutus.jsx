@@ -51,8 +51,8 @@ const Aboutus = () => {
             pic: assets.image5
         }
     ]
-    const cardWidth = 320;
-    const cardGap = 20;
+    const cardWidth = 300;
+    const cardGap = 25;
     const cardWidth2 = 320;
     const cardGap2 = 20;
 
@@ -113,6 +113,14 @@ const Aboutus = () => {
             assets.Award1,
         ]
     }
+    const timelineData = [
+        { year: '2012', description: 'ICS Mobile Pvt Ltd was established by two individuals.' },
+        { year: '2014', description: 'ICS Mobile Pvt Ltd expanded from two founders to a larger team of 20.' },
+        { year: '2017', description: 'ICS Mobile Pvt Ltd continued its growth, accommodating a team of 60 employees.' },
+        { year: '2021-2022', description: 'New services were launched, including WhatsApp and RCS.' },
+        { year: '2023', description: 'ICS Mobile Pvt Ltd was honored with awards for Top Influential Business Leadership and Emerging CPaaS and Messaging Platform.' },
+        { year: '2023', description: 'ICS Mobile Pvt Ltd expanded its presence in Delhi.' }
+    ];
     return (
         <div>
             <div className="aboutus-wrap-content">
@@ -129,7 +137,7 @@ const Aboutus = () => {
                 </div>
             </div>
             <div style={{ backgroundColor: '#fff' }} className="aboutus-wrap-content">
-                <div className="hero-section-8">
+                <div className="hero-section-8-1">
                     <div className="abtus-image">
                         <div className="hero-product-image">
                             <img src={assets.Aboutuslogo2} alt="chatRobot" />
@@ -142,8 +150,8 @@ const Aboutus = () => {
                 </div>
             </div>
             <div className="header-content">
-                <h2 style={{paddingTop:'2rem'}}>The ICS Mobile Team</h2>
-                <p>Meet the enthusiastic and hardworking staff at ICS, where we push ourselves <br /> ahead daily through teamwork and innovative thinking.</p>
+                <h2 style={{ paddingTop: '2rem' }}>The ICS Mobile Team</h2>
+                <p>Meet the enthusiastic and hardworking staff at ICS, where we push ourselves ahead daily through teamwork and innovative thinking.</p>
             </div>
             <div className="scroll-container-2">
                 <button className="scroll-btn left" onClick={scrollLeft}>
@@ -166,7 +174,7 @@ const Aboutus = () => {
                 </button>
             </div>
             <div style={{ backgroundColor: '#FFFAFA' }} className='header-content'>
-                <h2 style={{ marginBottom: '0' }}>Enabling organizations to interact in a secure, <br />efficient, and immediate manner</h2>
+                <h2 style={{ marginBottom: '0' }}>Enabling organizations to interact in a secure, efficient, and immediate manner</h2>
             </div>
             <div className="aboutus-wrap-content">
                 <div className="hero-section-8">
@@ -175,16 +183,16 @@ const Aboutus = () => {
                         <p className='chatbot-text'>ICS is a renowned CPaaS communication partner for businesses. ICS provides seamless integration, A2P SMS Gateways, WhatsApp messaging, RCS, Voice and email solutions, Customer Engagement & Games, user-focused Chatbots, and more. For optimum results, ICS has been speeding up customer experience through the most engaging communication channels with its target audience, believing that communication is the language of leadership. Thanks to our many years of expertise in this field, we are one of India's most renowned firms specializing in improving client experiences through interactive communication channels.</p>
                         <p style={{ paddingBottom: '2rem' }}>The mission of ICS Mobile, an ISO-certified business, is to provide safe and fast messaging services. Covering 70% of the retail market and supporting 350+ esteemed brands, we offer full-scale operational assistance and oversee communication channels for a diverse range of products.</p>
                     </div>
-                    <div className="abtus-image">
+                    <div className="abtus-image-1">
                         <div className="hero-product-image">
-                            <img style={{ paddingLeft: '4rem' }} src={assets.f7wf1} alt="chatRobot" />
+                            <img  src={assets.f7wf1} alt="chatRobot" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div style={{}} className="header-content">
-                <p style={{ paddingTop: '2rem', fontSize: '20px', fontWeight: '500' }}>Life at ICS Mobile</p>
-                <p style={{ width: '1000px', margin: '0 auto', padding: '2rem 0' }}>Here at ICS Mobile, our mission goes beyond just helping businesses. We're committed to enhancing the potential of our most valuable resource: our employees. Team members are encouraged to develop their skills in decision-making, problem-solving, idealizing, and achieving goals. Working together, thinking beyond the box, and treating each other with dignity and respect is what makes ICS more than simply an organization - it's a family. </p>
+            <div className="header-content">
+                <p style={{ paddingTop: '2rem', fontSize: '26px', fontWeight: '700' , color:'#000247'}}>Life at ICS Mobile</p>
+                <p style={{ margin: '0 auto', padding: '2rem 0' }}>Here at ICS Mobile, our mission goes beyond just helping businesses. We're committed to enhancing the potential of our most valuable resource: our employees. Team members are encouraged to develop their skills in decision-making, problem-solving, idealizing, and achieving goals. Working together, thinking beyond the box, and treating each other with dignity and respect is what makes ICS more than simply an organization - it's a family. </p>
             </div>
             <div className="scroll-container-3">
                 <button className="scroll-btn left" onClick={scrollLeftPictures}>
@@ -206,11 +214,31 @@ const Aboutus = () => {
             <div className="header-content-2">
                 <p style={{ fontSize: '14px', color: '#777', lineHeight: '24px', paddingBottom: '3rem' }}>Come be a part of ICS's inclusive and diverse workplace, where everyone has a chance to thrive. Join us today to learn more about the opportunities we have available!</p>
             </div>
-            <div className='our-journey'>
-                <img src={assets.ourJourney} alt="" />
-            </div>
             <div className="header-content">
-                <h2 style={{marginTop:'3rem'}}>Reowned Brand Trust us</h2>
+                <h2>Our Journey</h2>
+            </div>
+            <div className="our-journey">
+                <div className="timeline-container">
+                    <div className="timeline">
+                        {timelineData.map((item, index) => (
+                            <div key={index} className="timeline-item">
+                                <div className={`timeline-content ${index % 2 === 0 ? 'top' : 'bottom'}`}>
+                                    <div className="timeline-year">{item.year}</div>
+                                    <div className="timeline-description">{item.description}</div>
+                                    <div className={`vertical-line ${index % 2 === 0 ? 'down' : 'up'}`}></div>
+                                </div>
+                                <div className="timeline-node-1">
+                                    <div className="timeline-node-2"></div>
+                                </div>
+                            </div>
+                        ))}
+                        <div className="timeline-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="header-content">
+                <h2 style={{ marginTop: '3rem' }}>Reowned Brand Trust us</h2>
                 <p>Fueling countless campaigns, delighting thousands of customers.</p>
             </div>
             <div className="logos-container">

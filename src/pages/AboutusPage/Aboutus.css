@@ -9,7 +9,16 @@
     align-items: center;
     justify-content: center;
     padding-top: 1rem;
-    /* padding-bottom: 3rem; */
+    color: white;
+    position: relative;
+    overflow: hidden;
+    width: 1300px;
+}
+.hero-section-8-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
     color: white;
     position: relative;
     overflow: hidden;
@@ -18,6 +27,9 @@
 
 .abtus-image {
     width: 40%;
+}
+.abtus-image-1 img{
+    padding-left: 4rem;
 }
 
 .content-aboutus {
@@ -66,7 +78,6 @@
 
 .card2 {
     width: 280px;
-    /* Fixed width for each card */
     padding: 15px;
     background: #fff;
     border-radius: 12px;
@@ -87,9 +98,9 @@
     padding-bottom: 1rem;
 }
 
-.card2:hover {
+/* .card2:hover {
     transform: translateY(-10px);
-}
+} */
 
 .card-content-2 h3 {
     align-self: center;
@@ -126,14 +137,6 @@
     -ms-overflow-style: none;
 }
 
-.our-journey {
-    display: flex;
-    justify-content: center;
-    width: 1400px;
-    margin: 0 auto;
-}
-
-
 /* logos partner */
 
 .logos-container {
@@ -150,6 +153,7 @@
     max-height: 60px;
     object-fit: contain;
 }
+
 .awards-container-2 {
     display: flex;
     flex-wrap: wrap;
@@ -162,4 +166,156 @@
 .logo-image-2 {
     margin: 10px;
     object-fit: contain;
+}
+
+.our-journey {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.our-journey h2{
+    text-align: center;
+}
+
+.timeline-container {
+    position: relative;
+    width: 2100px;
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.timeline-item {
+    position: relative;
+    text-align: center;
+    /* flex: 1; */
+    padding-left: 200px;
+}
+
+.timeline-content {
+    position: absolute;
+    width: 290px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.timeline-content.top {
+    bottom: 100px; 
+    transform: translateX(-43%); 
+    padding-bottom: 5px;
+}
+
+
+.timeline-content.bottom {
+    top: 100px;
+    transform: translateX(-43%); 
+}
+
+
+.timeline-node-1 {
+    width: 40px;
+    height: 40px;
+    background-color: #FFE2E5;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.timeline-node-2 {
+    width: 20px;
+    height: 20px;
+    background-color: #B30000;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin: 5px auto;
+    top: 10px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: lightgray;
+    border-top: 2px dotted gray;
+    z-index: 0;
+}
+
+
+.vertical-line {
+    width: 2px;
+    background-color: gray;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.vertical-line.down {
+    height: 60px;
+    top: 100%; 
+}
+
+.vertical-line.up {
+    height: 60px;
+    bottom: 100%; 
+}
+
+.timeline-year {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.timeline-description {
+    margin-top: 10px;
+    color: #4A5057;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.timeline-description:first-of-type {
+    width: 200px;
+}
+
+
+@media(max-width:765px) {
+    .hero-section-8{
+        flex-direction: column-reverse;
+        padding-left: 1rem;
+    }
+    .abtus-image{
+        width: 100%;
+    }
+    .abtus-image img{
+        width: 328px;
+    }
+    .hero-section-8-1{
+        flex-direction: column;
+    }
+    .content-aboutus{
+        width: 100%;
+        text-align: center;
+    }
+    .timeline-container{
+        width: 1600px;
+    }
+    .scroll-boxes2{
+        gap: 25px;
+        padding: 10px 30px;
+    }
+    .abtus-image-1 img{
+        width: 350px;
+    }
 }
