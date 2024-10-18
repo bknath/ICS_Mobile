@@ -138,7 +138,7 @@ const Aboutus = () => {
     };
     const Awards = {
         Awardsimage: [
-            assets.Award1,
+            assets.Award2,
             assets.Award2,
         ]
     }
