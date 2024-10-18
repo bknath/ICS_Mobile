@@ -120,45 +120,47 @@ const Platform = () => {
         };
     }, []);
 
-    const [activeTab, setActiveTab] = useState('Banking');
+    const [activeTab, setActiveTab] = useState('Retail');
     const handleTabClick = (tab) => {
         setActiveTab(tab);
     };
-    const tabs = ['Banking', 'Retail', 'Technology', 'Ecommerce'];
+    const tabs = ['Retail', 'Banking', 'Technology', 'Gaming'];
     const logos = {
         Banking: [
-            assets.amazonlogo,
-            assets.axisbanklogo,
-            assets.nykaalogo,
-            assets.hexawarelogo,
-            assets.cromalogo,
-            assets.shopifylogo,
-            assets.safewaylogo,
-            assets.wayfairlogo,
-            assets.citibanklogo,
-            assets.shopclueslogo,
-            assets.evernotelogo,
-            assets.pwclogo
+            assets.kashti,
+            assets.tatacapital,
+            assets.paynearby,
+            assets.payworld,
+            assets.fatakpay,
+            assets.mpokket
         ],
         Retail: [
-            assets.amazonlogo,
-            assets.nykaalogo,
-            assets.safewaylogo,
-            assets.cromalogo
+            assets.adityabirla,
+            assets.arvind,
+            assets.bestseller,
+            assets.decathlon,
+            assets.healthglow,
+            assets.landmark,
+            assets.marksspencer,
+            assets.benetton,
+            assets.vmart
         ],
         Technology: [
-            assets.pwclogo,
-            assets.hexawarelogo,
-            assets.wayfairlogo,
-            assets.citibanklogo
+            assets.timesinternet,
+            assets.salesforce,
+            assets.clevertap,
+            assets.capillary,
+            assets.moengage,
+            assets.easyrewardz,
+            assets.webengage,
+            assets.solus,
+            assets.resulticks,
+            assets.customercentria,
+            assets.hansacequity
         ],
-        Ecommerce: [
-            assets.safewaylogo,
-            assets.wayfairlogo,
-            assets.citibanklogo,
-            assets.shopclueslogo,
-            assets.evernotelogo,
-            assets.pwclogo
+        Gaming: [
+            assets.mpl,
+            assets.my11circle
         ]
     }
     return (

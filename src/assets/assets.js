@@ -34,6 +34,35 @@ import productvectorart2 from './productvectorart2.svg'
 import SMSproduct2image from './SMSproduct2image.svg'
 import RCSproduct2image from './RCSproduct2image.svg'
 import Whatsappproduct2image from './Whatsappproduct2image.svg'
+//partner logos updated
+import adityabirla from './adityabirla.svg'
+import arvind from './arvind.svg'
+import bestseller from './bestseller.svg'
+import decathlon from './decathlon.svg'
+import healthglow from './health&glow.svg'
+import landmark from './landmark.svg'
+import marksspencer from './m&k.svg'
+import benetton from './uc&benetton.svg'
+import vmart from './vmart.svg'
+import timesinternet from './timesinternet.svg'
+import salesforce from './salesforce.svg'
+import clevertap from './clevertap.svg'
+import capillary from './capillary.svg'
+import moengage from './moengage.svg'
+import easyrewardz from './easyrewardz.svg'
+import webengage from './webengage.svg'
+import solus from './solus.svg'
+import resulticks from './resulticks.svg'
+import customercentria from './customercentria.svg'
+import hansacequity from './hansacequity.svg'
+import mpl from './mpl.svg'
+import my11circle from './my11circle.svg'
+import kashti from './kashti.svg'
+import tatacapital from './tatacapital.svg'
+import paynearby from './paynearby.svg'
+import payworld from './payworld.svg'
+import fatakpay from './fatakpay.svg'
+import mpokket from './mpokket.svg'
 //uodated Home section icon
 import homepageupdatedimage from './homepageupdatedimage.svg'
 import lastingconnection from './stars-02.svg'
@@ -192,11 +221,21 @@ import cto from './cto.png'
 import smsl from './smsl.png'
 import sysl from './sysl.png'
 import techl from './techl.png'
-import image1 from './image-1.svg'
-import image2 from './image-2.svg'
-import image3 from './image-3.svg'
-import image4 from './image-4.svg'
-import image5 from './image-5.svg'
+import image1 from './image1.svg'
+import image2 from './image2.svg'
+import image3 from './image3.svg'
+import image4 from './image4.svg'
+import image5 from './image5.svg'
+import image6 from './image6.svg'
+import image7 from './image7.svg'
+import image8 from './image8.svg'
+import image9 from './image9.svg'
+import image10 from './image10.svg'
+import image11 from './image11.svg'
+import image12 from './image12.svg'
+import image13 from './image13.svg'
+import image14 from './image14.svg'
+import image15 from './image15.svg'
 import ourJourney from './ourjourney.svg'
 import partner1logo from './pt1logo.svg'
 import partner2logo from './pt2logo.svg'
@@ -206,7 +245,8 @@ import partner5logo from './pt5logo.svg'
 import partner6logo from './pt6logo.svg'
 import partner7logo from './pt7logo.svg'
 import partner8logo from './pt8logo.svg'
-import Award1 from './award1.svg'
+import Award1 from './Award1.svg'
+import Award2 from './Award2.svg'
 //careers page
 import careercoverLogo from './careerslogo1.svg'
 import careerLogo2 from './careerlogo2.svg'
@@ -250,6 +290,35 @@ export const assets = {
     writingimg,
     productvectorart,
     productvectorart2,
+    //partners updated logos
+    adityabirla,
+    arvind,
+    bestseller,
+    decathlon,
+    healthglow,
+    landmark,
+    marksspencer,
+    benetton,
+    vmart,
+    timesinternet,
+    salesforce,
+    clevertap,
+    capillary,
+    moengage,
+    easyrewardz,
+    webengage,
+    solus,
+    resulticks,
+    customercentria,
+    hansacequity,
+    mpl,
+    my11circle,
+    kashti,
+    tatacapital,
+    paynearby,
+    payworld,
+    fatakpay,
+    mpokket,
     //updated home page icons
     homepageupdatedimage,
     lastingconnection,
@@ -415,6 +484,16 @@ export const assets = {
     image3,
     image4,
     image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
     ourJourney,
     partner1logo,
     partner2logo,
@@ -425,6 +504,7 @@ export const assets = {
     partner7logo,
     partner8logo,
     Award1,
+    Award2,
     //careerspage
     careercoverLogo,
     careerLogo2,

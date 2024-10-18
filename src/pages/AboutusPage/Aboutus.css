@@ -24,12 +24,22 @@
     overflow: hidden;
     width: 1300px;
 }
+.hero-section-8-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    width: 1300px;
+}
 
 .abtus-image {
     width: 40%;
 }
 .abtus-image-1 img{
-    padding-left: 4rem;
+    padding-left: 2rem;
 }
 
 .content-aboutus {
@@ -48,6 +58,7 @@
     color: #001F47;
     font-size: 14px;
     line-height: 24px;
+    width: 500px;
 }
 
 .scroll-container-2 {
@@ -288,7 +299,11 @@
 .timeline-description:first-of-type {
     width: 200px;
 }
-
+.header-content-at{
+    text-align: center;
+    width: 1100px;
+    margin: 0 auto;
+}
 
 @media(max-width:765px) {
     .hero-section-8{
@@ -304,9 +319,16 @@
     .hero-section-8-1{
         flex-direction: column;
     }
+    .hero-section-8-2{
+        flex-direction: column;
+    }
     .content-aboutus{
         width: 100%;
         text-align: center;
+    }
+    .content-aboutus p{
+        width: 340px;
+        margin: 0 auto;
     }
     .timeline-container{
         width: 1600px;
@@ -316,6 +338,13 @@
         padding: 10px 30px;
     }
     .abtus-image-1 img{
+        padding: 0;
+        width: 350px;
+    }
+    .header-content-at{
+        width: 350px;
+    }
+    .header-content h2{
         width: 350px;
     }
 }

@@ -49,7 +49,38 @@ const Aboutus = () => {
         },
         {
             pic: assets.image5
-        }
+        },
+        {
+            pic: assets.image6
+        },
+        {
+            pic: assets.image7
+        },
+        {
+            pic: assets.image8
+        },
+        {
+            pic: assets.image9
+        },
+        {
+            pic: assets.image10
+        },
+        {
+            pic: assets.image11
+        },
+        {
+            pic: assets.image12
+        },
+        {
+            pic: assets.image13
+        },
+        {
+            pic: assets.image14
+        },
+        {
+            pic: assets.image15
+        },
+
     ]
     const cardWidth = 300;
     const cardGap = 25;
@@ -108,9 +139,7 @@ const Aboutus = () => {
     const Awards = {
         Awardsimage: [
             assets.Award1,
-            assets.Award1,
-            assets.Award1,
-            assets.Award1,
+            assets.Award2,
         ]
     }
     const timelineData = [
@@ -177,7 +206,7 @@ const Aboutus = () => {
                 <h2 style={{ marginBottom: '0' }}>Enabling organizations to interact in a secure, efficient, and immediate manner</h2>
             </div>
             <div className="aboutus-wrap-content">
-                <div className="hero-section-8">
+                <div className="hero-section-8-2">
                     <div className="content-aboutus">
                         <p style={{ fontSize: '24px', paddingBottom: '10px', fontWeight: '500' }}>Who Are We</p>
                         <p className='chatbot-text'>ICS is a renowned CPaaS communication partner for businesses. ICS provides seamless integration, A2P SMS Gateways, WhatsApp messaging, RCS, Voice and email solutions, Customer Engagement & Games, user-focused Chatbots, and more. For optimum results, ICS has been speeding up customer experience through the most engaging communication channels with its target audience, believing that communication is the language of leadership. Thanks to our many years of expertise in this field, we are one of India's most renowned firms specializing in improving client experiences through interactive communication channels.</p>
@@ -190,9 +219,9 @@ const Aboutus = () => {
                     </div>
                 </div>
             </div>
-            <div className="header-content">
+            <div className="header-content-at">
                 <p style={{ paddingTop: '2rem', fontSize: '26px', fontWeight: '700' , color:'#000247'}}>Life at ICS Mobile</p>
-                <p style={{ margin: '0 auto', padding: '2rem 0' }}>Here at ICS Mobile, our mission goes beyond just helping businesses. We're committed to enhancing the potential of our most valuable resource: our employees. Team members are encouraged to develop their skills in decision-making, problem-solving, idealizing, and achieving goals. Working together, thinking beyond the box, and treating each other with dignity and respect is what makes ICS more than simply an organization - it's a family. </p>
+                <p style={{ padding: '2rem 0' }}>Here at ICS Mobile, our mission goes beyond just helping businesses. We're committed to enhancing the potential of our most valuable resource: our employees. Team members are encouraged to develop their skills in decision-making, problem-solving, idealizing, and achieving goals. Working together, thinking beyond the box, and treating each other with dignity and respect is what makes ICS more than simply an organization - it's a family. </p>
             </div>
             <div className="scroll-container-3">
                 <button className="scroll-btn left" onClick={scrollLeftPictures}>
@@ -248,7 +277,7 @@ const Aboutus = () => {
             </div>
             <div className="header-content">
                 <h2>Awards</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius <br /> vulputate neque. Morbi id tempor quam</p>
+                <p>We’re honored to be recognized for our commitment to excellence. These awards reflect our dedication to innovation, quality, and outstanding service.</p>
             </div>
             <div className="awards-container-2">
                 {Awards.Awardsimage.map((logo, index) => (
