@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Carrer.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
+import JobApplicationModel from '../../components/JobApplicationModel/JobApplicationModel'
 const features13 = [
     {
         icon: assets.globalaudienceIcon,
@@ -35,24 +36,70 @@ const features14 = [
     }
 ]
 const jobsData = [
-    { id: 1, title: 'UI/UX Designer', description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.', date: '2024-09-22' },
-    { id: 2, title: 'System Manager', description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.', date: '2024-09-20' },
-    { id: 3, title: 'Frontend Engineer', description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.', date: '2024-09-21' },
-    { id: 4, title: 'Backend Engineer', description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.', date: '2024-09-19' },
-    { id: 5, title: 'Email Marketing', description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.', date: '2024-09-18' },
-    { id: 6, title: 'SMS Lead', description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.', date: '2024-09-17' },
+    {
+        id: 1,
+        title: 'UI/UX Designer',
+        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        date: '2024-09-22',
+        requirements: "This is the requirements"
+    },
+    {
+        id: 2,
+        title: 'System Manager',
+        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        date: '2024-09-20',
+        requirements: "This is the requirements"
+    },
+    {
+        id: 3,
+        title: 'Frontend Engineer',
+        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        date: '2024-09-21',
+        requirements: "This is the requirements"
+    },
+    {
+        id: 4,
+        title: 'Backend Engineer',
+        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        date: '2024-09-19',
+        requirements: "This is the requirements"
+    },
+    {
+        id: 5,
+        title: 'Email Marketing',
+        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        date: '2024-09-18',
+        requirements: "This is the requirements"
+    },
+    {
+        id: 6,
+        title: 'SMS Lead',
+        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        date: '2024-09-17',
+        requirements: "This is the requirements"
+    },
 ];
 const Carrer = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     const [filter, setFilter] = useState('newest');
+    const [selectedJob, setSelectedJob] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const sortJobs = (jobs, filter) => {
         return jobs.sort((a, b) => {
             return filter === 'newest'
                 ? new Date(b.date) - new Date(a.date)
                 : new Date(a.date) - new Date(b.date);
         });
+    };
+    const openModal = (job) => {
+        setSelectedJob(job);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
     };
     return (
         <div>
@@ -77,7 +124,7 @@ const Carrer = () => {
             <div className="hero-section-10">
                 <div className="featured-jobs-container">
                     <div className="header-filter-row">
-                        <h2><span style={{color:'#144494'}}>Featured </span><span style={{color:'#B30000'}}>Jobs</span></h2>
+                        <h2><span style={{ color: '#144494' }}>Featured </span><span style={{ color: '#B30000' }}>Jobs</span></h2>
                         <div className="filter-dropdown">
                             <label htmlFor="filter">Filter by: </label>
                             <select
@@ -96,7 +143,7 @@ const Carrer = () => {
                             <div key={job.id} className="job-card">
                                 <h3>{job.title}</h3>
                                 <p>{job.description}</p>
-                                <a href="#">More Details &rarr;</a>
+                                <button onClick={() => openModal(job)}>More Details &rarr;</button>
                             </div>
                         ))}
                     </div>
@@ -176,6 +223,7 @@ const Carrer = () => {
                     </div>
                 </div>
             </div>
+            {isModalOpen && <JobApplicationModel job={selectedJob} onClose={closeModal} />}
         </div>
     )
 }
