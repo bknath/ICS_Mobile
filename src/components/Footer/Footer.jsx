@@ -24,9 +24,9 @@ const Footer = () => {
                         <li><a href="#">Products</a></li>
                         <li><Link to="/contact-us">Contact Us</Link></li>
                         <li><Link to="/career">Careers</Link></li>
-                        <li><a href="#">CSR Policy</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">T&C</a></li>
+                        <li><Link to="/csrpolicy">Csr Policy</Link></li>
+                        <li><Link to="/Privacy"> Policy</Link></li>
+                        <li><Link to="/TermsCondition">T&C</Link></li>
                     </ul>
                 </div>
                 <div className="footer-bottom">
