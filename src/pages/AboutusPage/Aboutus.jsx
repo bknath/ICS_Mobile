@@ -138,7 +138,7 @@ const Aboutus = () => {
     };
     const Awards = {
         Awardsimage: [
-            assets.Award2,
+            assets.Awardics1,
             assets.Award2,
         ]
     }
@@ -275,7 +275,7 @@ const Aboutus = () => {
                     <img key={index} src={logo} alt={`partnerlogos logo ${index + 1}`} className="logo-image" />
                 ))}
             </div>
-            <div className="header-content">
+            <div className="header-content-aw">
                 <h2>Awards</h2>
                 <p>We’re honored to be recognized for our commitment to excellence. These awards reflect our dedication to innovation, quality, and outstanding service.</p>
             </div>

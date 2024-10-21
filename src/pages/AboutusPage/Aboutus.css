@@ -14,6 +14,7 @@
     overflow: hidden;
     width: 1300px;
 }
+
 .hero-section-8-1 {
     display: flex;
     align-items: center;
@@ -24,6 +25,7 @@
     overflow: hidden;
     width: 1300px;
 }
+
 .hero-section-8-2 {
     display: flex;
     align-items: center;
@@ -38,7 +40,8 @@
 .abtus-image {
     width: 40%;
 }
-.abtus-image-1 img{
+
+.abtus-image-1 img {
     padding-left: 2rem;
 }
 
@@ -185,7 +188,8 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
-.our-journey h2{
+
+.our-journey h2 {
     text-align: center;
 }
 
@@ -195,7 +199,7 @@
     padding: 200px 0;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .timeline {
@@ -214,7 +218,7 @@
 
 .timeline-content {
     position: absolute;
-    width: 290px; 
+    width: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,15 +226,15 @@
 
 
 .timeline-content.top {
-    bottom: 100px; 
-    transform: translateX(-43%); 
+    bottom: 100px;
+    transform: translateX(-43%);
     padding-bottom: 5px;
 }
 
 
 .timeline-content.bottom {
     top: 100px;
-    transform: translateX(-43%); 
+    transform: translateX(-43%);
 }
 
 
@@ -243,6 +247,7 @@
     z-index: 1;
     margin: 0 auto;
 }
+
 .timeline-node-2 {
     width: 20px;
     height: 20px;
@@ -270,18 +275,18 @@
     width: 2px;
     background-color: gray;
     position: absolute;
-    left: 50%; 
+    left: 50%;
     transform: translateX(-50%);
 }
 
 .vertical-line.down {
     height: 60px;
-    top: 100%; 
+    top: 100%;
 }
 
 .vertical-line.up {
     height: 60px;
-    bottom: 100%; 
+    bottom: 100%;
 }
 
 .timeline-year {
@@ -299,52 +304,85 @@
 .timeline-description:first-of-type {
     width: 200px;
 }
-.header-content-at{
+
+.header-content-at {
     text-align: center;
     width: 1100px;
     margin: 0 auto;
 }
+.header-content-at p{
+    color: #4A5057;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header-content-aw {
+    text-align: center;
+    width: 1100px;
+    margin: 0 auto;
+}
+.header-content-aw p{
+    color: #4A5057;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
 
 @media(max-width:765px) {
-    .hero-section-8{
+    .hero-section-8 {
         flex-direction: column-reverse;
         padding-left: 1rem;
     }
-    .abtus-image{
+
+    .abtus-image {
         width: 100%;
     }
-    .abtus-image img{
+
+    .abtus-image img {
         width: 328px;
     }
-    .hero-section-8-1{
+
+    .hero-section-8-1 {
         flex-direction: column;
     }
-    .hero-section-8-2{
+
+    .hero-section-8-2 {
         flex-direction: column;
     }
-    .content-aboutus{
+
+    .content-aboutus {
         width: 100%;
         text-align: center;
     }
-    .content-aboutus p{
+
+    .content-aboutus p {
         width: 340px;
         margin: 0 auto;
     }
-    .timeline-container{
+
+    .timeline-container {
         width: 1600px;
     }
-    .scroll-boxes2{
+
+    .scroll-boxes2 {
         gap: 25px;
         padding: 10px 30px;
     }
-    .abtus-image-1 img{
+
+    .abtus-image-1 img {
         padding: 0;
         width: 350px;
     }
-    .header-content-at{
+
+    .header-content-at {
         width: 350px;
     }
-    .header-content h2{
+
+    .header-content h2 {
         width: 350px;
+    }
+    .header-content-aw p, .header-content-aw h2{
+        width: 340px;
     }
 }
