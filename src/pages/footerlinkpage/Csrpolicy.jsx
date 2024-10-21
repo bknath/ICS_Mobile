@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './footerlinkpage.css';
 
 function Csrpolicy() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='Csrpolicy-section'>
             <h2 className='Csrpolicy-header'>ICS MOBILES PRIVATE LIMITED CORPORATE SOCIAL RESPONSIBILITY (CSR) Policy</h2>
