@@ -110,7 +110,7 @@ const Navbar = () => {
                             <div className="dropdown-content-pr">
                                 <img src={assets.innovativetech} alt="" />
                                 <div className="content-text-pr">
-                                    <a href="#" onClick={handleLinkClick}>Blogs </a>
+                                    <Link to="/career">Careers</Link>
                                     <p>The latest industry news, updates and info.</p>
                                 </div>
                             </div>
