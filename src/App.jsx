@@ -17,6 +17,7 @@ import Rcstestpage from './pages/Rcstestpage'
 import Product2 from './pages/Home/Product/Product2'
 import AboutusPage from './pages/AboutusPage'
 import CareerPage from './pages/CareerPage'
+import Bloglandingpage from './pages/BlogsPage/Bloglandingpage'
 const App = () => {
   return (
     <div>
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/rcspage' element={<Rcstestpage />} />
         <Route path='/aboutus' element={<AboutusPage />} />
         <Route path='/career' element={<CareerPage />} />
+        <Route path='/blogpage' element={<Bloglandingpage/>}/>
       </Routes>
       <Routes>
         <Route path='/' element={<Hero />} />
