@@ -16,14 +16,14 @@
 .Csrpolicy-para{
     margin-top: 1.5rem;
     text-align: justify;
-    color:#7a7a7a;
+    
     font-weight:800px;
     
     
 }
 .para{
     text-align: justify;
-    color:#7a7a7a;
+   
     font-weight:800px;
 }
 
@@ -31,14 +31,14 @@
     list-style-position: outside;
     padding-left: 40px;
     text-align: justify;
-    color:#7a7a7a;
+   
     font-weight:800px;
 }
 ol{
     list-style-position: outside;
     padding-left: 40px;
     text-align: justify;
-    color:#7a7a7a;
+    
     font-weight:800px;
    
 }
@@ -58,6 +58,11 @@ ol{
     max-width: 1100px;
     margin: auto;  
 }
+.Privacy-subheder
+{
+    margin-top: 1.5rem;
+    
+}
 .Privacy-para{
     margin-top: 1.5rem;
     text-align: justify;
@@ -69,6 +74,9 @@ ol{
         font-size: 16px;
     }
     .Terms-heade{
+        font-size: 16px;
+    }
+    .Privacy-header{
         font-size: 16px;
     }
 }
