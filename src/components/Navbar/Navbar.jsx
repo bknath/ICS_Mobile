@@ -123,7 +123,9 @@ const Navbar = () => {
                             </div>
                         </div>
                     </li>
-                    <li className="nav-item"><a href="#">Blogs</a></li>
+                    <li className="nav-item">
+                        <Link to="/blogpage" onClick={handleLinkClick}>Blogs</Link>
+                    </li>
                     <li className="nav-item">
                         <Link to="/aboutus" onClick={handleLinkClick}>About us</Link>
                     </li>
@@ -162,11 +164,11 @@ const Navbar = () => {
                                     </a>
                                     {isProductsDropdownOpen && (
                                         <ul className="dropdown show">
-                                            <li><span><img src={assets.playBtn} alt="wh-icon" style={{paddingRight:"10px", width:'42px'}} /></span><Link to="/whatsapp" style={{fontSize:'14px'}} onClick={handleLinkClick}>Whatsapp Business API</Link></li>
-                                            <li><span><img src={assets.robotextIcon} alt="ch-icon" style={{paddingRight:"10px", width:'42px'}} /></span><Link to="/chatbot" style={{fontSize:'14px'}} onClick={handleLinkClick}>Chatbot</Link></li>
-                                            <li><span><img src={assets.FlagIcon} alt="cep-icon" style={{paddingRight:"10px"}} /></span><Link to="/customer" style={{fontSize:'14px'}} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
-                                            <li><span><img src={assets.innovativetech} alt="sms-icon" style={{paddingRight:"10px"}} /></span><Link to="/smsgateway" style={{fontSize:'14px'}} onClick={handleLinkClick}>SMS Gateway</Link></li>
-                                            <li><span><img src={assets.lastingconnection} alt="rcs-icon" style={{paddingRight:"10px"}} /></span><Link to="/rcspage" style={{fontSize:'14px'}} onClick={handleLinkClick}>Rich Communication</Link></li>
+                                            <li><span><img src={assets.playBtn} alt="wh-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/whatsapp" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Whatsapp Business API</Link></li>
+                                            <li><span><img src={assets.robotextIcon} alt="ch-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/chatbot" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Chatbot</Link></li>
+                                            <li><span><img src={assets.FlagIcon} alt="cep-icon" style={{ paddingRight: "10px" }} /></span><Link to="/customer" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
+                                            <li><span><img src={assets.innovativetech} alt="sms-icon" style={{ paddingRight: "10px" }} /></span><Link to="/smsgateway" style={{ fontSize: '14px' }} onClick={handleLinkClick}>SMS Gateway</Link></li>
+                                            <li><span><img src={assets.lastingconnection} alt="rcs-icon" style={{ paddingRight: "10px" }} /></span><Link to="/rcspage" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Rich Communication</Link></li>
                                         </ul>
                                     )}
                                 </li>
@@ -179,8 +181,8 @@ const Navbar = () => {
                                     </a>
                                     {isResourcesDropdownOpen && (
                                         <ul className="dropdown show">
-                                            <li><span><img src={assets.innovativetech} alt="bg-icon" style={{paddingRight:"10px"}} /></span><a href="#" style={{fontSize:'14px'}} onClick={handleLinkClick}>Blogs </a></li>
-                                            <li><span><img src={assets.lastingconnection} alt="cs-icon" style={{paddingRight:"10px"}} /></span><a href="#" style={{fontSize:'14px'}} onClick={handleLinkClick}>Case Study</a></li>
+                                            <li><span><img src={assets.innovativetech} alt="bg-icon" style={{ paddingRight: "10px" }} /></span><a href="#" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Blogs </a></li>
+                                            <li><span><img src={assets.lastingconnection} alt="cs-icon" style={{ paddingRight: "10px" }} /></span><a href="#" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Case Study</a></li>
                                         </ul>
                                     )}
                                 </li>
