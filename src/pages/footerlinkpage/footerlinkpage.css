@@ -1,0 +1,74 @@
+
+.Csrpolicy-section
+{
+    padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+/* .Csrpolicy-header{
+    margin-bottom: 1rem;
+} */
+
+.Csrpolicy-subheader{
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+.Csrpolicy-para{
+    margin-top: 1.5rem;
+    text-align: justify;
+    color:#7a7a7a;
+    font-weight:800px;
+    
+    
+}
+.para{
+    text-align: justify;
+    color:#7a7a7a;
+    font-weight:800px;
+}
+
+ ul{
+    list-style-position: outside;
+    padding-left: 40px;
+    text-align: justify;
+    color:#7a7a7a;
+    font-weight:800px;
+}
+ol{
+    list-style-position: outside;
+    padding-left: 40px;
+    text-align: justify;
+    color:#7a7a7a;
+    font-weight:800px;
+   
+}
+.Termscondtion-section{
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.terms-para{
+    margin-top: 1.5rem;
+    text-align: justify;
+    font-weight:800px;
+}
+
+.Privacy-section{
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;  
+}
+.Privacy-para{
+    margin-top: 1.5rem;
+    text-align: justify;
+    font-weight:800px;
+}
+@media (max-width: 765px) {
+    
+    .Csrpolicy-header{
+        font-size: 16px;
+    }
+    .Terms-heade{
+        font-size: 16px;
+    }
+}
