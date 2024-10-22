@@ -22,6 +22,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  width: 950px;
+  margin: 0 auto;
 }
 
 .tab {
@@ -88,8 +90,19 @@
   font-weight: 600;
 }
 
+
 @media (max-width: 765px){
-  .latest-writings{
-    display: none;
+  .articles{
+    flex-direction: column;
+  }
+  .tabs2{
+    display: flex;               
+    overflow-x: auto;            
+    justify-content: flex-start; 
+    scroll-behavior: smooth;     
+    scrollbar-width: none;       
+    -ms-overflow-style: none;    
+    width: 100%;                 
+    white-space: nowrap;
   }
 }
