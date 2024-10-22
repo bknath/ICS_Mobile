@@ -38,46 +38,25 @@ const features14 = [
 const jobsData = [
     {
         id: 1,
-        title: 'UI/UX Designer',
-        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        title: 'Account Manager',
+        description: 'Seeking an experienced Account Manager to drive client success, build relationships, identify growth opportunities, and collaborate with teams. Proven track record and customer-centric mindset required.',
         date: '2024-09-22',
-        requirements: "This is the requirements"
+        requirements: "<p>This is the requirements</p> <ul><li>Bachelor’s degree in Business, Marketing, or a related field.<li><ul>"
     },
     {
         id: 2,
-        title: 'System Manager',
-        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        title: 'Sales Executive',
+        description: 'Seeking a results-driven Sales Executive to develop strategies, pursue new business, and build client relationships. Strong sales background and negotiation skills required.',
         date: '2024-09-20',
-        requirements: "This is the requirements"
+        requirements: "<p>This is the requirements</p> <ul><li>Bachelor’s degree in Business, Marketing, or a related field.<li><ul>"
     },
     {
         id: 3,
-        title: 'Frontend Engineer',
-        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
+        title: 'DevOps Engineer',
+        description: 'Seeking a DevOps Engineer to streamline development, improve deployment pipelines, ensure service reliability, and collaborate with teams to optimize infrastructure and enhance performance.',
         date: '2024-09-21',
-        requirements: "This is the requirements"
-    },
-    {
-        id: 4,
-        title: 'Backend Engineer',
-        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
-        date: '2024-09-19',
-        requirements: "This is the requirements"
-    },
-    {
-        id: 5,
-        title: 'Email Marketing',
-        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
-        date: '2024-09-18',
-        requirements: "This is the requirements"
-    },
-    {
-        id: 6,
-        title: 'SMS Lead',
-        description: 'Join our team as an Email Marketing Specialist and lead our digital outreach efforts.',
-        date: '2024-09-17',
-        requirements: "This is the requirements"
-    },
+        requirements: "<p>This is the requirements</p> <ul><li>Bachelor’s degree in Business, Marketing, or a related field.<li><ul>"
+    }
 ];
 const Carrer = () => {
     useEffect(() => {
