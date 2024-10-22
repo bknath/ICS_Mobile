@@ -92,9 +92,7 @@
 
 
 @media (max-width: 765px){
-  .articles{
-    flex-direction: column;
-  }
+
   .tabs2{
     display: flex;               
     overflow-x: auto;            
