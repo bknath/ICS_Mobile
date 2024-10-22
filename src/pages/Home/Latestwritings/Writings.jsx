@@ -25,7 +25,7 @@ const Writings = () => {
                         <div className="article">
                             <img src={assets.writingimg} alt="SMS gateways 3" />
                             <h3>SMS Gateways vs. Email: Which to Choose?</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                             <div className="meta">20 April, 2021 | 6 Min Read</div>
                         </div>
                     </div>
@@ -82,21 +82,24 @@ const Writings = () => {
                     <div className="articles">
                         <div className="article">
                             <img src={assets.writingimg} alt="WhatsApp APIs 1" />
+                            <div className='textpart'>
                             <h3>Getting Started with WhatsApp APIs for Business</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">10 August, 2021 | 5 Min Read</div>
+                            <p className='apara'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            <div className="meta">10 August, 2021 | 5 Min Read</div></div>
                         </div>
                         <div className="article">
                             <img src={assets.writingimg} alt="WhatsApp APIs 2" />
+                            <div className='textpart'>
                             <h3>Best Practices for Using WhatsApp APIs</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">12 August, 2021 | 6 Min Read</div>
+                            <div className="meta">12 August, 2021 | 6 Min Read</div></div>
                         </div>
                         <div className="article">
                             <img src={assets.writingimg} alt="WhatsApp APIs 3" />
+                            <div className='textpart'>
                             <h3>Scaling Customer Support with WhatsApp APIs</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">15 August, 2021 | 7 Min Read</div>
+                            <div className="meta">15 August, 2021 | 7 Min Read</div></div>
                         </div>
                     </div>
                 );

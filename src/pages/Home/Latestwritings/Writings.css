@@ -89,7 +89,38 @@
 }
 
 @media (max-width: 765px){
-  .latest-writings{
-    display: none;
+  /* .latest-writings{
+  display: none;
+  } */
+  
+  .articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
   }
+  .article{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row; 
+    padding: 0px;
+    width: 100%;
+    gap:20px;
+    height:200px
+  }
+  .article img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    align-items: center;
+    
+  }
+  
+  .article h3 {
+    font-size: 10px;
+   line-height: 0;
+   padding: 10px;
+  }
+
+  
 }
