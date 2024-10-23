@@ -41,21 +41,21 @@ const jobsData = [
         title: 'Account Manager',
         description: 'Seeking an experienced Account Manager to drive client success, build relationships, identify growth opportunities, and collaborate with teams. Proven track record and customer-centric mindset required.',
         date: '2024-09-22',
-        requirements: "<p>This is the requirements</p> <ul><li>Bachelor’s degree in Business, Marketing, or a related field.<li><ul>"
+        requirements: "<p><strong>Account Manager Requirements:</strong></p> <ul><li>Bachelor’s degree in Business, Marketing, or a related field.</li><li>3–5 years of experience in account management or client relations.</li><li>Proven track record of managing multiple client accounts successfully.</li><li>Exceptional communication and interpersonal skills.</li><li>Strong problem-solving abilities and a customer-centric mindset.</li><ul>"
     },
     {
         id: 2,
         title: 'Sales Executive',
-        description: 'Seeking a results-driven Sales Executive to develop strategies, pursue new business, and build client relationships. Strong sales background and negotiation skills required.',
+        description: 'Seeking a dynamic Sales Executive to create strategies, pursue new business opportunities, and build client relationships. Strong sales experience, excellent communication are essential for success in this role.',
         date: '2024-09-20',
-        requirements: "<p>This is the requirements</p> <ul><li>Bachelor’s degree in Business, Marketing, or a related field.<li><ul>"
+        requirements: "<p><strong>Sales Executive Requirements:</strong></p><ul><li>Bachelor’s degree in Business, Sales, or a related field.</li><li>2–4 years of experience in sales or business development, preferably in a service-oriented industry.</li><li>Demonstrated success in meeting or exceeding sales targets.</li><li>Excellent negotiation, presentation, and closing skills.</li><li>Strong understanding of sales strategies and market trends.</li><li>Ability to build and maintain relationships with potential clients.</li><li>Self-motivated with a results-driven approach.</li><ul>"
     },
     {
         id: 3,
         title: 'DevOps Engineer',
         description: 'Seeking a DevOps Engineer to streamline development, improve deployment pipelines, ensure service reliability, and collaborate with teams to optimize infrastructure and enhance performance.',
         date: '2024-09-21',
-        requirements: "<p>This is the requirements</p> <ul><li>Bachelor’s degree in Business, Marketing, or a related field.<li><ul>"
+        requirements: "<p><strong>DevOps Engineer Requirements:</strong></p><ul><li>Bachelor’s degree in Computer Science, Engineering, or a related field.</li><li>3–5 years of experience in a DevOps role or related positions.</li><li>Strong knowledge of CI/CD pipelines and automation tools (e.g., Jenkins, GitLab CI).</li><li>Experience with cloud services (e.g., AWS, Azure, GCP) and containerization (e.g., Docker, Kubernetes).</li><li>Proficiency in scripting languages (e.g., Python, Bash) and configuration management tools (e.g., Ansible, Chef).</li><li>Solid understanding of system architecture, network security, and infrastructure management.</li><li>Excellent collaboration and communication skills, with a focus on teamwork.</li><ul>"
     }
 ];
 const Carrer = () => {
@@ -88,7 +88,6 @@ const Carrer = () => {
                         <h1>Where Innovation Meets A2P Communication Excellence</h1>
                         <p>Here at ICS, we think the best way to solve problems is to take them head-on and develop innovative ideas that change the game</p>
                         <div className="buttons">
-                            {/* <a href="contact-us" className="contact-us">Contact us</a> */}
                             <Link to="/contact-us" className='contact-us'>Contact us</Link>
                         </div>
                     </div>
@@ -122,7 +121,7 @@ const Carrer = () => {
                             <div key={job.id} className="job-card">
                                 <h3>{job.title}</h3>
                                 <p>{job.description}</p>
-                                <button onClick={() => openModal(job)}>More Details &rarr;</button>
+                                <button onClick={() => openModal(job)}>More Details <span><img src={assets.arrowUpRight} alt="" /></span></button>
                             </div>
                         ))}
                     </div>
@@ -150,7 +149,7 @@ const Carrer = () => {
                                     <div className="feature11-card-content">
                                         <h3>{features14.title}</h3>
                                         <p>{features14.description}</p>
-                                        {/* <a href={features14.link} className='read-more-2'>{features14.linkText} &gt;</a> */}
+                                        
                                     </div>
                                 </div>
                             ))}
@@ -167,7 +166,7 @@ const Carrer = () => {
                                     <div className="feature11-card-content">
                                         <h3>{features13.title}</h3>
                                         <p>{features13.description}</p>
-                                        {/* <a href={features13.link} className='read-more-2'>{features13.linkText} &gt;</a> */}
+                                        
                                     </div>
                                 </div>
                             ))}

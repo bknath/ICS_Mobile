@@ -254,6 +254,7 @@ import careerLogo3 from './careerlogo3.svg'
 import Hiringlogo1 from './Hiringlogo1.svg'
 import Hiringlogo2 from './Hiringlogo2.svg'
 import Hiringlogo3 from './Hiringlogo3.svg'
+import arrowUpRight from './arrow-up-right.svg'
 export const assets = {
     //Home
     logo3,
@@ -511,5 +512,6 @@ export const assets = {
     careerLogo3,
     Hiringlogo1,
     Hiringlogo2,
-    Hiringlogo3
+    Hiringlogo3,
+    arrowUpRight
 }

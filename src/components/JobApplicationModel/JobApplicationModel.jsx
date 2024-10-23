@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './JobApplication.css';
+import 'simplebar-react/dist/simplebar.min.css';
 
 const JobApplicationModel = ({ job, onClose }) => {
     const [name, setName] = useState('');
@@ -26,9 +27,10 @@ const JobApplicationModel = ({ job, onClose }) => {
     return (
         <div className="modal">
             <div className="modal-wrapper">
+                <div className="heading-job-wrapper">
+                    <h2>{job.title}</h2><span className="close" onClick={onClose}>&times;</span>
+                </div>
                 <div className="modal-content">
-                    <span className="close" onClick={onClose}>&times;</span>
-                    <h2>{job.title}</h2>
                     <p>{job.description}</p>
                     <div
                         dangerouslySetInnerHTML={{ __html: job.requirements }}
@@ -79,7 +81,6 @@ const JobApplicationModel = ({ job, onClose }) => {
                     </form>
                 </div>
             </div>
-
         </div>
     );
 };

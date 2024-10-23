@@ -181,7 +181,7 @@ const Navbar = () => {
                                     </a>
                                     {isResourcesDropdownOpen && (
                                         <ul className="dropdown show">
-                                            <li><span><img src={assets.innovativetech} alt="bg-icon" style={{ paddingRight: "10px" }} /></span><a href="#" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Blogs </a></li>
+                                            <li><span><img src={assets.innovativetech} alt="bg-icon" style={{ paddingRight: "10px" }} /></span><Link to="/career" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Carrers</Link></li>
                                             <li><span><img src={assets.lastingconnection} alt="cs-icon" style={{ paddingRight: "10px" }} /></span><a href="#" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Case Study</a></li>
                                         </ul>
                                     )}
