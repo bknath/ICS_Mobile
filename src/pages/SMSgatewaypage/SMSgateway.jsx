@@ -4,10 +4,16 @@ import '../Home/Platform/Platform.css'
 import { assets } from '../../assets/assets'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const SMSgateway = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    <Helmet>
+        <title>SMS Marketing | Engage Your Customers</title>
+        <meta name='description' content='Reach your audience instantly with our powerful SMS Marketing platform. Send personalized messages, track campaigns, and drive conversions.'/>
+        <meta name='keywords' content='SMS Marketing, customer engagement platform, client engagement software, Customer Engagement services'/>
+    </Helmet>
     const [activeTab, setActiveTab] = useState('dlt-support');
     const navRef = useRef(null);
     let scrollTimeout = null;

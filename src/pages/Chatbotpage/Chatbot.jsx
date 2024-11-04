@@ -3,6 +3,7 @@ import './Chatbot.css';
 import { assets } from '../../assets/assets';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 const features = [
     {
         icon: assets.magnetIcon,
@@ -76,6 +77,11 @@ const Chatbot = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    <Helmet>
+        <title>AI Chatbots | Automate Your Customer Service</title>
+        <meta name='description' content='Build intelligent chatbots to automate customer interactions. Our chatbot building platform makes it easy to create engaging and effective chatbots.'/>
+        <meta name='keywords' content='ai chatbot, facebook chatbot marketing, chatbot building platform'/>
+    </Helmet>
     const { ref: sectionref8, inView: imageInView8 } = useInView({
         triggerOnce: true,
         threshold: 0.1,

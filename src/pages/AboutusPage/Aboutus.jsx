@@ -1,10 +1,16 @@
 import React, { useEffect, useRef } from 'react'
 import './Aboutus.css'
 import { assets } from '../../assets/assets'
+import { Helmet } from 'react-helmet';
 const Aboutus = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    <Helmet>
+        <title>Your Trusted Mobile Marketing Partner | About Us</title>
+        <meta name='description' content='Learn about ICS Mobile, a leading provider of mobile marketing solutions. We offer WhatsApp APIs, Email Marketing Tools, and SMS Gateway for customer engagement.'/>
+        <meta name='keywords' content='Whatsapp APIs, Email Marketing Tools, SMS Gateway'/>
+    </Helmet>
     const scrollContainerRef = useRef(null);
     const pictureScrollRef = useRef(null);
     const cards = [

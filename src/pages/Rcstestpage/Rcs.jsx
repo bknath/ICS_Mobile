@@ -2,10 +2,16 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Rcs.css'
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 const Rcs = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    <Helmet>
+        <title>RCS Messaging | Make mobile conversations engaging</title>
+        <meta name='description' content='Engage your customers with rich, interactive messages. Our RCS API integration offers advanced features to enhance your mobile marketing strategy'/>
+        <meta name='keywords' content='Rich Communication Services, rcs api integration, rcs chat services'/>
+    </Helmet>
     const [activeTab, setActiveTab] = useState('rcs-carousels');
     const navRef = useRef(null);
     let scrollTimeout = null;

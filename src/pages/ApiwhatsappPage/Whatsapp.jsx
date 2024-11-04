@@ -5,10 +5,16 @@ import { assets } from '../../assets/assets'
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import {Helmet} from "react-helmet"
 const Whatsapp = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    <Helmet>
+        <title>WhatsApp API | Easy Business Messaging</title>
+        <meta name='description' content='Simplify your business communication with our user-friendly WhatsApp API platform. Automate messages, send rich media, and increase customer engagement.'/>
+        <meta name='keywords' content='Whatsapp API, Whatsapp Business API, whatsapp marketing tool, whatsapp automating tool'/>
+    </Helmet> 
     const [activeTab, setActiveTab] = useState('rcs-carousels');
     const navRef = useRef(null);
     let scrollTimeout = null;
@@ -114,8 +120,8 @@ const Whatsapp = () => {
             description: "Connect WhatsApp with WooCommerce to provide real-time customer support, send order updates, and boost sales through personalized interactions."
         },
     ];
-    const cardWidth = 300; // Width of a single card
-    const cardGap = 25; // Gap between cards
+    const cardWidth = 300; 
+    const cardGap = 25; 
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {

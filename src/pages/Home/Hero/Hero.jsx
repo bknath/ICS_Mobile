@@ -3,7 +3,13 @@ import './Hero.css'
 import { assets } from '../../../assets/assets'
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import { Helmet } from 'react-helmet';
 const Hero = () => {
+    <Helmet>
+        <title>Direct Mobile Marketing Platform | ICS Mobile</title>
+        <meta name='description' content='Grow your business with omnichannel direct mobile marketing solutions.  Whatsapp APIs, Email Marketing Tools, SMS Gateway and more.'/>
+        <meta name='keywords' content='Whatsapp APIs, Email Marketing Tools, SMS Gateway'/>
+    </Helmet>
     const brandRef = useRef(null);
     const yearRef = useRef(null);
     const smsRef = useRef(null);

@@ -3,6 +3,7 @@ import './Customer.css'
 import { assets } from '../../assets/assets'
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 const features3 = [
     {
         icon: assets.promotionIcon,
@@ -86,6 +87,11 @@ const features4 = [
     }
 ];
 const Customer = () => {
+    <Helmet>
+        <title>Customer Engagement Platform | Connect with Your Customers</title>
+        <meta name='description' content='Improve customer satisfaction and boost sales with our easy-to-use customer engagement tools. Connect with your audience and build stronger relationships.'/>
+        <meta name='keywords' content='customer engagement platform, client engagement software, Customer Engagement services'/>
+    </Helmet>
     const { ref: sectionref3, inView: imageInView3 } = useInView({
         triggerOnce: true,
         threshold: 0.1,
