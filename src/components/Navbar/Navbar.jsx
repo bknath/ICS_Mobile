@@ -58,21 +58,21 @@ const Navbar = () => {
                                         <img src={assets.playBtn} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/whatsapp" onClick={handleLinkClick}>Whatsapp Business API</Link>
-                                            <p>Trigger multiple variations of a message without errors on the most...</p>
+                                            <p>Leverage WhatsApp for seamless customer interactions with automated and reliable messaging solutions.</p>
                                         </div>
                                     </div>
                                     <div className="dropdown-content-pr">
                                         <img src={assets.robotextIcon} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/chatbot" onClick={handleLinkClick}>Chatbot</Link>
-                                            <p>Trigger multiple variations of a message without errors on the most...</p>
+                                            <p>Engage customers instantly with AI-powered chatbots tailored to respond to their queries in real time.</p>
                                         </div>
                                     </div>
                                     <div className="dropdown-content-pr">
                                         <img src={assets.FlagIcon} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/customer" onClick={handleLinkClick}>Customer Engagement Programs</Link>
-                                            <p>Choose from various gamified campaigns to offer your customers...</p>
+                                            <p>Offer personalized and interactive campaigns to increase customer loyalty and satisfaction.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -81,14 +81,14 @@ const Navbar = () => {
                                         <img src={assets.innovativetech} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/smsgateway" onClick={handleLinkClick}>SMS Gateway</Link>
-                                            <p>Choose from various gamified campaigns to offer your customers...</p>
+                                            <p>Send timely notifications, reminders, and updates with high reliability through our SMS Gateway.</p>
                                         </div>
                                     </div>
                                     <div className="dropdown-content-pr">
                                         <img src={assets.lastingconnection} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/rcspage" onClick={handleLinkClick}>Rich Communication</Link>
-                                            <p>Choose from various gamified campaigns to offer your customers...</p>
+                                            <p>Elevate your messaging experience with multimedia-rich interactions through RCS technology.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@ const Navbar = () => {
                                         <ul className="dropdown show">
                                             <li><span><img src={assets.playBtn} alt="wh-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/whatsapp" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Whatsapp Business API</Link></li>
                                             <li><span><img src={assets.robotextIcon} alt="ch-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/chatbot" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Chatbot</Link></li>
-                                            <li><span><img src={assets.FlagIcon} alt="cep-icon" style={{ paddingRight: "10px" }} /></span><Link to="/customer" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
+                                            <li><span><img src={assets.FlagIcon} alt="cep-icon" style={{ paddingRight: "10px" }} /></span><Link to="/customer" style={{ fontSize: '14px', textAlign:'left' }} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
                                             <li><span><img src={assets.innovativetech} alt="sms-icon" style={{ paddingRight: "10px" }} /></span><Link to="/smsgateway" style={{ fontSize: '14px' }} onClick={handleLinkClick}>SMS Gateway</Link></li>
                                             <li><span><img src={assets.lastingconnection} alt="rcs-icon" style={{ paddingRight: "10px" }} /></span><Link to="/rcspage" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Rich Communication</Link></li>
                                         </ul>
