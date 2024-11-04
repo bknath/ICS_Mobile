@@ -627,7 +627,7 @@
         /* flex-direction: column; */
         flex-wrap: wrap;
         gap: 10px;
-        padding: 0;
+        padding: 10px;
     }
     .tab-stats{
         padding: 0;

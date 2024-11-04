@@ -18,6 +18,7 @@
     overflow: hidden;
     width: 1300px;
 }
+
 .hero-section-10 {
     display: flex;
     align-items: center;
@@ -41,6 +42,7 @@
     line-height: 45px;
     margin-bottom: 20px;
     color: #144494;
+    width: 490px;
 }
 
 .content-career p {
@@ -50,13 +52,14 @@
     margin-bottom: 5px;
     color: #144494;
     padding-bottom: 20px;
+    width: 440px;
 }
 
 .career-image {
     width: 50%;
 }
 
-.article1 {
+/* .article1 {
     width: 300px;
     background-color: #fff;
     padding: 15px;
@@ -82,7 +85,7 @@
     margin-bottom: 15px;
     color: #4A5057;
     font-weight: 300;
-}
+} */
 
 /* join Partner Button */
 .wrapper-joinus {
@@ -108,6 +111,8 @@
     padding-bottom: 1rem;
     text-align: center;
     color: #fff;
+    width: 440px;
+    margin: 0 auto;
 }
 
 .joinpartenerbox p {
@@ -115,6 +120,8 @@
     color: #fff;
     line-height: 24px;
     padding-bottom: 1rem;
+    width: 900px;
+    margin: 0 auto;
 }
 
 .joinus-bt {
@@ -199,4 +206,84 @@
 
 .job-card a:hover {
     text-decoration: underline;
+}
+
+.hiringprocessimage {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.hiringprocessimage img {
+    width: 600px;
+}
+
+@media(max-width:765px) {
+    .hero-section-9 {
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+
+    .content-career {
+        width: 100%;
+    }
+
+    .content-career h1 {
+        width: 340px;
+        font-size: 32px;
+    }
+
+    .content-career p {
+        width: 320px;
+    }
+
+    .career-image {
+        width: 100%;
+    }
+
+    .career-image img {
+        width: 328px;
+    }
+
+    .hero-section-10 {
+        width: 340px;
+    }
+
+    .header-filter-row {
+        width: 320px;
+    }
+
+    .header-filter-row h2 {
+        font-size: 20px;
+    }
+
+    .job-list {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .hiringprocessimage {
+        width: 340px;
+    }
+
+    .hiringprocessimage img {
+        width: 340px;
+        padding-left: 4px;
+    }
+
+    .joinpartenerbox {
+        width: 320px;
+        background-image: url(../../assets/joinusbgmobileimage.svg);
+        height: 340px;
+    }
+
+    .joinpartenerbox h2 {
+        width: 320px;
+        font-size: 20px;
+    }
+
+    .joinpartenerbox p {
+        width: 280px;
+        font-size: 13px;
+    }
 }

@@ -5,9 +5,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    /* Enable scrolling if content is long */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Dark background with opacity */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,4 +104,15 @@
 
 .application-form button:hover {
     background-color: #0d346f;
+}
+@media(max-width:756px){
+    .modal{
+        left: -34.5%;
+    }
+    .modal-wrapper{
+        width: 320px;
+    }
+    .heading-job-wrapper{
+        width: 280px;
+    }
 }

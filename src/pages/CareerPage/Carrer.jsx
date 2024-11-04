@@ -158,7 +158,7 @@ const Carrer = () => {
                 </div>
 
                 <div className="feature11-wrap-container">
-                    <div className="feature11-cards-container">
+                    <div className="feature12-cards-container">
                         <div className="feature11-cards-column">
                             {features13.map((features13, index) => (
                                 <div className="feature11-card" key={index}>
@@ -183,22 +183,8 @@ const Carrer = () => {
                     <h2>Our Hiring Process</h2>
                     <p>Step right up to ICS, the heart of innovation. We do more than cultivate professions; we cultivate <br /> aspirations.</p>
                 </div>
-                <div className="articles">
-                    <div className="article1">
-                        <img src={assets.Hiringlogo1} alt="Description 1" />
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Id in vitae ut porta.</p>
-                    </div>
-                    <div className="article1">
-                        <img src={assets.Hiringlogo2} alt="Description 2" />
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Id in vitae ut porta.</p>
-                    </div>
-                    <div className="article1">
-                        <img src={assets.Hiringlogo3} alt="Description 3" />
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Id in vitae ut porta.</p>
-                    </div>
+                <div className="hiringprocessimage">
+                    <img src={assets.HiringProcess} alt="" />
                 </div>
             </div>
             {isModalOpen && <JobApplicationModel job={selectedJob} onClose={closeModal} />}
