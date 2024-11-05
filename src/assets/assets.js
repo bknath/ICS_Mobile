@@ -63,6 +63,10 @@ import paynearby from './paynearby.svg'
 import payworld from './payworld.svg'
 import fatakpay from './fatakpay.svg'
 import mpokket from './mpokket.svg'
+//testimonials content
+import benettonlogo from './benettonlogo.svg'
+import bluestonelogo from './bluestonelogo.svg'
+import mpl2logo from './mpl2logo.svg'
 //uodated Home section icon
 import homepageupdatedimage from './homepageupdatedimage.svg'
 import lastingconnection from './stars-02.svg'
@@ -321,6 +325,10 @@ export const assets = {
     payworld,
     fatakpay,
     mpokket,
+    //testimonials logo
+    benettonlogo,
+    bluestonelogo,
+    mpl2logo,
     //updated home page icons
     homepageupdatedimage,
     lastingconnection,
