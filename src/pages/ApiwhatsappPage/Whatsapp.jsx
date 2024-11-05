@@ -5,16 +5,12 @@ import { assets } from '../../assets/assets'
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
-import {Helmet} from "react-helmet"
+import { Helmet } from "react-helmet"
 const Whatsapp = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    <Helmet>
-        <title>WhatsApp API | Easy Business Messaging</title>
-        <meta name='description' content='Simplify your business communication with our user-friendly WhatsApp API platform. Automate messages, send rich media, and increase customer engagement.'/>
-        <meta name='keywords' content='Whatsapp API, Whatsapp Business API, whatsapp marketing tool, whatsapp automating tool'/>
-    </Helmet> 
+
     const [activeTab, setActiveTab] = useState('rcs-carousels');
     const navRef = useRef(null);
     let scrollTimeout = null;
@@ -120,8 +116,8 @@ const Whatsapp = () => {
             description: "Connect WhatsApp with WooCommerce to provide real-time customer support, send order updates, and boost sales through personalized interactions."
         },
     ];
-    const cardWidth = 300; 
-    const cardGap = 25; 
+    const cardWidth = 300;
+    const cardGap = 25;
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
@@ -149,6 +145,11 @@ const Whatsapp = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>WhatsApp API | Easy Business Messaging</title>
+                <meta name='description' content='Simplify your business communication with our user-friendly WhatsApp API platform. Automate messages, send rich media, and increase customer engagement.' />
+                <meta name='keywords' content='Whatsapp API, Whatsapp Business API, whatsapp marketing tool, whatsapp automating tool' />
+            </Helmet>
             <div className="whatsappAPI-wrap-content">
                 <div className="hero-section-4">
                     <div className="content-whatsappAPI">
@@ -240,7 +241,7 @@ const Whatsapp = () => {
                     <p>Discover carefully developed features that will improve your company's success on WhatsApp. Discover the unique ways each element has been designed to boost your achievements.</p>
                 </div>
                 <div className="feature-main-container-1234">
-                    
+
                     <div className="product-nav-1234" ref={navRef}>
                         {sections.map((section) => (
                             <a
@@ -249,7 +250,7 @@ const Whatsapp = () => {
                                 className={activeTab === section.id ? 'active-1234' : ''}
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    handleNavClick(section.id); 
+                                    handleNavClick(section.id);
                                 }}
                             >
                                 {section.name}
@@ -366,7 +367,7 @@ const Whatsapp = () => {
                 </div>
                 <div className="scroll-container">
                     <button className="scroll-btn left" onClick={scrollLeft}>
-                        &#8249; 
+                        &#8249;
                     </button>
 
                     <div className="scroll-boxes" ref={scrollContainerRef}>
@@ -381,7 +382,7 @@ const Whatsapp = () => {
                         ))}
                     </div>
                     <button className="scroll-btn right" onClick={scrollRight}>
-                        &#8250; 
+                        &#8250;
                     </button>
                 </div>
                 <div className="header-content-2">

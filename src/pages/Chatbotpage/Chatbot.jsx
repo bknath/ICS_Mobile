@@ -77,21 +77,22 @@ const Chatbot = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    <Helmet>
-        <title>AI Chatbots | Automate Your Customer Service</title>
-        <meta name='description' content='Build intelligent chatbots to automate customer interactions. Our chatbot building platform makes it easy to create engaging and effective chatbots.'/>
-        <meta name='keywords' content='ai chatbot, facebook chatbot marketing, chatbot building platform'/>
-    </Helmet>
+
     const { ref: sectionref8, inView: imageInView8 } = useInView({
         triggerOnce: true,
         threshold: 0.1,
     })
     return (
         <div>
+            <Helmet>
+                <title>AI Chatbots | Automate Your Customer Service</title>
+                <meta name='description' content='Build intelligent chatbots to automate customer interactions. Our chatbot building platform makes it easy to create engaging and effective chatbots.' />
+                <meta name='keywords' content='ai chatbot, facebook chatbot marketing, chatbot building platform' />
+            </Helmet>
             <div className="hero-wraping-content">
                 <div className="hero-section-2">
                     <div className="content-chatbot">
-                        <p style={{color:'#b30000'}}>Chatbot</p>
+                        <p style={{ color: '#b30000' }}>Chatbot</p>
                         <h1>Experience Stellar <br />Customer Engagement <br />with ICS Chatbots</h1>
                         <p className='chatbot-text'>Amplify your brand with exceptional customer care and personalized experiences provided by our ICS ChatBots. Leverage technology to deliver efficient and intelligent customer interactions.</p>
                         <div className="buttons">

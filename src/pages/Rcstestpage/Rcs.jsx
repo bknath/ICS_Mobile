@@ -7,11 +7,7 @@ const Rcs = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    <Helmet>
-        <title>RCS Messaging | Make mobile conversations engaging</title>
-        <meta name='description' content='Engage your customers with rich, interactive messages. Our RCS API integration offers advanced features to enhance your mobile marketing strategy'/>
-        <meta name='keywords' content='Rich Communication Services, rcs api integration, rcs chat services'/>
-    </Helmet>
+
     const [activeTab, setActiveTab] = useState('rcs-carousels');
     const navRef = useRef(null);
     let scrollTimeout = null;
@@ -113,6 +109,11 @@ const Rcs = () => {
     ]
     return (
         <div>
+            <Helmet>
+                <title>RCS Messaging | Make mobile conversations engaging</title>
+                <meta name='description' content='Engage your customers with rich, interactive messages. Our RCS API integration offers advanced features to enhance your mobile marketing strategy' />
+                <meta name='keywords' content='Rich Communication Services, rcs api integration, rcs chat services' />
+            </Helmet>
             <div className="rcs-wrap-content">
                 <div className="hero-section-7">
                     <div className="content-RCS">

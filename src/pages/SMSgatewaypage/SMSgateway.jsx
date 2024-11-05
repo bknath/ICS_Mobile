@@ -9,11 +9,7 @@ const SMSgateway = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    <Helmet>
-        <title>SMS Marketing | Engage Your Customers</title>
-        <meta name='description' content='Reach your audience instantly with our powerful SMS Marketing platform. Send personalized messages, track campaigns, and drive conversions.'/>
-        <meta name='keywords' content='SMS Marketing, customer engagement platform, client engagement software, Customer Engagement services'/>
-    </Helmet>
+
     const [activeTab, setActiveTab] = useState('dlt-support');
     const navRef = useRef(null);
     let scrollTimeout = null;
@@ -181,6 +177,11 @@ const SMSgateway = () => {
     })
     return (
         <div>
+            <Helmet>
+                <title>SMS Marketing | Engage Your Customers</title>
+                <meta name='description' content='Reach your audience instantly with our powerful SMS Marketing platform. Send personalized messages, track campaigns, and drive conversions.' />
+                <meta name='keywords' content='SMS Marketing, customer engagement platform, client engagement software, Customer Engagement services' />
+            </Helmet>
             <div className="SMSgateway-wrap-content" ref={sectionref10}>
                 <div className="hero-section-5">
                     <div className="content-SMSgateway">
@@ -206,7 +207,7 @@ const SMSgateway = () => {
                     <p>Our shared values keep us connected and guide us as one team.</p>
                 </div>
                 <div className="feature-main-container-1234">
-                    
+
                     <div className="product-nav-1234" ref={navRef}>
                         {sections.map((section) => (
                             <a
@@ -223,7 +224,7 @@ const SMSgateway = () => {
                         ))}
                     </div>
 
-                    
+
                     <div className="feature-content-container-1234">
                         <section id="dlt-support" className="feature-section-1234">
                             <div className="feature-item-1234">
@@ -310,7 +311,7 @@ const SMSgateway = () => {
                     </div>
                 </div>
                 <div className="SMSgateway-platform-header">
-                    <h2 style={{paddingTop:'3rem'}}>Why Opt For ICS SMS Gateway</h2>
+                    <h2 style={{ paddingTop: '3rem' }}>Why Opt For ICS SMS Gateway</h2>
                     <p>Experience seamless conversations on the world's leading chat platforms and discover the benefits of deep tech integration. Our WABA and RCS Chatbots empower real-time customer engagement and provide enhanced customer insights.</p>
                 </div>
                 <div className="feature9-wrap-container">
@@ -322,7 +323,7 @@ const SMSgateway = () => {
                                     <div className="feature9-card-content">
                                         <h3>{features9.title}</h3>
                                         <p>{features9.description}</p>
-                                        
+
                                     </div>
                                 </div>
                             ))}
@@ -342,7 +343,7 @@ const SMSgateway = () => {
                 </div>
                 <div className="scroll-container">
                     <button className="scroll-btn left" onClick={scrollLeft}>
-                        &#8249; 
+                        &#8249;
                     </button>
 
                     <div className="scroll-boxes" ref={scrollContainerRef}>
@@ -357,11 +358,11 @@ const SMSgateway = () => {
                         ))}
                     </div>
                     <button className="scroll-btn right" onClick={scrollRight}>
-                        &#8250; 
+                        &#8250;
                     </button>
                 </div>
                 <div className="header-content-2">
-                    <p style={{ fontSize: '14px', color: '#777', paddingBottom:'2rem', lineHeight:'24px' }}>By partnering with these leading companies, our API provides a versatile and powerful tool to help you streamline operations, automate processes, and <br />enhance customer engagement across various platforms.</p>
+                    <p style={{ fontSize: '14px', color: '#777', paddingBottom: '2rem', lineHeight: '24px' }}>By partnering with these leading companies, our API provides a versatile and powerful tool to help you streamline operations, automate processes, and <br />enhance customer engagement across various platforms.</p>
                 </div>
                 <div className="wrap-SMS-content-block">
                     <div className="SMS-content-block" ref={sectionref12}>

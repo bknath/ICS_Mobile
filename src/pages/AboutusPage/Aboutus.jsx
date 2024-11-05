@@ -6,11 +6,6 @@ const Aboutus = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    <Helmet>
-        <title>Your Trusted Mobile Marketing Partner | About Us</title>
-        <meta name='description' content='Learn about ICS Mobile, a leading provider of mobile marketing solutions. We offer WhatsApp APIs, Email Marketing Tools, and SMS Gateway for customer engagement.'/>
-        <meta name='keywords' content='Whatsapp APIs, Email Marketing Tools, SMS Gateway'/>
-    </Helmet>
     const scrollContainerRef = useRef(null);
     const pictureScrollRef = useRef(null);
     const cards = [
@@ -158,6 +153,11 @@ const Aboutus = () => {
     ];
     return (
         <div>
+            <Helmet>
+                <title>Your Trusted Mobile Marketing Partner | About Us</title>
+                <meta name='description' content='Learn about ICS Mobile, a leading provider of mobile marketing solutions. We offer WhatsApp APIs, Email Marketing Tools, and SMS Gateway for customer engagement.' />
+                <meta name='keywords' content='Whatsapp APIs, Email Marketing Tools, SMS Gateway' />
+            </Helmet>
             <div className="aboutus-wrap-content">
                 <div className="hero-section-8">
                     <div className="content-chatbot">
@@ -220,13 +220,13 @@ const Aboutus = () => {
                     </div>
                     <div className="abtus-image-1">
                         <div className="hero-product-image">
-                            <img  src={assets.f7wf1} alt="chatRobot" />
+                            <img src={assets.f7wf1} alt="chatRobot" />
                         </div>
                     </div>
                 </div>
             </div>
             <div className="header-content-at">
-                <p style={{ paddingTop: '2rem', fontSize: '26px', fontWeight: '700' , color:'#000247'}}>Life at ICS Mobile</p>
+                <p style={{ paddingTop: '2rem', fontSize: '26px', fontWeight: '700', color: '#000247' }}>Life at ICS Mobile</p>
                 <p style={{ padding: '2rem 0' }}>Here at ICS Mobile, our mission goes beyond just helping businesses. We're committed to enhancing the potential of our most valuable resource: our employees. Team members are encouraged to develop their skills in decision-making, problem-solving, idealizing, and achieving goals. Working together, thinking beyond the box, and treating each other with dignity and respect is what makes ICS more than simply an organization - it's a family. </p>
             </div>
             <div className="scroll-container-3">

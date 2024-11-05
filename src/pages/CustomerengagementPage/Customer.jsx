@@ -87,17 +87,18 @@ const features4 = [
     }
 ];
 const Customer = () => {
-    <Helmet>
-        <title>Customer Engagement Platform | Connect with Your Customers</title>
-        <meta name='description' content='Improve customer satisfaction and boost sales with our easy-to-use customer engagement tools. Connect with your audience and build stronger relationships.'/>
-        <meta name='keywords' content='customer engagement platform, client engagement software, Customer Engagement services'/>
-    </Helmet>
+
     const { ref: sectionref3, inView: imageInView3 } = useInView({
         triggerOnce: true,
         threshold: 0.1,
     })
     return (
         <div>
+            <Helmet>
+                <title>Customer Engagement Platform | Connect with Your Customers</title>
+                <meta name='description' content='Improve customer satisfaction and boost sales with our easy-to-use customer engagement tools. Connect with your audience and build stronger relationships.' />
+                <meta name='keywords' content='customer engagement platform, client engagement software, Customer Engagement services' />
+            </Helmet>
             <div className="wrap-customer-content">
                 <div className="hero-section-3">
                     <div className="content-CustomerEngagement">
