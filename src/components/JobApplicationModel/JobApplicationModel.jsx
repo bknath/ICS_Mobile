@@ -64,7 +64,7 @@ const JobApplicationModel = ({ job, onClose }) => {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: JSON.stringify(formData),
+                body: JSON.stringify(formCData),
             });
             if (response.ok) {
                 const data = await response.json(); // assuming your PHP script returns JSON
