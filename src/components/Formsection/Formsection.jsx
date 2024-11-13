@@ -57,7 +57,8 @@ const Formsection = () => {
             });
             if (response.ok) {
                 const data = await response.json(); // assuming your PHP script returns JSON
-            console.log('Response Data:', data);
+            console.log('Response status:', data.status);
+            console.log('Response response:', data.response);
                 alert('Form submitted successfully');
                 setFormData({
                     first_name: '',
