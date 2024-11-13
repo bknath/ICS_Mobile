@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Formsection.css';
 import { assets } from '../../assets/assets';
-import { submitFeedback } from '../../services/api';
 const Formsection = () => {
     const [formData, setFormData] = useState({
         first_name: '',
@@ -49,22 +48,30 @@ const Formsection = () => {
         }
 
         try {
-            const response = await submitFeedback(formData);
-            console.log(response);
-            return false;
-            if (response.status === 200) {
-                alert('Feedback submitted successfully');
-                setFeedback({
-                    first_name: '', 
+            const response = await fetch('https://insurvey.sendmsg.in/mobileicsmobile/AddMessage.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                alert('Form submitted successfully');
+                setFormData({
+                    first_name: '',
                     last_name: '',
                     email: '',
                     phone_number: '',
-                    message: ''
+                    message: '',
+                    privacy_policy: false,
                 });
+            } else {
+                alert('Error submitting form');
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('Error submitting feedback');
+            alert('Error submitting form');
         }
     };
 
