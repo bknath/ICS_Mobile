@@ -59,7 +59,7 @@ const JobApplicationModel = ({ job, onClose }) => {
                     <div
                         dangerouslySetInnerHTML={{ __html: job.requirements }}
                     />
-                    <h3>Apply Now-- {jobTitle}</h3>
+                    <h3>Apply Now</h3>
                     <form className="application-form" onSubmit={handleSubmit}>
                         <label>Name:</label>
                         <input
@@ -68,6 +68,12 @@ const JobApplicationModel = ({ job, onClose }) => {
                             placeholder="Your Name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
+                            required
+                        />
+                        <input
+                            type="hidden"
+                            name='role'
+                            value='{jobTitle}'
                             required
                         />
 
