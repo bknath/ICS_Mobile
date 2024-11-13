@@ -7,19 +7,40 @@ const JobApplicationModel = ({ job, onClose }) => {
     const [email, setEmail] = useState('');
     const [experience, setExperience] = useState('');
     const [resume, setResume] = useState(null);
-    const [message, setMessage] = useState('');
+    // const [message, setMessage] = useState('');
+
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+    // Resume file validation
+    const validateResume = (file) => {
+        if (!file) return false;
+        const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+        return allowedTypes.includes(file.type);
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        // Form validation checks
+        if (!name || !email || !experience || !resume) {
+            setError('All fields are required!');
+            return;
+        }
 
-        console.log('Form submitted:', {
-            name,
-            email,
-            experience,
-            resume,
-            message,
-        });
+        if (!validateEmail(email)) {
+            setError('Please enter a valid email address.');
+            return;
+        }
 
+        if (!validateResume(resume)) {
+            setError('Please upload a valid resume (PDF, DOC, DOCX).');
+            return;
+        }
+
+        console.log('Form submitted:', { name, email, experience, resume });
         alert('Application submitted successfully!');
         onClose();
     };

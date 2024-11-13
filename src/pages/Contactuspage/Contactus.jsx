@@ -53,10 +53,10 @@ const Contactus = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:4000/submit-form', {
+            const response = await fetch('https://insurvey.sendmsg.in/mobileicsmobile/AddMessage.php', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 body: JSON.stringify(formData),
             });
