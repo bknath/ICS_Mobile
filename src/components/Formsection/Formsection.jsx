@@ -8,6 +8,7 @@ const Formsection = () => {
         email: '',
         phone_number: '',
         message: '',
+        api_key: '',
         privacy_policy: false,
     });
 
