@@ -55,7 +55,7 @@ const Formsection = () => {
                 },
                 body: JSON.stringify(formData),
             });
-
+console.log(response);
             if (response.ok) {
                 alert('Form submitted successfully');
                 setFormData({
