@@ -47,18 +47,13 @@ const Formsection = () => {
             alert('You must agree to the privacy policy.');
             return;
         }
-     const updatedFormData = {
-            ...formData,
-            api_key: 'QtOaDjEZSJsHUvsuxcuKab', // Replace 'your_api_key_here' with your actual API key
-        };
-         const bodyData = new URLSearchParams(updatedFormData).toString();
         try {
             const response = await fetch('https://insurvey.sendmsg.in/mobileicsmobile/AddMessage.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: JSON.stringify(bodyData),
+                body: JSON.stringify(formData),
             });
             if (response.ok) {
                 const data = await response.json(); // assuming your PHP script returns JSON
