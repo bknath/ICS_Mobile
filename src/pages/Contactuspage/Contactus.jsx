@@ -202,7 +202,7 @@ const Contactus = () => {
                                 <input
                                     type="tel"
                                     id="phone"
-                                    name="phone"
+                                    name="phone_number"
                                     placeholder='+91 7608741464'
                                     value={formData.phone}
                                     onChange={handleChange}
