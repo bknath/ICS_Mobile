@@ -62,14 +62,12 @@ const Contactus = () => {
             });
             if (response.ok) {
                 const data = await response.json(); // assuming your PHP script returns JSON
-                var responsestatus=data.status;
-                var responsemessage=data.response;
-                if(responsestatus==true)
-                {
+                var responsestatus = data.status;
+                var responsemessage = data.response;
+                if (responsestatus == true) {
                     alert('Message Recieved Successfully');
                 }
-                else
-                {
+                else {
                     alert(responsemessage);
                 }
                 setFormData({
@@ -222,11 +220,11 @@ const Contactus = () => {
                                 >
                                     <option value="">Select an option</option>
                                     <option value="increase-traffic">Increase Website Traffic</option>
-                                    <option value="improve-communication">Improve Customer Communication</option>
-                                    <option value="optimize-processes">Optimize Business Processes</option>
-                                    <option value="enhance-security">Enhance Security & Authentication</option>
-                                    <option value="enhance-security">Connect and discuss with us</option>
-                                    <option value="enhance-security">Book a free 15 min demo</option>
+                                    <option value="improve-customer-communication">Improve Customer Communication</option>
+                                    <option value="optimize-business-processes">Optimize Business Processes</option>
+                                    <option value="enhance-security-and-authentication">Enhance Security & Authentication</option>
+                                    <option value="connect-and-discuss-with-us">Connect and discuss with us</option>
+                                    <option value="book-a-free-15min-demo">Book a free 15 min demo</option>
                                     <option value="other">Other</option>
                                 </select>
                             </div>
