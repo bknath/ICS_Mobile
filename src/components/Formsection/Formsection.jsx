@@ -8,7 +8,6 @@ const Formsection = () => {
         email: '',
         phone_number: '',
         message: '',
-        api_key: '',
         privacy_policy: false,
     });
 
@@ -137,13 +136,6 @@ const Formsection = () => {
                             placeholder='you@company.com'
                             value={formData.email}
                             onChange={handleChange}
-                            required
-                        />
-                        <input
-                            type="hidden"
-                            id="api_key"
-                            name="api_key"
-                            value='QtOaDjEZSJsHUvsuxcuKab'
                             required
                         />
                     </div>
