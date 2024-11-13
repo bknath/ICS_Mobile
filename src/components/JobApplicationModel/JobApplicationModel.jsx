@@ -45,6 +45,9 @@ const JobApplicationModel = ({ job, onClose }) => {
         onClose();
     };
 
+    const str = job.title;
+    const jobTitle = str.replaceAll(" ", "_");
+
     return (
         <div className="modal">
             <div className="modal-wrapper">
@@ -56,11 +59,12 @@ const JobApplicationModel = ({ job, onClose }) => {
                     <div
                         dangerouslySetInnerHTML={{ __html: job.requirements }}
                     />
-                    <h3>Apply Now</h3>
+                    <h3>Apply Now-- {jobTitle}</h3>
                     <form className="application-form" onSubmit={handleSubmit}>
                         <label>Name:</label>
                         <input
                             type="text"
+                            name='name'
                             placeholder="Your Name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
@@ -70,6 +74,8 @@ const JobApplicationModel = ({ job, onClose }) => {
                         <label>Email:</label>
                         <input
                             type="email"
+                            id='email'
+                            name='email'
                             placeholder="Your Email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -78,6 +84,7 @@ const JobApplicationModel = ({ job, onClose }) => {
 
                         <label>Years of Experience:</label>
                         <select
+                            name='yearofExp'
                             value={experience}
                             onChange={(e) => setExperience(e.target.value)}
                             required
