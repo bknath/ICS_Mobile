@@ -51,7 +51,7 @@ const Formsection = () => {
             const response = await fetch('https://insurvey.sendmsg.in/mobileicsmobile/AddMessage.php', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 body: JSON.stringify(formData),
             });
