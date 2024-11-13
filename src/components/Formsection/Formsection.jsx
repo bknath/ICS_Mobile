@@ -67,7 +67,6 @@ const Formsection = () => {
                 {
                     alert(responsemessage);
                 }
-                alert('Form submitted successfully');
                 setFormData({
                     first_name: '',
                     last_name: '',
@@ -130,6 +129,7 @@ const Formsection = () => {
             <div className="form-block">
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
+                        <input type="hidden" name="api_key" id="api_key" value="QtOaDjEZSJsHUvsuxcuKab"> 
                         <label htmlFor="email">Business Email Address</label>
                         <input
                             type="email"
