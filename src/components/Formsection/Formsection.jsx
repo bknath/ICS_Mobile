@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Formsection.css';
 import { assets } from '../../assets/assets';
-
+import { submitFeedback } from '../../services/api';
 const Formsection = () => {
     const [formData, setFormData] = useState({
         first_name: '',
@@ -49,30 +49,22 @@ const Formsection = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:4000/submit-form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                alert('Form submitted successfully');
-                setFormData({
-                    first_name: '',
+            const response = await submitFeedback(formData);
+            console.log(response);
+            return false;
+            if (response.status === 200) {
+                alert('Feedback submitted successfully');
+                setFeedback({
+                    first_name: '', 
                     last_name: '',
                     email: '',
                     phone_number: '',
-                    message: '',
-                    privacy_policy: false,
+                    message: ''
                 });
-            } else {
-                alert('Error submitting form');
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('Error submitting form');
+            alert('Error submitting feedback');
         }
     };
 
