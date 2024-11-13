@@ -139,6 +139,13 @@ const Formsection = () => {
                             onChange={handleChange}
                             required
                         />
+                        <input
+                            type="hidden"
+                            id="api_key"
+                            name="api_key"
+                            value=''
+                            required
+                        />
                     </div>
                     <div className="form-row">
                         <div className="form-group">
