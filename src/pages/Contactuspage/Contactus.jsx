@@ -60,14 +60,23 @@ const Contactus = () => {
                 },
                 body: JSON.stringify(formData),
             });
-
             if (response.ok) {
-                alert('Form submitted successfully');
+                const data = await response.json(); // assuming your PHP script returns JSON
+                var responsestatus=data.status;
+                var responsemessage=data.response;
+                if(responsestatus==true)
+                {
+                    alert('Message Recieved Successfully');
+                }
+                else
+                {
+                    alert(responsemessage);
+                }
                 setFormData({
                     first_name: '',
                     last_name: '',
                     email: '',
-                    phone: '',
+                    phone_number: '',
                     message: '',
                     privacy_policy: false,
                 });
