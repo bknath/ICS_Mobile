@@ -73,7 +73,7 @@ const JobApplicationModel = ({ job, onClose }) => {
                         <input
                             type="hidden"
                             name='role'
-                            value='{jobTitle}'
+                            value={jobTitle}
                             required
                         />
 
