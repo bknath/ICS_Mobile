@@ -108,9 +108,10 @@ const JobApplicationModel = ({ job, onClose }) => {
                 </div>
                 <div className="modal-content">
                     <p>{job.description}</p>
-                    <div dangerouslySetInnerHTML={{ __html: job.requirements }} />
-                    <h3>Apply Now </h3>
-                    {error && <p className="error-message">{error}</p>}
+                    <div
+                        dangerouslySetInnerHTML={{ __html: job.requirements }}
+                    />
+                    <h3>Apply Now-- {jobTitle}</h3>
                     <form className="application-form" onSubmit={handleSubmit}>
                         <label>Name:</label>
                         <input
@@ -125,6 +126,12 @@ const JobApplicationModel = ({ job, onClose }) => {
                             type="hidden"
                             name='role'
                             value={formCData.jobTitle}
+                            required
+                        />
+                        <input
+                            type="hidden"
+                            name='role'
+                            value={jobTitle}
                             required
                         />
 
