@@ -106,9 +106,12 @@
     background-color: #0d346f;
 }
 @media(max-width:756px){
-    .modal{
-        left: -34.5%;
-    }
+    /* .modal{
+        left: -0.5%;
+    } */
+     .modal-content ul li{
+        text-align: left;
+     }
     .modal-wrapper{
         width: 320px;
     }

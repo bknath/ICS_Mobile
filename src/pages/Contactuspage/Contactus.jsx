@@ -74,7 +74,7 @@ const Contactus = () => {
                     first_name: '',
                     last_name: '',
                     email: '',
-                    phone_number: '',
+                    phone: '',
                     message: '',
                     privacy_policy: false,
                 });
@@ -202,7 +202,7 @@ const Contactus = () => {
                                 <input
                                     type="tel"
                                     id="phone"
-                                    name="phone_number"
+                                    name="phone"
                                     placeholder='+91 7608741464'
                                     value={formData.phone}
                                     onChange={handleChange}
