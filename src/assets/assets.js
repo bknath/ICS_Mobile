@@ -227,7 +227,6 @@ import sysl from './sysl.png'
 import techl from './techl.png'
 import image1 from './image1.svg'
 import image2 from './image2.svg'
-import image3 from './image3.svg'
 import image4 from './image4.svg'
 import image5 from './image5.svg'
 import image6 from './image6.svg'
@@ -491,7 +490,6 @@ export const assets = {
     techl,
     image1,
     image2,
-    image3,
     image4,
     image5,
     image6,

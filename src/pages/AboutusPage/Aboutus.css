@@ -310,7 +310,8 @@
     width: 1100px;
     margin: 0 auto;
 }
-.header-content-at p{
+
+.header-content-at p {
     color: #4A5057;
     font-size: 14px;
     font-weight: 400;
@@ -322,7 +323,8 @@
     width: 1100px;
     margin: 0 auto;
 }
-.header-content-aw p{
+
+.header-content-aw p {
     color: #4A5057;
     font-size: 14px;
     font-weight: 400;
@@ -382,7 +384,9 @@
     .header-content h2 {
         width: 350px;
     }
-    .header-content-aw p, .header-content-aw h2{
+
+    .header-content-aw p,
+    .header-content-aw h2 {
         width: 340px;
     }
 }

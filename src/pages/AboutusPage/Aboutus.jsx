@@ -43,9 +43,6 @@ const Aboutus = () => {
             pic: assets.image2
         },
         {
-            pic: assets.image3
-        },
-        {
             pic: assets.image4
         },
         {
