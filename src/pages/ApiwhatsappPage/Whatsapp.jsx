@@ -142,6 +142,33 @@ const Whatsapp = () => {
         triggerOnce: true,
         threshold: 0.1,
     })
+    const [selectedClient, setSelectedClient] = useState('Bluestone');
+    const clientContent = {
+        Bluestone: {
+            logo: assets.bluestonelogo,
+            name: "Prasad",
+            title: "Operation Manager",
+            description: "Choosing ICS Mobile Services for our SMS services was a game-changer. The ease of use of their platform, coupled with the robust features, has streamlined our communication processes. Whether it's sending important updates or running targeted marketing campaigns, ICS has exceeded our expectations. Highly recommended!",
+            document: assets.documentlogo,
+        },
+        Benetton: {
+            logo: assets.benettonlogo,
+            name: "Vinay Sharma",
+            title: "Benetton India",
+            description: "ICS mobiles is one of the leading organisations which is well equipped with technology and moreover they offer end to end solutions to the brands in terms of reaching out to their customers which includes conventional/ modern. Good part of ICS is that they are flexible in terms understanding the client’s requirement and based on their respective requirement their team always design a customised solution with a speed.",
+            document: assets.documentlogo,
+        },
+        MPL: {
+            logo: assets.mpl2logo,
+            name: "Akashdeep Mishra",
+            title: "Operation Manager",
+            description: "Partnering with ICS has been a game-changer for us as a company. Their team consistently delivers quick responses and exceptional support, allowing us to implement innovative SMS strategies with ease. This collaboration has not only enhanced our communication but also significantly improved our key metrics. We are grateful for their expertise and dedication, which have truly elevated our SMS marketing efforts.",
+            document: assets.documentlogo,
+        },
+    };
+    const handleClick = (clientKey) => {
+        setSelectedClient(clientKey);
+    };
 
     return (
         <div>
@@ -397,30 +424,29 @@ const Whatsapp = () => {
                     <div className="testimonial-content">
                         <div className="testimonial-box">
                             <div className="testimonial-text">
-                                <img src={assets.lifestylelogo} alt="Lifestyle" className="testimonial-logo" />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                <img src={clientContent[selectedClient].logo} alt="Client Logo" className="testimonial-logo" />
+                                <p>{clientContent[selectedClient].description}</p>
                                 <div className="author-info">
-                                    <img src={assets.authorIcon} alt="Author" className="author-image" />
+                                    {/* <img src={assets.authorIcon} alt="Author" className="author-image" /> */}
                                     <div>
-                                        <h4>Mahesh Shah</h4>
-                                        <p>CEO of lifestyle</p>
+                                        <h4>{clientContent[selectedClient].name}</h4>
+                                        <p>{clientContent[selectedClient].title}</p>
                                     </div>
                                 </div>
-                                <a href="#" className="case-study-link">Read Case Study<span><img className='readmorearrow' src={assets.readmorearrow} alt="" /></span></a>
                             </div>
                             <div className="testimonial-image">
-                                <img src={assets.documentlogo} alt="Document" />
+                                <img src={clientContent[selectedClient].document} alt="Document" />
                             </div>
                         </div>
                         <div className="client-logos">
-                            <div className="client-logo-container">
-                                <img style={{ padding: '1rem 0 10px 0' }} src={assets.lifestylelogo2} alt="Lifestyle" />
+                            <div className="client-logo-container" onClick={() => handleClick('Bluestone')}>
+                                <img  src={assets.bluestonelogo} alt="Bluestone" />
                             </div>
-                            <div className="client-logo-container">
-                                <img style={{ width: '120px', padding: '1.3rem 0 10px 0' }} src={assets.zomotologo} alt="Zomato" />
+                            <div className="client-logo-container" onClick={() => handleClick('Benetton')}>
+                                <img  src={assets.benettonlogo} alt="Benetton" />
                             </div>
-                            <div className="client-logo-container">
-                                <img style={{ width: '120px', padding: '1rem 0 10px 0' }} src={assets.weworklogo} alt="Wework" />
+                            <div className="client-logo-container" onClick={() => handleClick('MPL')}>
+                                <img  src={assets.mpl2logo} alt="MPL" />
                             </div>
                         </div>
                     </div>
