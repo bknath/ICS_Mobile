@@ -107,7 +107,7 @@ const JobApplicationModel = ({ job, onClose }) => {
             //     alert('Error submitting form');
             // }
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Errorrrrrr:', error);
             alert('Error submitting form');
         }
 
