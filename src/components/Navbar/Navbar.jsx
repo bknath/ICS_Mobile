@@ -134,8 +134,9 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="nav-buttons">
-                    <a href="#" className="activate-trial">Activate Trial</a>
-                    <a href="#" className="btn sign-in">Sign In</a>
+                    {/* <a href="#" className="activate-trial">Activate Trial</a> */}
+                    <Link to="/contact-us" className='activate-trial'>Activate Trial</Link>
+                    <a href="https://ngui.sendmsg.in/" target="_blank" className="btn sign-in">Sign In</a>
                 </div>
                 {/* Mobile Hamburger */}
                 <div className="hamburger" onClick={toggleMobileMenu}>
@@ -195,8 +196,9 @@ const Navbar = () => {
                         {/* Mobile Buttons */}
                         <div className="wrap-mobile-buttons">
                             <div className="mobile-buttons">
-                                <a href="#" className="activate-trial">Activate Trial</a>
-                                <a href="#" className="btn sign-in">Sign In</a>
+                                <Link to="/contact-us" className='activate-trial'>Activate Trial</Link>
+                                {/* <a  className="activate-trial">Activate Trial</a> */}
+                                <a href="https://ngui.sendmsg.in/" target="_blank" className="btn sign-in">Sign In</a>
                             </div>
                         </div>
                     </div>
