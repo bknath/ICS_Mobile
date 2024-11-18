@@ -75,6 +75,27 @@ const JobApplicationModel = ({ job, onClose }) => {
               .then((response) => {
                 // console.log(JSON.stringify(response.data));
                 console.log(response);
+                if (response.ok) {
+                    const data =response.json(); // assuming your PHP script returns JSON
+                    var responsestatus=data.status;
+                    var responsemessage=data.response;
+                    if(responsestatus==true)
+                    {
+                        alert('Resume Recieved Successfully');
+                    }
+                    else
+                    {
+                        alert(responsemessage);
+                    }
+                    setFormData({
+                        name: '',
+                        email: '',
+                        experience: '',
+                        resume: '',
+                    });
+                } else {
+                    alert('Error submitting form');
+                }
               })
               .catch((error) => {
                 console.log(error);
@@ -87,27 +108,7 @@ const JobApplicationModel = ({ job, onClose }) => {
             //     },
             //     body: JSON.stringify(formCData),
             // });
-            // if (response.ok) {
-            //     const data = await response.json(); // assuming your PHP script returns JSON
-            //     var responsestatus=data.status;
-            //     var responsemessage=data.response;
-            //     if(responsestatus==true)
-            //     {
-            //         alert('Resume Recieved Successfully');
-            //     }
-            //     else
-            //     {
-            //         alert(responsemessage);
-            //     }
-            //     setFormData({
-            //         name: '',
-            //         email: '',
-            //         experience: '',
-            //         resume: '',
-            //     });
-            // } else {
-            //     alert('Error submitting form');
-            // }
+            
         } catch (error) {
             console.error('Errorrrrrr:', error);
             alert('Error submitting form');
