@@ -7,7 +7,8 @@ const Formsection = () => {
         last_name: '',
         email: '',
         phone_number: '',
-        message: '',
+        companySize: 'null',
+        helpOptions: 'null',
         privacy_policy: false,
     });
 
@@ -56,14 +57,12 @@ const Formsection = () => {
             });
             if (response.ok) {
                 const data = await response.json(); // assuming your PHP script returns JSON
-                var responsestatus=data.status;
-                var responsemessage=data.response;
-                if(responsestatus==true)
-                {
+                var responsestatus = data.status;
+                var responsemessage = data.response;
+                if (responsestatus == true) {
                     alert('Message Recieved Successfully');
                 }
-                else
-                {
+                else {
                     alert(responsemessage);
                 }
                 setFormData({
@@ -71,7 +70,8 @@ const Formsection = () => {
                     last_name: '',
                     email: '',
                     phone_number: '',
-                    message: '',
+                    companySize: 'null',
+                    helpOptions: 'null',
                     privacy_policy: false,
                 });
             } else {

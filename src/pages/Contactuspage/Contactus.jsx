@@ -8,7 +8,8 @@ const Contactus = () => {
         last_name: '',
         email: '',
         phone: '',
-        message: '',
+        companySize: 'null',
+        helpOptions: 'null',
         privacy_policy: false,
     });
 
@@ -75,7 +76,8 @@ const Contactus = () => {
                     last_name: '',
                     email: '',
                     phone: '',
-                    message: '',
+                    companySize: 'null',
+                    helpOptions: 'null',
                     privacy_policy: false,
                 });
             } else {
