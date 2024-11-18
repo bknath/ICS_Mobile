@@ -51,7 +51,7 @@ const Hero = () => {
                         <h1>Reimagine omnichannel communications</h1>
                         <p>Leverage the power of ICS Mobile’s Trusted CPAAS platform to elevate your digital interactions.</p>
                         <div className="buttons">
-                            <Link to="/contact-us" className='request-demo'>Request Demo</Link>
+                            <Link to="/demomodule" className='request-demo'>Request Demo</Link>
                             <Link to="/contact-us" className='talk-to-sales'>Talk to Sales</Link>
                         </div>
                         <div className="stats">

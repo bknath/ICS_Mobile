@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Platform.css';
 import { assets } from '../../../assets/assets';
 import { useInView } from "react-intersection-observer";
+import { Link } from 'react-router-dom';
 const Platform = () => {
     const { ref: sectionRef1, inView: imageInView1 } = useInView({
         triggerOnce: true,
@@ -196,7 +197,7 @@ const Platform = () => {
                 <div className="header-content">
                     <button className='head-section-b2'>Why us</button>
                     <h2>Why Our Platform Works for You</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p>There are many reasons why forward thinking brands like you choose ICS as their campaign marketing partner.</p>
                 </div>
                 <div className="wrap-platform-content" ref={sectionRef1}>
                     <div className="content-block">
@@ -229,7 +230,7 @@ const Platform = () => {
                                     <p>Prioritizing your needs at every step.</p>
                                 </div>
                             </div>
-                            <a href="#" class="get-in-touch">Get in touch</a>
+                            <Link to="/demomodule" className='get-in-touch'>Get in touch</Link>
                         </div>
                         <div className="content-block-col-2">
                             <img
@@ -245,7 +246,7 @@ const Platform = () => {
                 <div className="header-content">
                     <button className='head-section-b3'>Our Integration</button>
                     <h2>Connecting Seamlessly with Leading Platforms</h2>
-                    <p>We are proud to integrate our WhatsApp Business API with top-tier platforms, ensuring seamless communication and enhanced functionality for your business:</p>
+                    <p >We are proud to integrate our WhatsApp Business API with top-tier platforms, ensuring seamless communication and enhanced functionality for your business:</p>
                 </div>
                 <div className="scroll-container">
                     <button className="scroll-btn left" onClick={scrollLeft}>

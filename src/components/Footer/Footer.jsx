@@ -21,11 +21,11 @@ const Footer = () => {
                 <div className="footer-links">
                     <ul>
                         <li><Link to="/aboutus">About us</Link></li>
-                        <li><a href="#">Products</a></li>
+                        {/* <li><a href="#">Products</a></li> */}
                         <li><Link to="/contact-us">Contact Us</Link></li>
                         <li><Link to="/career">Careers</Link></li>
                         <li><Link to="/csrpolicy">Csr Policy</Link></li>
-                        <li><Link to="/Privacy"> Policy</Link></li>
+                        <li><Link to="/Privacy">Privacy Policy</Link></li>
                         <li><Link to="/TermsCondition">T&C</Link></li>
                     </ul>
                 </div>

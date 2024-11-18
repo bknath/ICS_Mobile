@@ -259,6 +259,12 @@ import Hiringlogo2 from './Hiringlogo2.svg'
 import Hiringlogo3 from './Hiringlogo3.svg'
 import arrowUpRight from './arrow-up-right.svg'
 import HiringProcess from './hiringprocessimage.svg'
+//demo page
+import demomainimg from './demo-imgh1.svg'
+import demoimg1 from './demo-img1.svg'
+import demoimg2 from './demo-img2.svg'
+import demoimg3 from './demo-img3.svg'
+import demoimg4 from './demo-img4.svg'
 export const assets = {
     //Home
     logo3,
@@ -521,5 +527,11 @@ export const assets = {
     Hiringlogo2,
     Hiringlogo3,
     arrowUpRight,
-    HiringProcess
+    HiringProcess,
+    //demo page
+    demomainimg,
+    demoimg1,
+    demoimg2,
+    demoimg3,
+    demoimg4
 }

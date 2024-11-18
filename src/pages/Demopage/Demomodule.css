@@ -1,0 +1,275 @@
+.demo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00306a;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../../assets/demopage-abstract.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+}
+
+.demo-wrap-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-right: 2rem;
+    border-radius: 8px;
+}
+
+
+.layout-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+
+.item-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.item-description {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+/* demo-form-block */
+
+.demo-form-block {
+    width: 46%;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 7px 2px rgba(38, 113, 183, 0.1);
+    background-color: #fff;
+    /* min-height: 400px; */
+    border-radius: 24px;
+    margin-top: 1.8rem;
+    max-width: 500px;
+}
+
+.form-block h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    color: #101828;
+    margin-bottom: 10px;
+}
+
+.form-block p {
+    color: #475467;
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-group {
+    width: 48%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input::placeholder {
+    font-size: 12px;
+    opacity: 70%;
+    font-family: 'Montserrat';
+}
+
+textarea::placeholder {
+    font-style: normal;
+    font-size: 12px;
+    opacity: 80%;
+    font-family: 'Montserrat';
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    color: #333;
+}
+
+.checkbox-group a {
+    color: #004b91;
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* form button:hover {
+    color: #004b91;
+} */
+
+select {
+    appearance: none;
+    /* Removes default browser styling */
+    -webkit-appearance: none;
+    /* For Safari and Chrome on macOS */
+    -moz-appearance: none;
+    /* For Firefox */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path fill="none" stroke="%23333" stroke-width="1.5" d="M1 1l4 4 4-4"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+/* For better styling on focused state */
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Optional: To remove the spinner on some browsers (like Safari) */
+select::-ms-expand {
+    display: none;
+}
+
+.demo-content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.demo-text-content-col1{
+    display: flex;
+    width: 48%;
+}
+.demo-heading h2{
+    font-size: 48px;
+    color: #144494;
+}
+.p-demo{
+    width: 540px;
+    font-size: 16px;
+    color: #144494;
+    line-height: 24px;
+    padding-bottom: 1rem;
+}
+.content-item-2{
+    display: flex;
+}
+.content-item-2 h3{
+    color: #144494;
+    line-height: 40px;
+}
+.content-item-2 img{
+    margin-right: 10px;
+}
+
+@media(max-width: 765px){
+    .demo-wrap-section{
+        flex-direction: column-reverse;
+    }
+    .demo-form-block{
+        width: 340px;
+        margin: 2rem auto;
+    }
+    .layout-container{
+        width: 340px;
+        margin: 1rem auto;
+        padding-right: 0;
+    }
+    .demo-content-section{
+        width: 340px;
+        flex-direction: column;
+    }
+    .demo-text-content-col1{
+        width: 340px;
+    }
+    .demo-heading h2{
+        font-size: 32px;
+        padding-bottom: 1rem;
+    }
+    .p-demo{
+        width: 328px;
+    }
+    .demo-img-content-col2 img{
+        width: 328px;
+    }
+}

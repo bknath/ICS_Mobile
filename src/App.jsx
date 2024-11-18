@@ -21,6 +21,7 @@ import Bloglandingpage from './pages/BlogsPage/Bloglandingpage'
 import Csrpolicy from './pages/footerlinkpage/Csrpolicy'
 import Privacy from './pages/footerlinkpage/Privacy'
 import TermsCondition from './pages/footerlinkpage/TermsCondition'
+import Demomodule from './pages/Demopage/Demomodule'
 const App = () => {
   return (
     <div>
@@ -34,6 +35,7 @@ const App = () => {
         <Route path='/rcspage' element={<Rcstestpage />} />
         <Route path='/aboutus' element={<AboutusPage />} />
         <Route path='/career' element={<CareerPage />} />
+        <Route path= '/demomodule' element={<Demomodule/>}/>
         <Route path='/blogpage' element={<Bloglandingpage />} />
       </Routes>
       <Routes>
