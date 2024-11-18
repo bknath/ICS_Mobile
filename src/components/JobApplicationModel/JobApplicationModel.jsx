@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './JobApplication.css';
 import 'simplebar-react/dist/simplebar.min.css';
-
+import FormData from 'form-data';
+import fs from 'fs';
 const JobApplicationModel = ({ job, onClose }) => {
     const jobTitle = job.title.replaceAll(" ", "_");
     const [formCData, setFormData] = useState({
@@ -59,34 +60,52 @@ const JobApplicationModel = ({ job, onClose }) => {
         }
 
         try {
-            const response = await fetch('https://insurvey.sendmsg.in/mobileicsmobile/AddCareer.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
+            let config = {
+                method: 'post',
+                maxBodyLength: Infinity,
+                url: 'https://insurvey.sendmsg.in/mobileicsmobile/AddCareer.php',
+                headers: { 
                 },
-                body: JSON.stringify(formCData),
-            });
-            if (response.ok) {
-                const data = await response.json(); // assuming your PHP script returns JSON
-                var responsestatus=data.status;
-                var responsemessage=data.response;
-                if(responsestatus==true)
-                {
-                    alert('Resume Recieved Successfully');
-                }
-                else
-                {
-                    alert(responsemessage);
-                }
-                setFormData({
-                    name: '',
-                    email: '',
-                    experience: '',
-                    resume: '',
-                });
-            } else {
-                alert('Error submitting form');
-            }
+                data : formCData
+              };
+              
+              axios.request(config)
+              .then((response) => {
+                // console.log(JSON.stringify(response.data));
+                console.log(response);
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+
+            // const response = await fetch('https://insurvey.sendmsg.in/mobileicsmobile/AddCareer.php', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/x-www-form-urlencoded',
+            //     },
+            //     body: JSON.stringify(formCData),
+            // });
+            // if (response.ok) {
+            //     const data = await response.json(); // assuming your PHP script returns JSON
+            //     var responsestatus=data.status;
+            //     var responsemessage=data.response;
+            //     if(responsestatus==true)
+            //     {
+            //         alert('Resume Recieved Successfully');
+            //     }
+            //     else
+            //     {
+            //         alert(responsemessage);
+            //     }
+            //     setFormData({
+            //         name: '',
+            //         email: '',
+            //         experience: '',
+            //         resume: '',
+            //     });
+            // } else {
+            //     alert('Error submitting form');
+            // }
         } catch (error) {
             console.error('Error:', error);
             alert('Error submitting form');
