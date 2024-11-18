@@ -78,9 +78,9 @@ const JobApplicationModel = ({ job, onClose }) => {
                 console.log(response.data);
                 if (response.status==200) {
                     thisdata=response.data;
-                    const data =thisdata.json(); // assuming your PHP script returns JSON
-                    var responsestatus=data.status;
-                    var responsemessage=data.response;
+                   // const data =thisdata.json(); // assuming your PHP script returns JSON
+                    var responsestatus=thisdata.status;
+                    var responsemessage=thisdata.response;
                     if(responsestatus==true)
                     {
                         alert('Resume Recieved Successfully');
