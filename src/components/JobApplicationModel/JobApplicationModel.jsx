@@ -75,8 +75,10 @@ const JobApplicationModel = ({ job, onClose }) => {
               .then((response) => {
                 // console.log(JSON.stringify(response.data));
                 console.log(response);
+                console.log(response.data);
                 if (response.status==200) {
-                    const data =response.json(); // assuming your PHP script returns JSON
+                    thisdata=response.data;
+                    const data =thisdata.json(); // assuming your PHP script returns JSON
                     var responsestatus=data.status;
                     var responsemessage=data.response;
                     if(responsestatus==true)
