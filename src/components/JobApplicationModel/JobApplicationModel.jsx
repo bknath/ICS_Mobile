@@ -66,7 +66,7 @@ const JobApplicationModel = ({ job, onClose }) => {
                 maxBodyLength: Infinity,
                 url: 'https://insurvey.sendmsg.in/mobileicsmobile/AddCareer.php',
                 headers: { 
-                    'Content-Type': FormcData.getHeaders()
+                    'Content-Type': formCData.getHeaders()
                 },
                 data : formCData
               };
