@@ -3,6 +3,7 @@ import './JobApplication.css';
 import 'simplebar-react/dist/simplebar.min.css';
 import FormData from 'form-data';
 import fs from 'fs';
+import axios from 'axios';
 const JobApplicationModel = ({ job, onClose }) => {
     const jobTitle = job.title.replaceAll(" ", "_");
     const [formCData, setFormData] = useState({
