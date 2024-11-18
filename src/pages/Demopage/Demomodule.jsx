@@ -27,7 +27,8 @@ const Demomodule = () => {
         last_name: '',
         email: '',
         phone_number: '',
-        message: '',
+        companySize:'null',
+        helpOptions:'null',
         privacy_policy: false,
     });
 
@@ -89,7 +90,8 @@ const Demomodule = () => {
                     last_name: '',
                     email: '',
                     phone_number: '',
-                    message: '',
+                    companySize:'null',
+                    helpOptions:'null',
                     privacy_policy: false,
                 });
             } else {
