@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Router, Routes } from 'react-router-dom'
 import Hero from './pages/Home/Hero/Hero'
 import Product from './pages/Home/Product/Product'
 import Platform from './pages/Home/Platform/Platform'
@@ -22,48 +22,54 @@ import Csrpolicy from './pages/footerlinkpage/Csrpolicy'
 import Privacy from './pages/footerlinkpage/Privacy'
 import TermsCondition from './pages/footerlinkpage/TermsCondition'
 import Demomodule from './pages/Demopage/Demomodule'
+import Blogsinglepage from './pages/BlogsPage/Blogsinglepage'
 const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path='/chatbot' element={<ChatBotpage />} />
-        <Route path='/customer' element={<CustomerengagementPage />} />
-        <Route path='/whatsapp' element={<ApiwhatsappPage />} />
-        <Route path='/contact-us' element={<Contactuspage />} />
-        <Route path='/smsgateway' element={<SMSgatewaypage />} />
-        <Route path='/rcspage' element={<Rcstestpage />} />
-        <Route path='/aboutus' element={<AboutusPage />} />
-        <Route path='/career' element={<CareerPage />} />
-        <Route path= '/demomodule' element={<Demomodule/>}/>
-        <Route path='/blogpage' element={<Bloglandingpage />} />
-      </Routes>
-      <Routes>
-        <Route path='/' element={<Hero />} />
-      </Routes>
-      <Routes>
-        <Route path='/' element={<Product2 />} />
-      </Routes>
-      <Routes>
-        <Route path='/' element={<Platform />} />
-      </Routes>
-      <Routes>
-        <Route path='/' element={<Writings />} />
-      </Routes>
-      <Routes>
-        <Route path='/' element={<Faqsection />} />
-      </Routes>
-      <Routes>
-        <Route path='/' element={<Formsection />} />
-      </Routes>
-      <Routes>
-        <Route path='/csrpolicy' element={<Csrpolicy />} />
-        <Route path='/privacy' element={<Privacy/>}/>
-        <Route path='/termscondition' element={<TermsCondition/>}/>
-      </Routes>
-      <Footer />
-    </div>
-  )
+    return (
+        <div>
+            <Navbar />
+            <Routes>
+                <Route path='/chatbot' element={<ChatBotpage />} />
+                <Route path='/customer' element={<CustomerengagementPage />} />
+                <Route path='/whatsapp' element={<ApiwhatsappPage />} />
+                <Route path='/contact-us' element={<Contactuspage />} />
+                <Route path='/smsgateway' element={<SMSgatewaypage />} />
+                <Route path='/rcspage' element={<Rcstestpage />} />
+                <Route path='/aboutus' element={<AboutusPage />} />
+                <Route path='/career' element={<CareerPage />} />
+                <Route path='/demomodule' element={<Demomodule />} />
+            </Routes>
+            <Routes>
+                <Route path='/' element={<Hero />} />
+            </Routes>
+            <Routes>
+                <Route path='/' element={<Product2 />} />
+            </Routes>
+            <Routes>
+                <Route path='/' element={<Platform />} />
+            </Routes>
+            <Routes>
+                <Route path='/' element={<Writings />} />
+            </Routes>
+            <Routes>
+                <Route path='/' element={<Faqsection />} />
+            </Routes>
+            <Routes>
+                <Route path='/' element={<Formsection />} />
+            </Routes>
+            <Routes>
+                <Route path='/csrpolicy' element={<Csrpolicy />} />
+                <Route path='/privacy' element={<Privacy />} />
+                <Route path='/termscondition' element={<TermsCondition />} />
+            </Routes>
+
+            <Routes>
+                <Route path='/blog' element={<Bloglandingpage />} />
+                <Route path='/blog/:id' element={<Blogsinglepage />} />
+            </Routes>
+
+            <Footer />
+        </div>
+    )
 }
 
 export default App

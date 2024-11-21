@@ -124,7 +124,7 @@ const Navbar = () => {
                         </div>
                     </li>
                     <li className="nav-item">
-                        <Link to="/blogpage" onClick={handleLinkClick}>Blogs</Link>
+                        <Link to="/blog" onClick={handleLinkClick}>Blogs</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/aboutus" onClick={handleLinkClick}>About us</Link>
