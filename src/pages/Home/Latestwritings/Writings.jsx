@@ -1,157 +1,149 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; 
 import './Writings.css';
-import { assets } from '../../../assets/assets';
 
 const Writings = () => {
-    const [activeTab, setActiveTab] = useState('WhatsApp APIs'); 
+    const [activeTab, setActiveTab] = useState('SMS gateways');
+    const [articles, setArticles] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const navigate = useNavigate(); 
 
-    const renderContent = () => {
-        switch (activeTab) {
-            case 'SMS gateways':
-                return (
-                    <div className="articles">
-                        <div className="article">
-                            <img src={assets.writingimg} alt="SMS gateways 1" />
-                            <div className='textpart'>
-                            <h3>Understanding SMS Gateways: How They Work</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">10 April, 2021 | 5 Min Read</div></div>
-                        </div>
-                        <div className="article">
-                            <img src={assets.writingimg} alt="SMS gateways 2" />
-                            <div className='textpart'>
-                            <h3>Benefits of SMS Gateways for Business</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">15 April, 2021 | 7 Min Read</div></div>
-                        </div>
-                        <div className="article">
-                            <img src={assets.writingimg} alt="SMS gateways 3" />
-                            <div className='textpart'>
-                            <h3>SMS Gateways vs. Email: Which to Choose?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">20 April, 2021 | 6 Min Read</div></div>
-                        </div>
-                    </div>
-                );
-            case 'Email assistance':
-                return (
-                    <div className="articles">
-                        <div className="article">
-                            <img src={assets.writingimg} alt="Email Assistance 1" />
-                            <div className='textpart'>
-                            <h3>Best Practices for Email Support</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">12 March, 2022 | 6 Min Read</div></div>
-                        </div>
-                        <div className="article">
-                            <img src={assets.writingimg} alt="Email Assistance 2" />
-                            <div className='textpart'>
-                            <h3>How Email Assistance Improves Customer Experience</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">18 March, 2022 | 7 Min Read</div></div>
-                        </div>
-                        <div className="article">
-                            <img src={assets.writingimg} alt="Email Assistance 3" />
-                            <div className='textpart'>
-                            <h3>Choosing the Right Email Assistance Tools</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">22 March, 2022 | 5 Min Read</div></div>
-                        </div>
-                    </div>
-                );
-            case 'Engagement programs':
-                return (
-                    <div className="articles">
-                        <div className="article">
-                            <img src={assets.writingimg} alt="Engagement Programs 1" />
-                            <div className='textpart'>
-                            <h3>Creating Effective Customer Engagement Programs</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">10 May, 2021 | 5 Min Read</div></div>
-                        </div>
-                        <div className="article">
-                            <img src={assets.writingimg} alt="Engagement Programs 2" />
-                            <div className='textpart'>
-                            <h3>Top Customer Engagement Strategies for 2021</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">12 May, 2021 | 6 Min Read</div></div>
-                        </div>
-                        <div className="article">
-                            <img src={assets.writingimg} alt="Engagement Programs 3" />
-                            <div className='textpart'>
-                            <h3>Engagement Programs: Measuring Success</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <div className="meta">15 May, 2021 | 7 Min Read</div></div>
-                        </div>
-                    </div>
-                );
-            case 'WhatsApp APIs':
-            default:
-                return (
-                    <div className="articles">
-                        <div className="article">
-                            <img src={assets.writingimg} alt="WhatsApp APIs 1" />
-                            <div className='textpart'>
-                            <h3>Getting Started with WhatsApp APIs for Business</h3>
-                            <p className='apara'>Lorem ipsum dolor sit amet, </p>
-                            <div className="meta">10 August, 2021 | 5 Min Read</div></div>
-                        </div>
-                        <div className="article">
-                            <img src={assets.writingimg} alt="WhatsApp APIs 2" />
-                            <div className='textpart'>
-                            <h3>Best Practices for Using WhatsApp APIs</h3>
-                            <p>Lorem ipsum dolor sit amet,</p>
-                            <div className="meta">12 August, 2021 | 6 Min Read</div></div>
-                        </div>
-                        <div className="article">
-                            <img src={assets.writingimg} alt="WhatsApp APIs 3" />
-                            <div className='textpart'>
-                            <h3>Scaling Customer Support with WhatsApp APIs</h3>
-                            <p>Lorem ipsum dolor sit amet, </p>
-                            <div className="meta">15 August, 2021 | 7 Min Read</div></div>
-                        </div>
-                    </div>
-                );
+    const CONTENTFUL_API_URL = 'https://cdn.contentful.com/spaces/168so8tu8c7k/environments/master';
+    const API_TOKEN = 'vzrKWJs9we3Tn0oX8PZuDQHNt0wrAA4pB0yDEyroFPY';
+
+    // Function to fetch asset URL
+    const findAssetUrl = async (assetId) => {
+        try {
+            const response = await axios.get(`${CONTENTFUL_API_URL}/assets/${assetId}`, {
+                headers: {
+                    Authorization: `Bearer ${API_TOKEN}`,
+                },
+            });
+            if (response.data) {
+                return `https:${response.data.fields.file.url}`;
+            }
+            return null;
+        } catch (error) {
+            console.error('Error fetching asset URL:', error);
+            return null;
         }
     };
 
+    // Fetch articles based on category
+    const fetchArticles = async (category) => {
+        setLoading(true); 
+        try {
+            const response = await axios.get(`${CONTENTFUL_API_URL}/entries`, {
+                headers: {
+                    Authorization: `Bearer ${API_TOKEN}`,
+                },
+                params: {
+                    'content_type': 'blogPost',  
+                    'fields.categories[in]': category,  
+                    include: 2, 
+                },
+            });
+
+            // Fetch all asset URLs asynchronously for thumbnails
+            const fetchedArticles = await Promise.all(response.data.items.map(async (item) => {
+                const blogImageThumbnailUrl = await findAssetUrl(item.fields.blogImageThumbnail?.sys.id);
+
+                return {
+                    id: item.sys.id,
+                    title: item.fields.blogTitle || 'Untitled',
+                    displayTitle: item.fields.displayTitle || '',
+                    categories: item.fields.categories || 'Uncategorized',
+                    blogImageThumbnail: blogImageThumbnailUrl, 
+                    publishedDate: item.fields.publishedDate || 'Unknown date',
+                    description: item.fields.content?.content[0]?.content[0]?.value || '',
+                    content: item.fields.content || {},
+                    relatedBlogs: item.fields.relatedBlogs?.map((ref) => ref.sys.id) || [],
+                };
+            }));
+
+            setArticles(fetchedArticles);
+        } catch (error) {
+            console.error('Error fetching articles:', error);
+        } finally {
+            setLoading(false); 
+        }
+    };
+
+    useEffect(() => {
+        fetchArticles(activeTab); 
+
+        
+        const writingsSection = document.getElementById('writings-section');
+        if (writingsSection) {
+            writingsSection.scrollIntoView({ behavior: 'smooth' }); 
+        }
+    }, [activeTab]);
+
+    // Render loading state if articles are still being fetched
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
     return (
-        <div className="latest-writings">
+        <div id="writings-section" className="latest-writings"> 
             <div className="header-content">
-                <button className='head-section-b4'>Blogs</button>
+                <button className="head-section-b4">Blogs</button>
             </div>
-            <h2>Latest writings</h2>
+            <h2>Latest Writings</h2>
             <div className="tabs2">
-                <button 
+                {/* Dynamic tabs based on categories */}
+                <button
                     className={`tab ${activeTab === 'SMS gateways' ? 'active' : ''}`}
                     onClick={() => setActiveTab('SMS gateways')}
                 >
-                    SMS gateways
+                    SMS Gateways
                 </button>
-                <button 
-                    className={`tab ${activeTab === 'Email assistance' ? 'active' : ''}`}
-                    onClick={() => setActiveTab('Email assistance')}
+                <button
+                    className={`tab ${activeTab === 'IVR' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('IVR')}
                 >
-                    Email assistance
+                    IVR
                 </button>
-                <button 
-                    className={`tab ${activeTab === 'Engagement programs' ? 'active' : ''}`}
-                    onClick={() => setActiveTab('Engagement programs')}
+                <button
+                    className={`tab ${activeTab === 'RCS' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('RCS')}
                 >
-                    Engagement programs
+                    RCS
                 </button>
-                <button 
-                    className={`tab ${activeTab === 'WhatsApp APIs' ? 'active' : ''}`}
-                    onClick={() => setActiveTab('WhatsApp APIs')}
+                <button
+                    className={`tab ${activeTab === 'WhatsApp API' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('WhatsApp API')}
                 >
                     WhatsApp APIs
                 </button>
             </div>
 
-            {/* Conditionally render articles based on active tab */}
-            {renderContent()}
+            <div className="articles">
+                {/* Render articles dynamically */}
+                {articles.length > 0 ? (
+                    articles.map((article) => (
+                        <div
+                            className="article"
+                            key={article.id}
+                            onClick={() => navigate(`/blog/${article.id}`)} // Navigate to single blog page
+                        >
+                            {article.blogImageThumbnail && (
+                                <img src={article.blogImageThumbnail} alt={article.title} />
+                            )}
+                            <div className="textpart">
+                                <h3>{article.title}</h3>
+                                <p>{article.displayTitle}</p>
+                                <div className="meta">{article.publishedDate} | 5 Min Read</div>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <p>No articles found for this category.</p>
+                )}
+            </div>
         </div>
     );
-}
+};
 
 export default Writings;
