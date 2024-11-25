@@ -95,7 +95,7 @@ const Formsection = () => {
                             <div>
                                 <h3>Email</h3>
                                 <p>Our friendly team is here <br /> to help.</p>
-                                <a href="mailto:hello@icsmobile.com">hello@icsmobile.com</a>
+                                <a href="mailto:sms.support@icsportal.in">sms.support@icsportal.in</a>
                             </div>
                         </div>
                         <div className="contact-item">
@@ -119,7 +119,7 @@ const Formsection = () => {
                             <div>
                                 <h3>Phone</h3>
                                 <p>Mon-Fri from 10am to <br /> 7pm.</p>
-                                <a href="tel:+919686544566">+91 96865-44566</a>
+                                <a href="tel:+919686544566">+91 9686544566</a>
                             </div>
                         </div>
                     </div>

@@ -23,6 +23,7 @@ import Privacy from './pages/footerlinkpage/Privacy'
 import TermsCondition from './pages/footerlinkpage/TermsCondition'
 import Demomodule from './pages/Demopage/Demomodule'
 import Blogsinglepage from './pages/BlogsPage/Blogsinglepage'
+import FbSignup from './pages/Fbsignuppage/FbSignup'
 const App = () => {
     return (
         <div>
@@ -32,6 +33,7 @@ const App = () => {
                 <Route path='/customer' element={<CustomerengagementPage />} />
                 <Route path='/whatsapp' element={<ApiwhatsappPage />} />
                 <Route path='/contact-us' element={<Contactuspage />} />
+                <Route path='/fb-signup' element={<FbSignup/>}/>
                 <Route path='/smsgateway' element={<SMSgatewaypage />} />
                 <Route path='/rcspage' element={<Rcstestpage />} />
                 <Route path='/aboutus' element={<AboutusPage />} />
