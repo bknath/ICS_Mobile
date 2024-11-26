@@ -98,7 +98,7 @@ const Contactus = () => {
                         <p style={{ paddingBottom: '5px', color: '#b30000' }}>Contact us</p>
                         <h2>How May We<br /> Assist You?</h2>
                         <p>ICS is a trusted CPaaS communication partner for Enterprises. We aim to provide solutions that not only fulfill your demands but also surpass your expectations. We're here to help you find it, no matter what you're looking for.</p>
-                        <span style={{display:'flex', fontSize:'15px'}}><Link to='/fb-signup'>Click here</Link><p>&nbsp; for Facebook Signup</p></span>
+                        <span style={{display:'flex', fontSize:'14px', alignItems:'center', padding:'2rem 2rem 0 0'}}><Link to='/fb-signup'>Click here</Link><p>&nbsp; for Facebook Signup</p></span>
                     </div>
                     <div className="contactusimage">
                         <img src={assets.contactusimage} alt="Contact Us" />
