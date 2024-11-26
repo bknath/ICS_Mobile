@@ -242,7 +242,7 @@ const Contactus = () => {
                                     required
                                 />
                                 <label htmlFor="privacy-policy">
-                                    You agree to our friendly <a href="#">privacy policy</a>.
+                                    You agree to our friendly <Link to='/privacypolicy'>privacy policy</Link>.
                                 </label>
                             </div>
                             <button type="submit">Send message</button>

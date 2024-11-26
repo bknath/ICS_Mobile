@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Demomodule.css'
 import { assets } from '../../assets/assets';
+import { Link } from 'react-router-dom';
 const Demomodule = () => {
     useEffect(() =>{
         window.scrollTo(0,0);
@@ -220,7 +221,7 @@ const Demomodule = () => {
                                     required
                                 />
                                 <label htmlFor="privacy-policy">
-                                    You agree to our friendly <a href="#">privacy policy</a>.
+                                    You agree to our friendly <Link to='/privacypolicy'>privacy policy</Link>.
                                 </label>
                             </div>
                             <button type="submit">Schedule a demo</button>

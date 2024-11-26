@@ -60,7 +60,7 @@ const App = () => {
             </Routes>
             <Routes>
                 <Route path='/csrpolicy' element={<Csrpolicy />} />
-                <Route path='/privacy' element={<Privacy />} />
+                <Route path='/privacypolicy' element={<Privacy />} />
                 <Route path='/termscondition' element={<TermsCondition />} />
             </Routes>
 

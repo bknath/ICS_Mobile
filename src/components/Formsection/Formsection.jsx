@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Formsection.css';
 import { assets } from '../../assets/assets';
+import { Link } from 'react-router-dom';
 const Formsection = () => {
     const [formData, setFormData] = useState({
         first_name: '',
@@ -225,7 +226,7 @@ const Formsection = () => {
                             required
                         />
                         <label htmlFor="privacy-policy">
-                            You agree to our friendly <a href="#">privacy policy</a>.
+                            You agree to our friendly <Link to='/privacypolicy'>privacy policy</Link>.
                         </label>
                     </div>
                     <button type="submit">Send message</button>
