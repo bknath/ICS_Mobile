@@ -77,7 +77,7 @@ const Platform = () => {
     const targetCounts = {
         apiCalls: 3,
         operators: 5,
-        apiUptime: 99.99,
+        apiUptime: 99.9,
         smsSent: 2,
         otpSent: 1
     };
@@ -349,7 +349,7 @@ const Platform = () => {
                                 </div>
                                 <div className="tab-stats-content">
                                     <div className="stat-flex-box">
-                                        <h3 className='stat-flex-box-1' ref={apiUptimeRef}>0</h3><span className="stat-flex-box-2">%</span>
+                                        <h3 className='stat-flex-box-1' ref={apiUptimeRef}>0</h3><span className="stat-flex-box-2">.9%</span>
                                     </div>
                                     <p style={{ paddingTop: '1.3rem' }}>API uptime</p>
                                 </div>

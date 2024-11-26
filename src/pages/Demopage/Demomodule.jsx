@@ -3,9 +3,9 @@ import './Demomodule.css'
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
 const Demomodule = () => {
-    useEffect(() =>{
-        window.scrollTo(0,0);
-    },[]);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const items = [
         {
             icon: assets.Hiringlogo1,
@@ -28,8 +28,8 @@ const Demomodule = () => {
         last_name: '',
         email: '',
         phone_number: '',
-        companySize:'null',
-        helpOptions:'null',
+        companySize: 'null',
+        helpOptions: 'null',
         privacy_policy: false,
     });
 
@@ -91,8 +91,8 @@ const Demomodule = () => {
                     last_name: '',
                     email: '',
                     phone_number: '',
-                    companySize:'null',
-                    helpOptions:'null',
+                    companySize: 'null',
+                    helpOptions: 'null',
                     privacy_policy: false,
                 });
             } else {
@@ -221,7 +221,8 @@ const Demomodule = () => {
                                     required
                                 />
                                 <label htmlFor="privacy-policy">
-                                    You agree to our friendly <Link to='/privacypolicy'>privacy policy</Link>.
+                                    By submitting this form, you agree to receive SMS, RCS or WhatsApp messages from ICS.
+                                    {/* You agree to our friendly <Link to='/privacypolicy'>privacy policy</Link>. */}
                                 </label>
                             </div>
                             <button type="submit">Schedule a demo</button>
