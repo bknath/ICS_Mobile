@@ -7,7 +7,7 @@ const Faqsection = () => {
     const faqs = [
         {
             question: "How many API calls can I make per month?",
-            answer: "You can make as many API calls as your business requires. We offer a free 30-day trial where you’ll have full access to our API, allowing you to explore its full potential. During the trial, we'll provide comprehensive support, including a personalized 30-minute onboarding session to help you integrate our services into your system efficiently and ensure you're up and running in no time."
+            answer: "You can make as many API calls as your business requires. During the trial, we'll provide comprehensive support, including a personalized 30-minute onboarding session to help you integrate our services into your system efficiently and ensure you're up and running in no time."
         },
         {
             question: "How many operators are connected?",

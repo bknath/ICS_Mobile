@@ -361,7 +361,7 @@ const Platform = () => {
                                 </div>
                                 <div className="tab-stats-content">
                                     <div className="stat-flex-box">
-                                        <h3 className='stat-flex-box-1' ref={otpSentRef}>0</h3><span className='stat-flex-box-2'>B</span>
+                                        <h3 className='stat-flex-box-1' ref={otpSentRef}>0</h3><span className='stat-flex-box-2'>B+</span>
                                     </div>
                                     <p>OTP sent per <br /> month</p>
                                 </div>
