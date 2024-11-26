@@ -226,7 +226,7 @@ const Formsection = () => {
                             required
                         />
                         <label htmlFor="privacy-policy">
-                            You agree to our friendly <Link to='/privacypolicy'>privacy policy</Link>.
+                            By submitting this form, you agree to receive SMS, RCS or WhatsApp messages from ICS.
                         </label>
                     </div>
                     <button type="submit">Send message</button>

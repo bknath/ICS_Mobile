@@ -157,16 +157,18 @@ textarea::placeholder {
 
 .checkbox-group {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .checkbox-group input[type="checkbox"] {
     width: auto;
     margin-right: 10px;
+    margin-top: 2px;
 }
 
 .checkbox-group label {
     color: #333;
+    line-height: 18px;
 }
 
 .checkbox-group a {

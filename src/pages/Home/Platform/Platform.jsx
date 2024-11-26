@@ -75,11 +75,11 @@ const Platform = () => {
     const otpSentRef = useRef(null);
 
     const targetCounts = {
-        apiCalls: 12,
+        apiCalls: 3,
         operators: 5,
-        apiUptime: 6,
-        smsSent: 19,
-        otpSent: 12
+        apiUptime: 99.99,
+        smsSent: 2,
+        otpSent: 1
     };
 
     useEffect(() => {
@@ -337,31 +337,31 @@ const Platform = () => {
                             <div className="tab-stats-row">
                                 <div className="tab-stats-content">
                                     <div className="stat-flex-box">
-                                        <h3 className='stat-flex-box-1' ref={apiCallsRef}>0</h3><span className="stat-flex-box-2">L+</span>
+                                        <h3 className='stat-flex-box-1' ref={apiCallsRef}>0</h3><span className="stat-flex-box-2">B+</span>
                                     </div>
                                     <p>API calls per <br /> months</p>
                                 </div>
                                 <div className="tab-stats-content">
                                     <div className="stat-flex-box">
-                                        <h3 className='stat-flex-box-1' ref={operatorsRef}>0</h3><span className='stat-flex-box-2'>L+</span>
+                                        <h3 className='stat-flex-box-1' ref={operatorsRef}>0</h3><span className='stat-flex-box-2'>+</span>
                                     </div>
                                     <p>Operators <br />connected</p>
                                 </div>
                                 <div className="tab-stats-content">
                                     <div className="stat-flex-box">
-                                        <span className="stat-flex-box-2">0</span><h3 className='stat-flex-box-1' ref={apiUptimeRef}>0</h3>
+                                        <h3 className='stat-flex-box-1' ref={apiUptimeRef}>0</h3><span className="stat-flex-box-2">%</span>
                                     </div>
                                     <p style={{ paddingTop: '1.3rem' }}>API uptime</p>
                                 </div>
                                 <div className="tab-stats-content">
                                     <div className="stat-flex-box">
-                                        <h3 className='stat-flex-box-1' ref={smsSentRef}>0</h3><span className='stat-flex-box-2'>L+</span>
+                                        <h3 className='stat-flex-box-1' ref={smsSentRef}>0</h3><span className='stat-flex-box-2'>B+</span>
                                     </div>
                                     <p>SMS sent per <br />month</p>
                                 </div>
                                 <div className="tab-stats-content">
                                     <div className="stat-flex-box">
-                                        <h3 className='stat-flex-box-1' ref={otpSentRef}>0</h3><span className='stat-flex-box-2'>K+</span>
+                                        <h3 className='stat-flex-box-1' ref={otpSentRef}>0</h3><span className='stat-flex-box-2'>B</span>
                                     </div>
                                     <p>OTP sent per <br /> month</p>
                                 </div>

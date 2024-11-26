@@ -11,8 +11,8 @@ const Hero = () => {
     const smsRef = useRef(null);
 
     const targetCounts = {
-        brandcount: 50,
-        yearcount: 5,
+        brandcount: 100,
+        yearcount: 15,
         smscount: 3
     };
 
