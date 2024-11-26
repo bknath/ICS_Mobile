@@ -7,7 +7,7 @@
 
 .contact-content-block {
     padding: 20px;
-    max-width: 600px;
+    width: 600px;
 }
 
 .contact-content-block h2 {
@@ -54,14 +54,14 @@
 }
 
 .contact-item p {
-    font-size: 14px;
+    font-size: 13px;
     color: #666;
     margin-bottom: 8px;
 }
 
 .contact-item a,
 .contact-item address {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: #b30000;
     text-decoration: none;
@@ -231,10 +231,13 @@ select::-ms-expand {
     }
     .contact-content-block{
         padding: 10px 5px;
+        width: 336px;
     }
     .contact-details{
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 21px;
     }
     .contact-item{
         width: 46%;
