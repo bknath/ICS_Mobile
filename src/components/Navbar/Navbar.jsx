@@ -187,6 +187,7 @@ const Navbar = () => {
                                         </ul>
                                     )}
                                 </li>
+                                <li><Link to="/blog" onClick={handleLinkClick}>Blogs</Link></li>
                                 <li><Link to="/aboutus" onClick={handleLinkClick}>About Us</Link></li>
                                 <li><Link to="/contact-us" onClick={handleLinkClick}>Contact Us</Link></li>
                             </ul>
