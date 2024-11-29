@@ -1,36 +1,12 @@
 import logo from './logo.svg'
 import logo3 from './images.png'
 import chatBubble from './Chat Bubble.svg'
-import mapICS from './mapics.png'
 import downarrow from './down-arrow.png'
-import Robot from './Robot.svg'
 import SMSmobile from './SMS-mobile.png' 
-import Partnercompany from './partnercompany.png'
-import lifestylelogo from './lifestyle-logo.png'
-import lifestylelogo2 from './lifestylelogo2.png'
 import documentlogo from './documentlogo.svg'
-import zomotologo from './Zomato-logo.png'
-import weworklogo from './wework-logo.png'
 import magnetIcon from './magneticon.svg'
 import handshakeIcon from './handshakeicon.svg'
 import settingIcon from './settingicon.svg'
-import customerapproachIcon from './customerapproachicon.svg'
-import authorIcon from './authoricon.png'
-import amazonlogo from './amazonlogo.png'
-import axisbanklogo from './axisbanklogo.png'
-import citibanklogo from './citibanklogo.png'
-import cromalogo from './cromalogo.png'
-import evernotelogo from './evernotelogo.png'
-import hexawarelogo from './hexawarelogo.png'
-import nykaalogo from './nykaalogo.png'
-import pwclogo from './pwclogo.png'
-import safewaylogo from './safewaylogo.png'
-import shopclueslogo from'./shopclueslogo.png'
-import shopifylogo from './shopifylogo.png'
-import wayfairlogo from './wayfairlogo.png'
-import writingimg from './writingimg.png'
-import productvectorart from './productvectorart.svg'
-import productvectorart2 from './productvectorart2.svg'
 import SMSproduct2image from './SMSproduct2image.svg'
 import RCSproduct2image from './RCSproduct2image.svg'
 import Whatsappproduct2image from './Whatsappproduct2image.svg'
@@ -125,24 +101,6 @@ import globalflexIcon from './gloabalflexicon.svg'
 import keyfeaturesIcon from './keyfeaturesicon.png'
 //whatsappAPI
 import whatsappAPILogo from './whatsappAPIlogo.svg'
-import globalaudienceIcon from './globalaudienceicon.svg'
-import bluetickIcon from './bluetickicon.svg'
-import whatsappPlatfroml2 from './4815735 1.svg'
-import whatsappPlatfroml3 from './3907313 1.svg'
-import notificationIcon from './notificationicon.svg'
-import ecommerceIcon from './ecommerceicon.svg'
-import loyaltyprogramIcon from './loyaltyprogicon.svg'
-import faqautomationIcon from './Faqautomationicon.svg'
-import feedbacksolIcon from './feedbacksolicon.svg'
-import botflowIcon from './botflowicon.svg'
-import newsletterIcon from './newslettericon.svg'
-import deliverymanageIcon from './deliverymanageicon.svg'
-import socialmediaIcon from './socialmediaicon.svg'
-import whatsapptemplateIcon from './whatsapptemplateicon.svg'
-import whatsappPlatforml4 from './whatsappPlatforml4.svg'
-import whatsappPlatforml5 from './whatsappPlatforml5.svg'
-import chatIcon2 from './chaticon2.svg'
-import chatIcon3 from './chaticon3.svg'
 //new whatsappAPI
 import whywhatsappP1img from './whywhatsapp-p1img.svg'
 import whywhatsappP2img from './whywhatsapp-p2img.svg'
@@ -188,7 +146,6 @@ import f7sm9 from './f7sm9.svg'
 // backgroundgradient
 import BackgroundImage from './backgroundimage.png'
 import Abstract from './Abstract.png'
-import HomepageBannerart from './HomepageBannerart.svg'
 // footer
 import FacebookIcon from './FacebookIcon.svg'
 import InstagramIcon from './InstagramIcon.svg'
@@ -270,37 +227,12 @@ export const assets = {
     logo3,
     logo,
     chatBubble,
-    mapICS,
     downarrow,
-    Robot,
-    HomepageBannerart,
     SMSmobile,
-    Partnercompany,
-    lifestylelogo,
-    lifestylelogo2,
     documentlogo,
-    zomotologo,
-    weworklogo,
     magnetIcon,
     handshakeIcon,
     settingIcon,
-    customerapproachIcon,
-    authorIcon,
-    amazonlogo,
-    axisbanklogo,
-    citibanklogo,
-    cromalogo,
-    evernotelogo,
-    hexawarelogo,
-    nykaalogo,
-    pwclogo,
-    safewaylogo,
-    shopclueslogo,
-    shopifylogo,
-    wayfairlogo,
-    writingimg,
-    productvectorart,
-    productvectorart2,
     //partners updated logos
     adityabirla,
     arvind,
@@ -395,24 +327,6 @@ export const assets = {
     keyfeaturesIcon,
     //whatsappAPI
     whatsappAPILogo,
-    globalaudienceIcon,
-    bluetickIcon,
-    whatsappPlatfroml2,
-    whatsappPlatfroml3,
-    notificationIcon,
-    ecommerceIcon,
-    loyaltyprogramIcon,
-    faqautomationIcon,
-    feedbacksolIcon,
-    botflowIcon,
-    newsletterIcon,
-    deliverymanageIcon,
-    socialmediaIcon,
-    whatsapptemplateIcon,
-    chatIcon2,
-    chatIcon3,
-    whatsappPlatforml4,
-    whatsappPlatforml5,
     //newwhatsappapi
     whywhatsappP1img,
     whywhatsappP2img,
