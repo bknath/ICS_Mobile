@@ -127,7 +127,7 @@ const Navbar = () => {
                         <Link to="/blog" onClick={handleLinkClick}>Blogs</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/aboutus" onClick={handleLinkClick}>About us</Link>
+                        <Link to="/about-us" onClick={handleLinkClick}>About us</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/contact-us" onClick={handleLinkClick}>Contact us</Link>
@@ -188,7 +188,7 @@ const Navbar = () => {
                                     )}
                                 </li>
                                 <li><Link to="/blog" onClick={handleLinkClick}>Blogs</Link></li>
-                                <li><Link to="/aboutus" onClick={handleLinkClick}>About Us</Link></li>
+                                <li><Link to="/about-us" onClick={handleLinkClick}>About Us</Link></li>
                                 <li><Link to="/contact-us" onClick={handleLinkClick}>Contact Us</Link></li>
                             </ul>
 

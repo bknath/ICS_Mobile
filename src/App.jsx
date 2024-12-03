@@ -36,7 +36,7 @@ const App = () => {
                 <Route path='/fb-signup' element={<FbSignup/>}/>
                 <Route path='/smsgateway' element={<SMSgatewaypage />} />
                 <Route path='/rcspage' element={<Rcstestpage />} />
-                <Route path='/aboutus' element={<AboutusPage />} />
+                <Route path='/about-us' element={<AboutusPage />} />
                 <Route path='/career' element={<CareerPage />} />
                 <Route path='/demomodule' element={<Demomodule />} />
             </Routes>
