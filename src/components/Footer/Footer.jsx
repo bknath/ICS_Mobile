@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <div className="footer-line"></div>
                     <div className="footer-ct-img">
-                        <p>Copyright ©2021. ICS Mobile Pvt. Ltd. All Rights Reserved</p>
+                        <p>Copyright ©2024. ICS Mobile Pvt. Ltd. All Rights Reserved</p>
                         <div className="ct-img-grp">
                             <span style={{paddingRight:'10px'}}><img src={assets.ISOCertified1} alt="" /></span><span><img src={assets.ISOCertified2} alt="" /></span>
                         </div>

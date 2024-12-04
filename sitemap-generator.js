@@ -20,7 +20,7 @@ const generateSitemap = () => {
 
   routes.forEach(route => {
     urlset.ele('url')
-      .ele('loc').txt(`https://icsmobile.in/${route.path}`).up()
+      .ele('loc').txt(`https://icsmobile.in${route.path}`).up()
       .ele('changefreq').txt('monthly').up()
       .ele('priority').txt('0.8').up();
   });
