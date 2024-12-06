@@ -24,6 +24,7 @@ import TermsCondition from './pages/footerlinkpage/TermsCondition'
 import Demomodule from './pages/Demopage/Demomodule'
 import Blogsinglepage from './pages/BlogsPage/Blogsinglepage'
 import FbSignup from './pages/Fbsignuppage/FbSignup'
+import FacebookLoginIntegration from './pages/Fbsignuppage/FacebookLoginIntegration'
 const App = () => {
     return (
         <div>
@@ -34,6 +35,7 @@ const App = () => {
                 <Route path='/whatsapp' element={<ApiwhatsappPage />} />
                 <Route path='/contact-us' element={<Contactuspage />} />
                 <Route path='/fb-signup' element={<FbSignup/>}/>
+                <Route path='/fb-signupnew' element={<FacebookLoginIntegration/>}/>
                 <Route path='/smsgateway' element={<SMSgatewaypage />} />
                 <Route path='/rcspage' element={<Rcstestpage />} />
                 <Route path='/about-us' element={<AboutusPage />} />
