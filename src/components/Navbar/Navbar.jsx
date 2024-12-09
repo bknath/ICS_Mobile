@@ -55,7 +55,7 @@ const Navbar = () => {
                             <div className="dropdown-content-block">
                                 <div className="dropdown-content-block-1">
                                     <div className="dropdown-content-pr">
-                                        <img src={assets.playBtn} alt="" />
+                                        <img src={assets.whatsAppiconmain} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/whatsapp" onClick={handleLinkClick}>Whatsapp Business API</Link>
                                             <p>Leverage WhatsApp for seamless customer interactions with automated and reliable messaging solutions.</p>
@@ -165,7 +165,7 @@ const Navbar = () => {
                                     </a>
                                     {isProductsDropdownOpen && (
                                         <ul className="dropdown show">
-                                            <li><span><img src={assets.playBtn} alt="wh-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/whatsapp" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Whatsapp Business API</Link></li>
+                                            <li><span><img src={assets.whatsAppiconmain} alt="wh-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/whatsapp" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Whatsapp Business API</Link></li>
                                             <li><span><img src={assets.robotextIcon} alt="ch-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/chatbot" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Chatbot</Link></li>
                                             <li><span><img src={assets.FlagIcon} alt="cep-icon" style={{ paddingRight: "10px" }} /></span><Link to="/customer" style={{ fontSize: '14px', textAlign:'left' }} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
                                             <li><span><img src={assets.innovativetech} alt="sms-icon" style={{ paddingRight: "10px" }} /></span><Link to="/smsgateway" style={{ fontSize: '14px' }} onClick={handleLinkClick}>SMS Gateway</Link></li>

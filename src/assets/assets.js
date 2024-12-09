@@ -10,6 +10,7 @@ import settingIcon from './settingicon.svg'
 import SMSproduct2image from './SMSproduct2image.svg'
 import RCSproduct2image from './RCSproduct2image.svg'
 import Whatsappproduct2image from './Whatsappproduct2image.svg'
+import whatsAppiconmain from './whatsAppiconmain.svg'
 //partner logos updated
 import adityabirla from './adityabirla.svg'
 import arvind from './arvind.svg'
@@ -233,6 +234,7 @@ export const assets = {
     magnetIcon,
     handshakeIcon,
     settingIcon,
+    whatsAppiconmain,
     //partners updated logos
     adityabirla,
     arvind,
