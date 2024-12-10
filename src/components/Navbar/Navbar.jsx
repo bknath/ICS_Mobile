@@ -62,14 +62,14 @@ const Navbar = () => {
                                         </div>
                                     </div>
                                     <div className="dropdown-content-pr">
-                                        <img src={assets.robotextIcon} alt="" />
+                                        <img src={assets.robonavicon} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/chatbot" onClick={handleLinkClick}>Chatbot</Link>
                                             <p>Engage customers instantly with AI-powered chatbots tailored to respond to their queries in real time.</p>
                                         </div>
                                     </div>
                                     <div className="dropdown-content-pr">
-                                        <img src={assets.FlagIcon} alt="" />
+                                        <img src={assets.cepnavicon} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/customer" onClick={handleLinkClick}>Customer Engagement Programs</Link>
                                             <p>Offer personalized and interactive campaigns to increase customer loyalty and satisfaction.</p>
@@ -78,16 +78,16 @@ const Navbar = () => {
                                 </div>
                                 <div className="dropdown-content-block-2">
                                     <div className="dropdown-content-pr">
-                                        <img src={assets.innovativetech} alt="" />
+                                        <img src={assets.smsnavicon} alt="" />
                                         <div className="content-text-pr">
                                             <Link to="/smsgateway" onClick={handleLinkClick}>SMS Gateway</Link>
                                             <p>Send timely notifications, reminders, and updates with high reliability through our SMS Gateway.</p>
                                         </div>
                                     </div>
                                     <div className="dropdown-content-pr">
-                                        <img src={assets.lastingconnection} alt="" />
+                                        <img src={assets.rcsnavicon} alt="" />
                                         <div className="content-text-pr">
-                                            <Link to="/rcspage" onClick={handleLinkClick}>Rich Communication</Link>
+                                            <Link to="/rcspage" onClick={handleLinkClick}>Rich Communication Services</Link>
                                             <p>Elevate your messaging experience with multimedia-rich interactions through RCS technology.</p>
                                         </div>
                                     </div>
@@ -166,10 +166,10 @@ const Navbar = () => {
                                     {isProductsDropdownOpen && (
                                         <ul className="dropdown show">
                                             <li><span><img src={assets.whatsAppiconmain} alt="wh-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/whatsapp" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Whatsapp Business API</Link></li>
-                                            <li><span><img src={assets.robotextIcon} alt="ch-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/chatbot" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Chatbot</Link></li>
-                                            <li><span><img src={assets.FlagIcon} alt="cep-icon" style={{ paddingRight: "10px" }} /></span><Link to="/customer" style={{ fontSize: '14px', textAlign:'left' }} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
-                                            <li><span><img src={assets.innovativetech} alt="sms-icon" style={{ paddingRight: "10px" }} /></span><Link to="/smsgateway" style={{ fontSize: '14px' }} onClick={handleLinkClick}>SMS Gateway</Link></li>
-                                            <li><span><img src={assets.lastingconnection} alt="rcs-icon" style={{ paddingRight: "10px" }} /></span><Link to="/rcspage" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Rich Communication</Link></li>
+                                            <li><span><img src={assets.robonavicon} alt="ch-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/chatbot" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Chatbot</Link></li>
+                                            <li><span><img src={assets.cepnavicon} alt="cep-icon" style={{ paddingRight: "10px" }} /></span><Link to="/customer" style={{ fontSize: '14px', textAlign:'left' }} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
+                                            <li><span><img src={assets.smsnavicon} alt="sms-icon" style={{ paddingRight: "10px" }} /></span><Link to="/smsgateway" style={{ fontSize: '14px' }} onClick={handleLinkClick}>SMS Gateway</Link></li>
+                                            <li><span><img src={assets.rcsnavicon} alt="rcs-icon" style={{ paddingRight: "10px" }} /></span><Link to="/rcspage" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Rich Communication Services</Link></li>
                                         </ul>
                                     )}
                                 </li>

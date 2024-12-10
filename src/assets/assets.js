@@ -11,6 +11,10 @@ import SMSproduct2image from './SMSproduct2image.svg'
 import RCSproduct2image from './RCSproduct2image.svg'
 import Whatsappproduct2image from './Whatsappproduct2image.svg'
 import whatsAppiconmain from './whatsAppiconmain.svg'
+import rcsnavicon from './rcsnavicon.svg'
+import smsnavicon from './smsnavicon.png'
+import cepnavicon from './cepnavicon.svg'
+import robonavicon from './robonavicon.svg'
 //partner logos updated
 import adityabirla from './adityabirla.svg'
 import arvind from './arvind.svg'
@@ -235,6 +239,10 @@ export const assets = {
     handshakeIcon,
     settingIcon,
     whatsAppiconmain,
+    rcsnavicon,
+    smsnavicon,
+    cepnavicon,
+    robonavicon,
     //partners updated logos
     adityabirla,
     arvind,
