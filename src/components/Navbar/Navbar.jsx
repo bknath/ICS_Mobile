@@ -45,7 +45,7 @@ const Navbar = () => {
                         onMouseEnter={() => setDropdownOpen('products')}
                         onMouseLeave={() => setDropdownOpen(null)}
                     >
-                        <a href="#" className="dropbtn">
+                        <a className="dropbtn">
                             Products
                             <span className="arrow">
                                 <img src={assets.downarrow} alt="Dropdown Arrow" />
@@ -100,7 +100,7 @@ const Navbar = () => {
                         onMouseEnter={() => setDropdownOpen('resources')}
                         onMouseLeave={() => setDropdownOpen(null)}
                     >
-                        <a href="#" className="dropbtn">
+                        <a  className="dropbtn">
                             Resources
                             <span className="arrow">
                                 <img src={assets.downarrow} alt="Dropdown Arrow" />
@@ -157,7 +157,7 @@ const Navbar = () => {
                         <div className="mobile-nav-links">
                             <ul>
                                 <li>
-                                    <a href="#" onClick={toggleProductsDropdown}>
+                                    <a  onClick={toggleProductsDropdown}>
                                         Products
                                         <span className="arrow2">
                                             <img src={isProductsDropdownOpen ? assets.uparrow : assets.downarrow2} alt="dropdown" />
@@ -174,7 +174,7 @@ const Navbar = () => {
                                     )}
                                 </li>
                                 <li>
-                                    <a href="#" onClick={toggleResourcesDropdown}>
+                                    <a  onClick={toggleResourcesDropdown}>
                                         Resources
                                         <span className="arrow2">
                                             <img src={isResourcesDropdownOpen ? assets.uparrow : assets.downarrow2} alt="dropdown" />
