@@ -117,7 +117,8 @@ const Navbar = () => {
                             <div className="dropdown-content-pr">
                                 <img src={assets.lastingconnection} alt="" />
                                 <div className="content-text-pr">
-                                    <a href="#" onClick={handleLinkClick}>Case Study</a>
+                                    <Link to='/#casestudies'>Case Studies</Link>
+                                    {/* <a href="#" onClick={handleLinkClick}>Case Study</a> */}
                                     <p>Learn how our customers are making big changes.</p>
                                 </div>
                             </div>
@@ -183,7 +184,7 @@ const Navbar = () => {
                                     {isResourcesDropdownOpen && (
                                         <ul className="dropdown show">
                                             <li><span><img src={assets.innovativetech} alt="bg-icon" style={{ paddingRight: "10px" }} /></span><Link to="/career" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Carrers</Link></li>
-                                            <li><span><img src={assets.lastingconnection} alt="cs-icon" style={{ paddingRight: "10px" }} /></span><a href="#" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Case Study</a></li>
+                                            <li><span><img src={assets.lastingconnection} alt="cs-icon" style={{ paddingRight: "10px" }} /></span><Link to='/#casestudies' style={{ fontSize: '14px' }} onClick={handleLinkClick}>Case Studies</Link></li>
                                         </ul>
                                     )}
                                 </li>

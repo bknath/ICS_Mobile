@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Platform.css';
 import { assets } from '../../../assets/assets';
 import { useInView } from "react-intersection-observer";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 const Platform = () => {
     const { ref: sectionRef1, inView: imageInView1 } = useInView({
         triggerOnce: true,
@@ -191,6 +191,16 @@ const Platform = () => {
     const handleClick = (clientKey) => {
         setSelectedClient(clientKey);
     };
+    const location = useLocation();
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.querySelector(location.hash);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location]);
+
     return (
         <div>
             <div className="platform-section-1">
@@ -271,7 +281,7 @@ const Platform = () => {
                 <div className="header-content-2">
                     <p style={{ fontSize: '14px', color: '#777', lineHeight: '24px' }}>By partnering with these leading companies, our API provides a versatile and powerful tool to help you streamline operations, automate processes, and <br />enhance customer engagement across various platforms.</p>
                 </div>
-                <div className="header-content">
+                <div className="header-content" id='casestudies'>
                     <button className='head-section-b3'>Case Studies</button>
                     <h2>Customer Success Stories</h2>
                     <p style={{ paddingBottom: '20px' }}>What some of our 8000+ customers across 100+ countries think of ICS</p>
@@ -296,13 +306,13 @@ const Platform = () => {
                         </div>
                         <div className="client-logos">
                             <div className="client-logo-container" onClick={() => handleClick('Bluestone')}>
-                                <img  src={assets.bluestonelogo} alt="Bluestone" />
+                                <img src={assets.bluestonelogo} alt="Bluestone" />
                             </div>
                             <div className="client-logo-container" onClick={() => handleClick('Benetton')}>
-                                <img  src={assets.benettonlogo} alt="Benetton" />
+                                <img src={assets.benettonlogo} alt="Benetton" />
                             </div>
                             <div className="client-logo-container" onClick={() => handleClick('MPL')}>
-                                <img  src={assets.mpl2logo} alt="MPL" />
+                                <img src={assets.mpl2logo} alt="MPL" />
                             </div>
                         </div>
                     </div>
