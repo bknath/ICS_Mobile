@@ -112,35 +112,35 @@ const Contactus = () => {
                             <img src={assets.chatBubble} alt="Chat Bubble" />
                             <div className="info-block-content">
                                 <h3>Looking to know more about our Services and Products?</h3>
-                                <a href="#">Find Assistance</a>
+                                <a>Find Assistance</a>
                             </div>
                         </div>
                         <div className="contact-us-item">
                             <img src={assets.contactuschaticon2} alt="Contact Us" />
                             <div className="info-block-content">
                                 <h3>Want to know more about our Developers API?</h3>
-                                <a href="#">Read API Docs</a>
+                                <a>Read API Docs</a>
                             </div>
                         </div>
                         <div className="contact-us-item">
                             <img src={assets.chatBubble} alt="Chat Bubble" />
                             <div className="info-block-content">
                                 <h3>Exploring better rates or better CPaaS services?</h3>
-                                <a href="#">Contact an Expert</a>
+                                <a>Contact an Expert</a>
                             </div>
                         </div>
                         <div className="contact-us-item">
                             <img src={assets.contactuschaticon2} alt="Contact Us" />
                             <div className="info-block-content">
                                 <h3>Investigating potential ICS Mobile collaborations?</h3>
-                                <a href="#">Discover Partnership</a>
+                                <a>Discover Partnership</a>
                             </div>
                         </div>
                         <div className="contact-us-item">
                             <img src={assets.chatBubble} alt="Chat Bubble" />
                             <div className="info-block-content">
                                 <h3>Want to be a part of our exciting team?</h3>
-                                <a href="#">Uncover Possibilities</a>
+                                <a>Uncover Possibilities</a>
                             </div>
                         </div>
                     </div>
