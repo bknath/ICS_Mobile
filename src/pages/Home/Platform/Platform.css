@@ -453,6 +453,7 @@
     padding-top: 0;
     padding: 0 95px;
     box-shadow: 0px 0px 10px 5px rgba(38, 113, 183, 0.1);
+    cursor: pointer;
 }
 
 .client-logo-container img {
