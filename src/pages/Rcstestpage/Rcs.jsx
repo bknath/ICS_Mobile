@@ -264,7 +264,7 @@ const Rcs = () => {
                         <div className="rcs-feature-content">
                             <ul className="rcs-feature-list">
                                 <li>
-                                    <img src={assets.chatIcon2} alt="" />
+                                    <img src={assets.chatIcon4} alt="" />
                                     <p>Elevate engagement with visually stunning RCS Carousels.</p>
                                 </li>
                                 <li>
@@ -272,7 +272,7 @@ const Rcs = () => {
                                     <p>Simplify interactions with clickable RCS Suggested Actions.</p>
                                 </li>
                                 <li>
-                                    <img src={assets.chatIcon2} alt="" />
+                                    <img src={assets.chatIcon4} alt="" />
                                     <p>Streamline conversations with context-aware RCS Smart Replies.</p>
                                 </li>
                                 <li>
@@ -280,7 +280,7 @@ const Rcs = () => {
                                     <p>Showcase crystal-clear media with RCS's high-resolution images and videos.</p>
                                 </li>
                                 <li>
-                                    <img src={assets.chatIcon2} alt="" />
+                                    <img src={assets.chatIcon4} alt="" />
                                     <p>Ensure clarity and accountability with RCS Read Receipts.</p>
                                 </li>
                                 <li>

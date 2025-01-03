@@ -15,6 +15,7 @@ import rcsnavicon from './rcsnavicon.svg'
 import smsnavicon from './smsnavicon.png'
 import cepnavicon from './cepnavicon.svg'
 import robonavicon from './robonavicon.svg'
+
 //partner logos updated
 import adityabirla from './adityabirla.svg'
 import arvind from './arvind.svg'
@@ -179,6 +180,15 @@ import f7rcs3 from './f7rcs3.svg'
 import f7rcs4 from './f7rcs4.svg'
 import f7rcs5 from './f7rcs5.svg'
 import f7rcs6 from './f7rcs6.svg'
+import whatsappPlatfroml2 from './4815735 1.svg'
+import whatsappPlatfroml3 from './3907313 1.svg'
+import whatsappPlatforml4 from './whatsappPlatforml4.svg'
+import whatsappPlatforml5 from './whatsappPlatforml5.svg'
+import chatIcon2 from './chaticon2.svg'
+import chatIcon3 from './chaticon3.svg'
+import chatIcon4 from './chaticon4.svg'
+import globalaudienceIcon from './globalaudienceicon.svg'
+import bluetickIcon from './bluetickicon.svg'
 //About us
 import Aboutuslogo1 from './Aboutuslogo1.svg'
 import Aboutuslogo2 from './Aboutuslogo2.svg'
@@ -410,6 +420,15 @@ export const assets = {
     f7rcs4,
     f7rcs5,
     f7rcs6,
+    whatsappPlatfroml2,
+    whatsappPlatfroml3,
+    whatsappPlatforml4,
+    whatsappPlatforml5,
+    chatIcon2,
+    chatIcon3,
+    chatIcon4,
+    globalaudienceIcon,
+    bluetickIcon,
     //Aboutus
     Aboutuslogo1,
     Aboutuslogo2,
