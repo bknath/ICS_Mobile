@@ -74,7 +74,7 @@ const Product2 = () => {
             <div className="header-content-1">
                 <button className='head-section-b1'>Products</button>
                 <h2>Explore All Products, Unlock Possibilities</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p>Discover Our Full Range of Products and Unlock Endless Possibilities!</p>
             </div>
             <div className="custom-product-section">
                 <div className="custom-product-content">
