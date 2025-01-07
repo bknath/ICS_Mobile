@@ -1,5 +1,6 @@
 import logo from './logo.svg'
 import logo3 from './images.png'
+import ICSmainLogo from './ICSmainLogo.svg'
 import chatBubble from './Chat Bubble.svg'
 import downarrow from './down-arrow.png'
 import SMSmobile from './SMS-mobile.png' 
@@ -15,6 +16,7 @@ import rcsnavicon from './rcsnavicon.svg'
 import smsnavicon from './smsnavicon.png'
 import cepnavicon from './cepnavicon.svg'
 import robonavicon from './robonavicon.svg'
+import Homeb1 from './homeb1.svg'
 
 //partner logos updated
 import adityabirla from './adityabirla.svg'
@@ -189,6 +191,7 @@ import chatIcon3 from './chaticon3.svg'
 import chatIcon4 from './chaticon4.svg'
 import globalaudienceIcon from './globalaudienceicon.svg'
 import bluetickIcon from './bluetickicon.svg'
+import mpl3logo from './mpl3logo.svg'
 //About us
 import Aboutuslogo1 from './Aboutuslogo1.svg'
 import Aboutuslogo2 from './Aboutuslogo2.svg'
@@ -237,10 +240,18 @@ import demoimg1 from './demo-img1.svg'
 import demoimg2 from './demo-img2.svg'
 import demoimg3 from './demo-img3.svg'
 import demoimg4 from './demo-img4.svg'
+//new product image added
+import SolutionPimage from './SolutionPimage.svg'
+import GamificationPimage from './GamificationPimage.svg'
 export const assets = {
+    //new product image added
+    GamificationPimage,
+    SolutionPimage,
     //Home
     logo3,
     logo,
+    ICSmainLogo,
+    Homeb1,
     chatBubble,
     downarrow,
     SMSmobile,
@@ -275,6 +286,7 @@ export const assets = {
     customercentria,
     hansacequity,
     mpl,
+    mpl3logo,
     my11circle,
     kashti,
     tatacapital,

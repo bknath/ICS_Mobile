@@ -181,7 +181,7 @@ const Platform = () => {
             document: assets.documentlogo,
         },
         MPL: {
-            logo: assets.mpl2logo,
+            logo: assets.mpl3logo,
             name: "Akashdeep Mishra",
             title: "Operation Manager",
             description: "Partnering with ICS has been a game-changer for us as a company. Their team consistently delivers quick responses and exceptional support, allowing us to implement innovative SMS strategies with ease. This collaboration has not only enhanced our communication but also significantly improved our key metrics. We are grateful for their expertise and dedication, which have truly elevated our SMS marketing efforts.",
@@ -202,7 +202,7 @@ const Platform = () => {
     }, [location]);
 
     return (
-        <div>
+        <div className='main-platform-div'>
             <div className="platform-section-1">
                 <div className="header-content">
                     <button className='head-section-b2'>Why us</button>

@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, #fff, #ffffff);
+    /* background-image: linear-gradient(to bottom, #fff, #ffffff); */
+    background: transparent;
     padding: 10px 50px;
     position: relative;
     flex-wrap: wrap;

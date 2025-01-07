@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
+.main-platform-div{
+    margin: 0;
+    padding: 0;
+}
 .platform-section-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 40px; */
-    background-image: url(../../../assets/outerbkglayer.svg);
+    /* background-image: url(../../../assets/outerbkglayer.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 10%;
+    background-position-x: center;
+    background-position-y: center; */
 }
 
 .head-section-b2 {
@@ -372,6 +375,11 @@
     width: 120px;
     height: 60px;
     margin-left: 6px;
+}
+.testimonial-logo[src*="mpl3logo"] {
+    width: 90px; 
+    height: 80px; 
+    margin-left: 10px;
 }
 
 .testimonial-text p {

@@ -50,7 +50,7 @@ const Hero = () => {
                     <div className="content">
                         <h1>Reimagine omnichannel communications</h1>
                         <p>Leverage the power of ICS Mobile’s Trusted CPAAS platform to elevate your digital interactions.</p>
-                        <div className="buttons">
+                        <div className="buttons-hmp">
                             <Link to="/demomodule" className='request-demo'>Request Demo</Link>
                             <Link to="/contact-us" className='talk-to-sales'>Talk to Sales</Link>
                         </div>
@@ -84,7 +84,7 @@ const Hero = () => {
                     <div className="robot" ref={sectionref14}>
                         <img
                             className={`image-slide-up ${imageInView14 ? 'visible' : ''}`}
-                            src={assets.homepageupdatedimage}
+                            src={assets.Homeb1}
                             alt="Robot"
                         />
                     </div>

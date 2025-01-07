@@ -58,7 +58,7 @@ const Faqsection = () => {
                         {openIndex === index && <div className="faq-answer">{faq.answer}</div>}
                     </div>
                 ))}
-                <button className="view-all-faqs">View all faq's</button>
+                <button style={{display:'none'}} className="view-all-faqs">View all faq's</button>
             </div>
         </section>
     );
