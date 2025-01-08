@@ -12,10 +12,13 @@
 .whatsappAPI-wrap-content {
     display: flex;
     justify-content: center;
-    background-image: url("../../assets/Abstract.png");
+    /* background-image: url("../../assets/Abstract.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+}
+.whatsapp-platform-section{
+    background-color: #f9f9f9;
 }
 
 .content-whatsappAPI {
@@ -63,9 +66,10 @@
 .whatsapprobot {
     width: 40%;
     padding-top: 1rem;
+    padding-left: 2rem;
 }
 .whatsapprobot img{
-    width: 530px;
+    width: 500px;
 }
 
 
@@ -303,6 +307,7 @@
     }
     .whatsapprobot{
         width: 100%;
+        padding-left: 0;
     }
     .whatsapprobot img{
         width: 340px;

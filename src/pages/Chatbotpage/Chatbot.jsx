@@ -101,7 +101,7 @@ const Chatbot = () => {
                     </div>
                     <div className="chatrobot">
                         <div className="hero-product-image">
-                            <img src={assets.chatbotImg} alt="chatRobot" />
+                            <img src={assets.chatBotb2} alt="chatRobot" />
                         </div>
                     </div>
                 </div>

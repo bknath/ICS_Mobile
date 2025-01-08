@@ -240,13 +240,17 @@ import demoimg1 from './demo-img1.svg'
 import demoimg2 from './demo-img2.svg'
 import demoimg3 from './demo-img3.svg'
 import demoimg4 from './demo-img4.svg'
-//new product image added
+//new product image added and banner
 import SolutionPimage from './SolutionPimage.svg'
 import GamificationPimage from './GamificationPimage.svg'
+import whatsAppb2 from './whatsAppb2.png'
+import chatBotb2 from './chatBotb2.svg'
 export const assets = {
     //new product image added
     GamificationPimage,
     SolutionPimage,
+    whatsAppb2,
+    chatBotb2,
     //Home
     logo3,
     logo,
