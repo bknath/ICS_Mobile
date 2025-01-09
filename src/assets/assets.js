@@ -246,7 +246,7 @@ import demoimg4 from './demo-img4.svg'
 import SolutionPimage from './SolutionPimage.svg'
 import GamificationPimage from './GamificationPimage.svg'
 import whatsAppb2 from './whatsAppb2.png'
-import chatBotb2 from './chatBotb2.svg'
+import chatBotb2 from './chatBotb2.png'
 export const assets = {
     //new product image added
     GamificationPimage,

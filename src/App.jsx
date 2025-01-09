@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar'
-import { Route, Router, Routes } from 'react-router-dom'
+import { Route, Router, Routes, useLocation } from 'react-router-dom'
 import Hero from './pages/Home/Hero/Hero'
 import Product from './pages/Home/Product/Product'
 import Platform from './pages/Home/Platform/Platform'
@@ -26,6 +26,18 @@ import Blogsinglepage from './pages/BlogsPage/Blogsinglepage'
 import FbSignup from './pages/Fbsignuppage/FbSignup'
 import FacebookLoginIntegration from './pages/Fbsignuppage/FacebookLoginIntegration'
 const App = () => {
+
+    const location = useLocation();
+
+    useEffect(() =>{
+        if(location.pathname==='/'){
+            document.body.style.backgroundColor = "#FFF7F8";
+        }else if(location.pathname==='/whatsapp' || location.pathname === '/chatbot'){
+            document.body.style.backgroundColor = "#F9EDEF";
+        }
+
+    })
+
     return (
         <div>
             <Navbar />
