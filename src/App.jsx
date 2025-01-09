@@ -32,7 +32,7 @@ const App = () => {
     useEffect(() =>{
         if(location.pathname==='/'){
             document.body.style.backgroundColor = "#FFF7F8";
-        }else if(location.pathname==='/whatsapp' || location.pathname === '/chatbot'){
+        }else if(location.pathname==='/whatsapp' || location.pathname === '/chatbot' || location.pathname === '/customer' || location.pathname === '/smsgateway' || location.pathname === '/rcspage'){
             document.body.style.backgroundColor = "#F9EDEF";
         }
 

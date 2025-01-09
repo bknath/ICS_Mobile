@@ -1,10 +1,10 @@
 .rcs-wrap-content{
     display: flex;
     justify-content: center;
-    background-image: url("../../assets/Abstract.png");
+    /* background-image: url("../../assets/Abstract.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;  */
 }
 .hero-section-7{
     display: flex;
