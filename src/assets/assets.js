@@ -71,6 +71,8 @@ import hubspotlogo from './hubspot.svg'
 import mobileWhatsappproduct2image from './mobileWhatsappproduct2image.png'
 import mobileSMSproduct2image from './mobileSMSproduct2image.png'
 import mobileRCSproduct2image from './mobileRCSproduct2image.png'
+import mobileGamification2image from './gamificationmb.png'
+import mobileSolution2image from './solutionmb.png'
 //chatbot
 import chatbotImg from './chatbotimg.svg'
 import chipIcon from './integratedsolicon.svg'
@@ -325,6 +327,8 @@ export const assets = {
     mobileRCSproduct2image,
     mobileSMSproduct2image,
     mobileWhatsappproduct2image,
+    mobileGamification2image,
+    mobileSolution2image,
     //chatbot
     chatbotImg,
     chipIcon,

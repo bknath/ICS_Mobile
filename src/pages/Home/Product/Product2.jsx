@@ -16,7 +16,9 @@ const desktopImages = {
 const mobileImages = {
     SMSproduct2image: assets.mobileSMSproduct2image,
     Whatsappproduct2image: assets.mobileWhatsappproduct2image,
-    RCSproduct2image: assets.mobileRCSproduct2image
+    RCSproduct2image: assets.mobileRCSproduct2image,
+    Gamification : assets.mobileGamification2image,
+    Solution : assets.mobileSolution2image
 };
 
 const products = [
