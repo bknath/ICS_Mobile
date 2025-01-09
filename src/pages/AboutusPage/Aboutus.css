@@ -385,8 +385,7 @@
         width: 350px;
     }
 
-    .header-content-aw p,
-    .header-content-aw h2 {
+    .header-content-aw {
         width: 340px;
     }
 }
