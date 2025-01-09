@@ -37,7 +37,6 @@ const App = () => {
         } else {
             document.body.style.backgroundColor = "#fff"
         }
-
     })
 
     return (
