@@ -36,6 +36,9 @@
     width: 40%;
     padding-top: 1rem;
 }
+.rcsdetail-image img{
+    width: 490px;
+}
 .contact-us {
     background-color: white;
     color: #b30000;

@@ -193,7 +193,7 @@ const SMSgateway = () => {
                         </div>
                     </div>
                     <div className="SMSrobot">
-                        <img src={assets.SMSgatewaylogo}
+                        <img src={assets.SMSGatewaynewLogo}
                             alt="SMSlogo1"
                             className={`image-slide-up ${imageInView10 ? 'visible' : ''}`}
                         />

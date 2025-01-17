@@ -19,7 +19,7 @@
 
 
 .content-CustomerEngagement {
-    width: 33%;
+    width: 48%;
 }
 
 .content-CustomerEngagement h1 {
@@ -60,8 +60,11 @@
 }
 
 .Customerrobot {
-    width: 50%;
+    width: 35%;
     padding-top: 2rem;
+}
+.Customerrobot img{
+   width: 460px;
 }
 /* platform section */
 

@@ -96,6 +96,7 @@ import EmailIcon from './emailicon.svg'
 import PhoneIcon from './phoneicon.svg'
 //CustomerEngagementpage
 import CustomerEngagementlogo from './CustomerEngagementlogo.svg'
+import CEPnewLogo from './CEPnewLogo.png'
 import surveypagesIcon from './surveypagesicon.svg'
 import flipbookIcon from './flipbookicon.svg'
 import htmltemplateIcon from './htmltemplateicon.svg'
@@ -133,6 +134,7 @@ import f7wf10 from './f7-wf10.svg'
 import f7wf11 from './f7-wf11.svg'
 //SMSgatewaypage
 import SMSgatewaylogo from './SMSgatewaylogo.svg'
+import SMSGatewaynewLogo from './SMSGatewaynewLogo.png'
 import SMSgatewaylogo2 from './SMSgatewayl2.svg'
 import SMSgatewaylogo3 from './SMSgatewayl3.svg'
 import SMSgatewaylogo4 from './SMSgatewayl4.svg'
@@ -178,6 +180,7 @@ import contactusimage from './contactusimage.svg'
 import contactuschaticon2 from './contactuschaticon2.svg'
 //RCS
 import Rcsmainlogo from './Rcsmainlogo.svg'
+import RCSnewmainLogo from './RCSnewmainLogo.png'
 import f7rcs1 from './f7rcs1.svg'
 import f7rcs2 from './f7rcs2.svg'
 import f7rcs3 from './f7rcs3.svg'
@@ -352,6 +355,7 @@ export const assets = {
     PhoneIcon,
     //CustomerEngagementpage
     CustomerEngagementlogo,
+    CEPnewLogo,
     surveypagesIcon,
     flipbookIcon,
     htmltemplateIcon,
@@ -389,6 +393,7 @@ export const assets = {
     f7wf11,
     //SMSgatewaypage
     SMSgatewaylogo,
+    SMSGatewaynewLogo,
     SMSgatewaylogo2,
     SMSgatewaylogo3,
     SMSgatewaylogo4,
@@ -434,6 +439,7 @@ export const assets = {
     contactuschaticon2,
     //RCS
     Rcsmainlogo,
+    RCSnewmainLogo,
     f7rcs1,
     f7rcs2,
     f7rcs3,

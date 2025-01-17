@@ -126,7 +126,7 @@ const Rcs = () => {
                     </div>
                     <div className="rcsdetail-image">
                         <div className="hero-product-image">
-                            <img src={assets.Rcsmainlogo} alt="" />
+                            <img src={assets.RCSnewmainLogo} alt="" />
                         </div>
                     </div>
                 </div>
