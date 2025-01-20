@@ -207,7 +207,7 @@ const Contactus = () => {
                                     type="tel"
                                     id="phone"
                                     name="phone"
-                                    placeholder='+91 7608741464'
+                                    placeholder='7608741464'
                                     value={formData.phone}
                                     onChange={handleChange}
                                     required
