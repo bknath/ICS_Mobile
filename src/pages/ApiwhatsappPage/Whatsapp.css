@@ -336,4 +336,7 @@
     .whatsapp-info-item{
         width: 100%;
     }
+    .feature-content-container-1234 > section:nth-of-type(10) .feature-item-1234 {
+        flex-direction: column-reverse;
+    }
 }
