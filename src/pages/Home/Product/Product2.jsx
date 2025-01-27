@@ -8,13 +8,17 @@ import minusIcon from '../../../assets/minusIcon.svg';
 const desktopImages = {
     SMSproduct2image: assets.SMSproduct2image,
     Whatsappproduct2image: assets.Whatsappproduct2image,
-    RCSproduct2image: assets.RCSproduct2image
+    RCSproduct2image: assets.RCSproduct2image,
+    Gamification : assets.GamificationPimage,
+    Solution : assets.SolutionPimage
 };
 
 const mobileImages = {
     SMSproduct2image: assets.mobileSMSproduct2image,
     Whatsappproduct2image: assets.mobileWhatsappproduct2image,
-    RCSproduct2image: assets.mobileRCSproduct2image
+    RCSproduct2image: assets.mobileRCSproduct2image,
+    Gamification : assets.mobileGamification2image,
+    Solution : assets.mobileSolution2image
 };
 
 const products = [
@@ -31,22 +35,22 @@ const products = [
     {
         name: 'Gamification',
         description: 'Drive engagement and motivation with our gamification solutions. Turn mundane interactions into exciting, rewarding experiences that keep your audience engaged and eager to participate.',
-        imageKey: 'SMSproduct2image'
+        imageKey: 'Gamification'
     },
     {
         name: 'RCS',
         description: 'Upgrade your messaging experience with RCS. Send interactive, media-rich content that brings your brand’s messaging to life, creating deeper connections with your customers.',
         imageKey: 'RCSproduct2image'
+    },  
+    {
+        name: 'Solution',
+        description: 'Empower your business with our comprehensive solutions, designed to optimize communication, improve customer experience, and drive growth across multiple channels.',
+        imageKey: 'Solution'
     },
     {
         name: 'Chat Bots',
         description: 'Streamline customer interactions with our intelligent Chatbot solutions. Provide instant, personalized responses, improving customer satisfaction and operational efficiency.',
         imageKey: 'RCSproduct2image'
-    },
-    {
-        name: 'Solution',
-        description: 'Empower your business with our comprehensive solutions, designed to optimize communication, improve customer experience, and drive growth across multiple channels.',
-        imageKey: 'Whatsappproduct2image'
     }
 ];
 
@@ -74,7 +78,7 @@ const Product2 = () => {
             <div className="header-content-1">
                 <button className='head-section-b1'>Products</button>
                 <h2>Explore All Products, Unlock Possibilities</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p>Discover Our Full Range of Products and Unlock Endless Possibilities!</p>
             </div>
             <div className="custom-product-section">
                 <div className="custom-product-content">

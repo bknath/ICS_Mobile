@@ -1,5 +1,6 @@
 import logo from './logo.svg'
 import logo3 from './images.png'
+import ICSmainLogo from './ICSmainLogo.svg'
 import chatBubble from './Chat Bubble.svg'
 import downarrow from './down-arrow.png'
 import SMSmobile from './SMS-mobile.png' 
@@ -15,6 +16,8 @@ import rcsnavicon from './rcsnavicon.svg'
 import smsnavicon from './smsnavicon.png'
 import cepnavicon from './cepnavicon.svg'
 import robonavicon from './robonavicon.svg'
+import Homeb1 from './homeb1.svg'
+
 //partner logos updated
 import adityabirla from './adityabirla.svg'
 import arvind from './arvind.svg'
@@ -68,6 +71,8 @@ import hubspotlogo from './hubspot.svg'
 import mobileWhatsappproduct2image from './mobileWhatsappproduct2image.png'
 import mobileSMSproduct2image from './mobileSMSproduct2image.png'
 import mobileRCSproduct2image from './mobileRCSproduct2image.png'
+import mobileGamification2image from './gamificationmb.png'
+import mobileSolution2image from './solutionmb.png'
 //chatbot
 import chatbotImg from './chatbotimg.svg'
 import chipIcon from './integratedsolicon.svg'
@@ -91,6 +96,7 @@ import EmailIcon from './emailicon.svg'
 import PhoneIcon from './phoneicon.svg'
 //CustomerEngagementpage
 import CustomerEngagementlogo from './CustomerEngagementlogo.svg'
+import CEPnewLogo from './CEPnewLogo.png'
 import surveypagesIcon from './surveypagesicon.svg'
 import flipbookIcon from './flipbookicon.svg'
 import htmltemplateIcon from './htmltemplateicon.svg'
@@ -128,6 +134,7 @@ import f7wf10 from './f7-wf10.svg'
 import f7wf11 from './f7-wf11.svg'
 //SMSgatewaypage
 import SMSgatewaylogo from './SMSgatewaylogo.svg'
+import SMSGatewaynewLogo from './SMSGatewaynewLogo.png'
 import SMSgatewaylogo2 from './SMSgatewayl2.svg'
 import SMSgatewaylogo3 from './SMSgatewayl3.svg'
 import SMSgatewaylogo4 from './SMSgatewayl4.svg'
@@ -173,12 +180,23 @@ import contactusimage from './contactusimage.svg'
 import contactuschaticon2 from './contactuschaticon2.svg'
 //RCS
 import Rcsmainlogo from './Rcsmainlogo.svg'
+import RCSnewmainLogo from './RCSnewmainLogo.png'
 import f7rcs1 from './f7rcs1.svg'
 import f7rcs2 from './f7rcs2.svg'
 import f7rcs3 from './f7rcs3.svg'
 import f7rcs4 from './f7rcs4.svg'
 import f7rcs5 from './f7rcs5.svg'
 import f7rcs6 from './f7rcs6.svg'
+import whatsappPlatfroml2 from './4815735 1.svg'
+import whatsappPlatfroml3 from './3907313 1.svg'
+import whatsappPlatforml4 from './whatsappPlatforml4.svg'
+import whatsappPlatforml5 from './whatsappPlatforml5.svg'
+import chatIcon2 from './chaticon2.svg'
+import chatIcon3 from './chaticon3.svg'
+import chatIcon4 from './chaticon4.svg'
+import globalaudienceIcon from './globalaudienceicon.svg'
+import bluetickIcon from './bluetickicon.svg'
+import mpl3logo from './mpl3logo.svg'
 //About us
 import Aboutuslogo1 from './Aboutuslogo1.svg'
 import Aboutuslogo2 from './Aboutuslogo2.svg'
@@ -227,10 +245,22 @@ import demoimg1 from './demo-img1.svg'
 import demoimg2 from './demo-img2.svg'
 import demoimg3 from './demo-img3.svg'
 import demoimg4 from './demo-img4.svg'
+//new product image added and banner
+import SolutionPimage from './SolutionPimage.svg'
+import GamificationPimage from './GamificationPimage.svg'
+import whatsAppb2 from './whatsAppb2.png'
+import chatBotb2 from './chatBotb2.png'
 export const assets = {
+    //new product image added
+    GamificationPimage,
+    SolutionPimage,
+    whatsAppb2,
+    chatBotb2,
     //Home
     logo3,
     logo,
+    ICSmainLogo,
+    Homeb1,
     chatBubble,
     downarrow,
     SMSmobile,
@@ -265,6 +295,7 @@ export const assets = {
     customercentria,
     hansacequity,
     mpl,
+    mpl3logo,
     my11circle,
     kashti,
     tatacapital,
@@ -299,6 +330,8 @@ export const assets = {
     mobileRCSproduct2image,
     mobileSMSproduct2image,
     mobileWhatsappproduct2image,
+    mobileGamification2image,
+    mobileSolution2image,
     //chatbot
     chatbotImg,
     chipIcon,
@@ -322,6 +355,7 @@ export const assets = {
     PhoneIcon,
     //CustomerEngagementpage
     CustomerEngagementlogo,
+    CEPnewLogo,
     surveypagesIcon,
     flipbookIcon,
     htmltemplateIcon,
@@ -359,6 +393,7 @@ export const assets = {
     f7wf11,
     //SMSgatewaypage
     SMSgatewaylogo,
+    SMSGatewaynewLogo,
     SMSgatewaylogo2,
     SMSgatewaylogo3,
     SMSgatewaylogo4,
@@ -404,12 +439,22 @@ export const assets = {
     contactuschaticon2,
     //RCS
     Rcsmainlogo,
+    RCSnewmainLogo,
     f7rcs1,
     f7rcs2,
     f7rcs3,
     f7rcs4,
     f7rcs5,
     f7rcs6,
+    whatsappPlatfroml2,
+    whatsappPlatfroml3,
+    whatsappPlatforml4,
+    whatsappPlatforml5,
+    chatIcon2,
+    chatIcon3,
+    chatIcon4,
+    globalaudienceIcon,
+    bluetickIcon,
     //Aboutus
     Aboutuslogo1,
     Aboutuslogo2,

@@ -13,7 +13,7 @@
 
 .footer-logo img {
     border-radius: 5px;
-    margin-left: 5rem;
+    margin-left: 68px;
 }
 
 .footer-top {
@@ -76,7 +76,7 @@
 }
 
 .footer-links :first-child {
-    margin-left: 1.6rem;
+    margin-left: 23px;
 }
 
 .footer-links a:hover {

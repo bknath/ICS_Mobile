@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
     color: white;
     position: relative;
     overflow: hidden;
@@ -12,10 +12,10 @@
 .hero-wraping-content{
     display: flex;
     justify-content: center;
-    background-image: url("../../assets/Abstract.png");
+    /* background-image: url("../../assets/Abstract.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 .content-chatbot {

@@ -36,7 +36,7 @@ const Navbar = () => {
             <nav className="navbar">
                 <div className="logo">
                     <Link to="/">
-                        <img src={assets.logo3} alt="Logo" />
+                        <img src={assets.ICSmainLogo} alt="Logo" />
                     </Link>
                 </div>
                 <ul className="nav-items">
@@ -169,8 +169,8 @@ const Navbar = () => {
                                             <li><span><img src={assets.whatsAppiconmain} alt="wh-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/whatsapp" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Whatsapp Business API</Link></li>
                                             <li><span><img src={assets.robonavicon} alt="ch-icon" style={{ paddingRight: "10px", width: '42px' }} /></span><Link to="/chatbot" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Chatbot</Link></li>
                                             <li><span><img src={assets.cepnavicon} alt="cep-icon" style={{ paddingRight: "10px" }} /></span><Link to="/customer" style={{ fontSize: '14px', textAlign:'left' }} onClick={handleLinkClick}>Customer Engagement Programs</Link></li>
-                                            <li><span><img src={assets.smsnavicon} alt="sms-icon" style={{ paddingRight: "10px" }} /></span><Link to="/smsgateway" style={{ fontSize: '14px' }} onClick={handleLinkClick}>SMS Gateway</Link></li>
-                                            <li><span><img src={assets.rcsnavicon} alt="rcs-icon" style={{ paddingRight: "10px" }} /></span><Link to="/rcspage" style={{ fontSize: '14px' }} onClick={handleLinkClick}>Rich Communication Services</Link></li>
+                                            <li><span><img src={assets.smsnavicon} alt="sms-icon" style={{ paddingRight: "10px" , width:'40px'}} /></span><Link to="/smsgateway" style={{ fontSize: '14px' }} onClick={handleLinkClick}>SMS Gateway</Link></li>
+                                            <li><span><img src={assets.rcsnavicon} alt="rcs-icon" style={{ paddingRight: "10px" }} /></span><Link to="/rcspage" style={{ fontSize: '14px', textAlign:'left' }} onClick={handleLinkClick}>Rich Communication Services</Link></li>
                                         </ul>
                                     )}
                                 </li>

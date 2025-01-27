@@ -4,7 +4,8 @@
 }
 
 .head-section-b1 {
-  margin-top: 3rem;
+  margin-top: 60px;
+  margin-bottom: 12px;
   border: none;
   background-color: #FDEFF0;
   border-radius: 15px;
@@ -20,7 +21,6 @@
   padding: 20px;
   width: 1100px;
   margin: 0 auto;
-  margin-bottom: 1rem;
 }
 
 .custom-product-content {

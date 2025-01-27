@@ -12,10 +12,6 @@
 .SMSgateway-wrap-content {
     display: flex;
     justify-content: center;
-    background-image: url("../../assets/Abstract.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .content-SMSgateway {
@@ -50,7 +46,7 @@
     padding-left: 6rem;
 }
 .SMSrobot img{
-    width: 440px;
+    width: 460px;
 }
 
 .SMSgateway-platform-section {
@@ -487,6 +483,18 @@
         flex-direction: column;
         width: 340px;
         margin: 1rem 0;
+    }
+    .feature-content-container-1234 > section:nth-of-type(2) .feature-item-1234 {
+        flex-direction: column-reverse;
+    }
+    .feature-content-container-1234 > section:nth-of-type(4) .feature-item-1234 {
+        flex-direction: column-reverse;
+    }
+    .feature-content-container-1234 > section:nth-of-type(6) .feature-item-1234 {
+        flex-direction: column-reverse;
+    }
+    .feature-content-container-1234 > section:nth-of-type(8) .feature-item-1234 {
+        flex-direction: column-reverse;
     }
     .feature-item-1234 img{
         width: 330px;

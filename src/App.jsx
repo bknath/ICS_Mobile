@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar'
-import { Route, Router, Routes } from 'react-router-dom'
+import { Route, Router, Routes, useLocation } from 'react-router-dom'
 import Hero from './pages/Home/Hero/Hero'
 import Product from './pages/Home/Product/Product'
 import Platform from './pages/Home/Platform/Platform'
@@ -26,6 +26,19 @@ import Blogsinglepage from './pages/BlogsPage/Blogsinglepage'
 import FbSignup from './pages/Fbsignuppage/FbSignup'
 import FacebookLoginIntegration from './pages/Fbsignuppage/FacebookLoginIntegration'
 const App = () => {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            document.body.style.backgroundColor = "#FFF7F8";
+        } else if (location.pathname === '/whatsapp' || location.pathname === '/chatbot' || location.pathname === '/customer' || location.pathname === '/smsgateway' || location.pathname === '/rcspage') {
+            document.body.style.backgroundColor = "#F9EDEF";
+        } else {
+            document.body.style.backgroundColor = "#fff"
+        }
+    })
+
     return (
         <div>
             <Navbar />
@@ -34,15 +47,15 @@ const App = () => {
                 <Route path='/customer' element={<CustomerengagementPage />} />
                 <Route path='/whatsapp' element={<ApiwhatsappPage />} />
                 <Route path='/contact-us' element={<Contactuspage />} />
-                <Route path='/fb-signup' element={<FbSignup/>}/>
-                <Route path='/fb-signupnew' element={<FacebookLoginIntegration/>}/>
+                <Route path='/fb-signup' element={<FbSignup />} />
+                <Route path='/fb-signupnew' element={<FacebookLoginIntegration />} />
                 <Route path='/smsgateway' element={<SMSgatewaypage />} />
                 <Route path='/rcspage' element={<Rcstestpage />} />
                 <Route path='/about-us' element={<AboutusPage />} />
                 <Route path='/career' element={<CareerPage />} />
                 <Route path='/demomodule' element={<Demomodule />} />
-                <Route path='/services' element={<Demomodule/>}/>
-                <Route path='/why-ics/' element={<Product2/>}/>
+                <Route path='/services' element={<Demomodule />} />
+                <Route path='/why-ics' element={<Product2 />} />
             </Routes>
             <Routes>
                 <Route path='/' element={<Hero />} />

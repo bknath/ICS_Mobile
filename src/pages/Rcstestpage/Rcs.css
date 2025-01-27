@@ -1,10 +1,6 @@
 .rcs-wrap-content{
     display: flex;
     justify-content: center;
-    background-image: url("../../assets/Abstract.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
 }
 .hero-section-7{
     display: flex;
@@ -39,6 +35,9 @@
 .rcsdetail-image{
     width: 40%;
     padding-top: 1rem;
+}
+.rcsdetail-image img{
+    width: 490px;
 }
 .contact-us {
     background-color: white;

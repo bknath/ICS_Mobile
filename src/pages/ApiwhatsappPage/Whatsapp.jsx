@@ -189,7 +189,7 @@ const Whatsapp = () => {
                     </div>
                     <div className="whatsapprobot" ref={sectionref15}>
                         <img
-                            src={assets.whatsappAPILogo}
+                            src={assets.whatsAppb2}
                             alt="chatRobot"
                             className={`image-slide-up ${imageInView15 ? 'visible' : ''}`}
                         />

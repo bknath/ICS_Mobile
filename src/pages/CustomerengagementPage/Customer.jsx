@@ -111,7 +111,7 @@ const Customer = () => {
                     </div>
                     <div className="Customerrobot">
                         <div className="hero-product-image">
-                            <img src={assets.CustomerEngagementlogo} alt="CustomerRobot" />
+                            <img src={assets.CEPnewLogo} alt="CustomerRobot" />
                         </div>
                     </div>
                 </div>

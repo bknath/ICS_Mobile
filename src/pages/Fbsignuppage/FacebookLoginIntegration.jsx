@@ -45,7 +45,7 @@ const FacebookLoginIntegration = () => {
                 override_default_response_type: true, // Override default response
                 extras: {
                     setup: {
-                        solutionID: "1059491325920268", // Example solution ID
+                        solutionID: "470262232807106", // Example solution ID
                     },
                 },
             }

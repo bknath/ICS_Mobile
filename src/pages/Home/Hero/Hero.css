@@ -2,40 +2,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #114DBB; */
+    /* background-color: #FFF7F8; */
     color: #00306a;
     position: relative;
     overflow: hidden;
+    flex-direction: column;
     width: 1400px;
 }
 .hero-wrap-section{
     display: flex;
     justify-content: center;
-    background-image: url("../../../assets/Abstract.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .content {
-    width: 41%;
+    margin-top: 70px;
+    width: 90%;
 }
 
 .content h1 {
-    font-size: 40px;
+    text-align: center;
+    font-size: 60px;
     font-weight: 600;
-    line-height: 45px;
-    margin-bottom: 10px;
+    line-height: 100%;
+    padding-bottom: 30px;
 }
 
 .content p {
+    text-align: center;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 500px;
+    margin: 0 auto;
 }
 
-.buttons {
-    margin-bottom: 30px;
-
+.buttons-hmp {
+    text-align: center;
 }
 
 /* .btn {
@@ -64,6 +65,7 @@
     line-height: 24px;
     padding: 8px 20px;
     border-radius: 4px;
+    
 }
 
 .talk-to-sales {
@@ -74,7 +76,7 @@
     font-weight: 600;
     line-height: 24px;
     margin-left: 10px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 4px;
 }
 .talk-to-sales:hover{
@@ -86,6 +88,7 @@
 .stats {
     display: flex;
     margin-top: 20px;
+    display: none;
 }
 
 .stat {
@@ -124,12 +127,14 @@
 }
 
 .robot {
-    width: 35%;
-    padding-left: 1rem;
+    position: relative;
+    z-index: -1;
+    top: -220px;
+    height: 600px;
 }
 
 .robot img{
-    width: 440px;
+   width: 100%; 
 }
 @keyframes slideUp {
     0% {
@@ -152,20 +157,20 @@
     }
     .content {
         width: 100%;
-        padding-left: 1rem;
-
     }
     .robot{
-        width: 100%;
+        top: -85px;
+        height: 280px;
     }
     .robot img{
-        width: 340px;
+        width: 370px;
     }
     .content p{
-        width: 70%;
+        width: 328px;
+        padding-bottom: 20px;
     }
     .stats{
-        width: 100%;
+        display: none;
     }
     .stat{
         margin-right: 10px;
@@ -173,6 +178,7 @@
     }
     .content h1{
         font-size: 32px;
+        padding-bottom: 20px;
     }
     .request-demo{
         padding: 8px 25px;
